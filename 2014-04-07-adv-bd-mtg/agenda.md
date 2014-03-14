@@ -5,8 +5,10 @@
 1. Overview of Beta site
 	- Feedback on on the browser
 		- "How do you want to browse data"
+		- Browsing within a dataset/study
+		- Browsing across datasets/studies
 1. Lessons learned in hand-curation
-	- Karen's testimony of contributing existing data
+	- Karen's testimonial about contributing existing data
 1. Working towards self-curation
 	- Interim solutions before full self-curation
 1. Databrary and Data/Lab Management 
