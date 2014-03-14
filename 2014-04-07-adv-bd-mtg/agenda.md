@@ -4,7 +4,8 @@
 1. Announcements and Housekeeping
 1. Brief status updates
 1. Overview of Beta site
+1. Datavyu update and 2.0 feature discussion
 1. Importance of sharing as you go 
-	- Karen's testimony of contributing existing data
+        - Karen's testimony of contributing existing data
 1. Discussion of data management priorities
 1. (Rick's guerilla marketing tactics here)
