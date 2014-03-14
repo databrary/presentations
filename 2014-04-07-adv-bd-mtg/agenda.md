@@ -13,18 +13,37 @@
 	- Community needs?
 	- Prioritizing features
 1. The future of Databrary
-	- How does/should Databrary differ from other services?
+	- How does Databrary differ from other services?
 		- Social media services
 			- ResearchGate
 		- Electronic CV/Public profile
 			- ResearchGate
+			- ORCID
 		- Data-sharing
 			- For profit: ResearchGate, figshare, 
-			- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories
+			- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories, GitHub
+			- University-based vs. non
 			- Domain-specific vs. domain general
 		- Data management
 			- Open Science Framework
-	- Should Databrary do more than store data?
-		- Social media services -- subscriptions, chat
-1. (Rick's guerilla marketing tactics here)
+			- GitHub
+	- How _should_ Databrary differ from other services?
+		- Should Databrary do more than store data?
+			- Social media services
+				- Subscribe to datasets
+				- Subscribe to researchers
+				- Subscribe to topic news feeds
+				- Chat/IM
+				- Mailing lists
+				- QA fora
+			- Society-specific "branding" or services
+			- Electronic CV/public profile services
+		- Should Databrary explore new "markets"
+			- Store unlimited supplemental materials for journals
+				- Developmental science only 
+				- Psychology-related
+				- Neuroscience-related
+				- Others?
+			- Store abstracts + supplemental materials for conferences
+			- Store videos of conference talks or lectures
 1. Datavyu update and 2.0 feature discussion
