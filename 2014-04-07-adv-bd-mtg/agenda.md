@@ -2,7 +2,12 @@
 
 1. Announcements and Housekeeping [KEA]
 1. Brief status updates [Dylan or KEA]
-	- Staffing, space
+	- Welcome to New Advisory Board members
+		- Brian Nosek, U Virginia and Center for Open Science
+		- Tal Yarkoni, U Texas, Neurosynth.org Project
+	- Staffing
+		- Jon Coe
+		- Vicky Foo
 	- IRB amendments
 	- Authorizations
 		- NYU, PSU, Indiana, Rutgers, Rochester
@@ -16,8 +21,9 @@
 		- Messinger Lab
 		- Gessel Archives
 	- Presentations
-		- NFAIS/CENDI, November 2013
-		- CNI 13 Fall, December 2013
+		- [NFAIS/CENDI, November 2013](http://cendievents.iiaweb.com/CENDI_NFAIS_FEDLINK_11122013/index.html)
+		- [CNI 13 Fall, December 2013](http://youtu.be/-Y4A2Pw_7AM)
+		- Spatial DataMine Workshop, February 2014
 		- Karen's list...
 1. Datavyu [Dylan or KEA]
 	- Datavyu 1.1
@@ -55,6 +61,7 @@
 			- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories, GitHub
 			- University-based vs. non
 			- Domain-specific vs. domain general
+			- Identifiable data vs. non
 		- Data management
 			- Open Science Framework
 			- GitHub
