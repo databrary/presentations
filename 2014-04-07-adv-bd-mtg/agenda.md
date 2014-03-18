@@ -34,19 +34,27 @@
 		- "How do you want to browse data"
 		- Browsing within a dataset/study
 		- Browsing across datasets/studies
-1. Lessons learned in hand-curation [KEA]
-	- Contributing existing data: Everything researcher does is extra work
-	- Necessary, desirable, optional; how good is good enough?
-1. Working towards self-curation [KEA]
-	- Interim solutions before full self-curation
-	- Researchers uploading as they go; what has to happen to make this possible; target date.
+1. Curation
+	- Lessons learned in hand-curation [KEA]
+		- Contributing existing data: Everything researcher does is extra work
+		- Necessary, desirable, optional; how good is good enough?
+	- Working towards self-curation [KEA]
+		- Interim solutions before full self-curation
+		- Researchers uploading as they go; what has to happen to make this possible; target date.
 1. Databrary and Data/Lab Management [KEA]
 	- Community needs?
-	- Outreach through Data Management Specialist
+	- Outreach
+		- Data Management Specialist
+		- PI Interviews
+		- Conference workshops?
+		- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
 	- Identifying needs, prioritizing features
-1. The future of Databrary [ROG]
+1. The future of Databrary [Dylan and ROG]
 	- Short-term future
 		- Databrary 1.0 release
+			- User guide, videos
+			- Search
+			- Studies and datasets
 	- Open science/data sharing evolving fast
 		- What features will attract, keep users, 
 		- What features will ensure sustainability, change the culture of dev sci?
