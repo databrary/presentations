@@ -12,10 +12,13 @@
 		- Karasik Lab
 		- Gordon Lab
 		- LoBue Lab
+	- Datasets on the radar
+		- Messinger Lab
+		- Gessel Archives
 	- Presentations
 		- NFAIS/CENDI, November 2013
 		- CNI 13 Fall, December 2013
-		- Karen's list
+		- Karen's list...
 1. Datavyu [Dylan or KEA]
 	- Datavyu 1.1
 	- Datavyu 2.0
@@ -56,7 +59,7 @@
 			- Open Science Framework
 			- GitHub
 	- How _should_ Databrary differ from other services?
-		- Should Databrary do more than store data?
+		- Should Databrary do more than store data, facilitate data management?
 			- Social media services
 				- Subscribe to datasets
 				- Subscribe to researchers
@@ -64,13 +67,16 @@
 				- Chat/IM
 				- Mailing lists
 				- QA fora
-			- Society-specific "branding" or services
+			- Project or task management, group communication or via API
+				- Slack.com, Campfire
+				- Asana, Trello, Basecamp
 			- Electronic CV/public profile services
 		- Should Databrary explore new "markets"
-			- Store unlimited supplemental materials for journals
+			- _Society-specific_ "branding" or services
+				- Store abstracts + supplemental materials for conferences
+				- Store videos of conference talks or lectures
+			- Store unlimited supplemental materials for _journals_
 				- Developmental science only 
 				- Psychology-related
 				- Neuroscience-related
 				- Others?
-			- Store abstracts + supplemental materials for conferences
-			- Store videos of conference talks or lectures
