@@ -1,20 +1,46 @@
 #General outline
 
-1. Announcements and Housekeeping
-1. Brief status updates
-1. Overview of Beta site
+1. Announcements and Housekeeping [KEA]
+1. Brief status updates [Dylan or KEA]
+	- Staffing, space
+	- IRB amendments
+	- Authorizations
+		- NYU, PSU, Indiana, Rutgers, Rochester
+	- Datasets acquired
+		- Adolph Lab
+		- Tamis-Lemonda Lab
+		- Karasik Lab
+		- Gordon Lab
+		- LoBue Lab
+	- Presentations
+		- NFAIS/CENDI, November 2013
+		- CNI 13 Fall, December 2013
+		- Karen's list
+1. Datavyu [Dylan or KEA]
+	- Datavyu 1.1
+	- Datavyu 2.0
+1. Overview of Beta site [Dylan]
+	- Registration
 	- Feedback on on the browser
 		- "How do you want to browse data"
 		- Browsing within a dataset/study
 		- Browsing across datasets/studies
-1. Lessons learned in hand-curation
-	- Karen's testimonial about contributing existing data
-1. Working towards self-curation
+1. Lessons learned in hand-curation [KEA]
+	- Contributing existing data: Everything researcher does is extra work
+	- Necessary, desirable, optional; how good is good enough?
+1. Working towards self-curation [KEA]
 	- Interim solutions before full self-curation
-1. Databrary and Data/Lab Management 
+	- Researchers uploading as they go; what has to happen to make this possible; target date.
+1. Databrary and Data/Lab Management [KEA]
 	- Community needs?
-	- Prioritizing features
-1. The future of Databrary
+	- Outreach through Data Management Specialist
+	- Identifying needs, prioritizing features
+1. The future of Databrary [ROG]
+	- Short-term future
+		- Databrary 1.0 release
+	- Open science/data sharing evolving fast
+		- What features will attract, keep users, 
+		- What features will ensure sustainability, change the culture of dev sci?
 	- How does Databrary differ from other services?
 		- Social media services
 			- ResearchGate
@@ -48,4 +74,3 @@
 				- Others?
 			- Store abstracts + supplemental materials for conferences
 			- Store videos of conference talks or lectures
-1. Datavyu update and 2.0 feature discussion
