@@ -1,7 +1,7 @@
 #General outline
 
 1. Announcements and Housekeeping [KEA]
-1. Brief status updates [Dylan or KEA]
+1. Brief status updates [KEA]
 	- Welcome to New Advisory Board members
 		- Brian Nosek, U Virginia and Center for Open Science
 		- Tal Yarkoni, U Texas, Neurosynth.org Project
@@ -27,22 +27,27 @@
 		- [CNI 13 Fall, December 2013](http://youtu.be/-Y4A2Pw_7AM)
 		- Spatial DataMine Workshop, February 2014
 		- Karen's list...
-1. Datavyu [Dylan or KEA]
-	- Datavyu 1.1
-	- Datavyu 2.0
+1. Datavyu
+	- Datavyu 1.1 [KEA]
+	- Datavyu 2.0 [Dylan]
+		- Deployment options, feature requirements
 1. Overview of Beta site [Dylan]
 	- Registration
-	- Feedback on on the browser
+		- Authorization: requesting and granting
+		- Permissions in general, access controls
+	- Feedback on the browser
+		- Introduction/review of "grouping" records
 		- "How do you want to browse data"
 		- Browsing within a dataset/study
 		- Browsing across datasets/studies
-1. Curation
-	- Lessons learned in hand-curation [KEA]
+1. Curation [KEA]
+	- Lessons learned in hand-curation
 		- Contributing existing data: Everything researcher does is extra work
 		- Necessary, desirable, optional; how good is good enough?
-	- Working towards self-curation [KEA]
+	- Working towards self-curation
 		- Interim solutions before full self-curation
 		- Researchers uploading as they go; what has to happen to make this possible; target date.
+		- Self-curation interface, design, interview and spreadsheet
 1. Databrary and Data/Lab Management [KEA]
 	- Community needs?
 	- Outreach
@@ -51,16 +56,16 @@
 		- Conference workshops?
 		- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
 	- Identifying needs, prioritizing features
-1. The future of Databrary [Dylan and ROG]
-	- Short-term future
+1. The future of Databrary
+	- Short-term future [Dylan]
 		- Databrary 1.0 release
 			- User guide, videos
 			- Search
 			- Studies and datasets
-	- Open science/data sharing evolving fast
+	- Open science/data sharing evolving fast [ROG]
 		- What features will attract, keep users, 
 		- What features will ensure sustainability, change the culture of dev sci?
-	- Longer-term planning (an eye toward sustainability)
+	- Longer-term planning (an eye toward sustainability) [ROG]
 		- How does Databrary differ from other services?
 			- Social media services
 				- ResearchGate
