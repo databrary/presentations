@@ -20,6 +20,8 @@
 	- Datasets on the radar
 		- Messinger Lab
 		- Gessel Archives
+		- Maher longitudinal study
+		- Gernsbacher Lab
 	- Presentations
 		- [NFAIS/CENDI, November 2013](http://cendievents.iiaweb.com/CENDI_NFAIS_FEDLINK_11122013/index.html)
 		- [CNI 13 Fall, December 2013](http://youtu.be/-Y4A2Pw_7AM)
@@ -58,44 +60,45 @@
 	- Open science/data sharing evolving fast
 		- What features will attract, keep users, 
 		- What features will ensure sustainability, change the culture of dev sci?
-	- How does Databrary differ from other services?
-		- Social media services
-			- ResearchGate
-		- Electronic CV/Public profile
-			- ResearchGate
-			- ORCID
-		- Data-sharing
-			- For profit: ResearchGate, figshare, 
-			- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories, GitHub
-			- University-based vs. non
-			- Domain-specific vs. domain general
-			- Identifiable data vs. non
-		- Data management
-			- Open Science Framework
-			- GitHub
-	- How _should_ Databrary differ from other services?
-		- Should Databrary do more than store data, facilitate data management?
+	- Longer-term planning (an eye toward sustainability)
+		-How does Databrary differ from other services?
 			- Social media services
-				- Subscribe to datasets
-				- Subscribe to researchers
-				- Subscribe to topic news feeds
-				- Chat/IM
-				- Mailing lists
-				- QA fora
-			- Project or group communication
-				- [Slack.com](http://slack.com)
-				- [Campfire](https://campfirenow.com/)
-				- [Yammer](http://yammer.com)
-			- Project Management
-				- [Asana](http://asana.com)
-				- [Trello](http://trello.com), Basecamp
-			- Electronic CV/public profile services
-		- Should Databrary explore new "markets"
-			- _Society-specific_ "branding" or services
-				- Store abstracts + supplemental materials for conferences
-				- Store videos of conference talks or lectures
-			- Store unlimited supplemental materials for _journals_
-				- Developmental science only 
-				- Psychology-related
-				- Neuroscience-related
-				- Others?
+				- ResearchGate
+			- Electronic CV/Public profile
+				- ResearchGate
+				- ORCID
+			- Data-sharing
+				- For profit: ResearchGate, figshare, 
+				- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories, GitHub
+				- University-based vs. non
+				- Domain-specific vs. domain general
+				- Identifiable data vs. non
+			- Data management
+				- Open Science Framework
+				- GitHub
+		- How _should_ Databrary differ from other services?
+			- Should Databrary do more than store data, facilitate data management?
+				- Social media services
+					- Subscribe to datasets
+					- Subscribe to researchers
+					- Subscribe to topic news feeds
+					- Chat/IM
+					- Mailing lists
+					- QA fora
+				- Project or group communication
+					- [Slack.com](http://slack.com)
+					- [Campfire](https://campfirenow.com/)
+					- [Yammer](http://yammer.com)
+				- Project Management
+					- [Asana](http://asana.com)
+					- [Trello](http://trello.com), Basecamp
+				- Electronic CV/public profile services
+			- Should Databrary explore new "markets"
+				- _Society-specific_ "branding" or services
+					- Store abstracts + supplemental materials for conferences
+					- Store videos of conference talks or lectures
+				- Store unlimited supplemental materials for _journals_
+					- Developmental science only 
+					- Psychology-related
+					- Neuroscience-related
+					- Others?
