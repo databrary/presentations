@@ -82,9 +82,13 @@
 				- Chat/IM
 				- Mailing lists
 				- QA fora
-			- Project or task management, group communication or via API
-				- Slack.com, Campfire
-				- Asana, Trello, Basecamp
+			- Project or group communication
+				- [Slack.com](http://slack.com)
+				- [Campfire](https://campfirenow.com/)
+				- [Yammer](http://yammer.com)
+			- Project Management
+				- [Asana](http://asana.com)
+				- [Trello](http://trello.com), Basecamp
 			- Electronic CV/public profile services
 		- Should Databrary explore new "markets"
 			- _Society-specific_ "branding" or services
