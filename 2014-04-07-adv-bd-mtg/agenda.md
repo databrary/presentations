@@ -61,7 +61,7 @@
 		- What features will attract, keep users, 
 		- What features will ensure sustainability, change the culture of dev sci?
 	- Longer-term planning (an eye toward sustainability)
-		-How does Databrary differ from other services?
+		- How does Databrary differ from other services?
 			- Social media services
 				- ResearchGate
 			- Electronic CV/Public profile
@@ -76,6 +76,8 @@
 			- Data management
 				- Open Science Framework
 				- GitHub
+				- [Quartzy](https://www.quartzy.com/)
+				- [LabGuru](http://www.labguru.com/)
 		- How _should_ Databrary differ from other services?
 			- Should Databrary do more than store data, facilitate data management?
 				- Social media services
