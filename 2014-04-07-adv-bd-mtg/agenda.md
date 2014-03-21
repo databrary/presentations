@@ -67,6 +67,15 @@
 	- Open science/data sharing evolving fast [ROG]
 		- What features will attract, keep users, 
 		- What features will ensure sustainability, change the culture of dev sci?
+	- Report on Society Specific Partnership Summit
+		- _Society-specific_ "branding" or services
+			- Store abstracts + supplemental materials for conferences
+			- Store videos of conference talks or lectures
+		- Store unlimited supplemental materials for _journals_
+			- Developmental science only 
+			- Psychology-related
+			- Neuroscience-related
+			- Others?
 	- Longer-term planning (an eye toward sustainability) [ROG]
 		- How does Databrary differ from other services?
 			- Social media services
@@ -103,12 +112,4 @@
 					- [Asana](http://asana.com)
 					- [Trello](http://trello.com), Basecamp
 				- Electronic CV/public profile services
-			- Should Databrary explore new "markets"
-				- _Society-specific_ "branding" or services
-					- Store abstracts + supplemental materials for conferences
-					- Store videos of conference talks or lectures
-				- Store unlimited supplemental materials for _journals_
-					- Developmental science only 
-					- Psychology-related
-					- Neuroscience-related
-					- Others?
+
