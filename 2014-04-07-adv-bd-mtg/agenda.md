@@ -94,7 +94,9 @@
 				- GitHub
 				- [Quartzy](https://www.quartzy.com/)
 				- [LabGuru](http://www.labguru.com/)
-		- How _should_ Databrary differ from other services?
+		-Prioritizing next big features
+			- Are other services built into Databrary or should we be a service integrator?
+			- How _should_ Databrary differ from other services?
 			- Should Databrary do more than store data, facilitate data management?
 				- Social media services
 					- Subscribe to datasets
@@ -112,4 +114,4 @@
 					- [Asana](http://asana.com)
 					- [Trello](http://trello.com), Basecamp
 				- Electronic CV/public profile services
-
+1. Final wrap up and time for any remaining questions/comments
