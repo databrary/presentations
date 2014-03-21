@@ -48,14 +48,16 @@
 		- Interim solutions before full self-curation
 		- Researchers uploading as they go; what has to happen to make this possible; target date.
 		- Self-curation interface, design, interview and spreadsheet
-1. Databrary and Data/Lab Management [KEA]
-	- Community needs?
-	- Outreach
-		- Data Management Specialist
-		- PI Interviews
-		- Conference workshops?
-		- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
-	- Identifying needs, prioritizing features
+	- Data Management
+		- What are the community needs? 
+		- Prioritizing features
+		- Outreach
+			- Data Management Specialist
+			- PI Interviews
+			- Conference workshops?
+			- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
+			- Surveys?
+			- Webinars?
 1. The future of Databrary
 	- Short-term future [Dylan]
 		- Databrary 1.0 release
@@ -92,6 +94,7 @@
 					- Chat/IM
 					- Mailing lists
 					- QA fora
+						- Topics by group
 				- Project or group communication
 					- [Slack.com](http://slack.com)
 					- [Campfire](https://campfirenow.com/)
