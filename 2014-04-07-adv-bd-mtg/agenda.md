@@ -1,16 +1,19 @@
-#General outline
+#Databrary 2014-04-07 Advisory Board Outline
 
 1. Announcements and Housekeeping [KEA]
 1. Brief status updates [KEA]
 	- Welcome to New Advisory Board members
-		- Brian Nosek, U Virginia and Center for Open Science
-		- Tal Yarkoni, U Texas, Neurosynth.org Project
+		- Brian Nosek, U Virginia and [Center for Open Science](http://centerforopenscience.org/)
+		- Tal Yarkoni, U Texas, [Neurosynth.org](http://neurosynth.org) Project
 	- Staffing
 		- Jon Coe
 		- Vicky Foo
 	- IRB amendments
 	- Authorizations
 		- NYU, PSU, Indiana, Rutgers, Rochester
+		- Discuss authorization process
+			- Suggest or require check with IRB?
+			- How to make process clear?
 	- Datasets acquired
 		- Adolph Lab
 		- Tamis-Lemonda Lab
@@ -37,81 +40,139 @@
 		- Permissions in general, access controls
 	- Feedback on the browser
 		- Introduction/review of "grouping" records
+		- Why browsing is hard
+			- Common categories -- age, sex, permission-level
+			- Custom categories -- conditions, exclusions, location, etc.
 		- "How do you want to browse data"
 		- Browsing within a dataset/study
 		- Browsing across datasets/studies
 1. Curation [KEA]
 	- Lessons learned in hand-curation
 		- Contributing existing data: Everything researcher does is extra work
+			- Existing workflows targeted at publication, not public sharing
 		- Necessary, desirable, optional; how good is good enough?
+		- Focus on *publications* first?
 	- Working towards self-curation
 		- Interim solutions before full self-curation
 		- Researchers uploading as they go; what has to happen to make this possible; target date.
 		- Self-curation interface, design, interview and spreadsheet
 	- Data Management
-		- What are the community needs? 
-		- Prioritizing features
-		- Outreach
+		- Identifying community needs
 			- Data Management Specialist
 			- PI Interviews
+			- Surveys?
+			- Webinars?		
+		- Prioritizing features
+		- Creating a culture of data curation
+			- Work with OSF/COS			
 			- Conference workshops?
 			- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
-			- Surveys?
-			- Webinars?
 1. The future of Databrary
 	- Short-term future [Dylan]
 		- Databrary 1.0 release
 			- User guide, videos
 			- Search
 			- Studies and datasets
-	- Open science/data sharing evolving fast [ROG]
-		- What features will attract, keep users, 
-		- What features will ensure sustainability, change the culture of dev sci?
-	- Report on Society Specific Partnership Summit
-		- _Society-specific_ "branding" or services
-			- Store abstracts + supplemental materials for conferences
-			- Store videos of conference talks or lectures
-		- Store unlimited supplemental materials for _journals_
-			- Developmental science only 
-			- Psychology-related
-			- Neuroscience-related
-			- Others?
-	- Longer-term planning (an eye toward sustainability) [ROG]
-		- How does Databrary differ from other services?
-			- Social media services
-				- ResearchGate
-			- Electronic CV/Public profile
-				- ResearchGate
-				- ORCID
-			- Data-sharing
-				- For profit: ResearchGate, figshare, 
-				- Not-for-profit: Open Science Framework, Dryad, ICPSR, institutional repositories, GitHub
-				- University-based vs. non
-				- Domain-specific vs. domain general
-				- Identifiable data vs. non
-			- Data management
-				- Open Science Framework
-				- GitHub
-				- [Quartzy](https://www.quartzy.com/)
-				- [LabGuru](http://www.labguru.com/)
-		-Prioritizing next big features
-			- Are other services built into Databrary or should we be a service integrator?
-			- How _should_ Databrary differ from other services?
-			- Should Databrary do more than store data, facilitate data management?
-				- Social media services
-					- Subscribe to datasets
-					- Subscribe to researchers
-					- Subscribe to topic news feeds
-					- Chat/IM
-					- Mailing lists
-					- QA fora
-						- Topics by group
-				- Project or group communication
-					- [Slack.com](http://slack.com)
-					- [Campfire](https://campfirenow.com/)
-					- [Yammer](http://yammer.com)
+	- Medium/long-term future [ROG]
+		- Mini SWOT analysis
+			- Strengths
+			- Weaknesses
+			- Opportunities
+			- Threats
+		- Strengths
+			- Solution for sharing identifiable data
+			- Growing awareness, visibility within content domain
+			- Attractive interface
+			- Flexible data model, poised for growth
+			- University support, Agency support
+			- Free, open-source video coding tool
+		- Weaknesses
+			- Data curation hard, slow
+			- Curating the past vs. fixing the future
+			- Sustainability model uncertain
+			- Datavyu has small user base, how compete/cooperate with commercial entities
+		- Threats
+			- Open science space moving quickly, attracting [venture capital](https://news.researchgate.net/index.php?/archives/182-Bill-Gates-ResearchGate.html)
+			- How can Databrary compete?
+			- Why share with Databrary vs. alternatives?
+			- What features will attract, keep users? 
+			- What features will ensure sustainability, change the culture of dev sci?
+		- Opportunities
+			- Partnerships
+				- Societies
+					- Report on Society Specific Partnership Summit 
+						- Store abstracts + supplemental materials for conferences
+						- Store videos of conference talks or lectures
+						- _Society-specific_ "branding" or services
+						- Incentives for early adopters of open practices (e.g., COS badges)
+				- Journals
+					- Store unlimited supplemental materials for _journals_?
+					- Store/version control unpublished submissions + supplemental material if sharing data, also?
+					- Which field(s)?
+						- Developmental science only 
+						- Psychology-related
+							- Vision, cognitive science
+						- Education
+						- Neuroscience-related
+					- Others?
+				- Conferences
+					- Posters + supplemental material
+					- Talks
+				- Other sharing organizations
+					- [Research Data Alliance interest group on domain repositories](https://rd-alliance.org/groups/domain-repositories-interest-group.html)
+					- [Center for Open Science](http://centerforopenscience.org/)
+			- Priorities for new features
+				- What should Databrary aspire to be?
+					- Domain-specific data repository?
+					- Hub for planning, communication, discovery, sharing?
+				- Data-sharing
+					- For profit vs. non-profit
+						- University vs. non-University backed
+					- Domain-specific vs. domain general vs. institutional
+					- Identifiable data vs. non
+					- Examples
+						- [ResearchGate.net](http://researchgate.net/), [figshare](http://figshare.com)
+						- [Open Science Framework](https://osf.io/), [Data Dryad](http://datadryad.org/), [ICPSR](http://www.icpsr.umich.edu/), institutional repositories, [GitHub](http://github.com/), [Academic Torrents](http://academictorrents.com/), [Dataverse Network](http://thedata.org), [PsychFileDrawer](http://www.psychfiledrawer.org/)
+				- Electronic CV/Public Profile
+					- Offer now or soon
+						- PI page
+						- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
+					- Competitors
+						- [ResearchGate.net](http://researchgate.net/)
+						- [ORCID](http://orcid.org/)
+				- Social media/communications
+					- Offer soon
+						- Subscribe to datasets
+						- Subscribe to researchers
+						- Subscribe to topic/keyword news feeds
+					- Consider?
+						- Chat/IM
+						- Mailing lists
+						- Q&A fora like [Stack Overflow](http://stackoverflow.com/), [Quora.com](http://quora.com), [Disqus](http://disqus.com/) or [Google Groups](http://groups.google.com)
+					- Project or group communication/service integrations
+						- [Slack.com](http://slack.com)
+						- [Campfire](https://campfirenow.com/)
+						- [Yammer](http://yammer.com)
+				- Lab/data management
+					- [Open Science Framework](https://osf.io/)
+					- [GitHub](http://github.com/)
+					- [Quartzy](https://www.quartzy.com/)
+					- [LabGuru](http://www.labguru.com/)
 				- Project Management
-					- [Asana](http://asana.com)
-					- [Trello](http://trello.com), Basecamp
-				- Electronic CV/public profile services
+					- [Asana](http://asana.com/)
+					- [Trello](http://trello.com/)
+					- [Basecamp](https://basecamp.com/)
+					- [Wrike.com](http://wrike.com/)
+					- [Bitrix24](http://bitrix24.com/)
+				- Big Data/Visualization
+					- Offer soon
+						- Host tools
+					- Consider
+						- Databrary API
+						- Visualization tools
+						- Web-based data analysis, research notebooks
+							- [RStudio Server](http://www.rstudio.com/ide/server/), [iPython Notebooks](http://ipython.org/ipython-doc/dev/interactive/notebook.html)
+						- Additional analysis streams
+							- Faces, [object tracking](http://web.mit.edu/vondrick/vatic/), optic flow, salience
+						- Metaanalytic tools
 1. Final wrap up and time for any remaining questions/comments
