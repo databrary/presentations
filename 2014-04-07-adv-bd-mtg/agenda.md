@@ -64,9 +64,11 @@
 			- Webinars?		
 		- Prioritizing features
 		- Creating a culture of data curation
-			- Work with OSF/COS			
-			- Conference workshops?
-			- On-site workshops/bootcamps via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
+			- Work with OSF/COS		
+			- Conference workshops
+			- On-site workshops/bootcamps 
+				- via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
+				- Note: Berkeley [summer 2014 institute](http://bitss.org/2014/03/14/deadline-summer-institute/) on transparency in social science cosponsored with COS and Dataverse.
 1. The future of Databrary
 	- Short-term future [Dylan]
 		- Databrary 1.0 release
@@ -93,6 +95,7 @@
 			- Datavyu has small user base, how compete/cooperate with commercial entities
 		- Threats
 			- Open science space moving quickly, attracting [venture capital](https://news.researchgate.net/index.php?/archives/182-Bill-Gates-ResearchGate.html)
+			- Databrary software not yet released.
 			- How can Databrary compete?
 			- Why share with Databrary vs. alternatives?
 			- What features will attract, keep users? 
@@ -104,7 +107,9 @@
 						- Store abstracts + supplemental materials for conferences
 						- Store videos of conference talks or lectures
 						- _Society-specific_ "branding" or services
-						- Incentives for early adopters of open practices (e.g., COS badges)
+						- Incentives for early adopters of open practices
+							- [COS badges](http://centerforopenscience.org/journals/)
+							- Discounts on membership dues, conference registrations
 				- Journals
 					- Store unlimited supplemental materials for _journals_?
 					- Store/version control unpublished submissions + supplemental material if sharing data, also?
@@ -112,6 +117,7 @@
 						- Developmental science only 
 						- Psychology-related
 							- Vision, cognitive science
+							- COS/OSF have good coverage/visibility in social psych
 						- Education
 						- Neuroscience-related
 					- Others?
@@ -124,46 +130,78 @@
 			- Priorities for new features
 				- What should Databrary aspire to be?
 					- Domain-specific data repository?
+					- File server
 					- Hub for planning, communication, discovery, sharing?
 				- Data-sharing
-					- For profit vs. non-profit
-						- University vs. non-University backed
-					- Domain-specific vs. domain general vs. institutional
-					- Identifiable data vs. non
-					- Examples
-						- [ResearchGate.net](http://researchgate.net/), [figshare](http://figshare.com)
-						- [Open Science Framework](https://osf.io/), [Data Dryad](http://datadryad.org/), [ICPSR](http://www.icpsr.umich.edu/), institutional repositories, [GitHub](http://github.com/), [Academic Torrents](http://academictorrents.com/), [Dataverse Network](http://thedata.org), [PsychFileDrawer](http://www.psychfiledrawer.org/)
+					- I want to share my data with other researchers.
+					- Existing options
+						- For profit vs. non-profit
+							- University vs. non-University backed
+						- Domain-specific vs. domain general vs. institutional
+						- Identifiable data vs. non
+						- Examples
+							- [ResearchGate.net](http://researchgate.net/)
+							- [figshare](http://figshare.com)
+							- [Open Science Framework](https://osf.io/)
+							- [Data Dryad](http://datadryad.org/)
+							- [ICPSR](http://www.icpsr.umich.edu/)
+							- Institutional repositories, e.g. Penn State's [ScholarSphere](https://scholarsphere.psu.edu/)
+							- [GitHub](http://github.com/)
+							- [Academic Torrents](http://academictorrents.com/)
+							- [Dataverse Network](http://thedata.org)
+							- [PsychFileDrawer](http://www.psychfiledrawer.org/)
+						- Databrary's response
+				- File server
+					- Story: I want to share X files with Y people.
+					- Existing options
+						- Department, institutional servers
+						- [Dropbox](http://dropbox.com)
+						- [Box](http://box.com)
+						- [Amazon](http://aws.amazon.com/)
+						- [Google Drive](http://drive.google.com/)
+					- Databrary's response
 				- Electronic CV/Public Profile
-					- Offer now or soon
-						- PI page
-						- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
-					- Competitors
+					- Story: I want to have a (single?) web profile that is easy to maintain that shows all of my work.
+					- Existing options
 						- [ResearchGate.net](http://researchgate.net/)
 						- [ORCID](http://orcid.org/)
+						- [Mendeley](http://www.mendeley.com/people/following/)
+						- [Google Scholar](http://scholar.google.com/)
+					- Databrary's options
+						- PI page
+						- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
+						- More links to other services, e.g., ResearchGate, ORCID, Mendeley, Google Scholar
 				- Social media/communications
-					- Offer soon
+					- Story: I want to subscribe to datasets, other researchers, or by keywords like ScienceDirect.
+					- Existing options
+					- Databrary's options
 						- Subscribe to datasets
 						- Subscribe to researchers
 						- Subscribe to topic/keyword news feeds
-					- Consider?
+					- Story: I want to communicate with lab members, other colleagues and keep searchable records of our meetings organized by project/topic.
+					- Existing options
 						- Chat/IM
+						- Blogging
+						- Wiki
 						- Mailing lists
 						- Q&A fora like [Stack Overflow](http://stackoverflow.com/), [Quora.com](http://quora.com), [Disqus](http://disqus.com/) or [Google Groups](http://groups.google.com)
-					- Project or group communication/service integrations
-						- [Slack.com](http://slack.com)
-						- [Campfire](https://campfirenow.com/)
-						- [Yammer](http://yammer.com)
-				- Lab/data management
-					- [Open Science Framework](https://osf.io/)
-					- [GitHub](http://github.com/)
-					- [Quartzy](https://www.quartzy.com/)
-					- [LabGuru](http://www.labguru.com/)
-				- Project Management
-					- [Asana](http://asana.com/)
-					- [Trello](http://trello.com/)
-					- [Basecamp](https://basecamp.com/)
-					- [Wrike.com](http://wrike.com/)
-					- [Bitrix24](http://bitrix24.com/)
+						- Project or group communication/service integrations
+							- [Slack.com](http://slack.com)
+							- [Campfire](https://campfirenow.com/)
+							- [Yammer](http://yammer.com)
+					- Databrary options
+				- Lab data, project, task management
+					- Story: I want to manage lab projects, people, tasks, resources, documents, and data.
+					- Existing options
+						- [Open Science Framework](https://osf.io/)
+						- [GitHub](http://github.com/)
+						- [Quartzy](https://www.quartzy.com/)
+						- [LabGuru](http://www.labguru.com/)
+						- [Asana](http://asana.com/)
+						- [Trello](http://trello.com/)
+						- [Basecamp](https://basecamp.com/)
+						- [Wrike.com](http://wrike.com/)
+						- [Bitrix24](http://bitrix24.com/)
 				- Big Data/Visualization
 					- Offer soon
 						- Host tools
@@ -171,8 +209,9 @@
 						- Databrary API
 						- Visualization tools
 						- Web-based data analysis, research notebooks
-							- [RStudio Server](http://www.rstudio.com/ide/server/), [iPython Notebooks](http://ipython.org/ipython-doc/dev/interactive/notebook.html)
+							- [RStudio Server](http://www.rstudio.com/ide/server/)
+							- [iPython Notebooks](http://ipython.org/ipython-doc/dev/interactive/notebook.html)
 						- Additional analysis streams
 							- Faces, [object tracking](http://web.mit.edu/vondrick/vatic/), optic flow, salience
-						- Metaanalytic tools
+						- Meta-analytic tools
 1. Final wrap up and time for any remaining questions/comments
