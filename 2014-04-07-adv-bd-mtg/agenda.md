@@ -10,12 +10,14 @@
 	- Staffing
 		- Jon Coe
 		- Vicky Foo
-	- IRB amendments
-	- Authorizations
-		- NYU, PSU, Indiana, Rutgers, Rochester
-		- Discuss authorization process
-			- Suggest or require check with IRB?
-			- How to make process clear?
+		- Shaziela Ishak
+	- Presentations
+		- [NFAIS/CENDI, November 2013](http://cendievents.iiaweb.com/CENDI_NFAIS_FEDLINK_11122013/index.html)
+		- [CNI 13 Fall, December 2013](http://youtu.be/-Y4A2Pw_7AM)
+		- Spatial DataMine Workshop, February 2014
+		- Karen's list...
+	- Datavyu 1.1 [KEA]
+		- User guide 	
 	- Datasets acquired
 		- Adolph Lab
 		- Tamis-Lemonda Lab
@@ -27,15 +29,13 @@
 		- Gessel Archives
 		- Maher longitudinal study
 		- Gernsbacher Lab
-	- Presentations
-		- [NFAIS/CENDI, November 2013](http://cendievents.iiaweb.com/CENDI_NFAIS_FEDLINK_11122013/index.html)
-		- [CNI 13 Fall, December 2013](http://youtu.be/-Y4A2Pw_7AM)
-		- Spatial DataMine Workshop, February 2014
-		- Karen's list...
-1. Datavyu
-	- Datavyu 1.1 [KEA]
-	- Datavyu 2.0 [Dylan]
-		- Deployment options, feature requirements
+	- IRB amendments report (who, where, # of studies) 
+	- Authorizations (LMS)
+		- NYU, PSU, Indiana, Rutgers, Rochester
+		- Discuss authorization process
+			- Suggest or require check with IRB?
+			- How to make process clear?
+
 1. Overview of Beta site [Dylan]
 	- Registration
 		- Authorization: requesting and granting
@@ -48,6 +48,7 @@
 		- "How do you want to browse data"
 			- Browsing within a dataset/study
 			- Browsing across datasets/studies
+
 1. Curation [KEA]
 	- Lessons learned in hand-curation
 		- Contributing existing data: Everything researcher does is extra work
@@ -72,6 +73,11 @@
 				- via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
 				- Note: Berkeley [summer 2014 institute](http://bitss.org/2014/03/14/deadline-summer-institute/) on transparency in social science cosponsored with COS and Dataverse.
 				- [Data Dryad / Dataverse Community meeting](http://datadryad.org/pages/membershipMeeting2014) May 28 in Cambridge.
+
+1. Datavyu
+	- Datavyu 2.0 [Dylan]
+		- Deployment options, feature requirements
+
 1. The future of Databrary
 	- Short-term future [Dylan]
 		- Databrary 1.0 release
