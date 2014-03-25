@@ -1,7 +1,7 @@
 #Databrary 2014-04-07 Advisory Board Outline
 
-1. Announcements and Housekeeping [KEA]
-1. Brief status updates [KEA]
+1. Welcome and Housekeeping [KEA] 1:00  
+1. Status updates [KEA] 1:05
 	- Welcome to New Advisory Board members
 		- Brian Nosek, U Virginia and [Center for Open Science](http://centerforopenscience.org/)
 		- Tal Yarkoni, U Texas, [Neurosynth.org](http://neurosynth.org) Project
@@ -26,18 +26,22 @@
 		- LoBue Lab
 	- Datasets on the radar
 		- Messinger Lab
-		- Gessel Archives
+		- Gesell Archives
 		- Maher longitudinal study
 		- Gernsbacher Lab
-	- IRB amendments report (who, where, # of studies) 
-	- Authorizations (LMS)
+1. Policy updates (LMS) 1:20
+	- Report on IRB amendments (who, where, # of studies) 
+	- Authorizations
 		- NYU, PSU, Indiana, Rutgers, Rochester
 		- Discuss authorization process
 			- Suggest or require check with IRB?
 			- How to make process clear?
+1. Break 1:50
 
-1. Overview of Beta site [Dylan]
-	- Registration
+1. Overview of Beta site [Dylan] 2:00
+	- Review user stories
+	- Review data structure
+	- Registration walkthrough
 		- Authorization: requesting and granting
 		- Permissions in general, access controls
 	- Feedback on the browser
@@ -48,25 +52,37 @@
 		- "How do you want to browse data"
 			- Browsing within a dataset/study
 			- Browsing across datasets/studies
+	- Datavyu 2.0
+		- Deployment options, feature requirements
+	- Short-term future 
+		- Databrary 1.0 release
+			- User guide, videos
+			- Search
+			- Studies and datasets
 
-1. Curation [KEA]
-	- Lessons learned in hand-curation
+1. Break 2:50
+
+1. Curation [KEA] 3:00
+	- Lessons learned in hand-curating 'archival' data
+		+ Brian MacW's points: Get folk to cough up the data, need some standards
 		- Contributing existing data: Everything researcher does is extra work
 			- Existing workflows targeted at publication, not public sharing
 		- Necessary, desirable, optional; how good is good enough?
 		- Focus on *publications* first?
-	- Working towards self-curation
-		- Interim solutions before full self-curation
-		- Researchers uploading as they go; what has to happen to make this possible; target date.
-		- Self-curation interface, design, interview and spreadsheet
+	- Self-curation
+		- Critical that researchers upload as they go; what has to happen to make this possible; target date.
+		- Upload everything, decide about sharing later
+		- Self-curation interface, design, wizard, and customized spreadsheet
 	- Data Management
 		- Identifying community needs
 			- Data Management Specialist
 			- PI Interviews
-			- Surveys?
-			- Webinars?		
-		- Prioritizing features
-		- Creating a culture of data curation
+			- Surveys
+			- Webinars	
+		- Task analysis
+			- Understanding research practices/workflow
+			- Prioritizing features based on this information
+		- Creating a culture of data curation 
 			- Work with OSF/COS 		
 			- Conference workshops
 			- On-site workshops/bootcamps 
@@ -74,17 +90,8 @@
 				- Note: Berkeley [summer 2014 institute](http://bitss.org/2014/03/14/deadline-summer-institute/) on transparency in social science cosponsored with COS and Dataverse.
 				- [Data Dryad / Dataverse Community meeting](http://datadryad.org/pages/membershipMeeting2014) May 28 in Cambridge.
 
-1. Datavyu
-	- Datavyu 2.0 [Dylan]
-		- Deployment options, feature requirements
-
-1. The future of Databrary
-	- Short-term future [Dylan]
-		- Databrary 1.0 release
-			- User guide, videos
-			- Search
-			- Studies and datasets
-	- Medium/long-term future [ROG]
+1. The future of Databrary [ROG]
+	- Medium/long-term future 
 		- Mini SWOT analysis
 			- Strengths
 			- Weaknesses
@@ -138,13 +145,13 @@
 					- [Research Data Alliance interest group on domain repositories](https://rd-alliance.org/groups/domain-repositories-interest-group.html)
 					- [Center for Open Science](http://centerforopenscience.org/)
 					- [Stanford Meta-Research Center](http://med.stanford.edu/metrics/)
-			- Priorities for new features
+			- Potential directions for the future
 				- What should Databrary aspire to be?
 					- Domain-specific data repository?
 					- File server
 					- Hub for planning, communication, discovery, sharing?
 				- Data-sharing
-					- I want to share my data with other researchers.
+					- Story:I want to share my data with other researchers.
 					- Existing options
 						- For profit vs. non-profit
 							- University vs. non-University backed
@@ -162,6 +169,30 @@
 							- [Dataverse Network](http://thedata.org)
 							- [PsychFileDrawer](http://www.psychfiledrawer.org/)
 						- Databrary's response
+				- Big Data/Visualization
+					- Offer soon
+						- Host tools
+					- Consider
+						- Databrary API
+						- Visualization tools
+						- Web-based data analysis, research notebooks
+							- [RStudio Server](http://www.rstudio.com/ide/server/)
+							- [iPython Notebooks](http://ipython.org/ipython-doc/dev/interactive/notebook.html)
+						- Additional analysis streams
+							- Faces, [object tracking](http://web.mit.edu/vondrick/vatic/), optic flow, salience
+						- Meta-analytic tools
+				- Lab data, project, task management
+					- Story: I want to manage lab projects, people, tasks, resources, documents, and data.
+					- Existing options
+						- [Open Science Framework](https://osf.io/)
+						- [GitHub](http://github.com/)
+						- [Quartzy](https://www.quartzy.com/)
+						- [LabGuru](http://www.labguru.com/)
+						- [Asana](http://asana.com/)
+						- [Trello](http://trello.com/)
+						- [Basecamp](https://basecamp.com/)
+						- [Wrike.com](http://wrike.com/)
+						- [Bitrix24](http://bitrix24.com/)
 				- File server
 					- Story: I want to share X files with Y people.
 					- Existing options
@@ -171,17 +202,6 @@
 						- [Amazon](http://aws.amazon.com/)
 						- [Google Drive](http://drive.google.com/)
 					- Databrary's response
-				- Electronic CV/Public Profile
-					- Story: I want to have a (single?) web profile that is easy to maintain that shows all of my work.
-					- Existing options
-						- [ResearchGate.net](http://researchgate.net/)
-						- [ORCID](http://orcid.org/)
-						- [Mendeley](http://www.mendeley.com/people/following/)
-						- [Google Scholar](http://scholar.google.com/)
-					- Databrary's options
-						- PI page
-						- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
-						- More links to other services, e.g., ResearchGate, ORCID, Mendeley, Google Scholar
 				- Social media/communications
 					- Story: I want to subscribe to datasets, other researchers, or by keywords like ScienceDirect.
 					- Existing options
@@ -201,28 +221,17 @@
 							- [Campfire](https://campfirenow.com/)
 							- [Yammer](http://yammer.com)
 					- Databrary options
-				- Lab data, project, task management
-					- Story: I want to manage lab projects, people, tasks, resources, documents, and data.
+				- Electronic CV/Public Profile
+					- Story: I want to have a (single?) web profile that is easy to maintain that shows all of my work.
 					- Existing options
-						- [Open Science Framework](https://osf.io/)
-						- [GitHub](http://github.com/)
-						- [Quartzy](https://www.quartzy.com/)
-						- [LabGuru](http://www.labguru.com/)
-						- [Asana](http://asana.com/)
-						- [Trello](http://trello.com/)
-						- [Basecamp](https://basecamp.com/)
-						- [Wrike.com](http://wrike.com/)
-						- [Bitrix24](http://bitrix24.com/)
-				- Big Data/Visualization
-					- Offer soon
-						- Host tools
-					- Consider
-						- Databrary API
-						- Visualization tools
-						- Web-based data analysis, research notebooks
-							- [RStudio Server](http://www.rstudio.com/ide/server/)
-							- [iPython Notebooks](http://ipython.org/ipython-doc/dev/interactive/notebook.html)
-						- Additional analysis streams
-							- Faces, [object tracking](http://web.mit.edu/vondrick/vatic/), optic flow, salience
-						- Meta-analytic tools
+						- [ResearchGate.net](http://researchgate.net/)
+						- [ORCID](http://orcid.org/)
+						- [Mendeley](http://www.mendeley.com/people/following/)
+						- [Google Scholar](http://scholar.google.com/)
+					- Databrary's options
+						- PI page
+						- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
+						- More links to other services, e.g., ResearchGate, ORCID, Mendeley, Google Scholar
+
+
 1. Final wrap up and time for any remaining questions/comments
