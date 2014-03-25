@@ -52,13 +52,14 @@
 		- "How do you want to browse data"
 			- Browsing within a dataset/study
 			- Browsing across datasets/studies
-	- Datavyu 2.0
-		- Deployment options, feature requirements
 	- Short-term future 
 		- Databrary 1.0 release
 			- User guide, videos
 			- Search
-			- Studies and datasets
+			- Studies and datasets	
+	- Datavyu 2.0
+		- Deployment options, feature requirements
+
 
 1. Break 2:50
 
