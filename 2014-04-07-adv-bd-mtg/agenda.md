@@ -5,6 +5,8 @@
 	- Welcome to New Advisory Board members
 		- Brian Nosek, U Virginia and [Center for Open Science](http://centerforopenscience.org/)
 		- Tal Yarkoni, U Texas, [Neurosynth.org](http://neurosynth.org) Project
+	- Farewell to departing member
+		- Sarah Morrow, Penn State, is leaving to head the State of South Carolina's Privacy Office
 	- Staffing
 		- Jon Coe
 		- Vicky Foo
@@ -42,10 +44,10 @@
 		- Introduction/review of "grouping" records
 		- Why browsing is hard
 			- Common categories -- age, sex, permission-level
-			- Custom categories -- conditions, exclusions, location, etc.
+			- Custom categories -- conditions, exclusions, location, language, etc.
 		- "How do you want to browse data"
-		- Browsing within a dataset/study
-		- Browsing across datasets/studies
+			- Browsing within a dataset/study
+			- Browsing across datasets/studies
 1. Curation [KEA]
 	- Lessons learned in hand-curation
 		- Contributing existing data: Everything researcher does is extra work
@@ -64,11 +66,12 @@
 			- Webinars?		
 		- Prioritizing features
 		- Creating a culture of data curation
-			- Work with OSF/COS		
+			- Work with OSF/COS 		
 			- Conference workshops
 			- On-site workshops/bootcamps 
 				- via partnerships with [Software-Carpentry](http://software-carpentry.org/)?
 				- Note: Berkeley [summer 2014 institute](http://bitss.org/2014/03/14/deadline-summer-institute/) on transparency in social science cosponsored with COS and Dataverse.
+				- [Data Dryad / Dataverse Community meeting](http://datadryad.org/pages/membershipMeeting2014) May 28 in Cambridge.
 1. The future of Databrary
 	- Short-term future [Dylan]
 		- Databrary 1.0 release
@@ -84,7 +87,6 @@
 		- Strengths
 			- Solution for sharing identifiable data
 			- Growing awareness, visibility within content domain
-			- Attractive interface
 			- Flexible data model, poised for growth
 			- University support, Agency support
 			- Free, open-source video coding tool
@@ -93,9 +95,11 @@
 			- Curating the past vs. fixing the future
 			- Sustainability model uncertain
 			- Datavyu has small user base, how compete/cooperate with commercial entities
+			- Small curation, development staff
 		- Threats
 			- Open science space moving quickly, attracting [venture capital](https://news.researchgate.net/index.php?/archives/182-Bill-Gates-ResearchGate.html)
 			- Databrary software not yet released.
+			- Other entities moving forward.
 			- How can Databrary compete?
 			- Why share with Databrary vs. alternatives?
 			- What features will attract, keep users? 
@@ -127,6 +131,7 @@
 				- Other sharing organizations
 					- [Research Data Alliance interest group on domain repositories](https://rd-alliance.org/groups/domain-repositories-interest-group.html)
 					- [Center for Open Science](http://centerforopenscience.org/)
+					- [Stanford Meta-Research Center](http://med.stanford.edu/metrics/)
 			- Priorities for new features
 				- What should Databrary aspire to be?
 					- Domain-specific data repository?
