@@ -80,23 +80,32 @@
 
 1. Overview of Beta site [Dylan] 2:00
 	- Review user stories
-	- Review data structure
+	- Where we were, where we are
+		- requirements going forward: discovery, editing, visualizations, api
+		- move from static to dynamic interface
+		- rebuilt api, front-end
 	- Registration walkthrough
 		- Authorization: requesting and granting
 		- Permissions in general, access controls
-	- Feedback on the browser
+		- Feedback on options
+	- Review data structure
 		- Introduction/review of "grouping" records
+		- Terminology feedback: dataset/study, record
+	- Feedback on the browser
 		- Why browsing is hard
-			- Common categories -- age, sex, permission-level
-			- Custom categories -- conditions, exclusions, location, language, etc.
+			- Common measures -- age, sex, permission-level
+			- Custom groups -- conditions, exclusions, groups, locations, etc.
+				- Terminology feedback on categories
 		- "How do you want to browse data"
 			- Browsing within a dataset/study
 			- Browsing across datasets/studies
 	- Short-term future 
 		- Databrary 1.0 release
-			- User guide, videos
 			- Search
-			- Studies and datasets	
+			- Studies and datasets
+			- Editing
+			- Self-curation?
+			- User guide? videos?
 	- Datavyu 2.0
 		- Deployment options, feature requirements
 
