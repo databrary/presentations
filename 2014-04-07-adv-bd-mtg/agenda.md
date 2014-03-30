@@ -79,36 +79,68 @@
 1. Break 1:50
 
 1. Overview of Beta site [Dylan] 2:00
-	- Review user stories
 	- Where we were, where we are
-		- requirements going forward: discovery, editing, visualizations, api
-		- move from static to dynamic interface
-		- rebuilt api, front-end
+		- 6 months ago
+			- Lots of videos
+			- Piled up into studies
+			- "Static" views, one presentation, limited flexibility
+		- identified requirements going forward
+			- flexible discovery
+			- efficient editing
+			- high-level visualizations, summaries
+			- api, scripting interface
+		- data organization
+			- lots of work around grouping data, studies, datesets
+			- how much to standardize? later during demo
+		- rebuilt more dynamic interface, using API
+			- next steps: determine best way to present, browse information
+			- next steps: complete, document API
+	- Review user stories
+		- [slides from before]
+			- browsing
+			- searching
+		- authorization
+			- lab (only) w/o authorization
+			- databrary (only)
+			- collaborate w/o authorization
+			- proxy
 	- Registration walkthrough
 		- Authorization: requesting and granting
 		- Permissions in general, access controls
-		- Feedback on options
+		- Feedback on permissions
 	- Review data structure
 		- Introduction/review of "grouping" records
 		- Terminology feedback: dataset/study, record
-	- Feedback on the browser
-		- Why browsing is hard
-			- Common measures -- age, sex, permission-level
-			- Custom groups -- conditions, exclusions, groups, locations, etc.
-				- Terminology feedback on categories
-		- "How do you want to browse data"
+	- Browser
+		- Many ways to group data
+			- conditions, exclusions, groups, locations, etc.
+			- terminology: feedback, standarization
+		- Many ways to display, filter, aggregate data
+			- age, sex, release-level
+			- race, ethnicity, language
+			- ses
+		- Going forward, inteface for
 			- Browsing within a dataset/study
+			- Entering data within a dataset
+			- Organizing, grouping data
 			- Browsing across datasets/studies
-	- Short-term future 
+	- Future
+		- New user stories
+			- summarize, aggregate data in study (counts, distributions, etc)
+			- enter (type/paste/import) new data, as you go
+			- customize presentation of dataset (titles, excerpts, layout)
+		- Design sessions
+			- Developers, UI/UX experts, researchers
+			- Refine user stories, improve interface
 		- Databrary 1.0 release
-			- Search
 			- Studies and datasets
+			- Uploading as you go
 			- Editing
-			- Self-curation?
+		- Later
 			- User guide? videos?
+			- Search?
 	- Datavyu 2.0
 		- Deployment options, feature requirements
-
 
 1. Break 2:50
 
