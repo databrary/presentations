@@ -9,10 +9,14 @@
 
 3.	Discussion of Future Data-sharing Initiatives
 	a.	Presidential/society endorsements
+
 	b.	Conference/workshop initiatives
+
 	c.	Journal-related initiatives
+
 	d.	Other initiatives
-	d.	Outreach/communications plans
+
+	e.	Outreach/communications plans
 
 4.	Next steps
 	a.	Report to Databrary Advisory Board
