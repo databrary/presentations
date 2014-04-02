@@ -8,6 +8,7 @@
 2.	Status of Current Data-sharing/Open Science Initiatives
 
 3.	Discussion of Future Data-sharing Initiatives
+
 	a.	Presidential/society endorsements
 
 	b.	Conference/workshop initiatives
