@@ -20,4 +20,7 @@
 	e.	Outreach/communications plans
 
 4.	Next steps
+
 	a.	Report to Databrary Advisory Board
+	
+	b.	Implementation plan
