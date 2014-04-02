@@ -1,5 +1,5 @@
 # Developmental Society Presidents Meeting
-## 2014-04-07 10:00 am EDT
+2014-04-07 10:00 am EDT
 
 ## A G E N D A
 
