@@ -5,7 +5,7 @@
 *check nih report for Karen's talks through 2/1*
 *whitney video*
 
-1. Welcome and Housekeeping [KEA] 1:00  
+1. Welcome and Housekeeping [KEA] 1:00 
 	- Announcements
 		+ Next meeting date - 10/13/14
 		+ Wi-fi for guests
@@ -13,7 +13,7 @@
 		+ Push-to-talk
 		+ Reimbursements
 		+ DINNER!
-1. Status updates [KEA] 1:05
+1. Status updates [KEA] 
 	- Introduce team and new staff
 		- Jon Coe
 		- Vicky Foo
@@ -64,10 +64,12 @@
 		- Messinger Lab
 		- Gesell Archives
 		- Maher longitudinal study
-		- Gernsbacher Lab
-1. Policy updates (LMS) 1:20
-	- Recap on policies (super quick)
-		+ Permissioning went through lots of iterations--it's now really easy and flexible. being done lots of places
+		- Gernsbacher Lab1:05
+1. Roadmap and discussion [KEA]  1:20 
+1. Break 1:50
+1. Policy updates [LMS] 2:00 
+	- Recap on policies 
+		+ Permissioning went through lots of iterations--it's now really easy and flexible. being used in lots of places
 		+ Authorization was all written here and at PSU--we still need to hear from you about the process
 	- Report on IRB amendments (who, where, # of studies) 
 		+ 
@@ -76,9 +78,7 @@
 		- Discuss authorization process
 			- Suggest or require check with IRB?
 			- How to make process clear?
-1. Break 1:50
-
-1. Overview of Beta site [Dylan] 2:00
+1. Overview of Beta site [Dylan] 2:30 
 	- Where we were, where we are
 		- 6 months ago
 			- Lots of videos
@@ -119,7 +119,7 @@
 			- age, sex, release-level
 			- race, ethnicity, language
 			- ses
-		- Going forward, inteface for
+		- Going forward, interface for
 			- Browsing within a dataset/study
 			- Entering data within a dataset
 			- Organizing, grouping data
@@ -141,17 +141,21 @@
 			- Search?
 	- Datavyu 2.0
 		- Deployment options, feature requirements
-
-1. Break 2:50
-
-1. Curation [KEA] 3:00
-	- Lessons learned in hand-curating 'archival' data
-		+ Brian MacW's points: Get folk to cough up the data, need some standards
+1. Break 3:15
+1. Uploading [KEA] 3:30
+	- Metadata:
+		- Brian MacW's points: Get folk to cough up the data, need some standards
+		- Metadata vs coding videos
+		- Metadata for participants
+		- Metadata for sessions
+		- Metadata for studies
+		- Metadata for datasets
+	- Uploading after the fact	
 		- Contributing existing data: Everything researcher does is extra work
 			- Existing workflows targeted at publication, not public sharing
 		- Necessary, desirable, optional; how good is good enough?
 		- Focus on *publications* first?
-	- Self-curation
+	- uploading as you go
 		- Critical that researchers upload as they go; what has to happen to make this possible; target date.
 		- Upload everything, decide about sharing later.
 		- PIs are able
@@ -165,10 +169,8 @@
 		- Task analysis
 			- Understanding research practices/workflow
 			- Prioritizing features based on this information
-
-1. Break (4:00)
-
-1. The future of Databrary [ROG]  (4:15)
+1. Break (4:15)
+1. The future of Databrary [ROG]  (4:30)
 	- Medium/long-term future 
 		- Mini SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)
 		- Strengths
@@ -314,6 +316,5 @@
 					- PI page
 					- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
 					- More links to other services, e.g., ResearchGate, ORCID, Mendeley, Google Scholar
-
-
-1. Final wrap up and time for any remaining questions/comments
+1. Final wrap up and time for any remaining questions/comments (5:00)
+1. Adjourn (5:30)
