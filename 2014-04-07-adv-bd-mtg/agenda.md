@@ -125,40 +125,66 @@
 		- "grouping" records
 		- "studies"
 		- terminology rfc: dataset/study, record
-	- Browser
+	- Walkthrough
+		- Login
+		- Profile
+			- edit, avatar
+			- authorization, whatever Lisa didn't cover
 		- Volume list
-			- search
+			- search: simple for now, eventually better
 			- studies
-		- Many ways to group data
+			- future: browsing across datasets/studies
+		- Bridges dataset
+			- summary info
+			- relationship to study
+		- Excerpts
+			- selected by data owner, others?
+		- Browser
+			- many ways to group data
+			- participants, records, measures
 			- conditions, exclusions, groups, locations, etc.
+		- Tags
+		- Comments
+		- Metrobaby
+			- tasks
+			- groups
 			- terminology: feedback, standarization
-		- Many ways to display, filter, aggregate data
+		- Many more ways to display, filter, aggregate data
 			- age, sex, release-level
 				+ click on age to toggle display
 			- race, ethnicity, language
 			- ses
 		- Going forward, interface for
-			- Browsing within a dataset/study
-			- Entering data within a dataset
-			- Organizing, grouping data
-			- Browsing across datasets/studies
+			- browsing within a dataset/study
+			- entering data within a dataset
+			- organizing, grouping data
 	- Future
 		- New user stories
 			- summarize, aggregate data in study (counts, distributions, etc)
 			- enter (type/paste/import) new data, as you go
 			- customize presentation of dataset (titles, excerpts, layout)
 		- Design sessions
-			- Developers, UI/UX experts, researchers
-			- Refine user stories, improve interface
+			- developers, UI/UX experts, researchers
+			- refine user stories, improve interface
+			- iterative design process
 		- Databrary 1.0 release
-			- Studies and datasets
-			- Uploading as you go
-			- Editing
+			- better video, timeline management
+			- uploading as you go
+			- editing
 		- Later
-			- User guide? videos?
-			- Search?
+			- search
 	- Datavyu 2.0
-		- Deployment options, feature requirements
+		- next 18 months
+		- bring datavyu into databrary framework
+		- deployment options, within browser
+			- fully within databrary (initially)
+			- local deployment
+		- requirements
+			- simple, easy, coding and annotation directly from databrary
+			- timeline display
+			- multi-column, multi-variable coding
+			- multiple videos
+			- scripting
 1. Researcher asks and support [KEA] 3:30
 	- Metadata:
 		- Brian MacW's points: Get folk to cough up the data, need some standards
