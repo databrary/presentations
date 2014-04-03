@@ -148,7 +148,7 @@
 		- Metrobaby
 			- tasks
 			- groups
-			- terminology: feedback, standarization
+			- rfc: terminology, standarization
 		- Many more ways to display, filter, aggregate data
 			- age, sex, release-level
 				+ click on age to toggle display
