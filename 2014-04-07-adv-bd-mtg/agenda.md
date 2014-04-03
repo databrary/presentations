@@ -95,30 +95,40 @@
 
 1. Break 2:15
 1. Overview of Beta site [Dylan] 2:30 
-	- Where we were, where we are
-		- 6 months ago
-			- Lots of videos
-			- Piled up into studies
-			- "Static" views, one presentation, limited flexibility
-		- identified requirements going forward
-			- flexible discovery
-			- efficient editing
-			- high-level visualizations, summaries
-			- api, scripting interface
-		- data organization
-			- lots of work around grouping data, studies, datasets
-			- how much to standardize? later during demo
-		- rebuilt more dynamic interface, using API
-			- next steps: determine best way to present, browse information
-			- next steps: complete, document API
-	- Review user stories
+	- Outline
+		- where we were 6 months ago
+			- site
+				- lots of videos
+				- piled up into studies
+				- minimal organization within studies
+				- "static" views, one presentation, limited flexibility
+			- user stories 
+				- [slides from before]
+				- mainly focused around browsing, searching, using
+		- where we are now
+			- identified technical requirements
+				- flexible discovery
+				- efficient editing
+				- high-level visualizations, summaries
+				- api, scripting interface
+				- result: rebuilt more dynamic interface, using API
+				- to do: complete, document API
+			- refined and improved data requirements
+				- learned a lot from manually curating, organizing existing datasets
+				- broadened types of possible, standard metadata 
+				- developed better ways to group data, studies, datasets
+				- result: understand constraints, required flexibility
+				- preview: how much to standardize?
+				- to do: determine best way to explore, browse, enter, organize information
+	- Review data structures, organization
 		- [slides from before]
-			- browsing
-			- searching
-		- Review data structure
-		- Introduction/review of "grouping" records
-		- Terminology feedback: dataset/study, record
+		- "grouping" records
+		- "studies"
+		- terminology rfc: dataset/study, record
 	- Browser
+		- Volume list
+			- search
+			- studies
 		- Many ways to group data
 			- conditions, exclusions, groups, locations, etc.
 			- terminology: feedback, standarization
