@@ -61,29 +61,37 @@
 		- Messinger Lab
 		- Gesell Archives
 		- Maher longitudinal study
-		- Gernsbacher Lab1:05
+		- Gernsbacher Lab
+		- Anjana Bhat
 1. Databrary Roadmap [KEA]  1:15 
 1. Policies [LMS] 1:45 
 	- Recap on policies 
 		+ Permissioning went through lots of iterations--it's now really easy and flexible
-		+ Authorization was all written here and at PSU--we still need to hear from you about the process
-	- Walkthrough
-		- Permissions in general, access controls
-		- Feedback on permissions
-		- 
-		- Authorization: requesting and granting
+			* Video examples of introducing release to participants
+		+ Authorization was written here and at PSU--we still need to hear from you about the process
+			* Where are there going to be hang-ups?
+			* Tweaking language to be as clear as possible.
+	- Site Walkthrough
+		+ Registration
+			* e-agreement
+		+ Authorization: requesting and granting
 			- lab (only) w/o authorization
 			- databrary (only)
 			- collaborate w/o authorization
 			- proxy
 		- How do we make process clear?
 			- Affiliates?
+		- Permissions in general, access controls
+		- Feedback on permissions
 	- Report:
 		+ IRBs
 		- Authorizations
 			- NYU, PSU, Indiana, Rutgers, Rochester
 			- Discuss authorization process
 				- Must researchers check with IRB?
+				- Institutions signing for each investigator
+				- Shift to institutional agreements with instituitional administrative accounts
+
 
 1. Break 2:15
 1. Overview of Beta site [Dylan] 2:30 
