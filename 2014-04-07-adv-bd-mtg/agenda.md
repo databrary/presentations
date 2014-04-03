@@ -1,11 +1,12 @@
 #Databrary 2014-04-07 Advisory Board Outline
-*Change Rick's picture*
 *fix staff photos*
 *Add Louth photo*
+*Add shaz photo*
+*photos of every face*
 *check nih report for Karen's talks through 2/1*
 *whitney video*
 
-1. Welcome and Housekeeping [KEA] 1:00 
+1. Welcome and Recent Accomplishments [KEA] 1:00 
 	- Announcements
 		+ Next meeting date - 10/13/14
 		+ Wi-fi for guests
@@ -13,16 +14,6 @@
 		+ Push-to-talk
 		+ Reimbursements
 		+ DINNER!
-1. Status updates [KEA] 
-	- Introduce team and new staff
-		- Jon Coe
-		- Vicky Foo
-		- Shaziela Ishak
-	- Welcome to New Advisory Board members
-		- Brian Nosek, U Virginia and [Center for Open Science](http://centerforopenscience.org/)
-		- Tal Yarkoni, U Texas, [Neurosynth.org](http://neurosynth.org) Project
-	- Farewell to departing member
-		- Sarah Morrow, Penn State, is leaving to head the State of South Carolina's Privacy Office
 	- Thanks to agency partners
 		+ Lisa Freund
 		+ Jim Griffin
@@ -34,6 +25,21 @@
 		+ Eric Rasmussen
 		+ Richard Louth
 		+ David Ackerman
+	- Review Specific aims
+		+ Build a repository for sharing video
+		+ Provide tools for scoring video
+		+ Provide data management tools
+		+ Create appropriate policy environment
+		+ Transform the culture of developmental science
+	- Introduce team and new staff
+		- Jon Coe
+		- Vicky Foo
+		- Shaziela Ishak
+	- Welcome to New Advisory Board members
+		- Brian Nosek, U Virginia and [Center for Open Science](http://centerforopenscience.org/)
+		- Tal Yarkoni, U Texas, [Neurosynth.org](http://neurosynth.org) Project
+	- Farewell to departing member
+		- Sarah Morrow, Penn State, is leaving to head the State of South Carolina's Privacy Office
 	- Visibility 		
 		- Presentations
 			- [NFAIS/CENDI, November 2013](http://cendievents.iiaweb.com/CENDI_NFAIS_FEDLINK_11122013/index.html)
@@ -43,15 +49,6 @@
 		- Publications
 			+ Submitted to IJDL
 			+ WIRE's Cog Sci (Rick-is this still on the table?)
-	- Review Specific aims
-		+ Build a repository for sharing video
-		+ Provide tools for scoring video
-		+ Provide data management tools
-		+ Create appropriate policy environment
-		+ Transform the culture of developmental science
-	+ Aims of this meeting
-		* (insert agenda here: summary of agenda)
-
 	- Datavyu 1.1 
 		- User guide 	
 	- Datasets acquired
@@ -65,19 +62,30 @@
 		- Gesell Archives
 		- Maher longitudinal study
 		- Gernsbacher Lab1:05
-1. Roadmap and discussion [KEA]  1:20 
-1. Break 1:50
-1. Policy updates [LMS] 2:00 
+1. Databrary Roadmap [KEA]  1:15 
+1. Policies [LMS] 1:45 
 	- Recap on policies 
-		+ Permissioning went through lots of iterations--it's now really easy and flexible. being used in lots of places
+		+ Permissioning went through lots of iterations--it's now really easy and flexible
 		+ Authorization was all written here and at PSU--we still need to hear from you about the process
-	- Report on IRB amendments (who, where, # of studies) 
-		+ 
-	- Authorizations
-		- NYU, PSU, Indiana, Rutgers, Rochester
-		- Discuss authorization process
-			- Suggest or require check with IRB?
-			- How to make process clear?
+	- Walkthrough
+		- Permissions in general, access controls
+		- Feedback on permissions
+		- 
+		- Authorization: requesting and granting
+			- lab (only) w/o authorization
+			- databrary (only)
+			- collaborate w/o authorization
+			- proxy
+		- How do we make process clear?
+			- Affiliates?
+	- Report:
+		+ IRBs
+		- Authorizations
+			- NYU, PSU, Indiana, Rutgers, Rochester
+			- Discuss authorization process
+				- Must researchers check with IRB?
+
+1. Break 2:15
 1. Overview of Beta site [Dylan] 2:30 
 	- Where we were, where we are
 		- 6 months ago
@@ -90,7 +98,7 @@
 			- high-level visualizations, summaries
 			- api, scripting interface
 		- data organization
-			- lots of work around grouping data, studies, datesets
+			- lots of work around grouping data, studies, datasets
 			- how much to standardize? later during demo
 		- rebuilt more dynamic interface, using API
 			- next steps: determine best way to present, browse information
@@ -99,16 +107,7 @@
 		- [slides from before]
 			- browsing
 			- searching
-		- authorization
-			- lab (only) w/o authorization
-			- databrary (only)
-			- collaborate w/o authorization
-			- proxy
-	- Registration walkthrough
-		- Authorization: requesting and granting
-		- Permissions in general, access controls
-		- Feedback on permissions
-	- Review data structure
+		- Review data structure
 		- Introduction/review of "grouping" records
 		- Terminology feedback: dataset/study, record
 	- Browser
@@ -117,6 +116,7 @@
 			- terminology: feedback, standarization
 		- Many ways to display, filter, aggregate data
 			- age, sex, release-level
+				+ click on age to toggle display
 			- race, ethnicity, language
 			- ses
 		- Going forward, interface for
@@ -141,8 +141,7 @@
 			- Search?
 	- Datavyu 2.0
 		- Deployment options, feature requirements
-1. Break 3:15
-1. Uploading [KEA] 3:30
+1. Researcher asks and support [KEA] 3:30
 	- Metadata:
 		- Brian MacW's points: Get folk to cough up the data, need some standards
 		- Metadata vs coding videos
@@ -154,7 +153,9 @@
 		- Contributing existing data: Everything researcher does is extra work
 			- Existing workflows targeted at publication, not public sharing
 		- Necessary, desirable, optional; how good is good enough?
-		- Focus on *publications* first?
+		- Go for low-hanging fruit
+			- Displays
+			- Excerpts 
 	- uploading as you go
 		- Critical that researchers upload as they go; what has to happen to make this possible; target date.
 		- Upload everything, decide about sharing later.
@@ -169,8 +170,8 @@
 		- Task analysis
 			- Understanding research practices/workflow
 			- Prioritizing features based on this information
-1. Break (4:15)
-1. The future of Databrary [ROG]  (4:30)
+1. Break 4:00
+1. Positioning Databrary for the future [ROG] 4:10
 	- Medium/long-term future 
 		- Mini SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)
 		- Strengths
@@ -316,5 +317,5 @@
 					- PI page
 					- Social media links [Twitter](http://twitter.com), Facebook, LinkedIn
 					- More links to other services, e.g., ResearchGate, ORCID, Mendeley, Google Scholar
-1. Final wrap up and time for any remaining questions/comments (5:00)
+1. Wrap up and discussion (5:00)
 1. Adjourn (5:30)
