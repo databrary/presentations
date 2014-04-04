@@ -111,8 +111,7 @@
 		- where we were 6 months ago
 			- site
 				- lots of videos
-				- piled up into studies
-				- minimal organization within studies
+				- piled up into studies with minimal organization
 				- "static" views, one presentation, limited flexibility
 			- user stories 
 				- [slides from before]
