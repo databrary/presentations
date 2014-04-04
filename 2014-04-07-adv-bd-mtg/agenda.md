@@ -124,6 +124,15 @@
 				- [slides from before]
 				- mainly focused around browsing, searching, using
 		- where we are now
+			- refined and improved data requirements
+				- learned a lot from manually curating, organizing existing datasets
+				- need responsive, iterative, "data-driven" approach
+				- there are always exceptions, irregularities
+				- broadened types of possible, standard metadata 
+				- developed better ways to group data, studies, datasets
+				- result: understand constraints, required flexibility
+				- preview: how much to standardize?
+				- to do: determine best way to explore, browse, enter, organize information
 			- identified technical requirements
 				- flexible discovery
 				- efficient editing
@@ -131,13 +140,6 @@
 				- api, scripting interface
 				- result: rebuilt more dynamic interface, using API
 				- to do: complete, document API
-			- refined and improved data requirements
-				- learned a lot from manually curating, organizing existing datasets
-				- broadened types of possible, standard metadata 
-				- developed better ways to group data, studies, datasets
-				- result: understand constraints, required flexibility
-				- preview: how much to standardize?
-				- to do: determine best way to explore, browse, enter, organize information
 	- Review data structures, organization
 		- [slides from before]
 		- "grouping" records
@@ -167,15 +169,18 @@
 			- tasks
 			- groups
 			- rfc: terminology, standarization
-		- Many more ways to display, filter, aggregate data
+			- complete set of categories?
+		- Many more ways to sort, filter, aggregate data
 			- age, sex, release-level
 				+ click on age to toggle display
 			- race, ethnicity, language
 			- ses
+			- within, across groups
 		- Going forward, interface for
 			- browsing within a dataset/study
 			- entering data within a dataset
 			- organizing, grouping data
+		- [slide with all categories, measures]
 	- Future
 		- New user stories
 			- summarize, aggregate data in study (counts, distributions, etc)
