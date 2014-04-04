@@ -11,8 +11,8 @@
 		+ Next meeting date - 10/13/14
 		+ Wi-fi for guests
 		+ Recording
-		+ Push-to-talk
-		+ Reimbursements
+		+ push-to-talk
+		+ reimbursements
 		+ DINNER!
 	- Thanks to agency partners
 		+ Lisa Freund
@@ -76,13 +76,26 @@
 			- 5 missing
 		- 260 other files
 1. Databrary Roadmap [KEA]  1:15 
-1. Policies [LMS] 1:45 
-	- Recap on policies 
-		+ Permissioning went through lots of iterations--it's now really easy and flexible
+1. Policies [LMS] 1:45  
+	- Release recap
+		- Reminder on release form and principles of sharing
+		+ Permissioning went through lots of iterations--it's now really easy and flexible and broad
 			* Video examples of introducing release to participants
-		+ Authorization was written here and at PSU--we still need to hear from you about the process
+		* Update:
+			* 
+	+ Agreement 
+		- overview of agreement, walled garden approach
+		- who promises what and to whom?
+		- guidance document (no?)
+		+ was written here and at PSU--we still need to hear from you about the process
 			* Where are there going to be hang-ups?
 			* Tweaking language to be as clear as possible.
+		* Update:
+			- NYU, PSU, Indiana, Rutgers, Rochester
+			- Discuss authorization process
+				- Must researchers check with IRB?
+				- Institutions signing for each investigator
+		- Authorization levels - inherit and direct
 	- Site Walkthrough
 		+ Registration
 			* e-agreement
@@ -94,15 +107,8 @@
 		- How do we make process clear?
 			- Affiliates?
 		- Permissions in general, access controls
-		- Feedback on permissions
-	- Report:
-		+ IRBs
-		- Authorizations
-			- NYU, PSU, Indiana, Rutgers, Rochester
-			- Discuss authorization process
-				- Must researchers check with IRB?
-				- Institutions signing for each investigator
-				- Shift to institutional agreements with instituitional administrative accounts
+		- Feedback on permissions		
+	- Shift to institutional agreements with instituitional administrative accounts
 
 
 1. Break 2:15
