@@ -117,12 +117,39 @@
 		- where we were 6 months ago
 			- site
 				- lots of videos
-				- piled up into studies with minimal organization
-				- "static" views, one presentation, limited flexibility
+				- piled up into studies
+				- minimal organization
+				- "static" views
+					- single presentation option
+					- limited flexibility
 			- user stories 
-				- [slides from before]
+				- education and teaching
+					- video clips for teaching
+					- illustrate an idea
+					- show the range of behaviors and exceptions
+					- show an excerpt in a talk
+				- pre-research
+					- browse the work in my field
+					- decide whether a study is worth doing
+					- preliminary data for grant proposal
+					- ideas and inspiration
+					- replicate, expand on, or review previous work based on the procedure or coding manual
+				- research
+					- repurpose videos for new uses
+					- replicate existing work by recoding videos
+					- grow sample size
+					- include participants from other contexts and populations
+					- conduct integrative analyses
+					- complete a grant progress report
 				- mainly focused around browsing, searching, using
 		- where we are now
+			- user stories: lab management
+				- describe a study design, indicating conditions, groups, etc.
+				- describe what types of data and metadata will be collected
+				- enter new, recently collected metadata
+				- upload a video and associate it with participants
+				- keep track of which data has been entered
+				- export data entered into databrary for analysis
 			- refined and improved data requirements
 				- learned a lot from manually curating, organizing existing datasets
 				- need responsive, iterative, "data-driven" approach
