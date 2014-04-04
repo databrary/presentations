@@ -77,9 +77,9 @@ header img {
 
 main {
 	position: fixed;
-	top: 175px;
-	left: 150px;
-	right: 150px;
+	top: 150px;
+	left: 100px;
+	right: 100px;
 	bottom: 100px;
 }
 
@@ -188,4 +188,9 @@ video {
 	max-width: 100%;
 	height: auto;
 	margin-bottom: 28px;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin: 0.5ex 0;
 }
