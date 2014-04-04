@@ -77,23 +77,33 @@
 		- 260 other files
 1. Databrary Roadmap [KEA]  1:15 
 1. Policies [LMS] 1:45  
-	- Release recap
-		- Reminder on release form and principles of sharing
-		+ Permissioning went through lots of iterations--it's now really easy and flexible and broad
-			* Video examples of introducing release to participants
+	- One of our key aims is to establish a policy framework that enables open sharing of video data
+	- Release
+		+ What's unique about our Release?
+			- Consent to participate separate from release to share data in Databrary
+			- AFTER the session
+			- Standardization of levels across contributors
+		+ We've gone through lots of iterations--it's now really easy and flexible and broad
+			* Not JUST the form, the script, the process, variations to adapt to special cases
+			* We've tested many versions on ourselves to develop the best 
+			* International, oral, special populations, participants with disabilities
+		- Even have Video examples of introducing release to participants
 		* Update:
-			* 
+			* X people/labs
 	+ Agreement 
 		- overview of agreement, walled garden approach
-		- who promises what and to whom?
-		- guidance document (no?)
-		+ was written here and at PSU--we still need to hear from you about the process
+			- user AND/OR contributor--no requirement to be both.
+				- but you do need authorization to view and download videos, but you don't have to upload or share in order to be authorized
+			- Inst. co-sign for PIs
+			- PIs can manage affiliates
+			- Terms: who promises what and to whom?
+				- IRB only needed for research.
+		+ Agreement written here and at PSU--we are still piloting it and need feedback the process
 			* Where are there going to be hang-ups?
-			* Tweaking language to be as clear as possible.
+			* How do we make the language as clear as possible
 		* Update:
-			- NYU, PSU, Indiana, Rutgers, Rochester
+			- NYU, PSU, Indiana, Rutgers, Rochester, McMaster
 			- Discuss authorization process
-				- Must researchers check with IRB?
 				- Institutions signing for each investigator
 		- Authorization levels - inherit and direct
 	- Site Walkthrough
