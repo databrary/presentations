@@ -63,6 +63,18 @@
 		- Maher longitudinal study
 		- Gernsbacher Lab
 		- Anjana Bhat
+	- Statistics
+		- 2.7 TB
+		- 4706 videos
+		- 1090 hours of video
+		- 714 participants
+		- 1634 sessions, releases:
+			- 9 public
+			- 1312 with excerpts
+			- 10 shared
+			- 298 private (18%)
+			- 5 missing
+		- 260 other files
 1. Databrary Roadmap [KEA]  1:15 
 1. Policies [LMS] 1:45 
 	- Recap on policies 
