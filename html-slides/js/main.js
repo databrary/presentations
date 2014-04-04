@@ -1,64 +1,34 @@
 $(document).ready(function () {
 	var $document = $(document),
-		$window = $(window),
-		$header = $('header'),
-		$footer = $('footer'),
 		$main = $('main'),
 		$articles = $main.find('article'),
-		$first = $articles.first(),
-		$current = $articles.first();
+		$current = 0;
 
-	var FADE_RATE = 250;
+	for (var i = 0; i < $articles.length; i ++) {
+		$($articles[i]).hide();
+	}
 
-	var update = function (last) {
-		$articles = $main.find('article');
-
-		if (last)
-			$current = $articles.last();
-		else
-			$current = $articles.first();
+	var update = function (i) {
+		$($articles[$current]).hide();
+		$($articles[$current = i]).show();
 	};
 
-	// moves
-
 	var next = function () {
-		update();
-
-		$current.fadeOut(FADE_RATE, function () {
-			$main.append($current.remove());
-			$current.show();
-		});
+		if ($current < $articles.length-1)
+			update($current + 1);
 	};
 
 	var back = function () {
-		update(true);
-
-		$current.fadeOut(0, function () {
-			$main.prepend($current.remove());
-			$current.fadeIn(FADE_RATE);
-		});
+		if ($current > 0)
+			update($current - 1);
 	};
 
 	var first = function () {
-		var index = $articles.index($first);
-
-		$articles.slice(1, 1 + index).hide();
-
-		$current.fadeOut(FADE_RATE, function () {
-			$main.append($articles.slice(0, 1 + index).remove());
-			$articles.slice(0, 1 + index).show();
-		});
+		update(0);
 	};
 
 	var last = function () {
-		var index = $articles.index($first);
-
-		$articles.slice(1, index).hide();
-
-		$current.fadeOut(0, function () {
-			$main.append($articles.slice(0, index).remove());
-			$articles.slice(0, index).fadeIn(FADE_RATE);
-		});
+		update($articles.length-1);
 	};
 
 	// bindings
@@ -66,19 +36,21 @@ $(document).ready(function () {
 	$document.bind('keydown', function (e) {
 		switch (e.which) {
 			case 37: // left
+			case 8:
 				back();
 				break;
 
 			case 39: // right
+			case 32:
 				next();
 				break;
 
 			case 38: // up
-				first();
+				last();
 				break;
 
 			case 40: // down
-				last();
+				first();
 				break;
 
 			default:
