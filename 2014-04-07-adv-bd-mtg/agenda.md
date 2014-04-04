@@ -101,12 +101,8 @@
 		+ Agreement written here and at PSU--we are still piloting it and need feedback the process
 			* Where are there going to be hang-ups?
 			* How do we make the language as clear as possible
-		* Update:
-			- NYU, PSU, Indiana, Rutgers, Rochester, McMaster
-			- Discuss authorization process
-				- Institutions signing for each investigator
-		- Authorization levels - inherit and direct
-	- Site Walkthrough
+	
+		- Site Walkthrough
 		+ Registration
 			* e-agreement
 		+ Authorization: requesting and granting
@@ -118,7 +114,9 @@
 			- Affiliates?
 		- Permissions in general, access controls
 		- Feedback on permissions		
-	- Shift to institutional agreements with instituitional administrative accounts
+	- Discuss authorization process
+				- Institutions signing for each investigator	
+				- Shift to institutional agreements with instituitional administrative accounts
 
 
 1. Break 2:15
