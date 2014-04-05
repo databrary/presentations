@@ -121,6 +121,19 @@
 
 1. Break 2:15
 1. Overview of Beta site [Dylan] 2:30 
+	- Datavyu 2.0
+		- Release, user-guide complete
+			- fixing few remaining bugs as they trickle in
+		- Next steps (~2 years): bring datavyu into databrary framework
+		- deployment options, within browser
+			- fully within databrary (initially)
+			- local deployment
+		- requirements
+			- simple, easy, coding and annotation directly from databrary
+			- timeline display
+			- multi-column, multi-variable coding
+			- multiple videos
+			- scripting
 	- Outline
 		- Site 6 months ago
 			- lots of videos
@@ -192,6 +205,11 @@
 			- within, across groups
 	- Next steps
         	- Enhancing the browser
+			- better video, timeline management
+			- improved browsing within a dataset/study
+			- uploading as you go
+			- entering, editing data
+			- organizing, grouping data
 		- Old user stories 
 			- education and teaching
 				- video clips for teaching
@@ -212,12 +230,6 @@
 				- conduct integrative analyses
 				- complete a grant progress report
 			- mainly focused around browsing, searching, using
-		- Databrary 1.0 release
-			- better video, timeline management
-			- improved browsing within a dataset/study
-			- uploading as you go
-			- entering, editing data
-			- organizing, grouping data
 	- All "categories" (kinds of "records"), "measures"
                 - pilot
                 - exclusion
@@ -266,18 +278,6 @@
 			- refine user stories, improve interface
 			- iterative design process
 		- ...
-	- Datavyu 2.0 [skip?]
-		- next 18 months
-		- bring datavyu into databrary framework
-		- deployment options, within browser
-			- fully within databrary (initially)
-			- local deployment
-		- requirements
-			- simple, easy, coding and annotation directly from databrary
-			- timeline display
-			- multi-column, multi-variable coding
-			- multiple videos
-			- scripting
 1. Researcher asks and support [KEA] 3:30
 	- Metadata:
 		- Brian MacW's points: Get folk to cough up the data, need some standards
