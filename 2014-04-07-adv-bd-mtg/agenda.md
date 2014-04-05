@@ -157,7 +157,7 @@
 			- Associated with metadata, groups
 		- Datasets and studies
 			- Datasets represent data collected directly during a session
-			- Studies represent analyses, researcher generated information
+			- Studies represent analyses, researcher generated information, eventually published papers perhaps
 			- Studies collect included sessions and "layer" files over them
 			- Allows repurposing, collecting data
 			- Terminology rfc
@@ -187,16 +187,11 @@
 		- Metrobaby
 			- tasks
 			- groups
-			- complete set of categories?
 		- Many more ways to sort, filter, aggregate data
-			- age, sex, release-level
-				+ click on age to toggle display
-			- race, ethnicity, language
-			- ses
+			- measures, age displays
 			- within, across groups
-		- [slide with all categories, measures]
-			- rfc: terminology, standarization
 	- Next steps
+        	- Enhancing the browser
 		- Old user stories 
 			- education and teaching
 				- video clips for teaching
@@ -223,24 +218,50 @@
 			- uploading as you go
 			- entering, editing data
 			- organizing, grouping data
-		- Later
-			- search
+	- All "categories" (kinds of "records"), "measures"
+                - pilot
+                - exclusion
+                        - reason
+                                - Did not meet inclusion criteria
+                                - Procedural/experimenter error
+                                - Withdrew/fussy/tired
+                                - Outlier
+                                - ...
+                - participant
+                        - subject id
+                        - birthdate
+                        - gender
+                        - race (NIH)
+                        - ethnicity (NIH)
+                        - disability
+                        - language
+                - condition, task, group
+                        - name 
+                        - summary
+                        - description
+                - location
+                        - setting
+                                - lab
+                                - home
+                                - classroom
+                                - clinic
+                                - ...
+                        - state, country
 	- [Switch to KEA here?]
 		- New user stories
 			- summarize, aggregate data in study (counts, distributions, etc)
 			- enter (type/paste/import) new data, as you go
 			- customize presentation of dataset (titles, excerpts, layout)
-		- Design sessions
-			- developers, UI/UX experts, researchers
-			- refine user stories, improve interface
-			- iterative design process
-		- Where we are now: User stories: data management
 			- describe a study design, indicating conditions, groups, etc.
 			- describe what types of data and metadata will be collected
 			- enter new, recently collected metadata
 			- upload a video and associate it with participants
 			- keep track of which data has been entered
 			- export previously-entered data for analysis
+		- Design sessions
+			- developers, UI/UX experts, researchers
+			- refine user stories, improve interface
+			- iterative design process
 		- ...
 	- Datavyu 2.0 [skip?]
 		- next 18 months
