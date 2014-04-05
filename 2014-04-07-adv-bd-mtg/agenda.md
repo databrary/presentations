@@ -122,63 +122,45 @@
 1. Break 2:15
 1. Overview of Beta site [Dylan] 2:30 
 	- Outline
-		- where we were 6 months ago
-			- site
-				- lots of videos
+		- Site 6 months ago
+			- lots of videos
 				- piled up into studies
 				- minimal organization
-				- "static" views
-					- single presentation option
-					- limited flexibility
-			- user stories 
-				- education and teaching
-					- video clips for teaching
-					- illustrate an idea
-					- show the range of behaviors and exceptions
-					- show an excerpt in a talk
-				- pre-research
-					- browse the work in my field
-					- decide whether a study is worth doing
-					- preliminary data for grant proposal
-					- ideas and inspiration
-					- replicate, expand on, or review previous work based on the procedure or coding manual
-				- research
-					- repurpose videos for new uses
-					- replicate existing work by recoding videos
-					- grow sample size
-					- include participants from other contexts and populations
-					- conduct integrative analyses
-					- complete a grant progress report
-				- mainly focused around browsing, searching, using
-		- where we are now
-			- user stories: lab management
-				- describe a study design, indicating conditions, groups, etc.
-				- describe what types of data and metadata will be collected
-				- enter new, recently collected metadata
-				- upload a video and associate it with participants
-				- keep track of which data has been entered
-				- export data entered into databrary for analysis
-			- refined and improved data requirements
-				- learned a lot from manually curating, organizing existing datasets
-				- need responsive, iterative, "data-driven" approach
-				- there are always exceptions, irregularities
-				- broadened types of possible, standard metadata 
-				- developed better ways to group data, studies, datasets
-				- result: understand constraints, required flexibility
-				- preview: how much to standardize?
-				- to do: determine best way to explore, browse, enter, organize information
-			- identified technical requirements
-				- flexible discovery
-				- efficient editing
+			- "static" views
+				- single presentation option
+				- limited flexibility
+		- Major updates
+			- revised technical requirements
+				- flexible discovery options, searching, filtering
+				- efficient, intuitive editing, uploading
 				- high-level visualizations, summaries
-				- api, scripting interface
-				- result: rebuilt more dynamic interface, using API
-				- to do: complete, document API
+				- API, scripting interface
+			- built new completely dynamic JS interface, using API
+		- refined and improved data representations
+			- learned a lot from manually curating, organizing existing datasets
+			- broadened types of possible, standard metadata 
+			- developed better ways to group data, studies, datasets
+			- there are always exceptions, irregularities
+				- missing data
+				- multiple videos
+				- doesn't cleanly fit in age group
+				- twins
+				- always something non-rectangular
+			- need responsive, iterative, "data-driven" approach
+				- real data are always more nuanced
+			- better understanding of constraints, required flexibility
 	- Review data structures, organization
-		- [slides from before]
-		- "grouping" records
-		- "studies"
-		- terminology rfc: dataset/study, record
+		- Basic oraganizational unit: Session
+			- Data collected at the same time: date
+			- Covered by a single release level
+			- Contains timeline of collected (synchronized or sequential) raw data files
+			- Associated with metadata, groups
+		- Datasets and studies
+			- Datasets represent data collected directly during a session
+			- Studies represent analyses, researcher generated information
+			- Studies collect included sessions and "layer" files over them
+			- Allows repurposing, collecting data
+			- Terminology rfc
 	- Walkthrough
 		- Login
 		- Profile
@@ -191,18 +173,20 @@
 		- Bridges dataset
 			- summary info
 			- relationship to study
+		- Study
+			- Citations (on study)
+			- Back to dataset
 		- Excerpts
 			- selected by data owner, others?
+		- Tags
+		- Comments
 		- Browser
 			- many ways to group data
 			- participants, records, measures
 			- conditions, exclusions, groups, locations, etc.
-		- Tags
-		- Comments
 		- Metrobaby
 			- tasks
 			- groups
-			- rfc: terminology, standarization
 			- complete set of categories?
 		- Many more ways to sort, filter, aggregate data
 			- age, sex, release-level
@@ -210,12 +194,38 @@
 			- race, ethnicity, language
 			- ses
 			- within, across groups
-		- Going forward, interface for
-			- browsing within a dataset/study
-			- entering data within a dataset
-			- organizing, grouping data
 		- [slide with all categories, measures]
-	- Future
+			- rfc: terminology, standarization
+	- Next steps
+		- Old user stories 
+			- education and teaching
+				- video clips for teaching
+				- illustrate an idea
+				- show the range of behaviors and exceptions
+				- show an excerpt in a talk
+			- pre-research
+				- browse the work in my field
+				- decide whether a study is worth doing
+				- preliminary data for grant proposal
+				- ideas and inspiration
+				- replicate, expand on, or review previous work based on the procedure or coding manual
+			- research
+				- repurpose videos for new uses
+				- replicate existing work by recoding videos
+				- grow sample size
+				- include participants from other contexts and populations
+				- conduct integrative analyses
+				- complete a grant progress report
+			- mainly focused around browsing, searching, using
+		- Databrary 1.0 release
+			- better video, timeline management
+			- improved browsing within a dataset/study
+			- uploading as you go
+			- entering, editing data
+			- organizing, grouping data
+		- Later
+			- search
+	- [Switch to KEA here?]
 		- New user stories
 			- summarize, aggregate data in study (counts, distributions, etc)
 			- enter (type/paste/import) new data, as you go
@@ -224,13 +234,15 @@
 			- developers, UI/UX experts, researchers
 			- refine user stories, improve interface
 			- iterative design process
-		- Databrary 1.0 release
-			- better video, timeline management
-			- uploading as you go
-			- editing
-		- Later
-			- search
-	- Datavyu 2.0
+		- Where we are now: User stories: data management
+			- describe a study design, indicating conditions, groups, etc.
+			- describe what types of data and metadata will be collected
+			- enter new, recently collected metadata
+			- upload a video and associate it with participants
+			- keep track of which data has been entered
+			- export previously-entered data for analysis
+		- ...
+	- Datavyu 2.0 [skip?]
 		- next 18 months
 		- bring datavyu into databrary framework
 		- deployment options, within browser
