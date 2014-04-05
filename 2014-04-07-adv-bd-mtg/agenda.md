@@ -235,6 +235,8 @@
                         - ethnicity (NIH)
                         - disability
                         - language
+			- country (of origin)
+			- ses?
                 - condition, task, group
                         - name 
                         - summary
@@ -247,6 +249,7 @@
                                 - clinic
                                 - ...
                         - state, country
+			- language (of study)
 	- [Switch to KEA here?]
 		- New user stories
 			- summarize, aggregate data in study (counts, distributions, etc)
