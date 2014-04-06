@@ -1,13 +1,13 @@
 # Developmental Society Presidents Meeting
-2014-04-07 10:00 am EDT
+2014-04-07 11:00 am EDT
 
 ## A G E N D A
 
-1.	Introductions and Welcome
+1.	Introductions and welcome
 
-2.	Status of Current Data-sharing/Open Science Initiatives
+2.	Status of current data-sharing/open science initiatives
 
-3.	Discussion of Future Data-sharing Initiatives
+3.	Discussion of future data-sharing initiatives
 
 	a.	Presidential/society endorsements
 
