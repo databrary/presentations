@@ -1,0 +1,166 @@
+\documentclass[aspectratio=169,14pt]{beamer}
+\usepackage{calc}
+\usepackage{graphicx}
+
+\usetheme{Boadilla}
+\setbeamercovered{again covered={\opaqueness<1->{50}}}
+
+\title[UI]{UI Design Meeting}
+\author{Dylan Simon}
+\institute{Databrary}
+\date{June 12, 2014}
+
+\begin{document}
+
+\begin{frame}{Coin-flipping Experiment \alt<2>{B}{A}}
+	\begin{enumerate}
+		\item	Participant comes into lab
+		\item	Fills out forms
+			\begin{itemize}
+			\item	consent
+			\item	demographic info
+			\end{itemize}
+		\item	Start video recording(s)
+		\item	\alt<2>{Experimenter}{Participant} flips coin 10 times, \alt<2>{participant}{experimenter} calls
+		\item	\alt<1>{Experimenter}{Participant} flips coin 10 times, \alt<1>{participant}{experimenter} calls
+		\item	Stop video recording
+		\item	Databrary release form
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Resulting lab data storage}
+	\begin{block}{Subject list (excel)}
+		\only<-2>{
+		\begin{tabular}{crlllll}
+			Order & Subject & Date & Birthdate & Gender & Race & \dots \\
+			A & 1 & 10/11/12 & 01/02/03 & F & W & \dots \\
+			A & 2 & 11/10/12 & 04/03/05 & M & A & \dots \\
+			B & \alt<2>{1}{21} & 12/11/10 & 05/01/03 & M & W & \dots \\
+			\vdots
+		\end{tabular}
+		}
+	\end{block}
+
+	\begin{block}{Server/External Drive}
+		\only<-2>{
+		\texttt{CoinFlip\only<2>{A}-1.vid}, \texttt{CoinFlip\only<2>{A}-2.vid}, \dots, \texttt{CoinFlip\only<2>{B}-\alt<2>{1}{21}.vid}, \dots
+		}
+	\end{block}
+
+	\uncover<3->{
+	\begin{block}{Trial data (SPSS)}
+		\only<-4>{
+		\begin{tabular}{rrcc}
+			Subject & Trial & Call & Outcome \\
+			1 & 1 & H & T \\
+			1 & 2 & T & T \\
+			\vdots \\
+			\only<4>{
+			2 & 1 & T & H
+			}
+		\end{tabular}
+		}
+	\end{block}
+	}
+
+	\uncover<5->{
+	\begin{block}{Filing cabinet (paper)}
+		\begin{itemize}
+			\item Consent form (with or \emph{without} ID)
+			\item Databrary release form (with or \alert{without} ID)
+		\end{itemize}
+	\end{block}
+	}
+\end{frame}
+
+\begin{frame}{Databrary metadata storage}
+	\begin{block}{Session}
+		\begin{description}
+		\item[Date] 2010-Nov-12
+		\item[Release] Shared with Databrary
+		\item[Video] mp4 file, 12:34, \emph{contains identifying information}
+		\item[Trial data] csv file, \emph{deidentified}
+		\end{description}
+	\end{block}
+
+	\begin{block}{Participant: 1}
+		\only<1>{
+		\begin{description}
+		\item[Birthdate] 2001-Feb-3
+		\item[Gender] Female
+		\item[Race] White
+		\end{description}
+		}
+	\end{block}
+
+	\uncover<2-3>{
+	\alt<2>{
+	\begin{block}{Condition: A}
+		Participant flips first
+	\end{block}
+	}{
+	\begin{columns}
+	\column{0.5\textwidth-0.6em}
+	\begin{block}{Condition: Participant flips}
+	\end{block}
+
+	\column{0.5\textwidth-0.6em}
+	\begin{block}{Condition: Experimenter flips}
+	\end{block}
+	\end{columns}
+	}
+	}
+\end{frame}
+
+\begin{frame}{Databrary asset storage}
+	\begin{block}{Session}
+	\end{block}
+
+	\vspace{-1em}
+	\begin{overprint}
+	\onslide<1>
+	\begin{block}{Video (mp4)}
+		identifying, 12:34
+	\end{block}
+
+	\onslide<2>
+	\begin{columns}
+	\column{0.5\textwidth-0.6em}
+	\begin{block}{Video (mp4)}
+		identifying, 6:12
+	\end{block}
+	\column{0.5\textwidth-0.6em}
+	\begin{block}{Video (mp4)}
+		identifying, 6:22
+	\end{block}
+	\end{columns}
+
+	\onslide<3>
+	\begin{columns}
+	\column{0.8\textwidth}
+	\begin{block}{Video: overhead view (mp4)}
+		identifying, 12:05
+	\end{block}
+	\column{0.1\textwidth}
+	\end{columns}
+	\begin{columns}
+	\column{0.1\textwidth}
+	\column{0.8\textwidth}
+	\begin{block}{Video: participant view (mp4)}
+		non-identifying, 11:43
+	\end{block}
+	\end{columns}
+
+	\end{overprint}
+
+	\begin{block}{Trial data (csv)}
+		deidentified
+	\end{block}
+
+\end{frame}
+
+\begin{frame}{Databrary session viewer}
+	\url{http://databrary.github.io/design/prototypes/2014-04-timeline/}
+\end{frame}
+
+\end{document}
