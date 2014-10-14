@@ -1,7 +1,22 @@
 # Slides: metadata
 
-- Last time, thoughts about session-level metadata
-- review
+## Upload as you go design
+
+- Familiar interface for data entry
+- Enter data as collected or from paper
+- Support standard session-level metadata
+- Export for further analysis, processing
+- Work
+
+## Review Session-level metadata
+
+- Participants: birthdate, gender, race, ethnicity, language, ...
+- Experimental conditions
+- Groups (age, ability, etc.)
+- Pilot
+- Exclusion: reason
+- Task
+- Context: setting, location, language
 
 # Front page
 
@@ -27,7 +42,7 @@ doi:10.1523/JNEUROSCI.4647-10.2011
 
 ### Upload short video
 
-???
+Frank, piano
 
 ### Upload stimuli image
 
@@ -77,10 +92,18 @@ David Baker?
 
 # Search
 
-## Volume: Karen?
+## Volume: Crawling bridges
 
 ## Volume: Facial expressions
 
 ### Timeline
 
-# Slide: future
+# Slides: future
+
+## Future plans
+
+- Iterate, improve upload-as-you-go, spreadsheet, timeline
+- Support research workflow: export, editing
+- Community sharing, excerpt collections, tagging, commenting
+- Search: improve discoverability, filtering of data
+- Video coding: import, online annotations, "Datavyu 2.0"
