@@ -4,3 +4,4 @@
 *.blg
 *.log
 *.tex.project.vim
+*.synctex.gz
