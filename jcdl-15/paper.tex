@@ -66,20 +66,49 @@ Accordingly, Databrary, with developmental psychology as a use case, has created
 Most existing research data repositories provide either unstructured storage of arbitrary files, or have rigorously structured schema that require contributors to properly extract and format contributions.
 While the former is well suited for archival of entire datasets and general-purpose hosting of materials, it does not facilitate discoverability, understanding, or re-use across various datasets.
 The latter, on the other hand, generate large-scale, homogonous data sources for meta- and re-analysis, but limited to specific domains and research questions, losing the full richness and innovation of the source materials and field.
+We have attempted here to adopt a middle ground: the bar for contributing a collection, but when data are provided we encourage a good deal of common structure, either by capturing data as they are collected, or by curation after the fact.
+It is this structure that is the focus of this paper.
 % we're a hybrid?
 
-\subsection{Video-based human research data}
+We have intentionally chosen to limit the bulk of the data hosted in the library to human-consumable, self-documenting, timeseries data: video and audio.
+These data can and largely are consumed and analyzed, at least initially, without sophisticated analysis tools: once digitally decoded, humans can glean the bulk of the richness of such data directly.
+Similarly, these data can often be used on their own or with minimal explanation, as the nature of the activity and participants are readily apparent.
+This naturally aids in the problems of documentation and re-use that plague most flat-file or dense datasets.
+On the other hand, since automated analysis of videos is an active and immature research area, the problems of search, discoverability, and meta-analysis remain.
+We attempt to address these issues by augmenting the primary data with additional, structured annotations and metadata.
 
-\subsection{Discovering and re-purposing data}
+\section{Data Schema}
 
-\section{The ``Session''}
+As with most user-driven databases, we separate individual data contributions or packages into individual collections variously referred to as datasets, studies, or volumes.
+Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
+These volumes are to some extent embeddable and referenceable, both among themselves and to and from external entities by DOI.
+The remainder of this work will address the available structures of data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
 
-\section{Organizing and documenting collections}
+% should we actually use the term "record"?  Alternatives: "grouping", "label", "annotation", ...
 
-\section{Collecting and annotating temporal data}
+There are two key, innovative structural elements that comprise a volume: the session and the record.
+Sessions are the primary container for data files, basically an elaboration on traditional file folders with additional temporal metadata.
+Records are used to represent all types of scalar variable-based data, traditionally contained in flat files or databases, as well as providing an organizational structure among sessions.
+The combination of these two elements allows data and metadata to be flexibly related and annotated.
 
-\section{Open Problems}
+\subsection{The ``Session''}
 
+Researchers record activities with individuals either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection.
+Thus, the video itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
+However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment being reset or producing multiple files, and/or in parallel from multiple data capture sources that overlap in time.
+These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, all of which have specific and critical temporal relationships with the primary data.
+
+We capture these relationships within an object called a session, which can comprises not only arbitrary files but also their absolute or relative temporal positioning.
+The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or a date of collection and relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units).
+Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
+Although some advanced recording equipment provides automatic timestamping or synchronization than can be used, most researchers collecting multiple parallel data streams often use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
+
+Once the timeframe of a session is established, this can allow temporally-positioned annotations to be attached to the session.
+% this is sort of an aside:
+In fact, this practice is very common in research when analyzing recordings, and specialized desktop software tools are employed to review video and audio and annotate events, utterances, actions, or phases at any temporal scale, from individual samples/frames to the entire session.
+Most of these tools currently focus on a single recording file, however, and despite the plethora of tools and features, there is little interoperability.
+
+\subsection{The ``Record''}
 
 
 \section{Introduction}
