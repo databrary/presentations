@@ -163,20 +163,27 @@ By providing some standardization of record types, we can also perform broad, me
 Finally, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
 That is, if any record only applies to part of a session, for example a single activity, or a participant being present for only part of a recording, it can be applied within the timeline of a session to only the appropriate part.
 This allows the final type of organizational structure, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos.
-It also can be used to represent annotations at a finer temporal scale, for example individual events interactions that are normally handled by off-line annotation softaware.
+It also can be used to represent annotations at a finer temporal scale, for example individual events interactions that are normally handled by off-line annotation software.
 However, the appropriate interfaces and tools to input or import these annotations are still being developed.
 
-%\subsection{Technical infrastructure}
+\subsection{Technical infrastructure}
 
 %%dg other notes: should we give a bit more discussion of the infrastruction - Postgresql, ffmpeg, using HPC for transcoding, storage, frontend technologies etc. 
 % i'm not sure. do other papers have this sort of "methods" section? -dylan
 %%dg - other papers in this general area (see: Peer_2012, Griffin_etal_2014, and Witt_2012 from references) do comment on the technology used (if there actually is a product and not just a proposed framework) to varying degrees. I don't think we have to spend more than a paragraph on it, but it would be good to mention the stack in terms of taking, augmenting, and storing video files and metadata overall.
 
+Databrary is a new, cohesive web application, built on the Play Framework to enable a responsive user interface, a complete API, and high-performance streaming.
+Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
+All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
+This transcoding utilizes the high performance computing cluster at the hosting campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
+The user interface is built primarily on the Angular web framework, and all data access is performed through an open JSON API.
+Although hosted data are protected, all source code is released under a GPLv3 license on github.
+
 \section{Standardization vs. Flexibility}
 
 As the extant research data libraries demonstrate, there is always the tension between standardization and flexibility.
-Since we're primarily dealing with video and audio data, we have, without much loss of flexibility, standardized on a particular encoding format (codecs and parameters) that allows for convenient access and HTML5-based streaming, while still allowing arbitrary resolutions and sample/frame-rates.
-We also allow for ``dumps'', which allow users - using certain portable data formats (e.g. ...) - to include any data that cannot be encompassed by our standard formats. In this way, we can incorporate data which may be relevant for re-use, but not broadly adopted by the community, without making the system too rigid.
+Since we're primarily dealing with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
+We also allow for ``dumps'', which allow users---using certain portable data formats (e.g. ...)---to include any data that cannot be encompassed by our standard formats. In this way, we can incorporate data which may be relevant for re-use, but not broadly adopted by the community, without making the system too rigid.
 
 Here we have also introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables (and values within categorical data types), and tag keywords.
 We have adopted an approach of encouraging adherence to existing standardized options but also allowing new types to be created as the data require it.
@@ -186,9 +193,9 @@ Achieving the appropriate balance will no doubt be challenging, but by limiting 
 
 %%dg not sure if this drives us off course, but wondering how much we should discuss library specific challenges in the "stuff to come section", both pertaining to video data and just in general, largely stuff that we will still have to deal with, such as: 1) creation and organization of metadata is still largely manual and time consuming - both in combing videos for stuff to clip out and also trying to extract more metadata from the contributed data itself as well as third party sources (e.g. keywords from journals). 2) interpretation of data lends to this, we can't always rely on contributors to be available to tell us what we need to know about their data 3) metadata interoperability: DOIs; Export in friendly formats (Dublin Core, METS), OAI-PMH compliance.
 
-\section{Conclusion}
+\section{Conclusions}
 
-\section{Acknowledgments}
+\section*{Acknowledgments}
 
 This work was supported by the National Science Foundation (BCS-1238599)
 and the National Institute of Child Health and Human Development
