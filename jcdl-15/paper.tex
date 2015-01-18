@@ -76,8 +76,7 @@ We attempt to address these issues by augmenting the primary recording data with
 %%dg probably need to make this section more cohesive, but the main gist is 1) We focus on video data, 2)video data has these inherent challenges. 3) At the same time there are already challenges involved in creating a research data repository, independant of the format of the data travels on. 4) This paper dicusses the challenges we have resolved and the challenges we have coming up.
 
 Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
-This facilitates a depth of access to configure data more to the original context in which it was collected and analyzed.
-% that use of "configure" doesn't make sense to me -dylan
+This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
 At the same time, it provides a common, standard structure for recordings and their associated metadata, including context, contents, and annotations.
 We achieve this conformance of datasets in the library through a combination of in-depth investigative curation and ingest processes for already-collected data, and a well-defined user experience that provides a platform for researchers to contribute and organize all of their research data as they are collected.
 The following sections provide specific detail on the design and decision-making behind this unifying structure.
@@ -86,6 +85,7 @@ The following sections provide specific detail on the design and decision-making
 \section{Data Architecture}
 
 %%dg would a figure illustration be helpful here? do we already have one?
+%%dg in general, how much room do we have for screenshots, if they help explain?
 
 As with most user-driven databases, we separate individual data contributions or packages into individual collections variously referred to as datasets, studies, or volumes.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
@@ -93,6 +93,7 @@ These volumes are to some extent embeddable and referenceable, both among themse
 The remainder of this work will address the available structures of data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
 
 % should we actually use the term "record"?  Alternatives: "grouping", "label", "annotation", ...
+% as long as we're clear in defining it. the record section appears to be doing this.
 
 There are two key, innovative structural elements that comprise a volume: the session and the record.
 Sessions are the primary container for data files, basically an elaboration on traditional file folders with additional temporal metadata.
@@ -101,13 +102,15 @@ The combination of these two elements allows data and metadata to be flexibly re
 
 \subsection{The ``Session''}
 
+%dg "The session was designed both to organize videos in a way that is familiar to researchers, as well as to allow them to 'go into' a session and add or edit data." - stuff like this to remind the reader why we're discussing these components in specific (rather than some other aspect of the system).
 Researchers record activities with individuals either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection.
 Thus, the recording itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
 However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment being producing multiple files, and/or in parallel from multiple data capture sources operating at the same time.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
 
 % should we be using more language like, "we observed", "in practice"?
-When dealing with multiple primary recordings, researchers often reduce these raw files into a single representation.
+%%dg - if it helps to illustrate particular points better, sure. 
+When working with multiple primary recordings, researchers often reduce these raw files into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
 Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying crosshairs representing location or gaze data.
 Doing so allows for more convenient human analysis of the data in standard tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
@@ -129,11 +132,12 @@ In addition to providing an organizational structure that allows users to visual
 These annotations could be applied manually by users or by automated video analysis systems.
 We expect that these annotations will provide an index target for additional discovery capabilities for users looking for particular features within data.
 
-%%dg, i guess it's crucial to make sure the audience understands that one of the specific challenges for us is that we're not just storing comprehensive single video files, but multiple files that capture the same phenomenon and how do we keep all those together in a meaningful way...to differentiate us from being "just another you tube" .. which i guess is what is already being said above. Though might need to do a little more hand holding for the reader as to why this is an issue in general and why it's important to even those who might be faced with different types of video data to collect (? maybe I'm rambling now ?).
+%%dg, i guess it's crucial to make the audience aware that one of the specific challenges for us is that we're not just storing comprehensive single video files, but multiple files that capture the same phenomenon and how do we keep all those together in a meaningful way...to differentiate us from being "just another you tube".
 
 \subsection{The ``Record''}
 
-An object called a record serves a number of purposes around session and metadata organization.
+%%dg maybe add some langauge to the beginning of this section that is explicit that the "record" is designed with the flexibility we talk about above in mind.
+An object called a record serves a number of purposes around session and metadata organization. 
 A record itself represents any number of variables or measurements---what would traditionally be a row of a database or flat file.
 For example, a record may represent an individual participant within the dataset and contain their subject identifier, gender, birthdate, and any other demographic, survey, or measurement data about that participant.
 A record could also represent a particular experimental task, condition, location, or outcome, and contain variables with corresponding parameters or descriptions.
@@ -166,16 +170,17 @@ However, the appropriate interfaces and tools to input or import these annotatio
 
 %%dg other notes: should we give a bit more discussion of the infrastruction - Postgresql, ffmpeg, using HPC for transcoding, storage, frontend technologies etc. 
 % i'm not sure. do other papers have this sort of "methods" section? -dylan
+%%dg - other papers in this general area (see: Peer_2012, Griffin_etal_2014, and Witt_2012 from references) do comment on the technology used (if there actually is a product and not just a proposed framework) to varying degrees. I don't think we have to spend more than a paragraph on it, but it would be good to mention the stack in terms of taking, augmenting, and storing video files and metadata overall.
 
 \section{Standardization vs. Flexibility}
 
 As the extant research data libraries demonstrate, there is always the tension between standardization and flexibility.
 Since we're primarily dealing with video and audio data, we have, without much loss of flexibility, standardized on a particular encoding format (codecs and parameters) that allows for convenient access and HTML5-based streaming, while still allowing arbitrary resolutions and sample/frame-rates.
-We also allow for ``dumps'' using certain portable data formats to include any data that cannot be encompassed by our standard formats, reasoning that these data may be relevant for re-use, but not broadly adopted by the community.
+We also allow for ``dumps'', which allow users - using certain portable data formats (e.g. ...) - to include any data that cannot be encompassed by our standard formats. In this way, we can incorporate data which may be relevant for re-use, but not broadly adopted by the community, without making the system too rigid.
 
 Here we have also introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables (and values within categorical data types), and tag keywords.
 We have adopted an approach of encouraging adherence to existing standardized options but also allowing new types to be created as the data require it.
-We encourage standardization both on-line as data are collected and entered via our user interface using auto-completion, suggestions, and drop-down options, and off-line via manual review and curaion of contributed data.
+We encourage standardization both on-line as data are collected and entered via our user interface using auto-completion, suggestions, and drop-down options, and off-line via manual review and curation of contributed data.
 
 Achieving the appropriate balance will no doubt be challenging, but by limiting our focus to particular research domains we have been able to achieve a good amount of standardization across the entire data library without overly burdening contributors.
 
