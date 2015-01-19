@@ -51,16 +51,16 @@ databases, scientific databases]
 %%dg maybe break this part up into subsections: Content/Domain; Users; Design contraints; Approach (or something like that)
 
 Video and audio recordings play a key role in many areas of human research, particularly in psychology, linguistics, education, and ethnography.
-It can document experimental procedures or behaviors, convey ideas and examples in teaching and scientific communication, and often act primary data source for later analysis.
-Unfortunately, in standard practice, the use of these video data is isolated to the researchers who collected them, due largely to the perceived requirements around privacy restrictions.
+It can document experimental procedures or behaviors, convey ideas and examples in teaching and scientific communication, and is a rich primary data source for later analysis.
+Unfortunately, in standard practice, the use of these video data is isolated to the researchers who collected them, due largely to the perceived requirements around privacy restrictions, not to mention.
 The goal of the Databrary project is to establish policies and tools to allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose existing videos for their own research interest.
 Accordingly, Databrary, with an initial focus on developmental psychology research, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
 
 % this is questionable...
-Most existing research data repositories provide either unstructured storage of arbitrary files, or have rigorously structured schema that require contributors to properly extract and format contributions.
-%%dg should pick examples to illustrate both sides of the spectrum (ICPSR - ???)
-While the former is well suited for archival of entire datasets and general-purpose hosting of resources, it does not facilitate detailed search, understanding, or re-use across various datasets.
-The latter, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
+%%dg probably want to try a different approach to highlighting this dichotomy
+We have found in designing an appropriate data schema that there are two competing polarities that need to be balanced out. On the one hand, a system might tend towards more generality, providing unstructured storage of arbitrary files. On the other, it can present a rigorously structured schema that requires contributors to properly extract and format contributions in a highly specified manner.
+While the former is well suited for archival of entire datasets and general-purpose hosting of resources, it does not facilitate detailed search, understanding, or re-use across various datasets with a great deal of curation \cite{Peer_2012}.
+The latter, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
 We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional resources to be built and discovered around this core.
 
 %%dg perhaps better to frame below as the affordances and challenges of working with video data. 
@@ -71,7 +71,7 @@ These data can and largely are consumed and analyzed, at least initially, withou
 Similarly, these data can often be used on their own or with minimal explanation, as the nature of the subjects and activity are readily apparent.
 This naturally aids in the problems of documentation and re-use that plague most flat-file or dense datasets.
 %Challenges
-On the other hand, since automated analysis of videos is an active yet immature research area, the problems of search, discoverability, and meta-analysis over these media remain.
+On the other hand, since automated analysis of videos is an active yet immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
 We attempt to address these issues by augmenting the primary recording data with additional structured and unstructured features.
 %%dg probably need to make this section more cohesive, but the main gist is 1) We focus on video data, 2)video data has these inherent challenges. 3) At the same time there are already challenges involved in creating a research data repository, independant of the format of the data travels on. 4) This paper dicusses the challenges we have resolved and the challenges we have coming up.
 
@@ -80,7 +80,6 @@ This facilitates storage and retrieval of data more closely mapped to the origin
 At the same time, it provides a common, standard structure for recordings and their associated metadata, including context, contents, and annotations.
 We achieve this conformance of datasets in the library through a combination of in-depth investigative curation and ingest processes for already-collected data, and a well-defined user experience that provides a platform for researchers to contribute and organize all of their research data as they are collected.
 The following sections provide specific detail on the design and decision-making behind this unifying structure.
-%%dg more like a system informed by the pitfalls of committing solely to either extreme.
 
 \section{Data Architecture}
 
