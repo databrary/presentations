@@ -23,7 +23,7 @@ Drew Gordon\\
 	\affaddr{New York, NY 10012}\\
 	\email{drew@databrary.org}
 \alignauthor
-Rick O. Gilmore, Ph.D.\\
+Rick O. Gilmore\\
 	\affaddr{The Pennsylvania State University}\\
 	\affaddr{Department of Psychology}\\
 	\affaddr{University Park, PA 16802}\\
@@ -50,11 +50,28 @@ databases, scientific databases]
 
 %%dg maybe break this part up into subsections: Content/Domain; Users; Design contraints; Approach (or something like that)
 
-Video and audio recordings play a key role in many areas of human research, particularly in psychology, linguistics, education, and ethnography.
-It can document experimental procedures or behaviors, convey ideas and examples in teaching and scientific communication, and is a rich primary data source for later analysis.
-Unfortunately, in standard practice, the use of these video data is isolated to the researchers who collected them, due largely to the perceived requirements around privacy restrictions, not to mention.
-The goal of the Databrary project is to establish policies and tools to allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose existing videos for their own research interest.
-Accordingly, Databrary, with an initial focus on developmental psychology research, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
+Video and audio recordings play a key role in many areas of research, especially in psychology, linguistics, education, ethnography, and ethology.
+Video documents experimental procedures or behaviors, conveys ideas and provides examples for teaching and scientific communication, and serves as a rich primary data source for later analysis.
+Unfortunately, in standard practice, the use of video data is restricted to the researchers who collect them, due largely to the perceived requirements around privacy restrictions and the relatively large file sizes that make email an impractical means of distribution.
+The goal of the Databrary project is to establish tools that allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose existing videos for their own research interests. The project also aims to create policies that enable the personally idenfifying information contained in videos to be shared among researchers while protecting the rights of research participants.
+Accordingly, Databrary, with an initial focus on research in developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
+In this paper, we discuss design and technical challenges the Databrary team has overcome in launching the system, and we suggest ways that our experiences building Databrary may have relevance to other teams charged with building large scale data repositories that are specialized to serve the needs of specific research communities.
+
+\subsection{Video is Special}
+%%dg perhaps better to frame below as the affordances and challenges of working with video data. 
+%That is..."A key component to understanding the design decisions made in creating Databrary is the unique affordances and challenges of video and audio data"
+%Affordances
+We have intentionally chosen to focus our efforts on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
+Video is an inexpensive and easy-to-use medium for capturing the richness, diversity, and complexity of behavior.
+As a consequence, film and video recording have been a mainstay of research in the developmental sciences for nearly 100 years. 
+A typical developmental lab acquires, on average, 12 hours of video per week depicting behavior in natural or laboratory environments.
+Video data can and largely are consumed and analyzed, at least initially, without sophisticated analysis tools: Once digitally decoded, trained human observers can glean directly much of the data's richness.
+Similarly, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
+This naturally reduces the problems of documentation and re-use that plague most flat-file or dense datasets.
+%Challenges
+On the other hand, since automated analysis of videos is an active yet immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
+We attempt to address these issues by augmenting the primary recording data with additional structured and unstructured features.
+%%dg probably need to make this section more cohesive, but the main gist is 1) We focus on video data, 2)video data has these inherent challenges. 3) At the same time there are already challenges involved in creating a research data repository, independant of the format of the data travels on. 4) This paper dicusses the challenges we have resolved and the challenges we have coming up.
 
 % this is questionable...
 %%dg probably want to try a different approach to highlighting this dichotomy
@@ -62,18 +79,6 @@ We have found in designing an appropriate data schema that there are two competi
 While the former is well suited for archival of entire datasets and general-purpose hosting of resources, it does not facilitate detailed search, understanding, or re-use across various datasets with a great deal of curation \cite{Peer_2012}.
 The latter, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
 We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional resources to be built and discovered around this core.
-
-%%dg perhaps better to frame below as the affordances and challenges of working with video data. 
-%That is..."A key component to understanding the design decisions made in creating Databrary is the unique affordances and challenges of video and audio data"
-%Affordances
-We have intentionally chosen to limit the bulk of the data hosted in the library to human-consumable, self-documenting, timeseries data: video and audio recordings.
-These data can and largely are consumed and analyzed, at least initially, without sophisticated analysis tools: once digitally decoded, humans can glean the bulk of the richness of such data directly.
-Similarly, these data can often be used on their own or with minimal explanation, as the nature of the subjects and activity are readily apparent.
-This naturally aids in the problems of documentation and re-use that plague most flat-file or dense datasets.
-%Challenges
-On the other hand, since automated analysis of videos is an active yet immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
-We attempt to address these issues by augmenting the primary recording data with additional structured and unstructured features.
-%%dg probably need to make this section more cohesive, but the main gist is 1) We focus on video data, 2)video data has these inherent challenges. 3) At the same time there are already challenges involved in creating a research data repository, independant of the format of the data travels on. 4) This paper dicusses the challenges we have resolved and the challenges we have coming up.
 
 Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
 This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
