@@ -12,21 +12,19 @@
 Dylan A. Simon\\
 	\affaddr{Databrary Project}\\
 	\affaddr{New York University}\\
-	\affaddr{196 Mercer Street, Room 807}\\
-	\affaddr{New York, NY 10012}\\
+	\affaddr{New York, NY, USA}\\
 	\email{dylan@databrary.org}
 \alignauthor
 Drew Gordon\\
 	\affaddr{Databrary Project}\\
-	\affaddr{New York University}
-	\affaddr{196 Mercer Street, Room 807}\\
-	\affaddr{New York, NY 10012}\\
+	\affaddr{New York University}\\
+	\affaddr{New York, NY, USA}\\
 	\email{drew@databrary.org}
 \alignauthor
 Rick O. Gilmore, Ph.D.\\
 	\affaddr{The Pennsylvania State University}\\
 	\affaddr{Department of Psychology}\\
-	\affaddr{University Park, PA 16802}\\
+	\affaddr{University Park, PA, USA}\\
 	\email{rogilmore@psu.edu}
 }
 
@@ -111,7 +109,7 @@ These primary recordings may also be augmented with other forms of timeseries da
 %%dg - if it helps to illustrate particular points better, sure. 
 When working with multiple primary recordings, researchers often reduce these raw files into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
-Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying crosshairs representing location or gaze data.
+Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying cross-hairs representing location or gaze data.
 Doing so allows for more convenient human analysis of the data in standard tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
 
 Instead, we capture these relationships within an object called a session, which can comprise not only arbitrary files but also their absolute or relative temporal positioning.
@@ -119,7 +117,7 @@ The metaphor we use here is a timeline, wherein each session defines a time rang
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
 Although some advanced recording equipment provides automatic timestamping or synchronization than can be used, most researchers collecting multiple parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
 
-\subsubsection{Simple annotations}
+\subsubsection*{Simple annotations}
 
 Once the timeframe of a session is established, this can allow temporally-positioned annotations to be attached to the session.
 % this is sort of an aside:
@@ -138,7 +136,7 @@ We expect that these annotations will provide an index target for additional dis
 %%dg maybe add some langauge to the beginning of this section that is explicit that the "record" is designed with the flexibility we talk about above in mind.
 An object called a record serves a number of purposes around session and metadata organization. 
 A record itself represents any number of variables or measurements---what would traditionally be a row of a database or flat file.
-For example, a record may represent an individual participant within the dataset and contain their subject identifier, gender, birthdate, and any other demographic, survey, or measurement data about that participant.
+For example, a record may represent an individual participant within the dataset and contain their subject identifier, gender, birth date, and any other demographic, survey, or measurement data about that participant.
 A record could also represent a particular experimental task, condition, location, or outcome, and contain variables with corresponding parameters or descriptions.
 Records are thus labeled and divided by the type of entity they represent.
 The variables themselves are textual, numeric, date, or potentially any other scalar data as in any traditional tabular data interface, with the records of a given type constituting the tabular rows.
@@ -158,6 +156,8 @@ In some research, multiple participants may also appear in multiple sessions, su
 Since researchers can create whichever record types apply to their data, they can then choose to group their data by whichever record type they wish.
 This also allows users to either import or export data in what they consider the native directory structure by indicating the appropriate nesting of record types.
 By providing some standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants of a particular age range.
+
+\subsubsection*{Structured annotations}
 
 Finally, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
 That is, if any record only applies to part of a session, for example a single activity, or a participant being present for only part of a recording, it can be applied within the timeline of a session to only the appropriate part.
@@ -182,13 +182,21 @@ Although hosted data are protected, all source code is released under a GPLv3 li
 
 As the extant research data libraries demonstrate, there is always the tension between standardization and flexibility.
 Since we're primarily dealing with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
-We also allow for ``dumps'', which allow users---using certain portable data formats (e.g. ...)---to include any data that cannot be encompassed by our standard formats. In this way, we can incorporate data which may be relevant for re-use, but not broadly adopted by the community, without making the system too rigid.
+We also allow for ``dumps'', which allow users---using certain portable formats (flat-files, documents, images, data)---to include any data that cannot be encompassed by our standard formats.
+In this way, we can incorporate data which may be relevant for re-use but not broadly adopted by the community, without making the system too rigid.
 
 Here we have also introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables (and values within categorical data types), and tag keywords.
 We have adopted an approach of encouraging adherence to existing standardized options but also allowing new types to be created as the data require it.
-We encourage standardization both on-line as data are collected and entered via our user interface using auto-completion, suggestions, and drop-down options, and off-line via manual review and curation of contributed data.
+Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered.
+For many previously collected datasets, this has proven the most effective method to both learn from data and avoid burdening contributors.
+However, since we expect the bulk of the data in the library to come from newly collected sources (due largely to privacy constraints on existing datasets), we have additionally taken a separate, user-driven approach.
 
-Achieving the appropriate balance will no doubt be challenging, but by limiting our focus to particular research domains we have been able to achieve a good amount of standardization across the entire data library without overly burdening contributors.
+We found that while some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools, often using a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and available filesystem storage (often just external hard-drives).
+This suggested the opportunity to supply a cohesive data management platform where all collected raw data, including recordings, contextual information, and measurements, could be entered, stored, and exported for later off-line analysis.
+Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset through liberal use of auto-completion, suggestions, and drop-down options.
+With the considerable benefit of reducing storage requirements within researcher's labs, this has proven an attractive prospect for researchers.
+
+Achieving the appropriate balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve a good amount of standardization across the entire data library without overly burdening contributors.
 
 %%dg not sure if this drives us off course, but wondering how much we should discuss library specific challenges in the "stuff to come section", both pertaining to video data and just in general, largely stuff that we will still have to deal with, such as: 1) creation and organization of metadata is still largely manual and time consuming - both in combing videos for stuff to clip out and also trying to extract more metadata from the contributed data itself as well as third party sources (e.g. keywords from journals). 2) interpretation of data lends to this, we can't always rely on contributors to be available to tell us what we need to know about their data 3) metadata interoperability: DOIs; Export in friendly formats (Dublin Core, METS), OAI-PMH compliance.
 
