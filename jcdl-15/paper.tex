@@ -119,7 +119,8 @@ When working with multiple primary recordings, researchers often reduce these ra
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
 Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying cross-hairs representing location or gaze data.
 Doing so allows for more convenient human analysis of the data in standard playback tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
-The session was thus designed to organize data in a way that is familiar to researchers without requiring these modifications.
+The session was thus designed to organize data in a way that is familiar to researchers without requiring these modifications. By also supporting the upload of multiple video files for a session, Databrary provides a workflow for their research in progress and not merely as a final resting place.
+%dg-I am not married to the above sentence.   
 
 A session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
 The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
@@ -129,17 +130,12 @@ These sync points can then be used to manually place recordings on the timeline 
 
 \subsubsection*{Simple annotations}
 
-Once the timeframe of a session is established, this can allow temporally-positioned annotations to be attached to the session.
-% this is sort of an aside:
-%%dg maybe the value here is that we've designed things with this specific type of research in mind.
-In fact, this practice is very common in research when analyzing recordings, and specialized desktop software tools are employed to review video and audio to annotate events, utterances, actions, or scenes at any temporal scale, from individual samples/frames to the entire session.
-Most of these tools currently focus on a single recording file, however, and despite the plethora of tools and features, there is little interoperability.
+Once the timeframe of a session is established, this allows temporally-positioned annotations to be attached to the session. Currently these annotations take the form of keyword-based tagging and comment-based discussions on any temporal segment of a session supplied manually by users. In future releases we expect to support annotations created by automated video analyis systems.
 
-In addition to providing an organizational structure that allows users to visualize data in ways familiar to their research, we also currently allow keyword-based tagging and comment-based discussions on any temporal segment of a session.
-These annotations could be applied manually by users or by automated video analysis systems.
-We expect that these annotations will provide an index target for additional discovery capabilities for users looking for particular features within data.
+This practice of annotation is very common in research when analyzing recordings, and specialized desktop software tools are employed to review video and audio to annotate events, utterances, actions, or scenes at any temporal scale, from individual samples/frames to the entire session.
+Most of these tools currently focus on a single recording file, however, and despite the plethora of tools and features, there is little interoperability. By supporting this annotation of positioned segments in a session, researchers can not only organize their data, and see it in ways familiar to their research, but also create additional metadata, and thus value of the dataset for other users, on top of it. 
 
-%%dg, i guess it's crucial to make the audience aware that one of the specific challenges for us is that we're not just storing comprehensive single video files, but multiple files that capture the same phenomenon and how do we keep all those together in a meaningful way...to differentiate us from being "just another you tube".
+In addition to enriching datasets for the creators of the data, these annotations will also provide an index target for additional discovery capabilities for users looking for particular features within data.
 
 \subsection{The ``Record''}
 
