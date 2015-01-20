@@ -99,9 +99,6 @@ Volumes can be associated with a minimal amount of metadata (title, description,
 These volumes are to some extent embeddable and referenceable, both among themselves and to and from external entities by DOI or URI.
 The remainder of this work will address the available structures for data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
 
-% should we actually use the term "record"?  Alternatives: "grouping", "label", "annotation", ...
-% as long as we're clear in defining it. the record section appears to be doing this.
-
 There are two key, innovative structural elements that comprise a volume: the session and the record.
 Sessions are the primary container for data files, basically an elaboration on traditional file folders with additional temporal metadata.
 Records are used to represent all types of scalar variable-based data, traditionally contained in flat files or databases, as well as to provide an organizational structure among sessions.
@@ -109,7 +106,6 @@ The combination of these two elements allows data and metadata to be flexibly re
 
 \subsection{The ``Session''}
 
-%dg "" - stuff like this to remind the reader why we're discussing these components in specific (rather than some other aspect of the system).
 Researchers record activities with individuals either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection.
 Thus, the recording itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
 However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment producing multiple files, and/or in parallel from multiple data capture sources operating at the same time.
@@ -172,10 +168,6 @@ It also can be used to represent annotations at a finer temporal scale, for exam
 However, the appropriate interfaces and tools to input or import these annotations are still being developed.
 
 \subsection{Technical infrastructure}
-
-%%dg other notes: should we give a bit more discussion of the infrastruction - Postgresql, ffmpeg, using HPC for transcoding, storage, frontend technologies etc. 
-% i'm not sure. do other papers have this sort of "methods" section? -dylan
-%%dg - other papers in this general area (see: Peer_2012, Griffin_etal_2014, and Witt_2012 from references) do comment on the technology used (if there actually is a product and not just a proposed framework) to varying degrees. I don't think we have to spend more than a paragraph on it, but it would be good to mention the stack in terms of taking, augmenting, and storing video files and metadata overall.
 
 Databrary is a new, cohesive web application, built on the Play Framework to enable a responsive user interface, a complete API, and high-performance streaming.
 Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
