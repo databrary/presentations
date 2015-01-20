@@ -36,7 +36,6 @@ Rick O. Gilmore\\
 % which is already noted below. Just wondering if it makes sense to be more explicit or not.
 %%dg also preservation and discoverability - though maybe that's included in data management
 %%rg video is big/dense in time and space. But, much of the size is masked without intensive analysis by humans or machines. Compare it with brain imaging data. A typical brain imaging study might include 3-5 runs of 200 brain volumes with 30 128x128 pixel x 8 bit greyscale slices per volume, with each volume collected about every 2-3 sec (.33-.5 Hz). Video is much "bigger" because it samples space and time densely.
-
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -48,8 +47,6 @@ Rick O. Gilmore\\
 
 \section{Introduction}
 
-%%dg maybe break this part up into subsections: Content/Domain; Users; Design contraints; Approach (or something like that)
-
 Video and audio recordings play a key role in many areas of research, especially in psychology, linguistics, education, ethnography, and ethology.
 Video documents experimental procedures or behaviors, conveys ideas, provides examples for teaching and scientific communication, and serves as a rich primary data source for later analysis.
 Unfortunately, in standard practice, the use of video data is restricted to the researchers who collect them, due largely to the perceived requirements around privacy restrictions.
@@ -57,15 +54,12 @@ The goal of the Databrary project is to create tools that allow video data to be
 Accordingly, Databrary, with an initial focus on research in developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
 
-%\subsection{Affordances and Challenges of Video}
+%\subsection{Benefits and Challenges of Video}
 
-%%dg perhaps better to frame below as the affordances and challenges of working with video data. 
-%That is..."A key component to understanding the design decisions made in creating Databrary is the unique affordances and challenges of video and audio data"
 %rog The text you removed explained how and why video is actually "data." Maybe that's not important for this audience. What are the questions we are trying to answer with this paper? I'd argue for the following: 1) Why video? 2) What challenges does video pose? 3) How does Databrary solve these challenges? 4) What challenges remain unmet? 5) What lessons does Databrary offer other data repositories?
-%Affordances
+%Benefitss
 We have intentionally chosen to focus our efforts on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
-%rog I don't know that many people understand what the term affordances means.
-These types of data have unique affordances but also present additional challenges \cite{Lanagan_Smeaton_2012}.
+Though while these types of data are an accessible and potent source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
 On one hand, recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can glean directly much of the data's richness.
 In particular, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
 This naturally reduces the problems of documentation and re-use that plague most flat-file or dense datasets.
@@ -92,7 +86,6 @@ The following section provides specific detail on the design and decision-making
 \section{Data Architecture}
 
 %%dg would a figure illustration be helpful here? do we already have one?
-%%dg in general, how much room do we have for screenshots, if they help explain?
 
 As with most user-driven databases, we separate individual data contributions into collections or packages variously referred to as datasets, studies, or volumes.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
@@ -119,7 +112,7 @@ The session was thus designed to organize data in a way that is familiar to rese
 %dg-I am not married to the above sentence.   
 
 A session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
-The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
+The metaphor we use here is a timeline <good place for a screenshot> , wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
 Although some advanced recording equipment provides automatic timestamping or synchronization than can be used, most researchers collecting multiple parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
 These sync points can then be used to manually place recordings on the timeline appropriately.
@@ -135,9 +128,8 @@ In addition to enriching datasets for the creators of the data, these annotation
 
 \subsection{The ``Record''}
 
-%%dg maybe add some langauge to the beginning of this section that is explicit that the "record" is designed with the flexibility we talk about above in mind.
 An object called a record serves a number of purposes around session and metadata organization. 
-A record itself represents any number of variables or measurements---what would traditionally be a row of a database or flat file.
+A record itself represents any number of variables or measurements---what would traditionally be a row of a database or flat file. Defining this component broadly supports the flexibility of the system, while giving this data a discrete place in the data schema.
 For example, a record may represent an individual participant within the dataset and contain their subject identifier, gender, birth date, and any other demographic, survey, or measurement data about that individual.
 A record could also represent a particular experimental task, condition, location, or outcome, and contain variables with corresponding parameters or descriptions.
 Records are thus labeled and divided by the type of entity they represent.
