@@ -53,9 +53,6 @@ Unfortunately, in standard practice, the use of video data is restricted to the 
 The goal of the Databrary project is to create tools that allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose them for their own research interests.
 Accordingly, Databrary, with an initial focus on research in developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
-
-%\subsection{Opportunities and Challenges of Video}
-
 %rog The text you removed explained how and why video is actually "data." Maybe that's not important for this audience. What are the questions we are trying to answer with this paper? I'd argue for the following: 1) Why video? 2) What challenges does video pose? 3) How does Databrary solve these challenges? 4) What challenges remain unmet? 5) What lessons does Databrary offer other data repositories?
 We have intentionally chosen to focus our efforts on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
 Though while these types of data are an accessible and potent source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
@@ -185,7 +182,12 @@ With the considerable benefit of reducing storage requirements within researcher
 
 Achieving the appropriate balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve a good amount of standardization across the entire data library without overly burdening contributors.
 
-%%dg not sure if this drives us off course, but wondering how much we should discuss library specific challenges in the "stuff to come section", both pertaining to video data and just in general, largely stuff that we will still have to deal with, such as: 1) creation and organization of metadata is still largely manual and time consuming - both in combing videos for stuff to clip out and also trying to extract more metadata from the contributed data itself as well as third party sources (e.g. keywords from journals). 2) interpretation of data lends to this, we can't always rely on contributors to be available to tell us what we need to know about their data 3) metadata interoperability: DOIs; Export in friendly formats (Dublin Core, METS), OAI-PMH compliance.
+
+\section{Ongoing Challenges and Next Steps}
+  
+ 1) Improving the API for interoperability with other systems
+ 2) Metadata interoperability: DOIs; Export in friendly formats (Dublin Core, METS), OAI-PMH compliance.
+ 3) ...
 
 \section{Conclusions}
 
