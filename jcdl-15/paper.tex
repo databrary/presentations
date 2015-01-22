@@ -47,33 +47,28 @@ Rick O. Gilmore\\
 
 \section{Introduction}
 
-%rog The text you removed explained how and why video is actually "data." Maybe that's not important for this audience. What are the questions we are trying to answer with this paper? I'd argue for the following: 1) Why video? 2) What challenges does video pose? 3) How does Databrary solve these challenges? 4) What challenges remain unmet? 5) What lessons does Databrary offer other data repositories?
-
 Video and audio recordings play a key role in many areas of research, especially in psychology, linguistics, education, ethnography, and ethology.
 Video documents experimental procedures or behaviors, conveys ideas, provides examples for teaching and scientific communication, and serves as a rich primary data source for later analysis.
 Unfortunately, in standard practice, the use of video data is restricted to the researchers who collect them, due largely to the perceived requirements around privacy restrictions.
 The goal of the Databrary project is to create tools that allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose them for their own research interests.
-Accordingly, Databrary, with an initial focus on developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
+Accordingly, Databrary, with an initial target audience of developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
-The larger discussion involving research data repositories and the role of libraries in automating and facilitating access to research data well after its original use is very much active and ongoing \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
-While Databrary is a model for tackling some of the challenges there, the scope of this paper focuses more on how we handle research data of a specific format and from a specific discipline, with implications for the future of data cataloging and reuse in other contexts.
 
-We have intentionally chosen to focus our efforts on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
-Though while these types of data are an accessible and potent source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
-On one hand, recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can glean directly much of the data's richness.
+Existing research data repositories present two competing approaches that need to be balanced out.
+A system might tend towards more generality, providing unstructured storage of arbitrary files.
+Alternatively, it can present a rigorously structured schema that requires contributors to properly extract and format contributions in a highly specific manner.
+While general-purpose repositories are well suited for archival of entire datasets and flexible hosting of resources, they do not facilitate detailed search, understanding, or re-use across various datasets without a great deal of curation \cite{Peer_2012}.
+Targeted repositories, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
+We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional structured and unstructured resources to be built and discovered around this core.
+
+We have intentionally chosen to focus Databrary on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
+While these types of data are an accessible source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
+Recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can glean directly much of the data's richness.
 In particular, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
 This naturally reduces the problems of documentation and re-use that plague most flat-file or dense datasets.
-On the other hand, since automated analysis of videos is an active yet immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
-We attempt to address these issues by augmenting the primary recording data with additional structured and unstructured features.
+However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
 
 %\section{Normalization vs. Flexibility}
-
-We have found in researching existing research data repositories that there are two competing approaches that need to be balanced out.
-On the one hand, a system might tend towards more generality, providing unstructured storage of arbitrary files.
-On the other, it can present a rigorously structured schema that requires contributors to properly extract and format contributions in a highly specified manner.
-While the former is well suited for archival of entire datasets and general-purpose hosting of resources, it does not facilitate detailed search, understanding, or re-use across various datasets without a great deal of curation \cite{Peer_2012}.
-The latter, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
-We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional resources to be built and discovered around this core.
 
 Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
 This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
@@ -194,6 +189,8 @@ Achieving the appropriate balance will no doubt be challenging, but by using the
 \section{Implications for Digital Libraries}
 %%dg this might or might not be valuable but I am wondering if this is a section that might help draw all the pieces together. Or maybe this just boils down to a sentence or two in the next steps or conclusions
 
+There is active discussion around the role of repositories and libraries in automating and facilitating access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
+While Databrary has some implications for the future of data cataloging and reuse in these contexts, our focus is on handling active research data of specific formats from a specific discipline.
 
 \section{Ongoing Challenges and Next Steps}
   
