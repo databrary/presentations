@@ -56,8 +56,8 @@ In this paper, we discuss the design and technical challenges of the system and 
 
 Existing research data repositories present two competing approaches that need to be balanced out.
 A system might tend towards more generality, providing unstructured storage of arbitrary files.
-Alternatively, it can present a rigorously structured schema that requires contributors to properly extract and format contributions in a highly specific manner.
-While general-purpose repositories are well suited for archival of entire datasets and flexible hosting of resources, they do not facilitate detailed search, understanding, or re-use across various datasets without a great deal of curation \cite{Peer_2012}.
+Alternatively, it can present a rigorously structured schema that requires contributors to format contributions in a highly specific manner.
+While general-purpose repositories are well-suited for archival of entire datasets and flexible hosting of resources, they do not facilitate detailed search, understanding, or re-use across various datasets without a great deal of curation \cite{Peer_2012}.
 Targeted repositories, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
 We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional structured and unstructured resources to be built and discovered around this core.
 
@@ -65,32 +65,34 @@ We have attempted to strike a balance between these extremes by focusing on vide
 
 We have intentionally chosen to focus Databrary on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
 While these types of data are an accessible source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
-Recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can glean directly much of the data's richness.
+Recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
 In particular, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
-This naturally reduces the problems of documentation and re-use that plague most flat-file or dense datasets.
+This naturally reduces the problems of documentation and re-use that plague most flat-file, largely text-based datasets.
 However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
 
 Research using recordings of these types typically proceeds by annotating or scoring raw data.
 In order to extract value from recordings for further analysis, researchers add temporally-positioned annotations, either by direct observation or with the aid of simple visualizations or analysis tools.
 Myriad specialized desktop software tools are employed to review video and audio to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
 Most of these tools currently focus on a single recording file, and despite the plethora of tools and features, there is little interoperability.
-Moreover, there is almost no standardization of these annotations themselves, even across studies performed by the same researcher.
+Moreover, there is almost no standardization of these annotations themselves, even across studies performed by the same researcher \cite{?}.
 
 \subsection{Approach}
-
-Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
+%%dg tried to add to this section, but it feels like it needs a bit more
+Databrary's approach to data is to provide as much context around the video data as possible and provide users a variety of ways to bring their data in.
+To keep datasets intact, Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary, video data.
 This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
 At the same time, it provides a common, standard structure for recordings and their associated metadata, including context, contents, and annotations.
-We achieve this conformance of datasets in the library through a combination of in-depth investigative curation and ingest processes for already-collected data, and a well-defined user experience that provides a platform for researchers to contribute and organize all of their research data as they are collected.
+We achieve this conformance of datasets in the library through a combination of in-depth investigative curation and automated, server-side ingest processes for already-collected data. For datasets that are in the process of being collecting, a well-defined user experience provides a platform for researchers to contribute and organize all of their research data as they proceed with their study.
 The following section provides specific detail on the design and decision-making behind this unifying structure.
 
 \section{Data Architecture}
 
 %%dg would a figure illustration be helpful here? do we already have one?
 
-As with most user-driven databases, we separate individual data contributions into collections or packages variously referred to as datasets, studies, or volumes.
+At the top level of organization, we separate individual data contributions into collections or packages variously referred to as datasets, studies, or volumes.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
 These volumes are to some extent embeddable and referenceable, both among themselves and to and from external entities by DOI or URI.
+%%dg can we expand on the above sentence, what does this mean and what are the implications?
 The remainder of this work will address the available structures for data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
 
 There are two key, innovative structural elements that comprise a volume: the \emph{session} and the \emph{record}.
@@ -100,7 +102,7 @@ The combination of these two elements allows data and metadata to be flexibly re
 
 \subsection{Sessions}
 
-Researchers record activities with individuals either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection \cite{Bakeman_2012}.
+The session in Databrary draws from the accepted and documented practice of researchers recording activities with individuals in sessions either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection \cite{Bakeman_2012}.
 Thus, the recording itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
 However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment producing multiple files, and/or in parallel from multiple data capture sources operating at the same time.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
@@ -109,9 +111,9 @@ When working with multiple primary recordings, researchers often combine these r
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
 Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying cross-hairs representing location or gaze data.
 Doing so allows for more convenient human analysis of the data in standard playback tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
-The session was thus designed to organize data in a way that is familiar to researchers without requiring these modifications.
+Though by allowing the option to add multiple videos that are related, without compiling them, the session was thus designed to organize data in a way that is familiar to researchers without requiring these modifications as well as to allow the research keep their data in the rawest form, so as not to lose analysis options in uploading their data. This additionally allows for greater options in reuse by other researchers.
 
-A session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
+Because Databrary allows for multiple videos in a single session that may occur at different times, data cab be represented temporally. That is, a session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
 The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
 % good place for a screenshot?
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
@@ -119,11 +121,11 @@ Although some advanced recording equipment provides automatic timestamping or sy
 These sync points can then be used to manually place recordings on the timeline appropriately.
 
 \subsubsection*{Simple annotations}
-
+%%dg this feels like it might be padded a little bit.
 Once the timeframe of a session is established, this allows temporally-positioned annotations to be attached to the session.
 In addition to the structured and organizational annotations discussed in the next section, we currently support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
-In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data.
+In addition to enriching datasets and enabling dialog between researchers through the additional layer of information on top of the original data, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
 
 \subsection{Records}
 
@@ -152,7 +154,7 @@ This also allows users to either import or export data in what they consider the
 By providing some standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
 
 \subsubsection*{Structured annotations}
-
+%%dg - might confuse the audience a bit in the difference betweetn simple and structured annotations
 Finally, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
 That is, if any record only applies to part of a session, such as a single scene or section---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only the appropriate part.
 This allows the final type of organizational structure, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos.
@@ -197,11 +199,12 @@ Achieving a sustainable balance will no doubt be challenging, but by using the a
 
 \subsection{Discovery}
 
-While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
+While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely to be implemented.
 This problem is compounded for us because we expect researchers not only to reuse and reanalyze data within their own research area, but potentially to find new uses data originally collected for entirely different purposes.
 Recordings with potential value in one research area may be primarily labeled with contextual information from a different research area.
 Ultimately, making this determination requires direct, human observation of the recordings, and so a large part of solving the discovery problem will be simply to present researchers with short, representative samples from a variety of datasets.
 
+%%dg is any of the following redundant with the annotation discussion above?
 Another important source for search targets comes from annotations supplied both by the original researchers during analysis as well as by the community.
 In the former case, normalization remains a concern, as most annotation schemes researchers employ involve opaque, symbolic or numeric codes with little semantic content.
 We are currently working to support import and export workflows for existing annotations tools that will be able to add meaningful definitions to these codes while researchers continue their current practices.
@@ -209,19 +212,14 @@ Beyond that, we also plan to build a new, more efficient and structured annotati
 In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
 
 \section{Conclusions}
+%%dg - do we not want to have this as the last section?
 
 \subsection{Implications for Digital Libraries}
-%%dg this might or might not be valuable but I am wondering if this is a section that might help draw all the pieces together. Or maybe this just boils down to a sentence or two in the next steps or conclusions
 
-There is active discussion around the role of repositories and libraries in automating and facilitating access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
-While Databrary has some implications for the future of data cataloging and reuse in these contexts, our focus is on handling active research data of specific formats from a specific discipline.
+There is active discussion around the role of repositories and libraries in automating and facilitating access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}. In the technical structure and approach laid out above, Databrary does present a functioning model for a system that can wrangle and facilitate research data management in a way that could make the job of libraries aspiring to store and provide access to research data more feasible. By building in increased interoperability of datastreams for the contents in Databrary using library-based metadata schemas (Dublin Core, METS) and OAI-PMH compliance, the data researchers add to systems like Databrary can then automatically be added into federated library searches with other domain specific data repositories. Additional interoperability like a more refined API and assigning Digital Obejct Identifiers (DOIs) to Databrary volumes, we can enhance the ways library and other information systems can tap into the datasets compiled in Databrary. 
 
 \subsection{Ongoing Challenges and Next Steps}
   
- 1) Improving the API for interoperability with other systems
- 2) Metadata interoperability: DOIs; Export in friendly formats (Dublin Core, METS), OAI-PMH compliance.
- 3) ...
-
 coding:
 
 \section*{Acknowledgments}
