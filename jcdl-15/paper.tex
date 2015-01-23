@@ -170,12 +170,12 @@ Although hosted data are protected, all source code is released under a GPLv3 li
 
 \section{Repository}
 
-The Databrary website was opened for general use in October 2014 and accepting contributions since earlier that year.
+The Databrary website was opened for general use in October 2014 and has accepted contributions since earlier that year.
 It currently hosts 5700 video files totaling 1600 hours of recordings along with 2200 additional files.
 These files comprise 2400 sessions and are covered by 1300 records (including 1100 individual participants).
 Data originates from 35 individual contributors across 25 different universities.
 
-\subsection{Normalization vs. Flexibility}
+\subsection{Normalization}
 
 As the extant research data libraries demonstrate, there is always the tension between normalization and flexibility.
 Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
@@ -195,13 +195,26 @@ With the considerable benefit of reducing storage requirements within researcher
 
 Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve a good amount of standardization across the entire data library without overly burdening contributors.
 
+\subsection{Discovery}
+
+While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
+This problem is compounded for us because we expect researchers not only to reuse and reanalyze data within their own research area, but potentially to find new uses data originally collected for entirely different purposes.
+Recordings with potential value in one research area may be primarily labeled with contextual information from a different research area.
+Ultimately, making this determination requires direct, human observation of the recordings, and so a large part of solving the discovery problem will be simply to present researchers with short, representative samples from a variety of datasets.
+
+Another important source for search targets comes from annotations supplied both by the original researchers during analysis as well as by the community.
+In the former case, normalization remains a concern, as most annotation schemes researchers employ involve opaque, symbolic or numeric codes with little semantic content.
+We are currently working to support import and export workflows for existing annotations tools that will be able to add meaningful definitions to these codes while researchers continue their current practices.
+Beyond that, we also plan to build a new, more efficient and structured annotation web interface enabling more of the analysis workflow directly within our system
+In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
+
+\section{Conclusions}
+
 \subsection{Implications for Digital Libraries}
 %%dg this might or might not be valuable but I am wondering if this is a section that might help draw all the pieces together. Or maybe this just boils down to a sentence or two in the next steps or conclusions
 
 There is active discussion around the role of repositories and libraries in automating and facilitating access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
 While Databrary has some implications for the future of data cataloging and reuse in these contexts, our focus is on handling active research data of specific formats from a specific discipline.
-
-\section{Conclusions}
 
 \subsection{Ongoing Challenges and Next Steps}
   
@@ -210,8 +223,6 @@ While Databrary has some implications for the future of data cataloging and reus
  3) ...
 
 coding:
-We are also working to support import and export of these annotations so researchers can continue to use their existing tools.
-By supporting temporally-positioned session annotations directly within our system, researchers will be able to work with their recordings directly in raw form without having to transfer or transform it.
 
 \section*{Acknowledgments}
 
