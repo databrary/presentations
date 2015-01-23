@@ -1,0 +1,42 @@
+﻿> *For reviewers: This template is using markdown, plain text formatting syntax. For more information, please contact us at or15-program-chairs@googlegroups.com*
+
+## **Title of Proposal**
+
+> Author 1 name, affiliation, email address
+Author 2 name, affiliation, email address
+
+### **Session Type (select one)**
+>* Panel
+* Presentation
+
+### **Abstract**
+> Summary of your proposal; maximum 200 words. The abstract should be a concise statement of the problem, approach and conclusions of the work described. You can copy and paste this into the submission system later.
+
+### **Conference Themes**
+> Select the conference theme(s) your proposal best addresses:
+* Supporting Open Scholarship, Open Science, and Cultural Heritage
+* Managing Research (and Open) Data
+* Integrating with External Systems
+* Re-using Repository Content
+* Exploring Metrics and Assessment
+* Managing Rights
+* Developing and Training Staff
+* Building the Perfect Repository
+
+### **Keywords**
+> List 3-4 key terms or phrases that describe the subject of the proposal.}
+
+### **Audience**
+> Tell us in a sentence or two who is the likely audience for this (Some examples might be repository managers, developers, data producers, librarians, etc.)
+
+### Background
+> How does your submission address the conference themes or the overarching topic of open repositories?
+
+### **Presentation content**
+> Tell us what you will (and won't) cover in the presentation. Why will your topic be of interest to the intended audience? Include figures and images if they will help reviewers evaluate the proposal content. If you are proposing a panel, outline how you envision each panelist contributing to the overall discussion. Proposals should be 2-4 pages in length and in English.
+
+### **Conclusion**
+> Summarize the take-home message from the presentation. What are the main points? It would be great if this were a part of the conversation around the conference theme.
+
+### **References**
+> This is not compulsory but may help. Use any clear unambiguous reference style you like.
