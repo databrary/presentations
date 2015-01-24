@@ -67,7 +67,7 @@ We have intentionally chosen to focus Databrary on hosting human-consumable, sel
 While these types of data are an accessible source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
 Recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
 In particular, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
-This naturally reduces the problems of documentation and re-use that plague most flat-file, largely text-based datasets.
+This naturally reduces the problems of documentation and re-use that plague most flat-file datasets. % wanted to include raw, opaque data here, too
 However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
 
 Research using recordings of these types typically proceeds by annotating or scoring raw data.
@@ -77,12 +77,14 @@ Most of these tools currently focus on a single recording file, and despite the 
 Moreover, there is almost no standardization of these annotations themselves, even across studies performed by the same researcher \cite{?}.
 
 \subsection{Approach}
+
 %%dg tried to add to this section, but it feels like it needs a bit more
-Databrary's approach to data is to provide as much context around the video data as possible and provide users a variety of ways to bring their data in.
-To keep datasets intact, Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary, video data.
+Databrary's approach to data is to provide as much context around the primary recordings as possible while still providing contributors some flexibility.
+To keep datasets intact, Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
 This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
 At the same time, it provides a common, standard structure for recordings and their associated metadata, including context, contents, and annotations.
-We achieve this conformance of datasets in the library through a combination of in-depth investigative curation and automated, server-side ingest processes for already-collected data. For datasets that are in the process of being collecting, a well-defined user experience provides a platform for researchers to contribute and organize all of their research data as they proceed with their study.
+We achieve this conformance for previously collected datasets through a combination of in-depth investigative curation and automated, server-side ingest processes.
+For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to contribute and organize all of their research data as they proceed with their study.
 The following section provides specific detail on the design and decision-making behind this unifying structure.
 
 \section{Data Architecture}
@@ -102,7 +104,8 @@ The combination of these two elements allows data and metadata to be flexibly re
 
 \subsection{Sessions}
 
-The session in Databrary draws from the accepted and documented practice of researchers recording activities with individuals in sessions either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection \cite{Bakeman_2012}.
+The session in Databrary draws from accepted and documented practices around how researchers record activities with individuals.
+Recordings are made either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection \cite{Bakeman_2012}.
 Thus, the recording itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
 However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment producing multiple files, and/or in parallel from multiple data capture sources operating at the same time.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
@@ -111,9 +114,10 @@ When working with multiple primary recordings, researchers often combine these r
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
 Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying cross-hairs representing location or gaze data.
 Doing so allows for more convenient human analysis of the data in standard playback tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
-Though by allowing the option to add multiple videos that are related, without compiling them, the session was thus designed to organize data in a way that is familiar to researchers without requiring these modifications as well as to allow the research keep their data in the rawest form, so as not to lose analysis options in uploading their data. This additionally allows for greater options in reuse by other researchers.
+The session was thus designed to organize original recordings in a way that is familiar to researchers, keeping their data in the rawest and most flexible form without requiring these modifications.
+This additionally allows for greater options in reuse by other researchers.
 
-Because Databrary allows for multiple videos in a single session that may occur at different times, data cab be represented temporally. That is, a session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
+A session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
 The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
 % good place for a screenshot?
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
@@ -121,11 +125,12 @@ Although some advanced recording equipment provides automatic timestamping or sy
 These sync points can then be used to manually place recordings on the timeline appropriately.
 
 \subsubsection*{Simple annotations}
+
 %%dg this feels like it might be padded a little bit.
 Once the timeframe of a session is established, this allows temporally-positioned annotations to be attached to the session.
 In addition to the structured and organizational annotations discussed in the next section, we currently support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
-In addition to enriching datasets and enabling dialog between researchers through the additional layer of information on top of the original data, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
+In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
 
 \subsection{Records}
 
@@ -199,7 +204,7 @@ Achieving a sustainable balance will no doubt be challenging, but by using the a
 
 \subsection{Discovery}
 
-While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely to be implemented.
+While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
 This problem is compounded for us because we expect researchers not only to reuse and reanalyze data within their own research area, but potentially to find new uses data originally collected for entirely different purposes.
 Recordings with potential value in one research area may be primarily labeled with contextual information from a different research area.
 Ultimately, making this determination requires direct, human observation of the recordings, and so a large part of solving the discovery problem will be simply to present researchers with short, representative samples from a variety of datasets.
@@ -216,11 +221,13 @@ In this way, Databrary will allow researchers to work with their recordings dire
 
 \subsection{Implications for Digital Libraries}
 
-There is active discussion around the role of repositories and libraries in automating and facilitating access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}. In the technical structure and approach laid out above, Databrary does present a functioning model for a system that can wrangle and facilitate research data management in a way that could make the job of libraries aspiring to store and provide access to research data more feasible. By building in increased interoperability of datastreams for the contents in Databrary using library-based metadata schemas (Dublin Core, METS) and OAI-PMH compliance, the data researchers add to systems like Databrary can then automatically be added into federated library searches with other domain specific data repositories. Additional interoperability like a more refined API and assigning Digital Obejct Identifiers (DOIs) to Databrary volumes, we can enhance the ways library and other information systems can tap into the datasets compiled in Databrary. 
+There is active discussion around the role of repositories and libraries in archiving and providing access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
+In the approach laid out above, Databrary presents a functioning system for research data management that may bring data closer established library standards that achieve these goals.
+Ultimately, we hope to provide increased interoperability with library-based metadata schemas (Dublin Core, METS) and reach OAI-PMH compliance, so that data researchers add to Databrary can be automatically incorporated into federated library searches with other domain specific data repositories.
+By providing a refined API and assigning Digital Obejct Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
 
 \subsection{Ongoing Challenges and Next Steps}
   
-coding:
 
 \section*{Acknowledgments}
 
