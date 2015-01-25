@@ -21,71 +21,31 @@ Data sharing, open science, video, psychology, developmental science
 Repository Developers, Research Data Librarians, Data Curators, Researchers
 
 ### Background
-Databrary is a research data repository that has been developed for the purpos of storing, sharing, and reusing data created by researches in the field of developmental science. By working around this discipline and with specifically video data, Databrary is designed with not only managing fully collected datasets, but also through a front-end feature for researchers to Upload video data as they go, making Databrary both a repository and a tool for ongoing data management.
+Databrary is a research data repository that has been developed for the purpose of storing, sharing, and reusing data created by researches in the field of developmental science. By working with researchers in this discipline and focusing specifically on video data, Databrary was designed not only for the deposit of fully collected datasets, but for the active uploading of management of datasets that are in process during the course of a study. With that in mind, Databrary offers a model for how to store large, complex, and sometimes heterogeneous datasets in such a way as to be available for later discoverability and reuse.
 
 ### **Presentation content**
-Observing and analyzing behavior are fundamental activities in developmental science,
-and researchers expend considerable resources collecting behavioral observations. By
-far, the prevalent method for recording behavior is video, thus constituting the primary
-form of raw data in developmental science. Although collecting videos is a widespread
-and expensive practice, video data sharing is virtually non-existent. Typically, after an
-original study is completed, video recordings are filed away or destroyed. The two
-primary impediments to sharing are the lack of tools that allow easy video data sharing
-and a long-standing tradition of conducting research in the isolation of individual
-laboratories. As a result, countless hours of video data waste away on tapes and hard
-drives in laboratories all over the world.
 
-Video data sharing has both unique promise and special challenges. The unique
-promise arises from the nature of video and its propensity for reuse. In contrast to other
-forms of behavioral data, video is largely self-documenting, making data provenance a
-relatively minor issue. Moreover, because video captures much of the richness and
-complexity of behavior, videos can be used for many purposes—including those never
-imagined by the original researcher. By sharing video data, other researchers can reuse
-the data to ask new questions, assess previous interpretations, learn about methods
-and procedures, draw ideas and inspiration for new lines of research, and show
-excerpts for educational purposes in teaching.
+#INTRODUCTION
+Observing and analyzing behavior are fundamental activities in developmental science, and researchers expend considerable resources collecting behavioral observations. By far, the prevalent method for recording behavior is video, thus constituting the primary form of raw data in developmental science. Although collecting videos is a widespread and expensive practice, video data sharing is virtually non-existent within this discipline. Typically, after an original study is completed, video recordings are filed away or destroyed. The two primary impediments to sharing are the lack of tools that allow easy video data sharing and a long-standing tradition of conducting research in the isolation of individual laboratories. As a result, countless hours of video data waste away on tapes and hard drives in laboratories all over the world. At a perceived crossroads in the collection and sharing of scientific data, video data is a ripe area for developing the future of digital repositories and libraries.
 
-Video data sharing also poses special ethical challenges. Video often depicts
-participants’ faces, and their names are often spoken aloud. Because of this, sharing
-video data presents ethical challenges related to participants’ privacy. In contrast to
-other forms of behavioral data which are non-identifiable or can be easily de-identified,
-video data cannot be easily de-identified without significantly diminishing its value and
-richness. Therefore, any solution for video sharing must also provide appropriate policy
-and access frameworks to ensure appropriate protection of research participants.
+#THE PROJECT
+Video data sharing provides the potential to increase scientific transparency, accelerate the pace of discovery, capitalize on previous research investments, and preserve video data for generations to come. The Databrary project aims to exploit the promises of video data sharing and address the ethical challenges of sharing identifiable data in order to transform the culture of developmental science and build a community which embraces data sharing and values transparency. To accomplish this, the project must: build a web-based library and infrastructure for storing and sharing video and associated metadata; provide tools for organizing and managing data; create a policy framework to permit sharing of identifiable data while appropriately restricting access; and grow a community of researchers committed to open video data sharing.
 
-Video data also provides challenges for data indexing and discovery efforts. While
-watching through hours of collected videos may sometimes be enlightening, for shared
-video data to be most useful for reuse, researchers must also be able to find data
-relevant to their interests. Basic descriptions of collected datasets provide a simple
-index target, but may still cover hundreds of hours of video. Automated video analysis
-and tagging is an active but immature research area, and does not yet provide general
-solutions for arbitrary video data. However, researchers already collect and generate
-metadata about videos, including information about sessions (including date and
-location), research participants (often including demographic information), and study
-manipulations (such as different groups or conditions). They also often score,
-transcribe, or tag video at smaller scales, from frames to minutes. By encouraging and
-enabling researchers to follow standard conventions for these annotations, without
-interfering with the types of metadata they use or how they analyze it, videos can be
-more easily discovered and re-purposed.
+#THE OPPOTUNITY
+In designing a set of technologies and practices for creating and managing a video data repository, there are both unique promise and special challenges. The unique promise arises from the nature of video and its propensity for reuse. In contrast to other forms of behavioral data, video is largely self-documenting, making data provenance a relatively minor issue. Moreover, because video captures much of the richness and complexity of behavior, videos can be used for many purposes — including those never imagined by the original researcher, making it inherently valuable for purposes of reuse and re-analysis. By sharing video data, other researchers can reuse the data to ask new questions, assess previous interpretations, learn about methods and procedures, draw ideas and inspiration for new lines of research, and show excerpts for educational purposes in teaching.
 
-Video data sharing provides the potential to increase scientific transparency, accelerate
-the pace of discovery, capitalize on previous research investments, and preserve video
-data for generations to come. The Databrary project aims to exploit the promises of
-video data sharing and address the ethical challenges of sharing identifiable data in
-order to transform the culture of developmental science and build a community which
-embraces data sharing and values transparency. To accomplish this, the project must:
-build a web-based library and infrastructure for storing and sharing video and
-associated metadata; provide tools for organizing and managing data; create a policy
-framework to permit sharing of identifiable data while appropriately restricting access;
-and grow a community of researchers committed to open video data sharing.
+#CHALLENGES
+##ACCESS AND PRIVACY
+Though conceptualizing a shared repository for video data sharing is not without its difficulties. For one, it poses special ethical challenges. Video often depicts participants’ faces, and their names are often spoken aloud. Because of this, sharing video data presents challenges related to participants’ privacy. In contrast to other forms of behavioral data which are non-identifiable or can be easily de-identified, video data cannot be easily de-identified without significantly diminishing its value and richness. Therefore, any solution for video sharing must also provide appropriate policy and access frameworks to ensure appropriate protection of research participants.
 
-This paper will describe the current status of the Databrary project. We will address
-recent community-building efforts and development progress, the cultural, policy, and
-technical challenges that must be addressed, and the unique opportunities that this
-project presents if the challenges are to be met effectively.
+##METADATA CREATION / CURATION
+Video data also provides challenges for data indexing and discovery efforts. While video data might be self documenting, it is not self describing from a metadata perspective. Sure watching through hours of collected videos may sometimes be enlightening, to facilitate the reuse of video data, researchers must also be able to find aspects of that data relevant to their interests without having to comb through hours of it themselves. Basic descriptions of collected datasets provide a simple index target, but may still cover hundreds of hours of video. Automated video analysis and tagging is an active but immature research area, and does not yet provide general solutions for arbitrary video data. However, researchers may have already collected and generated metadata about videos, including information about sessions (including date and location), research participants (often including demographic information), and study manipulations (such as different groups or conditions). They also often score, transcribe, or tag video at smaller scales, from frames to minutes. Though this metadata may not follow a set standard across laboratories. And so one of the additional challenges in promoting a standard repository for these data would be to create a work-flow by which heterogeneous datasets might be stored and accessed by a common practice. By encouraging and enabling researchers to follow standard conventions for these annotations, without interfering with the types of metadata they use or how they analyze it, videos can be more easily discovered and re-purposed. 
+
+#DATABRARY'S APPOACH
+
 
 ### **Conclusion**
-> Summarize the take-home message from the presentation. What are the main points? It would be great if this were a part of the conversation around the conference theme.
+As a new take on the concept of research data repositories, Databrary seeks to meet the needs of researchers through the data management needs of their studies. In doing so, it creates a unique opportunity to standardize the language and practices with which developmental science researchers with large amounts of video data collect and share their data. With long term preservation and storage in mind - with the help of NYU Libraries - Databrary can also be in a unique position to model how research data repositories can connect to the larger stream of aggregate research data service departments and research data access across departments and institutions. 
 
 ### **References**
 > This is not compulsory but may help. Use any clear unambiguous reference style you like.
