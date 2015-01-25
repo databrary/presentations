@@ -217,17 +217,27 @@ Beyond that, we also plan to build a new, more efficient and structured annotati
 In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
 
 \section{Conclusions}
-%%dg - do we not want to have this as the last section?
 
-\subsection{Implications for Digital Libraries}
+Starting from the perspective of a general-purpose repository, we have introduced a number of significant restrictions to create a specialized, domain repository for specific types of data.
+By limiting both file and metadata organization to a flat (but overlapping) set of sessions and records, rather than supporting the full hierarchical richness of other systems, we can present and capture session-based research data with a cohesive and intuitive user interface.
+By focusing on video and audio recordings we can normalize presentation and discovery of data across the site, and also introduce temporal structure to data and annotations driven by the nature of these recordings.
+Although we allow a few types of additional data files, we encourage users with other types of rich data, such as physiological recordings, to store and link to those resources externally, ideally in similarly focused and better-suited repositories.
+Similarly, by targeting use cases around finding new uses for existing research data, rather than replication or meta-analysis, we can limit the scope of accepted data to the original recordings and early analysis phases that generate the most value, rather than trying to capture the entire provenance.
 
-There is active discussion around the role of repositories and libraries in archiving and providing access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
-In the approach laid out above, Databrary presents a functioning system for research data management that may bring data closer established library standards that achieve these goals.
-Ultimately, we hope to provide increased interoperability with library-based metadata schemas (Dublin Core, METS) and reach OAI-PMH compliance, so that data researchers add to Databrary can be automatically incorporated into federated library searches with other domain specific data repositories.
-By providing a refined API and assigning Digital Obejct Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
+Having made significant progress building ingest and data entry services that have let us grow the library, we now must turn our efforts towards discovery and reuse, finding ways to better describe and elaborate on collected data.
+To do this we look both to the original data contributors for ways that their existing analysis workflows can generate usable content descriptions, and to the community of researchers to label and comment on datasets as they explore.
+Thus we seek to incorporate these existing annotation processes into Databrary, both to capture and define these annotations as generalizable search terms, and to make these workflows more convenient by obviating existing file transfer and transformation burdens.
+Ultimately we hope to allow and capture instances of data reuse in this same way, so that content descriptions are aggregated from multiple annotation passes from different users and existing data can continuously increase in value for researchers.
 
-\subsection{Ongoing Challenges and Next Steps}
-  
+There is also active discussion around the role of repositories and libraries in archiving and providing access to research data \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014}.
+Although this is not directly within our purview, we have laid out a functioning system for research data management that may bring data closer established library standards that achieve these goals.
+We may be well positioned to provide interoperability with library-based metadata schemas (Dublin Core, METS) and reach OAI-PMH compliance, so that data researchers add to Databrary can be automatically incorporated into federated library searches with other domain specific data repositories.
+By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
+
+% this is kinda weird, but maybe suitable for a last paragraph?
+Our single-minded focus on making collected, identifiable recordings of human research available and reusable to a whole community of researchers gives us a novel perspective on building domain-specific research repositories.
+The success we've had in engaging, involving, and extracting data from researchers is due largely to this focus, but it has come at the cost of limitations in scope and difficulties of interoperability and discovery that many more traditional repositories avoid.
+By slowly growing our scope and relaxing some of these limitations, we hope to leverage more of the established knowledge of the library science community to start reaping their benefits.
 
 \section*{Acknowledgments}
 
