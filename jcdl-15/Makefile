@@ -7,6 +7,6 @@ default: paper.pdf
 %.bbl: %.aux $(addsuffix .bib,$(BIBFILES))
 	bibtex $* || touch $@
 
-%.pdf: %.tex %.bbl
+%.pdf %.aux: %.tex %.bbl
 	pdflatex -shell-escape -interaction=nonstopmode $<
 
