@@ -149,22 +149,21 @@ Since researchers can create whichever record types apply to their data, they ca
 This also allows users to either import or export data in what they consider the native directory structure by indicating the appropriate nesting of record types, along with the record variables themselves in traditional CSV formats.
 By providing some standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
 
-\subsubsection*{Annotations}
+\subsection{Annotations}
 
-%%dg - note on this section: 1) we can add tags to sessions and portions of sections 2) in adding tags to portions of sessions, we should be able to import data from desktop coding software as tags on portions of sessions.
+Establishing a timeline for each session allows temporally-positioned annotations to be attached to the session.
+Currently we support two types of annotations: structured, organizational annotations based on records and added by the data contributors; and simple annotations contributed by the community.
+Eventually we hope to extend both of these to support the full range of annotations performed during analysis, both directly on the web and imported from existing software.
 
-%%simple
-The establishing a timeline for each session allows temporally-positioned, simple annotations to be attached to that session.
-In addition to the structured and organizational annotations discussed in the next section, we currently support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
+First, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
+If any record relates to a part, scene, or section of a session---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only that appropriate part.
+This allows an additional type of organizational structure researchers employ, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos.
+This can also theoretically be used to represent annotations at a finer temporal scale, for example individual trials or events that are normally handled by off-line annotation software.
+However, the appropriate interfaces and tools to input or import these annotations are still being developed.
+
+Second, we support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
 In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
-
-%%structured
-Yet to be implemented is the ability to add structured annotations to sections of a session. Records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
-If any record only applies to part of a session, such as a single scene or section---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only that appropriate part.
-This allows the final type of organizational structure, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos. %might need to refit this idea in
-It also can be used to represent annotations at a finer temporal scale, for example individual trials or events that are normally handled by off-line annotation software.
-However, the appropriate interfaces and tools to input or import these annotations are still being developed.
 
 \subsection{Technical infrastructure}
 
