@@ -123,14 +123,6 @@ Files placed within a session can then be (optionally) positioned, much as in vi
 Although some advanced recording equipment provides automatic timestamping or synchronization than can be used, most researchers collecting multiple parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
 These sync points can then be used to manually place recordings on the timeline appropriately.
 
-\subsubsection*{Simple annotations}
-
-%%dg this feels like it might be padded a little bit.
-Once the timeframe of a session is established, this allows temporally-positioned annotations to be attached to the session.
-In addition to the structured and organizational annotations discussed in the next section, we currently support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
-Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
-In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
-
 \subsection{Records}
 
 An object called a record serves a number of purposes around session and metadata organization.
@@ -157,11 +149,20 @@ Since researchers can create whichever record types apply to their data, they ca
 This also allows users to either import or export data in what they consider the native directory structure by indicating the appropriate nesting of record types, along with the record variables themselves in traditional CSV formats.
 By providing some standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
 
-\subsubsection*{Structured annotations}
-%%dg - might confuse the audience a bit in the difference betweetn simple and structured annotations
-Finally, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
-That is, if any record only applies to part of a session, such as a single scene or section---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only the appropriate part.
-This allows the final type of organizational structure, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos.
+\subsubsection*{Annotations}
+
+%%dg - note on this section: 1) we can add tags to sessions and portions of sections 2) in adding tags to portions of sessions, we should be able to import data from desktop coding software as tags on portions of sessions.
+
+%%simple
+The establishing a timeline for each session allows temporally-positioned, simple annotations to be attached to that session.
+In addition to the structured and organizational annotations discussed in the next section, we currently support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
+Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
+In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
+
+%%structured
+Yet to be implemented is the ability to add structured annotations to sections of a session. Records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
+If any record only applies to part of a session, such as a single scene or section---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only that appropriate part.
+This allows the final type of organizational structure, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos. %might need to refit this idea in
 It also can be used to represent annotations at a finer temporal scale, for example individual trials or events that are normally handled by off-line annotation software.
 However, the appropriate interfaces and tools to input or import these annotations are still being developed.
 
@@ -208,8 +209,7 @@ This problem is compounded for us because we expect researchers not only to reus
 Recordings with potential value in one research area may be primarily labeled with contextual information from a different research area.
 Ultimately, making this determination requires direct, human observation of the recordings, and so a large part of solving the discovery problem will be simply to present researchers with short, representative samples from a variety of datasets.
 
-%%dg is any of the following redundant with the annotation discussion above?
-Another important source for search targets comes from annotations supplied both by the original researchers during analysis as well as by the community.
+Another important source for search targets would come from annotations supplied both by the original researchers during analysis as well as by the community.
 In the former case, normalization remains a concern, as most annotation schemes researchers employ involve opaque, symbolic or numeric codes with little semantic content.
 We are currently working to support import and export workflows for existing annotations tools that will be able to add meaningful definitions to these codes while researchers continue their current practices.
 Beyond that, we also plan to build a new, more efficient and structured annotation web interface enabling more of the analysis workflow directly within our system
