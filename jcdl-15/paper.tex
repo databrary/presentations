@@ -38,10 +38,6 @@ It uniquely captures the complexity of behavior, and when mined by human coders 
 Thus, video presents substantial opportunities for data reuse if challenges relating to tagging/annotation, search and discovery, and curation can be overcome.
 The Databrary data library represents one approach to meeting these challenges within a particular scholarly domain, the study of human and animal development.
 
-%%dg being that the conference them is big data, should we be trying to be more explicit about that?
-% big data is generally referring to "more rows" rather than larger files. I think the closest we get is the size of video files
-% which is already noted below. Just wondering if it makes sense to be more explicit or not.
-%%dg also preservation and discoverability - though maybe that's included in data management
 %%rg video is big/dense in time and space. But, much of the size is masked without intensive analysis by humans or machines. Compare it with brain imaging data. A typical brain imaging study might include 3-5 runs of 200 brain volumes with 30 128x128 pixel x 8 bit greyscale slices per volume, with each volume collected about every 2-3 sec (.33-.5 Hz). Video is much "bigger" because it samples space and time densely.
 \end{abstract}
 
@@ -100,9 +96,7 @@ At the top level of organization, we separate individual data contributions into
 Most researchers in the target domain organize their research activity around the collection and analysis of specific datasets; scholarly products like papers or presentations draw upon one or more datasets. 
 The volume enables Databrary to reflect the many-to-many structural relationship between datasets and studies in a flexible and powerful way.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
-These volumes are to some extent embeddable and referenceable, both among themselves and to and from external entities by DOI or URI.
-%%dg can we expand on the above sentence, what does this mean and what are the implications?
-%The remainder of this work will address the available structures for data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
+These volumes are citeable in that they are persistently identified (with a URI) and can cite external resources using a Digital Object Identifier (DOI) and an Open Researcher and Contributor ID (ORCID).
 
 Two structural elements comprise a volume: the \emph{session} and the \emph{record}.
 Sessions provide the primary container for data files, an elaboration on traditional file folders with additional temporal metadata. 
@@ -126,7 +120,6 @@ Doing so allows for more convenient human analysis of the data in standard playb
 
 A session container captures the relationships among data elements from a single data acquisition, capturing heterogeneous file types \emph{and} their absolute or relative temporal positioning.
 We use a timeline metaphor: Each session defines a time range, with absolute timestamps representing the exact time of data collection or relative positioning with an optional date.
-% good place for a screenshot?
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
 Although some advanced recording equipment provides automatic timestamping or synchronization features, most researchers who collect parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
 These sync points can then be used to manually place recordings on the timeline.
@@ -172,7 +165,6 @@ However, the appropriate interfaces and tools to input or import these annotatio
 Second, we support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
 In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}. Where research of community tagging provides evidence for the case that not many users actually do participate in tagging, we intend to leverage automated tagging through already existing metadata and analysis to seed a base of tags for reuse by the community \cite{Yang_Lu_Giles_2011, Farooq_etal_2007}.
-%%dg - might move the last sentence around, but provides a gist.
 
 \subsection{Technical infrastructure}
 
