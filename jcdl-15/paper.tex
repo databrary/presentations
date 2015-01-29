@@ -70,12 +70,11 @@ We have attempted to strike a balance between these extremes by making video and
 Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
 Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
 Video data collected in one context can often be used by others for different purposes with minimal explanation.
-This naturally reduces the problems of documentation and re-use that plague many flat-file datasets. % wanted to include raw, opaque data here, too
+This naturally reduces the problems of documentation and re-use that plague many flat-file datasets or repositories for data that require propietary software to view.
 However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}. In short, recordings pose challenges that older, less dynamic media do not \cite{Lanagan_Smeaton_2012}.
 
 Research using recordings typically proceeds with the addition of temporally-positioned annotations, either by direct observation or with the aid of simple visualization or analysis tools.
-Specialized %commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (Transana, Elan, CLAN, and Datavyu) 
-desktop software tools enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
+Specialized desktop software tools --- both commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (e.g. Transana, Elan, CLAN, and Datavyu) --- enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
 Most of these tools currently focus on a single recording, and despite the plethora of tools and features, there is little interoperability.
 Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for annotations themselves, even across studies performed by the same researcher \cite{?}. %Adolph, personal communication?
 
@@ -89,8 +88,6 @@ For datasets that are in the process of being collected, a well-defined user exp
 The following section provides specific details about the design and decision-making behind this unifying structure.
 
 \section{Data Architecture}
-
-%%dg would a figure illustration be helpful here? do we already have one?
 
 At the top level of organization, we separate individual data contributions into collections or packages called \emph{volumes}.
 Most researchers in the target domain organize their research activity around the collection and analysis of specific datasets; scholarly products like papers or presentations draw upon one or more datasets. 
@@ -233,7 +230,6 @@ Although resolving this complicated issue is not directly within our purview, we
 We may be well positioned to provide interoperability with library-based metadata schemas (such as export of data packages cross-walked to Dublin Core or METS schemas) and reach OAI-PMH compliance, so as to automatically incorporate the data that researchers add to Databrary into federated library searches with other domain specific data repositories.
 By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
 
-% this is kinda weird, but maybe suitable for a last paragraph?
 Our single-minded focus on making collected, identifiable recordings of human research available and reusable to a whole community of researchers gives us a novel perspective on building domain-specific research repositories.
 The success we've had in engaging, involving, and extracting data from researchers is due largely to this focus, but it has come at the cost of limitations in scope and difficulties of interoperability and discovery that many more traditional repositories avoid.
 By slowly growing our scope and relaxing some of these limitations, we hope to leverage more of the established knowledge of the digital library community in order to make this repository more globally applicable to the storage and accessibility of research data.
