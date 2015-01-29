@@ -1,7 +1,7 @@
 \documentclass{sig-alternate}
 
 \begin{document}
-\conferenceinfo{JCDL}{'15 Knoxville, Tennesse USA}
+\conferenceinfo{JCDL}{'15 Knoxville, Tennessee USA}
 
 \title{Databrary: A digital data library for sharing research video}
 
@@ -31,6 +31,13 @@ Rick O. Gilmore\\
 \maketitle
 
 \begin{abstract}
+
+Video and audio recordings serve as a primary data source in many fields, especially in the social and behavioral sciences. 
+Video is dense in both time and space.
+It uniquely captures the complexity of behavior, and when mined by human coders or computer algorithms, video provides big streams of data that can yield novel scientific insights \cite{raudies_visual_2014}.
+Thus, video presents substantial opportunities for data reuse if challenges relating to tagging/annotation, search and discovery, and curation can be overcome.
+The Databrary data library represents one approach to meeting these challenges within a particular scholarly domain, the study of human and animal development.
+
 %%dg being that the conference them is big data, should we be trying to be more explicit about that?
 % big data is generally referring to "more rows" rather than larger files. I think the closest we get is the size of video files
 % which is already noted below. Just wondering if it makes sense to be more explicit or not.
@@ -78,8 +85,8 @@ Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for
 
 \subsection{Approach}
 
-Our approach has been to provide as much context as possible around the primary recordings  while still providing contributors flexibility that they have come to expect from their own, possibly \textit{ad hoc}, archival systems.
-To keep datasets intact, Databrary incorporates allows heterogeneous flat-file data, materials, and references to be associated with the primary video or audio recordings.
+Our approach has been to provide consistent structure related to the storage and presentation of primary recordings while providing contributors the flexibility that they have come to expect from their own, possibly \emph{ad hoc}, archival systems.
+To keep datasets intact, Databrary associates heterogeneous flat-file data, materials, and references with the primary video or audio recordings.
 We provide a standard structure for recordings and their associated metadata, including context, contents, and annotations. This facilitates the storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
 We achieve this conformance for previously collected datasets through a combination of in-depth investigative curation and automated, server-side ingest processes.
 For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to actively curate their own research data as they acquire it.
@@ -89,64 +96,66 @@ The following section provides specific details about the design and decision-ma
 
 %%dg would a figure illustration be helpful here? do we already have one?
 
-At the top level of organization, we separate individual data contributions into collections or packages variously referred to as datasets, studies, or volumes.
+At the top level of organization, we separate individual data contributions into collections or packages called \emph{volumes}.
+Most researchers in the target domain organize their research activity around the collection and analysis of specific datasets; scholarly products like papers or presentations draw upon one or more datasets. 
+The volume enables Databrary to reflect the many-to-many structural relationship between datasets and studies in a flexible and powerful way.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
 These volumes are to some extent embeddable and referenceable, both among themselves and to and from external entities by DOI or URI.
 %%dg can we expand on the above sentence, what does this mean and what are the implications?
-The remainder of this work will address the available structures for data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
+%The remainder of this work will address the available structures for data within these volumes, highlighting how these structures allow commonalities between volumes to be represented.
 
-There are two key, innovative structural elements that comprise a volume: the \emph{session} and the \emph{record}.
-Sessions are the primary container for data files, an elaboration on traditional file folders with additional temporal metadata.
-Records are used to represent all types of scalar variable-based data, traditionally contained in flat files or databases, as well as to provide an organizational structure among sessions.
+Two structural elements comprise a volume: the \emph{session} and the \emph{record}.
+Sessions provide the primary container for data files, an elaboration on traditional file folders with additional temporal metadata. 
+Records represent all types of scalar variable-based data, traditionally contained in flat files or databases, as well as provide an organizational structure among sessions.
 The combination of these two elements allows data and metadata to be flexibly related and annotated.
 
 \subsection{Sessions}
 
-The session in Databrary draws from accepted and documented practices around how researchers record activities with individuals.
-Recordings are made either for the purpose of a later, closer review or analysis, or simply to document and verify measurements and observations made during the collection \cite{Bakeman_2012}.
-Thus, the recording itself is often the core item of research, representing a single data collection, experiment, trial, visit, or case depending on the nature of the research.
-However, in many cases a single session can comprise multiple videos: from serial data streams due to recording equipment producing multiple files, and/or in parallel from multiple data capture sources operating at the same time.
+The session in Databrary draws upon documented practices in the ways researchers use video. 
+The session was designed to organize recordings and related data streams in a way familiar to researchers, keeping data in its rawest and most flexible form without requiring  modifications that reduce the precision or utility of the data to others.
+
+Recordings are often the core component of data collection.
+Recordings provide raw materials for subsequent detailed analysis or documentation about what measurements were made during the collection \cite{Bakeman_2012}.
+In some cases a single session can comprise multiple videos, either serially in time representing different segments of activity or in parallel from multiple cameras recording the same events.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
 
 When working with multiple primary recordings, researchers often combine these raw files into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
-Secondary data is also often overlaid or combined in this way, such as by adding an additional waveform or frequency visualization below a video, or by overlaying cross-hairs representing location or gaze data.
-Doing so allows for more convenient human analysis of the data in standard playback tools that only support a single data stream, but also loses some of the raw data, by obscuring, masking, or downsampling spatially or temporally.
-The session was thus designed to organize original recordings in a way that is familiar to researchers, keeping their data in the rawest and most flexible form without requiring these modifications.
-This additionally allows for greater options in reuse by other researchers.
+Researchers may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing location or gaze data.
+Doing so allows for more convenient human analysis of the data in standard playback tools that support single data streams, but this spatial or temporal downsampling can obscure or mask some data patterns.
 
-A session object captures these relationships to represent a single data acquisition, comprising not only arbitrary files but also their absolute or relative temporal positioning.
-The metaphor we use here is a timeline, wherein each session defines a time range, with absolute timestamps representing the exact time of data collection, or relative positioning defined by a 0 starting point of the collection (or potentially any other meaningful wall-time units) with an optional date.
+A session container captures the relationships among data elements from a single data acquisition, capturing heterogeneous file types \emph{and} their absolute or relative temporal positioning.
+We use a timeline metaphor: Each session defines a time range, with absolute timestamps representing the exact time of data collection or relative positioning with an optional date.
 % good place for a screenshot?
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
-Although some advanced recording equipment provides automatic timestamping or synchronization than can be used, most researchers collecting multiple parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
-These sync points can then be used to manually place recordings on the timeline appropriately.
+Although some advanced recording equipment provides automatic timestamping or synchronization features, most researchers who collect parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
+These sync points can then be used to manually place recordings on the timeline.
+In this way, the session container represents the structure of a data collection session but retains significant flexibility.
 
 \subsection{Records}
 
-An object called a record serves a number of purposes around session and metadata organization.
-A record itself represents any number of variables or measurements: what would traditionally be a row of a database or flat file.
-Records can thus represent most any item of analysis or organization typically represented in this form.
-For example, a record may represent an individual participant within the dataset and contain their subject identifier, gender, birth date, and any other demographic, survey, or measurement data about that individual.
-A record could also represent a particular experimental trial, task, condition, location, or outcome, and contain variables with corresponding measurements, parameters, descriptions.
-Records are thus labeled and divided by the type of entity they represent.
-The variables themselves are textual, numeric, date, or potentially any other scalar data as in any traditional tabular data interface, with the records of a given type then constituting the tabular rows.
+Record objects represent any number of variables, measurements, or items of analysis within a session: What would traditionally be a row of a database or flat file.
+A record may represent an individual participant and contain a subject identifier, gender, birth date, and demographic, survey, or measurement data about that person.
+It could also represent a particular experimental trial, task, condition, location, or outcome, and contain variables with corresponding measurements, parameters, or descriptions.
+Accordingly, records are labeled and organized by the type of entity they represent.
+The variables themselves are textual, numeric, date, or any scalar data form.
 
-Records are also used to organize sessions.
-We observed that different researchers organize their data files in different ways according to the type of research.
+Records help to organize sessions.
+We have observed that different researchers organize data files in different ways.
 Many consider participants to be the primary item of analysis, and so create a filesystem directory for each participant.
-Others organize their data based on date, experimental condition, phase of analysis, or age groups.
-Sometimes even single video files are split up into segments according to scene or activity, and researchers consider this property the primary organizational principal.
+Others organize their data based on date, experimental condition, phase of analysis, or age group.
+Sometimes even single video files are split up into segments according to scene or activity, and researchers consider this property the primary organizational principle.
 
-Rather than trying to handle all of these strategies separately, we instead leverage records.
-That is, records can be attached to sessions, or, equivalently, sessions can be grouped into records, in a many-to-many relationship.
-For example, in a traditional psychology study, each participant may appear in exactly one session, so the collected information about that participant, added to the record, is attached one-to-one with their session.
-A dataset may also be composed of a few different sub-sets based on experimental procedures or location, and here each session would be placed into exactly one of these few records.
-In some research, multiple participants may also appear in multiple sessions, such as recordings of the same class of students over a span of time.
+Rather than trying to handle all of these strategies separately, Databrary leverages the power of records.
+Records can be attached to sessions, or, sessions can be grouped into records, in a many-to-many relationship.
+For example, in one type of lab-based psychology study, a participant may appear in exactly one session, so the collected information about that participant, added to a record, is attached in a one-to-one relationship with a specific session.
+In other research, multiple participants may appear in multiple sessions, such as recordings of the same class of students over a span of time.
+A dataset may consist of distinct sub-sets of participants based on differences in experimental procedures or locations; here each session would be placed into a record representing the procedure or location.
 
-Since researchers can create whichever record types apply to their data, they can then choose to group their data by whichever record type they wish.
-This also allows users to either import or export data in what they consider the native directory structure by indicating the appropriate nesting of record types, along with the record variables themselves in traditional CSV formats.
-By providing some standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
+Since researchers can create whichever record types apply to their data, they can also choose to group their data as they wish.
+This allows users to import data in what they consider the native directory structure by indicating the appropriate nesting of record types along with record variables themselves in traditional CSV formats. 
+The same flexbility applies to data export.
+By providing standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
 
 \subsection{Annotations}
 
