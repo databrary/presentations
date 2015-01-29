@@ -22,7 +22,7 @@ Drew Gordon\\
 	\email{drew@databrary.org}
 \alignauthor
 Rick O. Gilmore\\
-	\affaddr{The Pennsylvania State University}\\
+	\affaddr{Penn State}\\
 	\affaddr{Department of Psychology}\\
 	\affaddr{University Park, PA, USA}\\
 	\email{rogilmore@psu.edu}
@@ -47,43 +47,43 @@ Rick O. Gilmore\\
 
 \section{Introduction}
 
-Video and audio recordings play a key role in many areas of research and often serves as a primary data source in domains such as psychology, linguistics, education, anthropology, and numerous other fields.
-Unfortunately, in standard practice, the use of video data is restricted to the researchers who collect them, due largely to the perceived requirements around privacy restrictions.
-The goal of the Databrary project is to create tools that allow video data to be documented, organized, and shared so that other researchers can discover and re-purpose them for their own research interests.
-Accordingly, Databrary, with an initial target audience of developmental psychology and related fields, has created a web-based library to accommodate the storage and organization of video data, capture contextual information necessary for re-use, and standardize across datasets without placing undue burden on data contributors.
+Video and audio recordings serve as a primary data source in psychology, linguistics, education, anthropology, and numerous other fields, especially the study of human and animal development.
+Unfortunately, researchers who collect video rarely share recordings with others, due largely to perceived requirements associated with privacy restrictions.
+The goal of the Databrary project is to increase the repurposing and reuse of recordings, especially video, by creating tools that allow video to be documented, organized, and shared among researchers.
+We have created a web-based data library to accommodate the storage and organization of video data, capture contextual information necessary for reuse, and standardize across datasets without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
 
-Existing research data repositories present two competing approaches that need to be balanced out.
-A system might tend towards more generality, providing unstructured storage of arbitrary files.
-Alternatively, it can present a rigorously structured schema that requires contributors to format contributions in a highly specific manner.
-While general-purpose repositories are well-suited for archival of entire datasets and flexible hosting of resources, they do not facilitate detailed search, understanding, or re-use across various datasets without a great deal of curation \cite{Peer_2012}.
-Targeted repositories, on the other hand, generate large-scale, homogeneous data sources for meta- and re-analysis, but are limited to specific domains and research questions, losing the full richness, context, and innovation of the source materials and field.
-We have attempted to strike a balance between these extremes by focusing on video and audio recordings as the unifying factor and allowing additional structured and unstructured resources to be built and discovered around this core.
+\subsection{Balancing Generality and Specificity}
+
+Research data repositories require a balance between generality and specificity.
+Archives that permit the unstructured storage of arbitrary files lie at one extreme;
+those that present a rigorously structured schema and required contribution formats lie at the other.
+The flexibility of general-purpose repositories make them especially well-suited to the archival of entire datasets, but these systems do not facilitate search, understanding, or re-use without extensive, usually labor-intensive, curation \cite{Peer_2012}.
+Targeted repositories, on the other hand, generate large-scale, homogeneous data sources that facilitate meta- and re-analysis, but serve only specific domains. 
+We have attempted to strike a balance between these extremes by making video and audio recordings the unifying focus of Databrary. This allows additional structured and unstructured resources to be built around and discovered through this functional core.
 
 \subsection{Video-driven research}
 
-We have intentionally chosen to focus Databrary on hosting human-consumable, self-documenting, timeseries data: video and audio recordings.
-While these types of data are an accessible source for research analysis, they also present additional challenges \cite{Lanagan_Smeaton_2012}.
-Recordings can be and largely are consumed and analyzed, at least initially, without sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
-In particular, video data collected in one context can often be used by others for different purposes with minimal explanation, as the nature of the subjects and activity are readily apparent.
-This naturally reduces the problems of documentation and re-use that plague most flat-file datasets. % wanted to include raw, opaque data here, too
-However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
+Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
+Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
+Video data collected in one context can often be used by others for different purposes with minimal explanation.
+This naturally reduces the problems of documentation and re-use that plague many flat-file datasets. % wanted to include raw, opaque data here, too
+However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}. In short, recordings pose challenges that older, less dynamic media do not \cite{Lanagan_Smeaton_2012}.
 
-Research using recordings of these types typically proceeds by annotating or scoring raw data.
-In order to extract value from recordings for further analysis, researchers add temporally-positioned annotations, either by direct observation or with the aid of simple visualizations or analysis tools.
-Myriad specialized desktop software tools are employed to review video and audio to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
-Most of these tools currently focus on a single recording file, and despite the plethora of tools and features, there is little interoperability.
-Moreover, there is almost no standardization of these annotations themselves, even across studies performed by the same researcher \cite{?}.
+Research using recordings typically proceeds with the addition of temporally-positioned annotations, either by direct observation or with the aid of simple visualization or analysis tools.
+Specialized %commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (Transana, Elan, CLAN, and Datavyu) 
+desktop software tools enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
+Most of these tools currently focus on a single recording, and despite the plethora of tools and features, there is little interoperability.
+Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for annotations themselves, even across studies performed by the same researcher \cite{?}. %Adolph, personal communication?
 
 \subsection{Approach}
 
-Databrary's approach to data is to provide as much context around the primary recordings as possible while still providing contributors some flexibility.
-To keep datasets intact, Databrary can incorporate heterogeneous datasets within our target domain by allowing secondary, general-purpose flat-file data, materials, and references to be associated with the primary data.
-This facilitates storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
-At the same time, it provides a common, standard structure for recordings and their associated metadata, including context, contents, and annotations.
+Our approach has been to provide as much context as possible around the primary recordings  while still providing contributors flexibility that they have come to expect from their own, possibly \textit{ad hoc}, archival systems.
+To keep datasets intact, Databrary incorporates allows heterogeneous flat-file data, materials, and references to be associated with the primary video or audio recordings.
+We provide a standard structure for recordings and their associated metadata, including context, contents, and annotations. This facilitates the storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
 We achieve this conformance for previously collected datasets through a combination of in-depth investigative curation and automated, server-side ingest processes.
-For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to contribute and organize all of their research data as they proceed with their study.
-The following section provides specific detail on the design and decision-making behind this unifying structure.
+For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to actively curate their own research data as they acquire it.
+The following section provides specific details about the design and decision-making behind this unifying structure.
 
 \section{Data Architecture}
 
