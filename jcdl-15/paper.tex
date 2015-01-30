@@ -77,6 +77,20 @@ This structure facilitates the capture, standardization, discovery, and understa
 We achieve this conformance through in-depth, investigative curation of previously collected datasets, along with familiar user interfaces allowing researchers to structure their own research data as they acquire it.
 In the future, we hope to capture additional annotation data researchers already produce while analyzing recordings to further improve our discovery capabilities.
 
+\subsection*{Repository Overview}
+
+Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
+It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
+These files comprise 2,400 sessions and are covered by 1,300 metadata records (including 1,100 individual participants).
+Data originates from 35 individual contributors across 25 different universities.
+
+Databrary is a new, cohesive web application, built in Scala on the Play Framework\footnote{http://playframework.com/} to enable a responsive user interface, a complete API, and high-performance streaming.
+Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
+All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
+This transcoding utilizes the high performance computing cluster at the host campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
+The user interface is built primarily on the Angular web framework\footnote{http://angularjs.org/}, and all data access is performed through an open JSON API.
+Although hosted data are protected, all source code is released under a GPLv3 license on github\footnote{http://github.com/databrary}.
+
 \section{Data Architecture}
 
 At the top level of organization, we separate individual data contributions into collections or packages called \emph{volumes}.
@@ -154,22 +168,7 @@ Such annotations can also be added through our API by automated video analysis a
 In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
 There may also be useful automated approaches for seeding tags to be refined by the community based on existing metadata and analysis \cite{Yang_Lu_Giles_2011,Farooq_etal_2007,Giles2013}.
 
-\subsection{Technical infrastructure}
-
-%%dg - voting to put this and the repository section up higher in the paper, Approach, maybe?
-Databrary is a new, cohesive web application, built in Scala on the Play Framework\footnote{http://playframework.com/} to enable a responsive user interface, a complete API, and high-performance streaming.
-Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
-All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
-This transcoding utilizes the high performance computing cluster at the host campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
-The user interface is built primarily on the Angular web framework\footnote{http://angularjs.org/}, and all data access is performed through an open JSON API.
-Although hosted data are protected, all source code is released under a GPLv3 license on github\footnote{http://github.com/databrary}.
-
-\section{Repository}
-
-Databrary accepted contributions beginning in early 2014 and opened for general use in October 2014.
-It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
-These files comprise 2,400 sessions and are covered by 1,300 records (including 1,100 individual participants).
-Data originates from 35 individual contributors across 25 different universities.
+\section{Interface and Interoperability}
 
 \subsection{Normalization}
 
