@@ -38,7 +38,7 @@ Recordings present unique opportunities for reuse and reanalysis for novel scien
 However, there are numerous technical and policy challenges preventing existing recordings from being accessed and reused by other researchers.
 By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share these data in a standardized way.
 There are remaining challenges around discovery and annotation, and we discuss some options and initial approaches.
-While many of Databrary's strengths have derived from its focus on a particular scholarly domain, many of these issues have broader relevance to the digital library community.
+While many of Databrary's strengths have derived from its focus on particular scholarly domains, many of these issues have broader relevance to the digital library community.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -49,50 +49,48 @@ While many of Databrary's strengths have derived from its focus on a particular 
 \keywords{Data sharing, open science, video, psychology, developmental science}
 
 \section{Introduction}
+%video data are special because they are reusable
+Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
+Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
+Video data collected in one context can often be used by others for different purposes with minimal explanation.
+This naturally reduces the problems of documentation and re-use that plague many flat-file datasets or repositories for data that require proprietary software to view.
+However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013, Lanagan_Smeaton_2012}.
 
+%video data are not reused, databrary aims to provide solutions that allow for reuse.
 Video and audio recordings serve as a primary data source in psychology, linguistics, education, anthropology, and numerous other fields, and especially in the study of human development.
 Unfortunately, researchers who collect recordings rarely share with others, due largely to perceived requirements associated with privacy restrictions.
-The goal of the Databrary project is build tools and policies that simplify repurposing and reuse of recordings.
-We have created a web-based data library to accommodate the storage and organization of video data, capture contextual information necessary for reuse, and standardize across datasets without placing undue burden on data contributors.
+%say this better: This inhibits reuse. 
+To address this problem, the Databrary project aims to build tools and policies that allow repurposing and reuse of recordings.
+We have created a web-based data library to accommodate the storage and organization of video data, capture contextual information necessary for reuse, and create standardization across datasets that enable discovery without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
 
 \subsection{Balancing Generality and Specificity}
 
 Research data repositories require a balance between generality and specificity.
 Archives that permit the unstructured storage of arbitrary files lie at one extreme; those that present a rigorously structured schema and required contribution formats lie at the other.
-The flexibility of general-purpose repositories make them especially well-suited to the archival of entire datasets, but these systems do not facilitate search, understanding, or re-use without extensive, usually labor-intensive, curation \cite{Peer_2012}.
+The flexibility of general-purpose repositories make them especially well-suited to the archival of entire datasets, but these systems do not facilitate search, understanding, or re-use without extensive, usually labor-intensive, curation to summarize or extract \cite{Peer_2012}.
 Targeted repositories, on the other hand, generate large-scale, homogeneous data sources that facilitate meta- and re-analysis, but are limited to specific research questions, losing the full richness, context, and innovation of the source materials and field.
-We have attempted to strike a balance between these extremes by making video and audio recordings the unifying focus of Databrary.
-This allows additional structured and unstructured resources to be built around and discovered through this functional core.
-
-\subsection{Video-driven research}
-
-Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
-Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
-Video data collected in one context can often be used by others for different purposes with minimal explanation.
-This naturally reduces the problems of documentation and re-use that plague many flat-file datasets or repositories for data that require proprietary software to view.
-However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013}.
-In short, recordings pose challenges that older, less dynamic media do not \cite{Lanagan_Smeaton_2012}.
-
-Research using recordings typically proceeds with the addition of temporally-positioned annotations, either by direct observation or with the aid of simple visualization or analysis tools.
-Specialized desktop software tools---both commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (e.g., Transana, Elan, CLAN, and Datavyu)---enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
-Most of these tools currently focus on a single recording, and despite the plethora of tools and features, there is little interoperability.
-Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for annotations themselves, even across studies performed by the same researcher. %Adolph, personal communication?
 
 \subsection{Approach}
-
-Our approach has been to provide consistent structure related to the storage and presentation of primary recordings while providing contributors the flexibility that they have come to expect from their own, possibly \emph{ad hoc}, archival systems.
-To keep datasets intact, Databrary associates heterogeneous flat-file data, materials, and references with the primary video or audio recordings.
+%How databrary uniquely can deal with this problem because of its focus on video: by focusing on specific domain and focusing primarily on video, and inferring structure from actual data, databary has figured out how to standardize enough of the contextual metadata to facilitate understanding/enable re-use. 
 We provide a standard structure for recordings and their associated metadata, including context, contents, and annotations.
 This facilitates the storage and retrieval of data more closely mapped to the original context in which it was collected and analyzed.
+%our novel contribution to this is the identification of generalizable set of principles around which to structure this contextual metadata, which enables re-use of recordings at an unprecendented scale. 
+%annotating data is unique advantage of video, hope to leverage add'l data generated during analysis (i.e. annotations) to solve remaining problem is search.
+
+We have attempted to strike a balance between these extremes by making video and audio recordings the unifying focus of Databrary.
+This allows additional structured and unstructured resources to be built around and discovered through this functional core.
+Our approach has been to provide consistent structure related to the storage and presentation of primary recordings while providing contributors the flexibility that they have come to expect from their own, possibly \emph{ad hoc}, archival systems.
+To keep datasets intact, Databrary associates heterogeneous flat-file data, materials, and references with the primary video or audio recordings.
+
 We achieve this conformance for previously collected datasets through a combination of in-depth investigative curation and automated, server-side ingest processes.
-For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to actively curate their own research data as they acquire it.
+For datasets that are in the process of being collected, a well-defined user experience provides a platform for researchers to actively curate their own research data as they acquire it. 
 The following section provides specific details about the design and decision-making behind this unifying structure.
 
 \section{Data Architecture}
 
 At the top level of organization, we separate individual data contributions into collections or packages called \emph{volumes}.
-Most researchers in the target domain organize their research activity around the collection and analysis of specific datasets; scholarly products like papers or presentations draw upon one or more datasets.
+Most researchers in the target domains organize their research activity around the collection and analysis of specific datasets; scholarly products like papers or presentations draw upon one or more datasets.
 The volume enables Databrary to reflect the many-to-many structural relationship between datasets and studies in a flexible and powerful way.
 Volumes can be associated with a minimal amount of metadata (title, description, permissions, etc.) as well as additional files (documents and other materials).
 These volumes are citeable in that they are persistently identified (with a URI) and can cite external resources using a Digital Object Identifier (DOI) and an Open Researcher and Contributor ID (ORCID).
@@ -125,24 +123,24 @@ These sync points can then be used to manually place recordings on the timeline.
 In this way, the session container represents the structure of a data collection session but retains significant flexibility.
 
 \subsection{Records}
+A record can represent many things that are typically conceived of as a row of a database.
+Each may represent a single data sample, such as a participant, dyad, classroom, a level of analysis, such as an experimental trial, task, condition, or location, or some other factor. 
+A record is thus defined by one of the above types along with any number of scalar values, which can be textual, numeric, or date.
+In the case of a record representing an individual participant, these values might include subject identifier, gender, birth date, demographic information, measurement data, or other collected variables.
+For other record types, these values may include relevant independent variables, parameters, or descriptions. 
+We can thus display the records of a given type as a table, with the values of each record constituting a row.
 
-Record objects represent any number of variables, measurements, or items of analysis within a session: What would traditionally be a row of a database or flat file.
-A record may represent an individual participant and contain a subject identifier, gender, birth date, and demographic, survey, or measurement data about that person.
-It could also represent a particular experimental trial, task, condition, location, or outcome, and contain variables with corresponding measurements, parameters, or descriptions.
-Accordingly, records are labeled and organized by the type of entity they represent.
-The variables themselves are textual, numeric, date, or any scalar data form.
-
-Records help to organize sessions.
-We have observed that researchers organize data files in substantially different ways.
-Many consider participants to be the primary focus of analysis, and so create a filesystem directory for each participant.
-Others organize their data based on date, experimental condition, phase of analysis, or age group.
+In addition to containing values, records are also used to organize sessions.
+We have found that different researchers organize data files in substantially different ways.
+Researchers differentially consider their primary organizational unit, often depending on the primary focus of analysis for their specific study or sub-domain.
+They may organize their data by participants, session date, experimental condition, phase of analysis, or age group.
 Sometimes even single video files are split up into segments according to scene or activity, and researchers consider this property the primary organizational principle.
 
 Rather than trying to handle all of these strategies separately, Databrary leverages the power of records.
 Records can be attached to sessions, or, sessions can be grouped into records, in a many-to-many relationship.
-For example, in one type of lab-based psychology study, a participant may appear in exactly one session, so the collected information about that participant, added to a record, is attached in a one-to-one relationship with a specific session.
+For example, a study participant may appear in exactly one session, so the collected information about that participant, added to a record, is attached in a one-to-one relationship with a specific session.
 In other research, multiple participants may appear in multiple sessions, such as recordings of the same class of students over a span of time.
-A dataset may consist of distinct sub-sets of participants based on differences in experimental procedures or locations; here each session would be placed into a record representing the procedure or location.
+% for brevity, can we either exclude or condense this sentence?: A dataset may consist of distinct sub-sets of participants based on differences in experimental procedures or locations; here each session would be placed into a record representing the procedure or location.
 
 Since researchers can create whichever record types apply to their data, they can also choose to group their data as they wish.
 This allows users to import data in what they consider the native directory structure by indicating the appropriate nesting of record types along with record variables themselves in traditional CSV formats.
@@ -152,6 +150,12 @@ By providing standardization of record types, we can also perform broad, meta-se
 \subsection{Annotations}
 
 % rog this section needs work.
+
+Research using recordings typically proceeds with the addition of temporally-positioned annotations, either by direct observation or with the aid of simple visualization or analysis tools.
+Specialized desktop software tools---both commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (e.g., Transana, Elan, CLAN, and Datavyu)---enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
+Most of these tools currently focus on a single recording, and despite the plethora of tools and features, there is little interoperability.
+Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for annotations themselves, even across studies performed by the same researcher. 
+%moved ^ from intro
 
 Establishing a timeline for each session allows temporally-positioned annotations to be attached to the session.
 Currently we support two types of annotations: structured annotations based on records and added by the data contributors; and simple annotations contributed by the community.
@@ -179,21 +183,21 @@ Although hosted data are protected, all source code is released under a GPLv3 li
 
 \section{Repository}
 
-The Databrary website accepted contributions beginning in early 2014 and opened for general use in October 2014.
+Databrary accepted contributions beginning in early 2014 and opened for general use in October 2014.
 It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
 These files comprise 2,400 sessions and are covered by 1,300 records (including 1100 individual participants).
 Data originates from 35 individual contributors across 25 different universities.
 
 \subsection{Normalization}
 
-Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
-We also allow allow users, using certain portable formats (flat-files, documents, images), to include any data that cannot be encompassed by our standard formats.
+%Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
+We allow users, using certain portable formats (flat-files, documents, images), to include any data that cannot be encompassed by our standard formats.
 In this way, we can incorporate data which may be relevant for re-use but not broadly adopted by the community, without making the system too rigid.
 
 Here we have also introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables (and values within categorical data types), and tag keywords.
 We have adopted an approach that encourages adherence to existing standardized options but  allows new types to be created as the data require it.
 Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered.
-For many previously collected datasets, this has proven the most effective method to learn from data and avoid burdening contributors.
+For many previously collected datasets, this has proven the most effective method to infer from data and avoid burdening contributors.
 However, since we expect the bulk of the data in the library to come from newly collected sources (due largely to privacy constraints on existing datasets), we have additionally taken a distinct, user-driven approach.
 
 We found that while some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools, often using a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and available filesystem storage.
@@ -201,7 +205,9 @@ This suggested the opportunity to supply a cohesive data management platform whe
 Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset through liberal use of auto-completion, suggestions, and drop-down options.
 With the considerable benefit of reducing storage requirements within researcher's labs, and often adding convenience over existing practices, this has proven an attractive prospect for researchers.
 
-Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
+Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to 
+
+particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
 
 \subsection{Discovery}
 
