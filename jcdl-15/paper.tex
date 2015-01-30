@@ -173,7 +173,7 @@ Data originates from 35 individual contributors across 25 different universities
 
 \subsection{Normalization}
 
-Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
+Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample\-/frame-rates.
 We additionally allow users, using certain portable formats (flat files, documents, images), to include data is not encompassed by our standard formats, but which may still be relevant for reuse.
 Beyond that, we have introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables, and tag keywords.
 We have adopted an approach that encourages adherence to existing standardized options but still allows new types to be created as the data require it.
@@ -200,19 +200,18 @@ In this way, Databrary will allow researchers to work with their recordings dire
 
 \section{Conclusions}
 
-Starting from the perspective of a general-purpose repository, we have introduced a number of  restrictions to create one specialized for specific types of data.
-By focusing on video and audio recordings we can normalize presentation and discovery of data across the site, and also introduce temporal structure to data and annotations driven by the nature of these recordings.
+We have built a research data repository focused on video and audio recordings that allows for normalized presentation and discovery of data across the site and introduces temporal structure to data and annotations driven by the nature of these recordings.
 By limiting both file and metadata organization to a flat (but overlapping) set of sessions and records, we capture session-based research data within a cohesive and intuitive user interface.
 Although we allow additional data files, we encourage users with other types of rich data, such as physiological recordings, to store and link to those resources externally.
 Similarly, by targeting reuse of existing research data, rather than replication or meta-analysis, we limit the scope of accepted data to the original recordings and early analysis phases that generate the most value.
+Focus on a particular research domain allows us to achieve a sustainable balance between standardization and flexibility without burdening contributors.
 
 Having made significant progress building ingest and data entry services that have let us grow the library, we now must turn our efforts towards discovery and reuse, finding ways to better describe and elaborate on collected data.
 To do this we look both to the original data contributors for ways that their existing analysis workflows can generate usable content descriptions, and to the community of researchers to label and comment on datasets as they explore.
 Thus we seek to incorporate these existing annotation processes into Databrary, both to capture and define these annotations as generalizable search terms, and to make these workflows more convenient by obviating existing file transfer and transformation burdens.
 Ultimately we hope to allow and capture instances of data reuse in this same way, so that content descriptions are aggregated from multiple annotation passes from different users and existing data can continuously increase in value for researchers.
-%Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
 
-There is also active discussion around the role of repositories and libraries in archiving and providing access to research data, where the roles and responsibilities between libraries and research departments is not entirely established \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014, Pinfield_etal_2014}.
+There is also active discussion around the role of repositories and libraries in archiving and providing access to research data, where the roles and responsibilities between libraries and research departments is not entirely established \cite{Castelli_etal_2013,Nielson_Hjørland_2014,Macmillan_2014,Pinfield_etal_2014}.
 Although resolving this complicated issue is not directly within our purview, we have laid out a functioning system for research data management that may bring data closer established library standards that achieve these goals.
 We may be well positioned to provide interoperability with library-based metadata schemas (such as export of data packages cross-walked to Dublin Core or METS schemas) and reach OAI-PMH compliance, so as to automatically incorporate the data that researchers add to Databrary into federated library searches with other domain specific data repositories.
 By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
