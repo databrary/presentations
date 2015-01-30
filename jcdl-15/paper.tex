@@ -106,7 +106,7 @@ The combination of these two elements allows data and metadata to be flexibly st
 Sessions provide a container for raw materials and measurements that were made during a data collection \cite{Bakeman_2012}.
 As recordings are often the core component of a data collection, a session in many cases is defined by a single recording.
 In some cases a single session comprises multiple videos, either serially in time representing different segments or in parallel from multiple cameras recording the same events.
-These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
+These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys. All of which have specific and critical temporal relationships with the primary data.
 
 When working with multiple files, researchers often combine them into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
@@ -192,7 +192,7 @@ Beyond that, we also plan to build a new, more efficient and structured annotati
 In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
 
 There is also active discussion around the role libraries in providing repositories and services for research data \cite{Castelli_etal_2013,Nielson_Hjørland_2014,Macmillan_2014,Pinfield_etal_2014}.
-Although resolving the complicated issues that arise within the library domain is not directly within our purview, we have laid out a functioning system for research data management that may bring data closer to established library standards that achieve these goals, further enhancing the discoverability of these data.
+Although resolving the complicated issues that arise within the library domain is not directly within our purview, we have laid out a functioning system for research data management that may bring established library standards to bear on research data, further enhancing their discoverability.
 Going forward, we are well positioned to provide interoperability with library-based metadata schemas (such as export of data packages cross-walked to Dublin Core or METS schemas) and reach OAI-PMH compliance, so as to automatically incorporate the data that researchers add to Databrary into federated library searches with other domain specific data repositories.
 By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets.
 
@@ -207,7 +207,6 @@ Focus on a particular research domain allows us to achieve a sustainable balance
 Having made significant progress building ingest and data entry services that have let us grow the library, we now must turn our efforts towards discovery and reuse, finding ways to better describe and elaborate on collected data.
 To do this we look both to the original data contributors for ways that their existing analysis workflows can generate usable content descriptions, and to the community of researchers to label and comment on datasets as they explore.
 Thus we seek to incorporate these existing annotation processes into Databrary, both to capture and define these annotations as generalizable search terms, and to make these workflows more convenient by obviating existing file transfer and transformation burdens.
-%%below sentence too long? remove or shorten?
 Ultimately we hope to allow and capture instances of data reuse in this same way, so that content descriptions are aggregated from multiple annotation passes from different users and existing data can continuously increase in value for researchers.
 
 The success we've had in engaging, involving, and extracting data from researchers is due largely to our focus on a specific community of researchers, but it has come at the cost of limitations in scope and difficulties of interoperability and discovery that many more traditional repositories avoid.
