@@ -84,74 +84,69 @@ The combination of these two elements allows data and metadata to be flexibly st
 
 \subsection{Sessions}
 
-Recordings are often the core component of a data collection, and so sessions were designed to structure them in a way familiar to researchers.
-Sessions provide raw materials for subsequent detailed analysis or documentation about what measurements were made during the collection \cite{Bakeman_2012}.
-In some cases a single session can comprise multiple videos, either serially in time representing different segments of activity or in parallel from multiple cameras recording the same events.
+Sessions provide a container for raw materials and measurements that were made during a data collection \cite{Bakeman_2012}.
+As recordings are often the core component of a data collection, a session in many cases is defined by a single recording.
+In some cases a single session can comprise multiple videos, either serially in time representing different segments or in parallel from multiple cameras recording the same events.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
 
-%for brevity, maybe this paragraph can go. it's adding nuance but does it advance our point about contextual metadata, structure and reuse? yes, because reuse is harder with only composite. 
-When working with multiple primary recordings, researchers often combine these raw files into a single representation.
+When working with multiple files, researchers often combine them into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
-Some may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing location or gaze data (that is, where a subject is looking during data collection).
-Doing so allows for more convenient human analysis of the data in standard playback tools that support single data streams, but this spatial or temporal downsampling can obscure or mask some data patterns.
+Some may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing object or eye movement.
+Doing so allows for more convenient human analysis of the data in standard playback tools that support single data streams, but often involves losing data either through masking or downsampling.
 
-A session container captures the relationships among data elements from a single data acquisition, capturing heterogeneous file types \emph{and} their absolute or relative temporal positioning.
+A session captures these relationships among data elements from a single data acquisition, representing files along with their absolute or relative temporal positioning.
 The metaphor we use here is a timeline: each session defines a time range, with absolute timestamps representing the exact time of data collection or relative positioning with an optional date.
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
 Although some advanced recording equipment provides automatic timestamping or synchronization features, most researchers who collect parallel data streams use ``sync points'' such as an electronic trigger signal, light flash, or tone to align recordings.
 These sync points can then be used to manually place recordings on the timeline.
-In this way, the session container represents the structure of a data collection session but retains significant flexibility.
+In this way, the session represents recordings and related data streams in a way familiar to researchers, while keeping data in its most raw and flexible form.
 
 \subsection{Records}
+
 A record can represent many things that are typically conceived of as a row of a database.
 Each may represent a single data sample, such as a participant, group, or classroom, a level of analysis, such as an experimental trial, task, condition, or location, or some other factor. 
 A record is thus defined by one of the above types along with any number of scalar values, which can be textual, numeric, or date.
 In the case of a record representing an individual participant, these values might include subject identifier, gender, birth date, demographic information, measurement data, or other collected variables.
-For other record types, these values may include relevant independent variables, parameters, or descriptions. 
+For other record types, these values may include relevant independent variables, parameters, identifiers, or descriptions. 
 We can thus display the records of a given type as a table, with the values of each record constituting a row.
 
 In addition to containing values, records are also used to organize sessions.
 We have found that different researchers organize data files in substantially different ways.
-Researchers differentially consider their primary organizational unit, often depending on the primary focus of analysis for their specific study or sub-domain.
-They may organize their data by participants, session date, experimental condition, phase of analysis, or age group.
+Researchers employ different organizational structures, often depending on the primary focus of analysis for their specific study or sub-domain.
+Common directory structures include participants, session date, experimental condition, phase of analysis, and age group.
 Sometimes even single video files are split up into segments according to scene or activity, and researchers consider this property the primary organizational principle.
 
-Rather than trying to handle all of these strategies separately, Databrary leverages the power of records.
-Records can be attached to sessions, or, sessions can be grouped into records, in a many-to-many relationship.
+Rather than trying to handle all of these strategies separately, Databrary leverages records to provide arbitrary groupings.
+Records can be attached to sessions, or, equivalently, sessions can be grouped into records, in a many-to-many relationship.
 For example, a study participant may appear in exactly one session, so the collected information about that participant, added to a record, is attached in a one-to-one relationship with a specific session.
-In other research, multiple participants may appear in multiple sessions, such as recordings of the same class of students over a span of time.
-% for brevity, can we either exclude or condense this sentence?: A dataset may consist of distinct sub-sets of participants based on differences in experimental procedures or locations; here each session would be placed into a record representing the procedure or location.
+In other research, multiple participants may appear in multiple sessions, such as recordings of the same class of students over a span of time, and so the record may be attached to multiple sessions.
+This similarly extends to any other groupings of sessions based on experimental procedures or other factors by attaching the appropriate record of the corresponding type.
 
 Since researchers can create whichever record types apply to their data, they can also choose to group their data as they wish.
-This allows users to import data in what they consider the native directory structure by indicating the appropriate nesting of record types along with record variables themselves in traditional CSV formats.
-The same flexbility applies to data export.
+This allows users to import, browse, or export data in what they consider the native directory structure by indicating the appropriate nesting of record types
 By providing standardization of record types, we can also perform broad, meta-searches across the library, for example for all videos containing participants within a particular age range.
 
 \subsection{Annotations}
 
-% rog this section needs work.
-
 Research using recordings typically proceeds with the addition of temporally-positioned annotations, either by direct observation or with the aid of simple visualization or analysis tools.
-Specialized desktop software tools---both commercial (e.g., Noldus Observer, Mangold Interact, and Studiocode) and academic (e.g., Transana, Elan, CLAN, and Datavyu)---enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
+Specialized desktop software tools enable researchers to annotate events, measurements, utterances, or behaviors at any temporal scale, from individual samples/frames to the entire session.
 Most of these tools currently focus on a single recording, and despite the plethora of tools and features, there is little interoperability.
-Moreover, with rare exceptions \cite{MacWhinney2001} there are few standards for annotations themselves, even across studies performed by the same researcher. 
-%moved ^ from intro
+Moreover, with rare exceptions in specific research domains \cite{MacWhinney2001}, there are few standards for annotations themselves, even across studies performed by the same researcher. 
 
-Establishing a timeline for each session allows temporally-positioned annotations to be attached to the session.
+Establishing a timeline for each session also allows these sorts of temporally-positioned annotations to be attached.
 Currently we support two types of annotations: structured annotations based on records and added by the data contributors; and simple annotations contributed by the community.
 Eventually we hope to extend both of these to support the full range of annotations performed during analysis, both directly on the web and imported from existing software.
 
 First, records can be attached not only to entire sessions, but also to arbitrary temporal sub-sets of a session.
 If any record relates to a part, scene, or section of a session---for example a participant being present for only part of a recording---it can be applied within the timeline of a session to only that appropriate part.
 This allows an additional type of organizational structure researchers employ, wherein records define virtual sub-sessions that can be grouped and interacted with as units, without needing to cut up source videos.
-This can also theoretically be used to represent annotations at a finer temporal scale, for example individual trials or events that are normally handled by off-line annotation software.
+This can also theoretically be used to represent annotations at a finer temporal scale, for example individual trials or events.
 However, the appropriate interfaces and tools to input or import these annotations are still being developed.
 
-Second, we support simple keyword-based tagging and comment-based discussions on any temporal segment of a session.
+Second, we allow users to contribute simple keyword-based tagging and comment-based discussions on any temporal segment of a session as they watch the recordings.
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
 In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
-Where research of community tagging provides evidence for the case that not many users actually do participate in tagging, we intend to leverage automated tagging through already existing metadata and analysis to seed a base of tags for reuse by the community \cite{Yang_Lu_Giles_2011, Farooq_etal_2007}.
-%%dg - reflagging this last sentence, it's valuable, but seems to do a major belly flop right here.
+There may also be useful automated approaches for seeding tags to be refined by the community based on existing metadata and analysis \cite{Yang_Lu_Giles_2011,Farooq_etal_2007,Giles2013}.
 
 \subsection{Technical infrastructure}
 
@@ -174,7 +169,7 @@ Data originates from 35 individual contributors across 25 different universities
 
 %%dg - Reading this again, this section seems a little redudant with what is discussed above with making records and sessions flexible? Might be able to sum up this section and the discovery section in a single 'Lessons learned and Upcoming Challenges' section
 
-%Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
+Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
 We allow users, using certain portable formats (flat-files, documents, images), to include any data that cannot be encompassed by our standard formats.
 In this way, we can incorporate data which may be relevant for reuse but not broadly adopted by the community, without making the system too rigid.
 
@@ -189,9 +184,7 @@ This suggested the opportunity to supply a cohesive data management platform whe
 Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset through liberal use of auto-completion, suggestions, and drop-down options.
 With the considerable benefit of reducing storage requirements within researcher's labs, and often adding convenience over existing practices, this has proven an attractive prospect for researchers.
 
-Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to 
-
-particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
+Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
 
 \subsection{Discovery}
 
