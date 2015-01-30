@@ -50,19 +50,18 @@ While many of Databrary's strengths have derived from its focus on particular sc
 
 \section{Introduction}
 
-Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
-Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
-Video data collected in one context can often be used by others for different purposes with minimal explanation.
-This naturally reduces the problems of documentation and re-use that plague many flat-file datasets or repositories for data that require proprietary software to view.
-However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013, Lanagan_Smeaton_2012}.
-
-Video and audio recordings serve as a primary data source in psychology, linguistics, education, anthropology, and numerous other fields, and especially in the study of human development.
-Unfortunately, researchers who collect recordings rarely share with others, due largely to perceived requirements associated with privacy restrictions. Despite the inherent reusability of video data, difficulties in sharing them limit this scenario from happening more often.
-
+Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data. 
+Moreover, recordings are a primary source of raw data for scientific research in psychology, linguistics, education, anthropology, and many other disciplines.
+Recordings collected in one context can often be used by others for different purposes with minimal explanation. 
+This, therefore, naturally reduces the problems of documentation and provenance that plague many flat-file datasets and data repositories, especially those containing data that requires proprietary software to access.
+Yet researchers rarely share recordings with others, due largely to entrenched practices and perceived requirements associated with privacy restrictions. %something here or somewhere else about aversion (fear) to changing practices...
+Despite the inherent reusability of recordings, this lack of sharing inhibits the reuse of raw data and impedes scientific discovery.
 To address this problem, the Databrary project aims to build tools and policies that facilitate repurposing and reuse of recordings.
 We have created a web-based data library to accommodate the storage and organization of video data, capture contextual information necessary for reuse, and create standardization across datasets that enable discovery without placing undue burden on data contributors.
-In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
 
+Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools. Once recordings are digitally decoded, trained human observers can directly glean much of the data's richness.
+Since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013, Lanagan_Smeaton_2012}.
+%^either need to say more here about annotations or do it in approach. 
 \subsection{Balancing Generality and Specificity}
 
 Research data repositories require a balance between generality and specificity.
@@ -97,27 +96,28 @@ These volumes are citeable in that they are persistently identified (with a URI)
 Two structural elements comprise a volume: the \emph{session} and the \emph{record}.
 Sessions provide the primary container for data files, an elaboration on traditional file folders with additional temporal metadata.
 Records represent all types of scalar variable-based data, traditionally contained in flat files or databases, as well as provide an organizational structure among sessions.
-The combination of these two elements allows data and metadata to be flexibly related and annotated.
+The combination of these two elements allows data and metadata to be flexibly related and annotated. %another word besides annotated here?
 
 \subsection{Sessions}
 
 The session draws upon documented practices in the ways researchers use video.
-It was designed to organize recordings and related data streams in a way familiar to researchers, keeping data in its rawest and most flexible form without requiring  modifications that reduce the precision or utility of the data to others.
+It was designed to organize recordings and related data streams in a way familiar to researchers, keeping data in its most raw and flexible form without requiring  modifications that reduce the precision or utility of the data to others.
 
 Recordings are often the core component of data collection.
 They provide raw materials for subsequent detailed analysis or documentation about what measurements were made during the collection \cite{Bakeman_2012}.
 In some cases a single session can comprise multiple videos, either serially in time representing different segments of activity or in parallel from multiple cameras recording the same events.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
 
+%for brevity, maybe this paragraph can go. it's adding nuance but does it advance our point about contextual metadata, structure and reuse? yes, because reuse is harder with only composite. 
 When working with multiple primary recordings, researchers often combine these raw files into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
 Some may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing location or gaze data (that is, where a subject is looking during data collection).
 Doing so allows for more convenient human analysis of the data in standard playback tools that support single data streams, but this spatial or temporal downsampling can obscure or mask some data patterns.
 
 A session container captures the relationships among data elements from a single data acquisition, capturing heterogeneous file types \emph{and} their absolute or relative temporal positioning.
-We use a timeline metaphor for storage and visualization: Each session defines a time range, with absolute timestamps representing the exact time of data collection or relative positioning with an optional date.
+The metaphor we use here is a timeline: each session defines a time range, with absolute timestamps representing the exact time of data collection or relative positioning with an optional date.
 Files placed within a session can then be (optionally) positioned, much as in video or audio editing software.
-Although some advanced recording equipment provides automatic timestamping or synchronization features, most researchers who collect parallel data streams use ``sync points'' such as an electronic trigger signal, flash, or tone to align recordings.
+Although some advanced recording equipment provides automatic timestamping or synchronization features, most researchers who collect parallel data streams use ``sync points'' such as an electronic trigger signal, light flash, or tone to align recordings.
 These sync points can then be used to manually place recordings on the timeline.
 In this way, the session container represents the structure of a data collection session but retains significant flexibility.
 
