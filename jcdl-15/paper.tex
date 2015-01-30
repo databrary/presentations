@@ -49,25 +49,24 @@ While many of Databrary's strengths have derived from its focus on particular sc
 \keywords{Data sharing, open science, video, psychology, developmental science}
 
 \section{Introduction}
-%video data are special because they are reusable
+
 Video and audio recordings constitute a form of human-consumable, self-documenting, timeseries data.
 Recordings can be and largely are consumed and analyzed, at least initially, without the use of sophisticated tools: once digitally decoded, trained human observers can directly glean much of the data's richness.
 Video data collected in one context can often be used by others for different purposes with minimal explanation.
 This naturally reduces the problems of documentation and re-use that plague many flat-file datasets or repositories for data that require proprietary software to view.
 However, since automated analysis of videos is an active yet still immature research area, the problems of search, discoverability, and meta-analysis over these media remain \cite{Albertson_2013, Lanagan_Smeaton_2012}.
 
-%video data are not reused, databrary aims to provide solutions that allow for reuse.
 Video and audio recordings serve as a primary data source in psychology, linguistics, education, anthropology, and numerous other fields, and especially in the study of human development.
-Unfortunately, researchers who collect recordings rarely share with others, due largely to perceived requirements associated with privacy restrictions.
-%say this better: This inhibits reuse. 
-To address this problem, the Databrary project aims to build tools and policies that allow repurposing and reuse of recordings.
+Unfortunately, researchers who collect recordings rarely share with others, due largely to perceived requirements associated with privacy restrictions. Despite the inherent reusability of video data, difficulties in sharing them limit this scenario from happening more often.
+
+To address this problem, the Databrary project aims to build tools and policies that facilitate repurposing and reuse of recordings.
 We have created a web-based data library to accommodate the storage and organization of video data, capture contextual information necessary for reuse, and create standardization across datasets that enable discovery without placing undue burden on data contributors.
 In this paper, we discuss the design and technical challenges of the system and describe some findings and structural solutions to these challenges.
 
 \subsection{Balancing Generality and Specificity}
 
 Research data repositories require a balance between generality and specificity.
-Archives that permit the unstructured storage of arbitrary files lie at one extreme; those that present a rigorously structured schema and required contribution formats lie at the other.
+General purpose repositories that permit the unstructured storage of arbitrary files lie at one extreme \cite{dataverse, dryad, purr}; those that present a rigorously structured schema and required contribution formats lie at the other \cite{HCP, PGP, talkbank}.
 The flexibility of general-purpose repositories make them especially well-suited to the archival of entire datasets, but these systems do not facilitate search, understanding, or re-use without extensive, usually labor-intensive, curation to summarize or extract \cite{Peer_2012}.
 Targeted repositories, on the other hand, generate large-scale, homogeneous data sources that facilitate meta- and re-analysis, but are limited to specific research questions, losing the full richness, context, and innovation of the source materials and field.
 
@@ -80,7 +79,7 @@ This facilitates the storage and retrieval of data more closely mapped to the or
 
 We have attempted to strike a balance between these extremes by making video and audio recordings the unifying focus of Databrary.
 This allows additional structured and unstructured resources to be built around and discovered through this functional core.
-Our approach has been to provide consistent structure related to the storage and presentation of primary recordings while providing contributors the flexibility that they have come to expect from their own, possibly \emph{ad hoc}, archival systems.
+Our approach has been to provide a basic scaffold related to the storage and presentation of primary recordings while providing contributors the flexibility that they have come to expect from their own, possibly \emph{ad hoc}, archival systems.
 To keep datasets intact, Databrary associates heterogeneous flat-file data, materials, and references with the primary video or audio recordings.
 
 We achieve this conformance for previously collected datasets through a combination of in-depth investigative curation and automated, server-side ingest processes.
@@ -106,13 +105,13 @@ The session draws upon documented practices in the ways researchers use video.
 It was designed to organize recordings and related data streams in a way familiar to researchers, keeping data in its rawest and most flexible form without requiring  modifications that reduce the precision or utility of the data to others.
 
 Recordings are often the core component of data collection.
-Recordings provide raw materials for subsequent detailed analysis or documentation about what measurements were made during the collection \cite{Bakeman_2012}.
+They provide raw materials for subsequent detailed analysis or documentation about what measurements were made during the collection \cite{Bakeman_2012}.
 In some cases a single session can comprise multiple videos, either serially in time representing different segments of activity or in parallel from multiple cameras recording the same events.
 These primary recordings may also be augmented with other forms of timeseries data such as motion capture, eye tracking, or physiological recordings, as well as with additional point-in-time measurements, observations, or surveys, all of which have specific and critical temporal relationships with the primary data.
 
 When working with multiple primary recordings, researchers often combine these raw files into a single representation.
 For example, they may concatenate serial recordings or make a composite video by joining or overlaying frames.
-Some may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing location or gaze data.
+Some may overlay or combine secondary data, by adding waveform or frequency visualizations below a video, or by overlaying cross-hairs representing location or gaze data (that is, where a subject is looking during data collection).
 Doing so allows for more convenient human analysis of the data in standard playback tools that support single data streams, but this spatial or temporal downsampling can obscure or mask some data patterns.
 
 A session container captures the relationships among data elements from a single data acquisition, capturing heterogeneous file types \emph{and} their absolute or relative temporal positioning.
@@ -124,7 +123,7 @@ In this way, the session container represents the structure of a data collection
 
 \subsection{Records}
 A record can represent many things that are typically conceived of as a row of a database.
-Each may represent a single data sample, such as a participant, dyad, classroom, a level of analysis, such as an experimental trial, task, condition, or location, or some other factor. 
+Each may represent a single data sample, such as a participant, participant pairs interacting, classroom, a level of analysis, such as an experimental trial, task, condition, or location, or some other factor. 
 A record is thus defined by one of the above types along with any number of scalar values, which can be textual, numeric, or date.
 In the case of a record representing an individual participant, these values might include subject identifier, gender, birth date, demographic information, measurement data, or other collected variables.
 For other record types, these values may include relevant independent variables, parameters, or descriptions. 
@@ -171,9 +170,11 @@ Second, we support simple keyword-based tagging and comment-based discussions on
 Such annotations can also be added through our API by automated video analysis according to features of interest identified in the data.
 In addition to enriching datasets and enabling dialog between researchers, we expect these annotations to provide an index target for additional discovery capabilities for users looking for particular features within data \cite{Lanagan_Smeaton_2012}.
 Where research of community tagging provides evidence for the case that not many users actually do participate in tagging, we intend to leverage automated tagging through already existing metadata and analysis to seed a base of tags for reuse by the community \cite{Yang_Lu_Giles_2011, Farooq_etal_2007}.
+%%dg - reflagging this last sentence, it's valuable, but seems to do a major belly flop right here.
 
 \subsection{Technical infrastructure}
 
+%%dg - voting to put this and the repository section up higher in the paper, Approach, maybe?
 Databrary is a new, cohesive web application, built in Scala on the Play Framework\footnote{http://playframework.com/} to enable a responsive user interface, a complete API, and high-performance streaming.
 Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
 All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
@@ -189,6 +190,8 @@ These files comprise 2,400 sessions and are covered by 1,300 records (including 
 Data originates from 35 individual contributors across 25 different universities.
 
 \subsection{Normalization}
+
+%%dg - Reading this again, this section seems a little redudant with what is discussed above with making records and sessions flexible? Might be able to sum up this section and the discovery section in a single 'Lessons learned and Upcoming Challenges' section
 
 %Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
 We allow users, using certain portable formats (flat-files, documents, images), to include any data that cannot be encompassed by our standard formats.
