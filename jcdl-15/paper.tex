@@ -5,7 +5,7 @@
 
 \title{Databrary: A digital data library for sharing research video}
 
-\numberofauthors{3}
+\numberofauthors{4}
 
 \author{
 \alignauthor
@@ -21,6 +21,12 @@ Drew Gordon\\
 	\affaddr{New York, NY, USA}\\
 	\email{drew@databrary.org}
 \alignauthor
+Lisa Steiger\\
+	\affaddr{Databrary Project}\\
+	\affaddr{New York University}\\
+	\affaddr{New York, NY, USA}\\
+	\email{lisa@databrary.org}
+\and
 Rick O. Gilmore\\
 	\affaddr{Penn State}\\
 	\affaddr{Department of Psychology}\\
@@ -162,36 +168,29 @@ Although hosted data are protected, all source code is released under a GPLv3 li
 
 Databrary accepted contributions beginning in early 2014 and opened for general use in October 2014.
 It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
-These files comprise 2,400 sessions and are covered by 1,300 records (including 1100 individual participants).
+These files comprise 2,400 sessions and are covered by 1,300 records (including 1,100 individual participants).
 Data originates from 35 individual contributors across 25 different universities.
 
 \subsection{Normalization}
 
-%%dg - Reading this again, this section seems a little redudant with what is discussed above with making records and sessions flexible? Might be able to sum up this section and the discovery section in a single 'Lessons learned and Upcoming Challenges' section
-
 Since we primarily deal with video and audio data, standardizing on an encoding format allows for convenient, consistent access without much loss of flexibility, while still allowing arbitrary resolutions, encoding qualities, and sample/frame-rates.
-We allow users, using certain portable formats (flat-files, documents, images), to include any data that cannot be encompassed by our standard formats.
-In this way, we can incorporate data which may be relevant for reuse but not broadly adopted by the community, without making the system too rigid.
+We additionally allow users, using certain portable formats (flat files, documents, images), to include data is not encompassed by our standard formats, but which may still be relevant for reuse.
+Beyond that, we have introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables, and tag keywords.
+We have adopted an approach that encourages adherence to existing standardized options but still allows new types to be created as the data require it.
+Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered without burdening or constraining researchers.
 
-Here we have also introduced a number of metadata concepts where this tension becomes most apparent, namely the available record types, variables (and values within categorical data types), and tag keywords.
-We have adopted an approach that encourages adherence to existing standardized options but  allows new types to be created as the data require it.
-Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered.
-For many previously collected datasets, this has proven the most effective method to infer from data and avoid burdening contributors.
 However, since we expect the bulk of the data in the library to come from newly collected sources (due largely to privacy constraints on existing datasets), we have additionally taken a distinct, user-driven approach.
-
-We found that while some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools, often using a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and available filesystem storage.
+We found that while some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools, often using a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and local filesystem storage.
 This suggested the opportunity to supply a cohesive data management platform where all collected raw data, including recordings, contextual information, and measurements, could be entered, stored, and exported for later off-line analysis.
-Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset through liberal use of auto-completion, suggestions, and drop-down options.
+Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset, through liberal use of auto-completion, suggestions, and drop-down options.
 With the considerable benefit of reducing storage requirements within researcher's labs, and often adding convenience over existing practices, this has proven an attractive prospect for researchers.
-
-Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
 
 \subsection{Discovery}
 
 While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
-This problem is compounded for us because we expect researchers not only to reuse and reanalyze data within their own research area, but potentially to find new uses data originally collected for entirely different purposes.
-Recordings with potential value in one research area may be primarily labeled with contextual information from a different research area.
-Ultimately, making this determination requires direct, human observation of the recordings, and so a large part of solving the discovery problem will be simply to present researchers with short, representative samples from a variety of datasets.
+This problem is compounded for us because we expect that data collected in one research area, to be useful for entirely different purposes.
+Thus, data arrives labeled with contextual information that may not fully describe the range of features present.
+Ultimately, making determination of usefulness requires direct, human observation of the recordings, and so a large part the discovery solution will be simply to present researchers with short, representative samples from a variety of datasets.
 
 Another important source for search targets would come from annotations supplied both by the original researchers during analysis as well as by the community.
 In the former case, normalization remains a concern, as most annotation schemes researchers employ involve opaque, symbolic or numeric codes with little semantic content.
@@ -211,6 +210,7 @@ Having made significant progress building ingest and data entry services that ha
 To do this we look both to the original data contributors for ways that their existing analysis workflows can generate usable content descriptions, and to the community of researchers to label and comment on datasets as they explore.
 Thus we seek to incorporate these existing annotation processes into Databrary, both to capture and define these annotations as generalizable search terms, and to make these workflows more convenient by obviating existing file transfer and transformation burdens.
 Ultimately we hope to allow and capture instances of data reuse in this same way, so that content descriptions are aggregated from multiple annotation passes from different users and existing data can continuously increase in value for researchers.
+%Achieving a sustainable balance will no doubt be challenging, but by using the above approaches and limiting our focus to particular research domains we have been able to achieve substantial standardization across the entire data library without overly burdening contributors.
 
 There is also active discussion around the role of repositories and libraries in archiving and providing access to research data, where the roles and responsibilities between libraries and research departments is not entirely established \cite{Castelli_etal_2013, Nielson_Hjørland_2014, Macmillan_2014, Pinfield_etal_2014}.
 Although resolving this complicated issue is not directly within our purview, we have laid out a functioning system for research data management that may bring data closer established library standards that achieve these goals.
