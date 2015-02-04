@@ -1,8 +1,10 @@
-git log﻿## **Databrary: A research-centered repository for video data**
+## **Databrary: A research-centered repository for video data**
 
->Andrew Gordon, Databrary Project - New York University, drew.gordon@nyu.edu
+>Andrew Gordon, New York University, drew@databrary.org
 
->Lisa Steiger, Databrary Project - New York University, lisa.steiger@nyu.edu
+>Dylan A. Simon, New York University, dylan@databrary.org
+
+>Lisa Steiger, New York University, lisa@databrary.org
 
 ### **Session Type**
 * Presentation
@@ -22,7 +24,7 @@ Repository Developers, Research Data Librarians, Data Curators, and Researchers 
 ### Background
 Databrary[1] is a research data repository, developed with federal funding from the NSF and NIH, and hosted at New York University. It is being developed for the purpose of storing, sharing, and reusing data created by researchers in the developmental and learning sciences. Databrary was designed not only for the deposit of fully collected datasets, but also for the active uploading and management of datasets that are in the process of being collected and analyzed.
 
-Observing and analyzing behavior are fundamental activities in the developmental and learning sciences, and researchers expend considerable resources collecting observations. The prevalent method for recording behavior is video, thus constituting the primary form of raw data for behavioral researchers. Although collecting videos is a widespread practice, video data sharing is virtually non-existent among researchers. The two primary impediments to sharing are the lack of tools that allow easy video data sharing and a long-standing tradition of conducting research in the isolation of individual laboratories. As a result, countless hours of video data waste away on tapes and hard drives in laboratories all over the world. 
+Observing and analyzing behavior are fundamental activities in the developmental and learning sciences, and researchers expend considerable resources collecting observations. The prevalent method for recording behavior is video, thus constituting the primary form of raw data in these domains. Although collecting videos is a widespread practice, video data sharing is virtually non-existent among researchers. The two primary impediments to sharing are the lack of tools that allow easy video data sharing and a long-standing tradition of conducting research in the isolation of individual laboratories. As a result, countless hours of video data waste away on tapes and hard drives in laboratories all over the world. 
 
 The unique promise of video data arises from the nature of video and its propensity for reuse. In contrast to other forms of behavioral data, video is largely self-documenting, making data provenance a relatively minor issue. Moreover, because video captures much of the richness and complexity of behavior, videos can be used for many purposes — including those never imagined by the original researcher, making it inherently valuable for purposes of reuse and re-analysis. By sharing video data, other researchers can reuse the data to ask new questions, assess previous interpretations, learn about methods and procedures, draw ideas and inspiration for new lines of research, and show excerpts for educational purposes in teaching.
 
@@ -36,10 +38,10 @@ The website was opened for general use in October 2014 and has accepted contribu
 Databrary is built in Scala on the Play Framework[2] to enable a responsive user interface, a complete API, and high-performance streaming. Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data. All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video. This transcoding utilizes the high performance computing cluster at the hosting campus of NYU, using ffmpeg's libav bindings for both this and direct access to video frames and clips. The user interface is built primarily on the Angular web framework[3], and all data access is performed through an open JSON API. Although hosted data are protected, all source code is released under a GPLv3 license on github[4].
 
 ####2. Notable Challenges
-**a.** ACCESS AND PRIVACY -
+**a. ACCESS AND PRIVACY** -
 Conceptualizing a shared repository for video data sharing is not without its difficulties. For one, it poses special ethical challenges. Video often depicts participants’ faces, and their names are often spoken aloud. Because of this, sharing video data presents challenges related to participants’ privacy. In contrast to other forms of behavioral data which are non-identifiable or can be easily de-identified, video data cannot be easily de-identified without significantly diminishing its value and richness. Therefore, any solution for video sharing must also provide appropriate policy and access frameworks to ensure appropriate protection of research participants.
 
-**b.** METADATA CREATION / CURATION -
+**b. METADATA CREATION / CURATION** -
 Video data also provides challenges for data indexing and discovery efforts. While video data might be self-documenting, it is not self-describing from a metadata perspective. While watching through hours of collected videos may be enlightening, it is not always an effective use of research time. To facilitate the reuse of video data, researchers must also be able to find aspects of that data relevant to their interests without having to comb through hours of it themselves.
 
 Additionally, researchers may have already collected and generated metadata about videos, including information about recorded sessions (including date and location), research participants (often including demographic information), and study manipulations (such as different groups or conditions). They also often score, transcribe, or tag video at smaller scales, from frames to minutes, using desktop software or other manual approaches. This metadata may not follow a set standard across laboratories, so one of the additional challenges in promoting a standard repository for these data is in creating a set of workflows by which heterogeneous datasets might be stored and accessed through a more common practice.
