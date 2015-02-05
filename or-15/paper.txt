@@ -19,7 +19,7 @@ Managing Research (and Open) Data
 Data sharing, Open Science, Video, Psychology, Behavioral Sciences
 
 ### **Audience**
-Repository Developers, Research Data Librarians, Data Curators, and Researchers are the target audience for this presentation.
+Repository Developers, Research Data Librarians, Data Curators, and Researchers.
 
 ### Background
 Databrary[1] is a research data repository, developed with federal funding from the NSF and NIH, and hosted at New York University. It is being developed for the purpose of storing, sharing, and reusing data created by researchers in the developmental and learning sciences. Databrary was designed not only for the deposit of fully collected datasets, but also for the active uploading and management of datasets that are in the process of being collected and analyzed.
@@ -30,7 +30,7 @@ The unique promise of video data arises from the nature of video and its propens
 
 ### **Presentation content**
 
-####1. Describing The Project
+####1. The Project
 Since beginning work in early 2013, the goals of the Databrary project have been to: build a web-based library and infrastructure for storing and sharing video and associated metadata; provide tools for organizing and managing data; create a policy framework to permit sharing of identifiable data while appropriately restricting access; and grow a community of researchers committed to open video data sharing.
 
 The website was opened for general use in October 2014 and has accepted contributions since earlier that year. It operates out of New York University (NYU) and works closely with NYU Libraries for storage and information system support. As of January 2015, it hosts 5700 video files totaling 1600 hours of recordings along with 2200 additional files. These files comprise 2400 sessions and are covered by 1300 records (including 1100 individual participants). Data originates from 35 individual contributors across 25 different universities.
@@ -47,7 +47,7 @@ Video data also provides challenges for data indexing and discovery efforts. Whi
 Additionally, researchers may have already collected and generated metadata about videos, including information about recorded sessions (including date and location), research participants (often including demographic information), and study manipulations (such as different groups or conditions). They also often score, transcribe, or tag video at smaller scales, from frames to minutes, using desktop software or other manual approaches. This metadata may not follow a set standard across laboratories, so one of the additional challenges in promoting a standard repository for these data is in creating a set of workflows by which heterogeneous datasets might be stored and accessed through a more common practice.
 
 ####3. Addressing these challenges and going forward
-The first challenge for the Databrary project was defining a set of policies and an end-user design to enact and communicate the many challenges researchers face in sharing the raw data of their studies while also protecting their subjects' privacy. Through a number of personal interviews with researchers and website interface iterations, we were able to design a set of policies and workflows that allow researchers to read and accept the terms of the Access Agreement. The agreement was intentionally written in language researchers would understand. The agreement requires an institutional representative to co-sign the agreement to verify that the person is a qualified academic researcher with human subjects ethics training and that the institution has an Institutional Review Board (IRB) that oversee their scientific activities. The agreement was designed to ensure that identifiable data housed in Databrary are protected authorized users and their affiliates will treat sensitive data with the same ethical responsibilty that they treat data from their own laboratory. This access model might challenge the definition of open data defined universally by the Open Knowledge Foundation[5]. It is of critical importance for us, however, to strike a balance between enabling open sharing of identifiable data where children and adults are recorded, while also garnering the trust and approval of our data contributors. These access controls and commitment to protect identifiable video data has been the key to growing our community and, in turn, the number of datasets in the repository.
+The first challenge for the Databrary project was defining a set of policies and an end-user design to enact and communicate the many challenges researchers face in sharing the raw data of their studies while also protecting their subjects' privacy. Through a number of personal interviews with researchers and website interface iterations, we were able to design a set of policies and workflows that allow researchers to read and accept the terms of the Access Agreement. The agreement was intentionally written in language researchers would understand. The agreement requires an institutional representative to co-sign the agreement to verify that the person is a qualified academic researcher with human subjects ethics training and that the institution has an Institutional Review Board (IRB) that oversee their scientific activities. The agreement was designed to ensure that identifiable data housed in Databrary are protected and that authorized users and their affiliates will treat sensitive data with the same ethical responsibilty that they treat data from their own laboratory. 
 
 The second challenge we continue to address is the curation process for the management and creation of metadata. We found that it is a challenge for researchers to reorganize and redescribe their data for the purposes of contributing their data to Databrary. For this, we have developed an in-house process for curating and incorporating datasets into Databrary that involves staff creating, cleaning, and enriching metadata, as well as clipping out identifying information from video data. To complement the manual curation process, we have also devised an end-user workflow for researchers to add their data to Databrary as they proceed with their research, which greatly reduces staff time in curation as well as promotes a standard data management practice across labs.
 
@@ -65,6 +65,4 @@ As an innovative approach to research data repositories, Databrary seeks to meet
 [3] http://angularjs.org/
 
 [4] http://github.com/databrary
-
-[5] https://okfn.org/opendata/
 
