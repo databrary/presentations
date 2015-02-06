@@ -22,7 +22,7 @@ Data sharing, Open Science, Video, Psychology
 Repository Developers, Research Data Librarians, Data Curators, and Researchers.
 
 ### Background
-Databrary[1] is a research data repository, developed with federal funding from the NSF and NIH, and hosted at New York University. It is being developed for the purpose of storing, sharing, and reusing data created by researchers in the developmental and learning sciences. Databrary was designed not only for the deposit of fully collected datasets, but also for the active uploading and management of datasets that are in the process of being collected and analyzed.
+Databrary[1] is a research data repository, developed with federal funding from the NSF and NIH, and hosted at New York University. It is being developed for the purpose of storing, sharing, and reusing data created by researchers in the developmental and learning sciences. Databrary was designed not only for the deposit of fully-collected datasets, but also for the active uploading and management of datasets that are in the process of being collected and analyzed.
 
 Observing and analyzing behavior are fundamental activities in the developmental and learning sciences, and researchers expend considerable resources collecting observations. The prevalent method for recording behavior is video, thus constituting the primary form of raw data in these domains. Although collecting videos is a widespread practice, video data sharing is virtually non-existent among researchers. The two primary impediments to sharing are the lack of tools that allow easy video data sharing and a long-standing tradition of conducting research in the isolation of individual laboratories. As a result, countless hours of video data waste away on tapes and hard drives in laboratories all over the world. 
 
@@ -54,7 +54,7 @@ The second challenge we continue to address is the curation process for the mana
 While we continue to elaborate and refine these processes, we also look towards the next steps of enhancing data discoverability, both within Databrary and beyond by increasing interoperability with existing library systems. By developing more in-depth search and browse features, providing a more refined API and API documentation, and exporting data in library-based metadata schemas as well as reaching OAI-PMH compliance, we expect to ensure that the data in Databrary might connect to other research data repositories and be more findable and accessible across domain and institutional boundaries.
 
 ### **Conclusion**
-As an innovative approach to research data repositories, Databrary seeks to meet the needs of researchers through the data management needs of their studies. In doing so, it creates a unique opportunity to standardize the language and practices by which behavioral science researchers work with and share large amounts of video data. With long term preservation and storage in mind, Databrary is also in a potentially unique position to model how research data repositories can connect to a larger network of research data services across academic departments and institutions.
+As an innovative approach to research data repositories, Databrary seeks to meet the needs of researchers through the data management needs of their studies. In doing so, it creates a unique opportunity to standardize the language and practices by which developmental science researchers work with and share large amounts of video data. With long term preservation and storage in mind, Databrary is also in a potentially unique position to model how research data repositories can connect to a larger network of research data services across academic departments and institutions.
 
 ### **References**
 [1] https://databrary.org/
@@ -63,6 +63,6 @@ As an innovative approach to research data repositories, Databrary seeks to meet
 
 [3] http://angularjs.org/
 
-[4] http://github.com/databrary
+[4] https://github.com/databrary
 
-[5] http://databrary.org/access/policies/agreement.html
+[5] https://databrary.org/access/policies/agreement.html
