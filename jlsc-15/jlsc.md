@@ -17,7 +17,22 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 - Papers that discuss existing data repositories
     + Domain-general vs. domain specific
 - Papers that discuss theory or practice of librarianship around data repositories
-    + If we build it, will they come vs. ???
+    + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)?
+
+<!-- Would it be safe to assume a paragraph of review per each main point we discuss regarding Databrary below(i.e. scope of repository, position of repository, representational model for repository, practical concerns (IRB, privacy, else...))? --> 
+
+<!-- Repositories big and small (in scope, not in size) -->
+The current literature on data repositories and data curation focus primarily on the libraries role in providing research data management services for their University community <cite, cite, cite>. On the whole, these discussions focus on the collecting, cataloging, and making available heterogenous datasets from across domains and specializations <cite, cite, cite>. Though there is a considerable body of literature that also discusses domain specific research data repositories <cite, cite, cite>. Often, the former sit within or emerge from within the library. For the latter, (read up on this...how do these types connect to the library?).
+
+<!-- New practices for library staff - communication -->
+Amongst the research and practice around research data and the library, the discussion focuses on the emerging role of librarians with domain expertise aimed at the research data they aspire to collect as well as the evolving roles librarians need to take in communicating the importance and specific practices in organizing and managing data, as well as taking on roles as curators of digital data. The goal of these new roles and responsibilities aim at lessening or eliminating the barriers to sharing as well as helping other researchers find and reuse the data being added to repositories.
+
+<!-- New requirements for metadata creation and building metadata for digital data objects -->
+Accomompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets<cite, cite, cite>. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. 
+
+<!-- Overview/Tieing together and prelude to rest of paper --> 
+Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
+
 
 ## Databrary services
 
@@ -111,6 +126,7 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 
 - Build on discovery and search (this was in last paper, not sure how relevant it is here)
 - Visualization, tagging
+- Build and improve ability to excerpt videos for scholars to communicate research findings and exemplar data samplings at conferences in the classroom.
 - Support for new temporally dense data streams
     + Physiology
     + Gaze tracking
