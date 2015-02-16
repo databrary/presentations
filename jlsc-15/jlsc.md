@@ -105,6 +105,7 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 ### Enhance Databrary's feature-set
 
 - Build on discovery and search (this was in last paper, not sure how relevant it is here)
+- Visualization, tagging
 
 ### Improve Active/Self-Curation
 
@@ -114,8 +115,15 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 ### Integrate with other services
 
 - Connect more with library systems (OAI, Library-specific metadata exports, Linked Data)
+- Connect with other data repositories
+    + Open Science Framework
+    + Dataverse
+    + ICPSR?
 
 ### Plan for long-term sustainability
+
+- Cost share data management/data curation services on new grants
+- Institutional subscription model
 
 ## Conclusion
 
