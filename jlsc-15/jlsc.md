@@ -33,10 +33,10 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
         * Curation for sharing not part of scientific workflow
             - No incentive to share, many discincentives
 - But, there is a desire to change
-        * Databrary's committed contributors
-        * Agencies beginning to require data sharing, support data sharing.
-        * Evolving policies to enable sharing
-        * Video is largely self-documenting, so potential for data re-use is high.
+    * Databrary's committed contributors
+    * Agencies beginning to require data sharing, support data sharing.
+    * Evolving policies to enable sharing
+    * Video is largely self-documenting, so potential for data re-use is high.
 - Sharing with restricted community of researchers
     + Datasets linked to publications
         * Citations
@@ -71,6 +71,9 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 - Community outreach/training, hands-on support.
 - Meeting researchers more than half-way.
 - Bringing expertise from library/information science to the research enterprise at an early stage.
+- Approach is working
+    - 70+ users in first year, 35 contributors, X files
+
 
 ### Curation
 
@@ -113,6 +116,12 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
     + Gaze tracking
     + Kinematics
 
+### Community outreach
+
+- Libraries, sponsored projects offices, grants planning staff
+    + Budgeting for data management/curation from the beginning.
+    + Build on NDAR planning model (<http://ndar.nih.gov/ndarpublicweb/Documents/NDAR_Data_Submission_Costs.xls>)
+
 ### Improve Active/Self-Curation
 
 - Field test, adapt based on feedback.
@@ -126,6 +135,7 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
     + Dataverse
     + ICPSR?
 - API for external data-mining, data tagging services.
+- Data linking to other geo- or time-coded open data sets.
 
 ### Plan for long-term sustainability
 
@@ -133,6 +143,4 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 - Institutional subscription model
 
 ## Conclusion
-
-
 
