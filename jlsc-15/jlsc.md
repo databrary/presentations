@@ -45,6 +45,7 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
         * Raw data
     + Cross-referencing among datasets, published papers/studies
     + Expose as much metadata as possible
+    + Restricted access helps with data privacy/security concerns, but may slow adoption (see below).
 - Novel approach
     - We have taken a new approach to supporting research data, as evidenced by the organization of our own leadership, the charge from our funding agencies.
     - Our repository is designed in the context of researchers, not as an isolated project initiated by either the library or the central IT dept
@@ -77,18 +78,18 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 - We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate.
 - Balance: we are sensitive to gathering the "minimum viable" set of metadata to aid discovery and sharing.  We are, however, prepared to accept more.
 
-#### After-the-fact/archival
+#### After-the-fact/archival curation
 
 - Curation process (librarians outside of the library, how to gather and standardize metadata, handling many types of data, from in the process of gathering to archival materials gathered decades ago).
 
-#### Active
+#### Active curation
 
 - Curate data while it is being collected.
     + New in developmental science.
     + Builds on existing common practices.
 - Differs from institutional repositories because of focus on a particular research field.
 - Serves as the foundation of search and discoverability
-- Spreadsheet interface
+- Spreadsheet interface, metadata capture
 
 ### Support from University Entities and funding partners
 
@@ -100,12 +101,17 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 
 ### Expand number and diversity of datasets
 
-- Continue to document and standardize curation processes and learn from library and data services staff about collection development and dataset profiles
+- Continue to document and standardize curation processes and learn from library and data services staff about collection development and dataset profiles.
+- Education and cognitive/social psychology communities, anthropology, linguistics.
 
 ### Enhance Databrary's feature-set
 
 - Build on discovery and search (this was in last paper, not sure how relevant it is here)
 - Visualization, tagging
+- Support for new temporally dense data streams
+    + Physiology
+    + Gaze tracking
+    + Kinematics
 
 ### Improve Active/Self-Curation
 
@@ -119,6 +125,7 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
     + Open Science Framework
     + Dataverse
     + ICPSR?
+- API for external data-mining, data tagging services.
 
 ### Plan for long-term sustainability
 
