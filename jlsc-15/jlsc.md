@@ -23,13 +23,15 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 The current literature on data repositories and data curation focus primarily on the libraries role in providing research data management services for their University community <cite, cite, cite>. On the whole, these discussions focus on the collecting, cataloging, and making available heterogenous datasets from across domains and specializations <cite, cite, cite>. Though there is a considerable body of literature that also discusses domain specific research data repositories <cite, cite, cite>. Often, the former sit within or emerge from within the library. For the latter, (read up on this...how do these types connect to the library?).
 
 <!-- New practices for library staff - communication -->
-Amongst the research and practice around research data and the library, the discussion focuses on the emerging role of librarians with domain expertise aimed at the research data they aspire to collect as well as the evolving roles librarians need to take in communicating the importance and specific practices in organizing and managing data, as well as taking on roles as curators of digital data. The goal of these new roles and responsibilities aim at lessening or eliminating the barriers to sharing as well as helping other researchers find and reuse the data being added to repositories.
+Amongst the research and practice around research data and the library, the discussion focuses on the emerging role of librarians with domain expertise aimed at the research data they aspire to collect as well as the evolving roles librarians need to take in communicating the importance and specific practices in organizing and managing data, as well as taking on roles as curators of digital data. The goal of these new roles and responsibilities aim at lessening or eliminating the barriers to sharing as well as helping other researchers find and reuse the data being added to repositories. 
 
 <!-- New requirements for metadata creation and building metadata for digital data objects -->
 Accompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets<cite, cite, cite>. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. 
 
 <!-- Overview/Tieing together and prelude to rest of paper --> 
-Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
+Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
+
+Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
 
 
 ## Databrary Project Model
@@ -61,6 +63,16 @@ Within these intersecting discussions, we note that there is a tension between b
     - Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use.
     - Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
 
+### The technical details (Drew)
+
+The Databrary web application is open-source and built in Scala on the Play Framework to support a responsive user interface, a complete API, and high-performance streaming. The user interface is built primarily on the Angular web framework, and all data access is performed through an open JSON API.
+
+As part of the curation process, Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file if it was digital, or a 10-bit YUV digital preservation copy if the original version was not digital. Currently, the access version format is H.264 (HiP) with AAC audio in an MPEG-4 container, although we expect the appropriate video formats to change over time, as has been the case with many digital video formats in
+recent years.
+
+For preservation, the original file (if digital) or the preservation copy will be stored in a long-term preservation repository managed jointly by the NYU Libraries and the central Information Technology Services unit. This repository ensures that each content item has a METS structural metadata file that associates the digital asset with its metadata. It stores files in two mirrored and geographically distributed
+locations, and a third copy on offsite tape; it performs regular fixity checks; and it provides a format migration capacity, in the event that astored format becomes at risk of obsolescence.
+
 ### Enticing Contributors: Data Privacy and Community Outreach (Rick? Drew?)
 
 - IRB and privacy concerns that needed to be addressed - community building that follows from this
@@ -90,11 +102,13 @@ Within these intersecting discussions, we note that there is a tension between b
 
 ### Curation (Drew)
 
-- Databrary supports both after the fact and active curation
-- We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate.
-- Balance: we are sensitive to gathering the "minimum viable" set of metadata to aid discovery and sharing.  We are, however, prepared to accept more.
+Databrary supports both after the fact and active curation. After the fact curation consists of ingesting datasets after collection has been completed and largely after all study derivatives (research papers, analyses, etc.) have been created. Active curation refers to the "Upload As You Go" feature of Databrary, a user interface built into the web application that guides researchers through uploading their video data and attaching metadata as they conduct their study. 
+
+We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate. The end result of both available curation processes is a system that defines and supports a minimum requirement for metadata to standardize representation of datasets while facilitatin discovey and sharing, while allowing researchers and staff to add additional metadata where time and resources permit. The two different curation methods are described in more detail below.
 
 #### After-the-fact/archival curation 
+
+The challenge that any data repository will face, regardless of size and scope, is how to define a schema that will accept a wide variety of datasets, while adding a level of standardization that allows them to be easily searched and acted upon (FRBR - Saatchi & Hourcle).
 
 - Curation process (librarians outside of the library, how to gather and standardize metadata, handling many types of data, from in the process of gathering to archival materials gathered decades ago).
 
@@ -106,6 +120,7 @@ Within these intersecting discussions, we note that there is a tension between b
 - Differs from institutional repositories because of focus on a particular research field.
 - Serves as the foundation of search and discoverability
 - Spreadsheet interface, metadata capture
+- Annotations add additional metadata for discoverability
 
 
 ## Next Steps
