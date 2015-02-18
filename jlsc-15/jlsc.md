@@ -6,8 +6,6 @@
 
 ## Introduction
 
-- What is Databrary and what purpose does it serve
-
 Databrary (<http://databrary.org>), is a digital data library specialized for storing and sharing videos collected as raw data in the context of research about human and animal behavior. The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595). New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU). Databrary began sharing video data in 2014, so the project remains in the early stages of operation. Sharing personally identifiable research materials like video recordings has posed significant challenges along a number of dimensions. In meeting these challenges, Databrary has engaged a wide range of expertise, including substantial support from experts in the NYU Library and project staff with training in library and information science. As such, we think the project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
 
 In this paper, we will discuss how Databrary is similar to and differs from existing data repositories. We will describe the project's origins and rationale and motivate the focus on a specific research field (developmental science) and particular data type (recordings, especially video). The storage and sharing of identifiable recordings poses a variety of challenges. We will describe Databrary's solutions to many of them, including the development of policies and procedures to enable the sharing of identifiable data and curation practices and technologies customized for a particular research community. Finally, in laying out a roadmap for enhancements and extensions of Databrary, we will discuss our views about what lessons library and information scientists might draw from the Databrary experience. We hope to demonstrate that information professionals have important roles to play in partnership with researchers in many scholarly domains.
@@ -34,9 +32,9 @@ Accompanying the discussion on new roles is a more more low level and technical 
 Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
 
 
-## Databrary services
+## Databrary Project Model
 
-### Project Origins and Rationale
+### Project Origins and Rationale (Rick)
 
 - Data sharing a growing focus within research community and with research funding agencies.
     + Libraries already house other products of scholarly activity such as journal articles and books, but the raw materials behind published research remains unavailable in most cases.
@@ -47,11 +45,6 @@ Within these intersecting discussions, we note that there is a tension between b
         * Technical barriers -- videos are large
         * Curation for sharing not part of scientific workflow
             - No incentive to share, many discincentives
-- But, there is a desire to change
-    * Databrary's committed contributors
-    * Agencies beginning to require data sharing, support data sharing.
-    * Evolving policies to enable sharing
-    * Video is largely self-documenting, so potential for data re-use is high.
 - Sharing with restricted community of researchers
     + Datasets linked to publications
         * Citations
@@ -68,35 +61,40 @@ Within these intersecting discussions, we note that there is a tension between b
     - Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use.
     - Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
 
-#### Citations
-
-- Provide valid citations in standard format
-- Citations for subcomponents (e.g., excerpts)
-
-### Policies and Data Privacy
+### Enticing Contributors: Data Privacy and Community Outreach (Rick? Drew?)
 
 - IRB and privacy concerns that needed to be addressed - community building that follows from this
 -  Privacy concerns impact the curation process in that video data has identifiable data and so that would either need to be reviewed for access or completely redacted before being ingested. Ensuring proper access restrictions was also an important component in contributor buy-in.
 - What to share? When to share? Who should share?
     - Data Sharing Manifesto
 
-### Community Outreach
-
 - Databrary is designed to work more closely with researchers (i.e."designed in the context of researchers").
 - Community outreach/training, hands-on support.
 - Meeting researchers more than half-way.
-- Bringing expertise from library/information science to the research enterprise at an early stage.
+- Bringing expertise from library/information science to the research enterprise at an early stage (research informationists).
 - Approach is working
     - 70+ users in first year, 35 contributors, X files
 
+### Institutional Positioning: Support from University Entities and funding partners (David)
 
-### Curation
+- "Relationship with not only the central library but also with other university central services, such as central IT, sponsored projects, legal."
+- Privacy policies, language developed with sponsored projects and IRB staff at NYU and PSU.
+- Cooperative agreement, active participation by agency officials.
+
+### Services for Scholarly Communication (Rick?)
+
+- Provide valid citations in standard format
+- Citations for subcomponents (e.g., excerpts)
+- Other research materials
+- Raw data
+
+### Curation (Drew)
 
 - Databrary supports both after the fact and active curation
 - We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate.
 - Balance: we are sensitive to gathering the "minimum viable" set of metadata to aid discovery and sharing.  We are, however, prepared to accept more.
 
-#### After-the-fact/archival curation
+#### After-the-fact/archival curation 
 
 - Curation process (librarians outside of the library, how to gather and standardize metadata, handling many types of data, from in the process of gathering to archival materials gathered decades ago).
 
@@ -109,20 +107,15 @@ Within these intersecting discussions, we note that there is a tension between b
 - Serves as the foundation of search and discoverability
 - Spreadsheet interface, metadata capture
 
-### Support from University Entities and funding partners
 
-- "Relationship with not only the central library but also with other university central services, such as central IT, sponsored projects, legal."
-- Privacy policies, language developed with sponsored projects and IRB staff at NYU and PSU.
-- Cooperative agreement, active participation by agency officials.
+## Next Steps
 
-## The Future of Video Data Sharing (Next Steps)
-
-### Expand number and diversity of datasets
+### Expand number and diversity of datasets (Drew)
 
 - Continue to document and standardize curation processes and learn from library and data services staff about collection development and dataset profiles.
 - Education and cognitive/social psychology communities, anthropology, linguistics.
 
-### Enhance Databrary's feature-set
+### Enhance Databrary's feature-set (Drew)
 
 - Build on discovery and search (this was in last paper, not sure how relevant it is here)
 - Visualization, tagging
@@ -132,18 +125,12 @@ Within these intersecting discussions, we note that there is a tension between b
     + Gaze tracking
     + Kinematics
 
-### Community outreach
-
-- Libraries, sponsored projects offices, grants planning staff
-    + Budgeting for data management/curation from the beginning.
-    + Build on NDAR planning model (<http://ndar.nih.gov/ndarpublicweb/Documents/NDAR_Data_Submission_Costs.xls>)
-
-### Improve Active/Self-Curation
+### Improve Active/Self-Curation (Drew)
 
 - Field test, adapt based on feedback.
 - Freak-out: researchers are often surprised at the appearance of their data as it becomes further curated.  Possibly concerned about perceived flaws in their process?  (+ Drew's phrasing: "appealing to the contributing parties.")
 
-### Integrate with other services
+### Integrate with other services (Drew)
 
 - Connect more with library systems (OAI, Library-specific metadata exports, Linked Data)
 - Connect with other data repositories
