@@ -33,7 +33,6 @@ Within these intersecting discussions, we note that there is a tension between b
 
 Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
 
-
 ## Databrary Project Model
 
 ### Project Origins and Rationale (Rick)
@@ -65,7 +64,7 @@ Finally, we understand that the specific features and virtues of a repository wi
 
 ### The technical details (Drew)
 
-The Databrary web application is open-source and built in Scala on the Play Framework to support a responsive user interface, a complete API, and high-performance streaming. The user interface is built primarily on the Angular web framework, and all data access is performed through an open JSON API.
+The Databrary web application is open-source and built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming. The backend is a PostgresSQL relational database. The user interface is built primarily on the JavaScript Angular web framework, and all data access is performed through an open JSON API. 
 
 As part of the curation process, Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file if it was digital, or a 10-bit YUV digital preservation copy if the original version was not digital. Currently, the access version format is H.264 (HiP) with AAC audio in an MPEG-4 container, although we expect the appropriate video formats to change over time, as has been the case with many digital video formats in
 recent years.
@@ -75,6 +74,13 @@ locations, and a third copy on offsite tape; it performs regular fixity checks; 
 
 ### Enticing Contributors: Data Privacy and Community Outreach (Rick? Drew?)
 
+In order to attract data deposits, Databrary has had to confront some the potent barriers to sharing.
+
+#### Securely sharing identifiable research data
+- Videos are identifiable
+    + Can't be anonymized without undermining/destroying data reuse value.
+    + How to share while maintaining participant privacy
+    + Concerns especially significant when considering infants and children, the main focus of Databrary's initial target research community.
 - IRB and privacy concerns that needed to be addressed - community building that follows from this
 -  Privacy concerns impact the curation process in that video data has identifiable data and so that would either need to be reviewed for access or completely redacted before being ingested. Ensuring proper access restrictions was also an important component in contributor buy-in.
 - What to share? When to share? Who should share?
@@ -121,7 +127,6 @@ The challenge that any data repository will face, regardless of size and scope, 
 - Serves as the foundation of search and discoverability
 - Spreadsheet interface, metadata capture
 - Annotations add additional metadata for discoverability
-
 
 ## Next Steps
 
