@@ -39,7 +39,7 @@ Within these intersecting discussions, we note that there is a tension between b
 ### Project Origins and Rationale
 
 - Data sharing a growing focus within research community and with research funding agencies.
-    + Libraries already house other products of scholarly activity such as journal articles and books, but the raw materials behind published remains unavailable in most cases.
+    + Libraries already house other products of scholarly activity such as journal articles and books, but the raw materials behind published research remains unavailable in most cases.
 - There is no history of sharing within developmental science.
     - Barriers include
         * Collection of sensitive/private data, e.g. video
@@ -115,7 +115,7 @@ Within these intersecting discussions, we note that there is a tension between b
 - Privacy policies, language developed with sponsored projects and IRB staff at NYU and PSU.
 - Cooperative agreement, active participation by agency officials.
 
-## The Future of Video Data Sharing
+## The Future of Video Data Sharing (Next Steps)
 
 ### Expand number and diversity of datasets
 
