@@ -2,31 +2,64 @@
 
 ## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
 
+
 ## Abstract
+
+Thesis (not for final copy): In order for libraries to be successful in performing research data management and developing suitable research data repositories, they need to create strategies for librarians to work more closely with researchers, to the extent that they may be embedded in their data management workflows.
+- Subpoint: Databrary is a model for this, particularly for researchers that are generally "non-technical" and not as opinionated in how their data are represented in a repository (so long is it is there and can be found and shared with others).
 
 ## Introduction
 
 Databrary (<http://databrary.org>), is a digital data library specialized for storing and sharing videos collected as raw data in the context of research about human and animal behavior. The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595). New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU). Databrary began sharing video data in 2014, so the project remains in the early stages of operation. Sharing personally identifiable research materials like video recordings has posed significant challenges along a number of dimensions. In meeting these challenges, Databrary has engaged a wide range of expertise, including substantial support from experts in the NYU Library and project staff with training in library and information science. As such, we think the project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
 
+<!--update these stats, move this section elsewhere or this is ok? -->
+The website was opened for general use in October 2014 and has accepted contributions since earlier that year. As of January 2015, it hosts 5700 video files totaling 1600 hours of recordings along with 2200 additional files. These files comprise 2400 sessions and are covered by 1300 records (including 1100 individual participants). Data originates from 35 individual contributors across 25 different universities.
+
 In this paper, we will discuss how Databrary is similar to and differs from existing data repositories. We will describe the project's origins and rationale and motivate the focus on a specific research field (developmental science) and particular data type (recordings, especially video). The storage and sharing of identifiable recordings poses a variety of challenges. We will describe Databrary's solutions to many of them, including the development of policies and procedures to enable the sharing of identifiable data and curation practices and technologies customized for a particular research community. Finally, in laying out a roadmap for enhancements and extensions of Databrary, we will discuss our views about what lessons library and information scientists might draw from the Databrary experience. We hope to demonstrate that information professionals have important roles to play in partnership with researchers in many scholarly domains.
 
-## Literature Review
+## Literature Review (Drew)
 
 - Papers that discuss existing data repositories
     + Domain-general vs. domain specific
 - Papers that discuss theory or practice of librarianship around data repositories
-    + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)?
+    + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)? 
+- Papers that discuss funding and institutional models for supporting research data repositories
 
-<!-- Would it be safe to assume a paragraph of review per each main point we discuss regarding Databrary below(i.e. scope of repository, position of repository, representational model for repository, practical concerns (IRB, privacy, else...))? --> 
+The current literature on data repositories and data curation covers the libraries role in providing research data management services for their University community, reviews of projects that take on the task of storing and providing access to research data, and relationships and funding models that make these repositories possible. 
 
-<!-- Repositories big and small (in scope, not in size) -->
-The current literature on data repositories and data curation focus primarily on the libraries role in providing research data management services for their University community <cite, cite, cite>. On the whole, these discussions focus on the collecting, cataloging, and making available heterogenous datasets from across domains and specializations <cite, cite, cite>. Though there is a considerable body of literature that also discusses domain specific research data repositories <cite, cite, cite>. Often, the former sit within or emerge from within the library. For the latter, (read up on this...how do these types connect to the library?).
+<!-- Repositories big and small (in scope, not in size) and how they are situated in their institution -->
+- Albertson, 2012
+- Peer & Green, 2012
+- Lagoze etal, 2014 (?)
+- Lyle, 2014
+- Witt, 2012
+On the whole, these discussions focus on the collecting, cataloging, and making available heterogenous datasets from across domains and specializations. Though there is a considerable body of literature that also discusses domain specific research data repositories. Often, the former sit within or emerge from within the library. For the latter, (read up on this...how do these types connect to the library?).
 
-<!-- New practices for library staff - communication -->
+<!-- New practices for library staff - communication with researchers/policy-->
+- Bardyn, Resnick, & Camina, 2012
+- Carlson, 2012
+- Castelli, Manghi, & Thanos, 2013
+- Federer, 2013
+- Macdonald & Martinez-Uribe, 2010 (collaboration and expertise)
+- McClure, 2014 (data profiles)
+- MaCmillan, 2014 
 Amongst the research and practice around research data and the library, the discussion focuses on the emerging role of librarians with domain expertise aimed at the research data they aspire to collect as well as the evolving roles librarians need to take in communicating the importance and specific practices in organizing and managing data, as well as taking on roles as curators of digital data. The goal of these new roles and responsibilities aim at lessening or eliminating the barriers to sharing as well as helping other researchers find and reuse the data being added to repositories. 
 
-<!-- New requirements for metadata creation and building metadata for digital data objects -->
-Accompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets<cite, cite, cite>. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. 
+<!-- New practices for library staff metadata creation and technical workflow -->
+- Greenberg, White, Carrier, & Scherle, 2009
+- Yoon & Tibbo, 2011
+- Witt, Carlson, Cragin, & Brandt, 2009
+- Heidorn, 2011
+- Hilliker, Wacker, & Nurnberger, 2013 (linked data and discoverability - kind of an aside)
+- Nielson, 2014
+- Wickett, 2012
+- Pinfield etal, 2014 (but also in communication), 
+- Simons & Richardson, 2012 (JLSC publication)
+- Weber, Palmer, & Chao, 2012
+Accompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. What are the practical underpinnings to curating research data?
+
+<!-- Outside of the library, there is discussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
+
 
 <!-- Overview/Tieing together and prelude to rest of paper --> 
 Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
@@ -62,7 +95,7 @@ Finally, we understand that the specific features and virtues of a repository wi
     - Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use.
     - Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
 
-### The technical details (Drew)
+### The Technical Infrastructure (Drew)
 
 The Databrary web application is open-source and built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming. The backend is a PostgresSQL relational database. The user interface is built primarily on the JavaScript Angular web framework, and all data access is performed through an open JSON API. 
 
