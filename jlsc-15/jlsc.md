@@ -61,7 +61,7 @@ Accompanying the discussion on new roles is a more more low level and technical 
 <!-- Outside of the library, there is discussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
 
 
-<!-- Overview/Tieing together and prelude to rest of paper --> 
+<!-- Overview/Tying together and prelude to rest of paper --> 
 Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
 
 Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
@@ -141,17 +141,29 @@ In order to attract data deposits, Databrary has had to confront some the potent
 
 ### Curation (Drew)
 
-Databrary supports both after the fact and active curation. After the fact curation consists of ingesting datasets after collection has been completed and largely after all study derivatives (research papers, analyses, etc.) have been created. Active curation refers to the "Upload As You Go" feature of Databrary, a user interface built into the web application that guides researchers through uploading their video data and attaching metadata as they conduct their study. 
+Databrary supports both after the fact and active curation. After the fact curation consists of ingesting datasets after collection has been completed and largely after all study derivatives (research papers, analyses, etc.) have been created. Active curation refers to Databrary's user interface that allows researchers upload their video data and attaching metadata as they collect it during the course of their study. 
 
-We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate. The end result of both available curation processes is a system that defines and supports a minimum requirement for metadata to standardize representation of datasets while facilitatin discovey and sharing, while allowing researchers and staff to add additional metadata where time and resources permit. The two different curation methods are described in more detail below.
+We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate. The end result of both available curation processes is a system that defines and supports a minimum requirement for metadata to standardize representation of datasets while facilitatin discovey and sharing, while allowing researchers and staff to add additional metadata where time and resources permit. The two different curation methods are described in more detail below. 
 
 #### After-the-fact/archival curation 
 
 The challenge that any data repository will face, regardless of size and scope, is how to define a schema that will accept a wide variety of datasets, while adding a level of standardization that allows them to be easily searched and acted upon (FRBR - Saatchi & Hourcle).
 
-- Curation process (librarians outside of the library, how to gather and standardize metadata, handling many types of data, from in the process of gathering to archival materials gathered decades ago).
+Communication with researchers remains a key component to the curation process. The act of discussing with researchers their data that had already been collected for incorporation into Databrary was and continues to be an important step in understanding overall how our target contributors envision their data inside of a repository and how to develop a generalized schema that would meet the diverse needs of each individual lab.
+
+Because data that had once been gathered under a very different set of participant consents and IRB permissions, this communication is also crucial in understanding how we might interpret pre-existing restrictions on the data in a way that meets the criteria for bringing the data into Databrary. Becuase these access restrictions apply not only to the overall study level, but also to the session and individual file level, gathering this metadata comprises a non-trivial amount of curation effort and informs the policy and documentation we share with our current and potential contributors and repository users.
+
+In addition to communication, collaboration between embedded library staff and staff familiar with the practices and interpretation of data within a behavioral science context is important for ensuring the quality and organization of the data for ingest. 
+
+Once a dataset has been approved for ingesting and the contributor has been onboared via the authorization process, we begin the process of gathering, organizing, and preparing the data for ingest. Due to the nature of video data being identifying and differing lab practices around gathering personally identifying information, it is sometimes the case that staff time will need to be devoted to reviewing video clips for personal information we do not want to upload, such as residential address or social security number if these pieces of information were captured during a lab experiment. In the case of older video collections, where relevant metadata may have been lost or not documented to begin with, we will also review videos for any relevant metadata related to participant tasks or conditions. Not only does this require staff time, but also some familiarity with the domain of behavioral science.
+
+Finally, once all the metadata has been organized into a set of CSV files and video files are uploaded to a staging server for ingest, set of server scripts will merge the metadata into a JSON file which is then uploaded via the web application. This process then starts of the uploading of the video assets, creation of the sessions and records, and the video files are transcoded to a standard format, clipped to remove identifying information, and stored on the long-term preservation location within NYU's ITS data centers.
 
 #### Active curation
+
+Active curation refers to the data management features available in Databrary's user interface for researchers to upload their lab data as they collect it. Through ongoing discussion with Databrary users and potential users of Databrary, we have designed and developed into the web application a spreadsheet view for editing highlevel session metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups etc.) and a timeline view for viewing and uploading video assets related to sessions. The timeline view is akin to video editing software and not only allows users to upload and position video files along the time line, but also to annotate video sections with user-generated tags. 
+
+[Screen shots since no page limit?]
 
 - Curate data while it is being collected.
     + New in developmental science.
