@@ -24,17 +24,18 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
     + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)? 
 - Papers that discuss funding and institutional models for supporting research data repositories
 
-The current literature on data repositories and data curation covers the libraries role in providing research data management services for their University community, reviews of projects that take on the task of storing and providing access to research data, and relationships and funding models that make these repositories possible. 
 
 <!-- Repositories big and small (in scope, not in size) and how they are situated in their institution -->
-- Albertson, 2012
+
 - Peer & Green, 2012
 - Lagoze etal, 2014 (?)
 - Lyle, 2014
 - Witt, 2012
-On the whole, these discussions focus on the collecting, cataloging, and making available heterogenous datasets from across domains and specializations. Though there is a considerable body of literature that also discusses domain specific research data repositories. Often, the former sit within or emerge from within the library. For the latter, (read up on this...how do these types connect to the library?).
+- Ardini, Pan, Qin, Cooley, 2013
+While there are more data repositories than there are published articles that discuss them, a sampling of the current literature on data repositories and data curation largely focusing on projects that establish services for an institution or a research community. These projects have varied scopes. Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini etal 2013). In either case, a main challenge to any data repository, no matter the scope, is creating a schema and workflow that is general enough to incorporate many different datasets, but focused enough that standardization and search does not become a burden to administrators, curators, and users. Amongst the important questions in terms of how these respoitories function is how are the established institutionally and how do they interface with researchers and producers of repository content. Witt (2012) dicsusses the collaboration between Purdue Library Systems and Information Technology at Purdue (ITaP). ICPSR, as discussed in Lyle (2014), instead grew as a consortium of different research institutions. P
 
 <!-- New practices for library staff - communication with researchers/policy-->
+Regardless of the repositories scope or where it is located, there is another, more general discussion about the new responsibilities and workflows that fall from these systems make up an important question for the future of these services for researchers and the role of libraries and information professionals in the development and management of these systems. 
 - Bardyn, Resnick, & Camina, 2012
 - Carlson, 2012
 - Castelli, Manghi, & Thanos, 2013
@@ -58,6 +59,9 @@ Amongst the research and practice around research data and the library, the disc
 Accompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. What are the practical underpinnings to curating research data?
 
 <!-- Outside of the library, there is discussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
+- Borgman 2012
+- 
+A challenge for researchers sharing their data involves whether their data will make sense removed from their original context (Borgman 2012).
 
 <!-- Overview/Tying together and prelude to rest of paper --> 
 Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
