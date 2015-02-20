@@ -2,7 +2,6 @@
 
 ## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
 
-
 ## Abstract
 
 Thesis (not for final copy): In order for libraries to be successful in performing research data management and developing suitable research data repositories, they need to create strategies for librarians to work more closely with researchers, to the extent that they may be embedded in their data management workflows.
@@ -60,25 +59,22 @@ Accompanying the discussion on new roles is a more more low level and technical 
 
 <!-- Outside of the library, there is discussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
 
-
 <!-- Overview/Tying together and prelude to rest of paper --> 
 Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
 
 Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
 
-## Databrary Project Model
+## Databrary Project Model <!-- Rick --!>
 
-### Project Origins and Rationale (Rick)
+Data sharing has attracted a growing focus within many research communities. In some fields of inquiry such as the Earth and space sciences, open data sharing has been a longstanding norm. This contrasts with the relatively low prevalence of data sharing in the behavioral sciences. Federal agencies that fund behavioral research have implemented data management planning and sharing requirements for applicants, but ethical and technical barriers to sharing sensitive data about human participants have made open data sharing uncommon in the behavioral sciences. 
 
-- Data sharing a growing focus within research community and with research funding agencies.
-    + Libraries already house other products of scholarly activity such as journal articles and books, but the raw materials behind published research remains unavailable in most cases.
-- There is no history of sharing within developmental science.
-    - Barriers include
-        * Collection of sensitive/private data, e.g. video
-        * Research ethics policies
-        * Technical barriers -- videos are large
-        * Curation for sharing not part of scientific workflow
-            - No incentive to share, many discincentives
+These problems grow when video provides a primary stream of research data and when infants, children or adolescents are the focus of study. Videos contain personally identifiable information -- faces, voices, names spoken aloud, and possibly views of the homes of research participants. Video data collected in laboratory or home settings for research purposes requires approval by a research ethics board, informed consent from the participants, and involves a promise by the research team that a participants' identity will not be disclosed to anyone outside the research team. Video data cannot be anonymized without reducing information content. Concealing participants’ identity (e.g., by pixilation or blocking faces) would limit the utility of the data. Thus, researchers risk violating participants’ privacy if digital images are viewed or released to the public without authorization. At the same time, video has significant potential for re-use. Videos recorded in one experimental setting may often be used for other purposes.  
+
+Recognizing that solving the problems of open video data sharing was a high priority for the developmental science research community, the NSF sponsored a workshop in September 2011 focused on assessing how to overcome the barriers to open video data sharing. Databrary Principal Investigator (PI), Karen Adolph, a leading researcher in developmental science and an advocate for the use and re-use of video data was the workshop organizer and leader. Participants included 39 researchers in developmental science, educational research, computer science, and cognitive science, along with program officers from NSF, NICHD, and IES. Discussions focused on the promises and pitfalls of open video-based data-sharing in developmental science. The strong consensus was that the barriers were surmountable and potential benefits were many.
+
+Subsequently, Adolph assembled a new project team to flesh out a pair of project proposals that were ultimately funded by NSF and NICHD. From the beginning, the team included experts from a variety of units at the home institution, New York University (NYU) and the partner institution (PSU), including the library, information technology services, office of sponsored projects, and research compliance office. The goal of this effort was to inform project planning and ethics discussions with the broadest array of expertise available. At the same time, Adolph and Gilmore engaged experts in the developmental science community to provide guidance about the emerging project. The goal was to ensure that the repository was designed with the needs and perspectives of the target community directly in mind from the very beginning. 
+
+#### Sharing identifiable data
 - Sharing with restricted community of researchers
     + Datasets linked to publications
         * Citations
@@ -88,12 +84,10 @@ Finally, we understand that the specific features and virtues of a repository wi
     + Cross-referencing among datasets, published papers/studies
     + Expose as much metadata as possible
     + Restricted access helps with data privacy/security concerns, but may slow adoption (see below).
-- Novel approach
-    - We have taken a new approach to supporting research data, as evidenced by the organization of our own leadership, the charge from our funding agencies.
-    - Our repository is designed in the context of researchers, not as an isolated project initiated by either the library or the central IT dept
-    - Cf. the Northwestern Survey and also the new NYU survey of peer research repositories (I have more on this).  We build on others' work and take a holistic approach wherever possible.
-    - Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use.
-    - Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
+
+#### Committed contributors, community outreach...
+
+We think the Databrary approach is novel. The same experts who helped plan the initial project proposals in the spring of 2012 sit on the advisory board and participate actively in the twice yearly board meetings. Our repository is designed in the context of researchers, not as an isolated project initiated by either the library or the central IT dept. Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use. Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
 
 ### The Technical Infrastructure (Drew)
 
@@ -208,3 +202,19 @@ It is the active curation feature that differentiates Databrary from institution
 
 ## Conclusion
 
+
+---
+
+# Deleted text
+
+Libraries already house other products of scholarly activity such as journal articles and books, but the raw materials behind published research remains unavailable in most cases.
+
+So, video poses significant challenges to the ideal of open data sharing, but the challenges are balanced by a high potential for accelerating the pace of scientific discovery.
+
+- There is no history of sharing within developmental science.
+    - Barriers include
+        * Collection of sensitive/private data, e.g. video
+        * Research ethics policies
+        * Technical barriers -- videos are large
+        * Curation for sharing not part of scientific workflow
+            - No incentive to share, many discincentives
