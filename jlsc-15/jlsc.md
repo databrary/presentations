@@ -161,17 +161,13 @@ Finally, once all the metadata has been organized into a set of CSV files and vi
 
 #### Active curation
 
-Active curation refers to the data management features available in Databrary's user interface for researchers to upload their lab data as they collect it. Through ongoing discussion with Databrary users and potential users of Databrary, we have designed and developed into the web application a spreadsheet view for editing highlevel session metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups etc.) and a timeline view for viewing and uploading video assets related to sessions. The timeline view is akin to video editing software and not only allows users to upload and position video files along the time line, but also to annotate video sections with user-generated tags. 
+One of the lessons we learned early on is that it was a challenge for researchers to prepare data once their study had completed. Additionally, we did not want Databrary only to be a final resting place for the products of our contributors research, but an active community. As a tool that would also assist contributors in completing the requirements of their data management plan, we purposefully designed the application and the surrounding policies and IRB agreements to anticipate that researchers will begin a study with using Databrary as a space for managing as well as preserving their research data. 
+
+Though in order to be useful, data management through Databrary would have to reflect what we observed to be some of the common practices undertaken in collecting and keeping track of data through its lifecycel. Active curation refers to the data management features available in Databrary's user interface for researchers to upload their lab data as they collect it. Through ongoing discussion with Databrary users and potential users of Databrary, we have designed and developed into the web application a spreadsheet view for editing high level session metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups etc.) and a timeline view for viewing and uploading video assets related to sessions. The timeline view is akin to video editing software and not only allows users to upload and position video files along the time line, but also to annotate video sections with user-generated tags. These metadata are then an index point for search and discoverability.
 
 [Screen shots since no page limit?]
 
-- Curate data while it is being collected.
-    + New in developmental science.
-    + Builds on existing common practices.
-- Differs from institutional repositories because of focus on a particular research field.
-- Serves as the foundation of search and discoverability
-- Spreadsheet interface, metadata capture
-- Annotations add additional metadata for discoverability
+It is the active curation feature that differentiates Databrary from institutional repositories and could not have been possible with out the focus on a particular research field as well as the positioning and mission to more actively include its intended community throughout its development. The decision to create a spreadsheet that focuses on sessions gets derived from the observational session being the basic analytic unit of behavioral science (Bakeman & Quera, 2012). Using a timeline for display and management of video assets comes from desktop coding tools like ____, which many researchers in this field use to code their videos for the behaviors and phenomena of interest for their study. As such, being closely tied to the practices of researchers in this domain allowed us to elaborate on the idea of a repository to provide them not only with representational modelf for their data that they are familiar with, but also a workflow to make management of their data more efficient, and also contribute to a more common practice across labs and institutions.
 
 ## Next Steps
 
