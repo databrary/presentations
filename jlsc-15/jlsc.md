@@ -4,15 +4,11 @@
 
 ## Abstract
 
-Thesis (not for final copy): In order for libraries to be successful in performing research data management and developing suitable research data repositories, they need to create strategies for librarians to work more closely with researchers, to the extent that they may be embedded in their data management workflows.
-- Subpoint: Databrary is a model for this, particularly for researchers that are generally "non-technical" and not as opinionated in how their data are represented in a repository (so long is it is there and can be found and shared with others).
+Libraries have long provided a home for a diverse range of scholarly products, but new interest has arisen in organizing, preserving, and sharing the raw materials -- the data and metadata -- that undergird the published products of research. Library and information science professionals have valuable expertise to bring to bear in the effort to create larger, more diverse, and more widely used data libraries. However, for libraries to be maximally successful in providing the research data management and preservation services required of a successful data repository, librarians must work especially closely with researchers and embed themselves in data management workflows as much as possible. The Databrary digital data library provides a model for how library and information science experts, working in a diverse team, can inform the development and implementation of a data repository that is closely linked to the needs of a specific research community. In Databrary's case, the target scholarly community represents researchers who use video as a main source of data to study human and animal development. Storing and sharing video poses policy and technical challenges that Databrary staff have solved in ways that may prove informative to the library and information science community.
 
 ## Introduction
 
 Databrary (<http://databrary.org>), is a digital data library specialized for storing and sharing videos collected as raw data in the context of research about human and animal behavior. The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595). New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU). Databrary began sharing video data in 2014, so the project remains in the early stages of operation. Sharing personally identifiable research materials like video recordings has posed significant challenges along a number of dimensions. In meeting these challenges, Databrary has engaged a wide range of expertise, including substantial support from experts in the NYU Library and project staff with training in library and information science. As such, we think the project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
-
-<!--update these stats, move this section elsewhere or this is ok? -->
-The website was opened for general use in October 2014 and has accepted contributions since earlier that year. As of January 2015, it hosts 5700 video files totaling 1600 hours of recordings along with 2200 additional files. These files comprise 2400 sessions and are covered by 1300 records (including 1100 individual participants). Data originates from 35 individual contributors across 25 different universities.
 
 In this paper, we will discuss how Databrary is similar to and differs from existing data repositories. We will describe the project's origins and rationale and motivate the focus on a specific research field (developmental science) and particular data type (recordings, especially video). The storage and sharing of identifiable recordings poses a variety of challenges. We will describe Databrary's solutions to many of them, including the development of policies and procedures to enable the sharing of identifiable data and curation practices and technologies customized for a particular research community. Finally, in laying out a roadmap for enhancements and extensions of Databrary, we will discuss our views about what lessons library and information scientists might draw from the Databrary experience. We hope to demonstrate that information professionals have important roles to play in partnership with researchers in many scholarly domains.
 
@@ -23,7 +19,6 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 - Papers that discuss theory or practice of librarianship around data repositories
     + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)? 
 - Papers that discuss funding and institutional models for supporting research data repositories
-
 
 <!-- Repositories big and small (in scope, not in size) and how they are situated in their institution -->
 
@@ -64,84 +59,55 @@ Accompanying the discussion on new roles is a more more low level and technical 
 A challenge for researchers sharing their data involves whether their data will make sense removed from their original context (Borgman 2012).
 
 <!-- Overview/Tying together and prelude to rest of paper --> 
-Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preservering research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
+Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preserving research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
 
 Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
 
-## Databrary Project Model <!-- Rick --!>
+## Data-sharing in Developmental Science and the Origins of Databrary
 
-Data sharing has attracted a growing focus within many research communities. In some fields of inquiry such as the Earth and space sciences, open data sharing has been a longstanding norm. This contrasts with the relatively low prevalence of data sharing in the behavioral sciences. Federal agencies that fund behavioral research have implemented data management planning and sharing requirements for applicants, but ethical and technical barriers to sharing sensitive data about human participants have made open data sharing uncommon in the behavioral sciences. 
+In some fields, such as the Earth and space sciences or high energy physics, open data sharing has been a longstanding norm (e.g., DataONE, Virtual Observatory, Hubble, etc.). Federal agencies that fund behavioral research have implemented data management planning and sharing requirements for applicants, but ethical and technical barriers to sharing sensitive data about human participants have made open data sharing uncommon in the behavioral sciences. These problems grow when infants, children, or adolescents are the focus of study and when video provides a primary stream of research data. Both features characterize research in developmental science.
 
-These problems grow when video provides a primary stream of research data and when infants, children or adolescents are the focus of study. Videos contain personally identifiable information -- faces, voices, names spoken aloud, and possibly views of the homes of research participants. Video data collected in laboratory or home settings for research purposes requires approval by a research ethics board, informed consent from the participants, and involves a promise by the research team that a participants' identity will not be disclosed to anyone outside the research team. Video data cannot be anonymized without reducing information content. Concealing participants’ identity (e.g., by pixilation or blocking faces) would limit the utility of the data. Thus, researchers risk violating participants’ privacy if digital images are viewed or released to the public without authorization. At the same time, video has significant potential for re-use. Videos recorded in one experimental setting may often be used for other purposes.  
+While personally identifying information can be removed from text-based data, videos may contain faces, voices, names spoken aloud, and sometimes views of the homes of research participants. These cannot be removed without reducing the information content. Further, the collection of video or other identifiable or sensitive information requires approval by a research ethics board and informed consent from the participants. The consent process formalizes a promise by the research team that a participant's identity will not be disclosed. Thus, researchers risk violating participants’ privacy if digital images are viewed or released to others without authorization. 
+
+At the same time, video has significant potential for re-use. Video uniquely captures the complexity and richness of behavior. Accordingly, videos recorded in one experimental setting for one purpose may often be used by other investigators for other purposes (c.f., Raudies & Gilmore, 2014).
+
+### Origins of Databrary
 
 Recognizing that solving the problems of open video data sharing was a high priority for the developmental science research community, the NSF sponsored a workshop in September 2011 focused on assessing how to overcome the barriers to open video data sharing. Databrary Principal Investigator (PI), Karen Adolph, a leading researcher in developmental science and an advocate for the use and re-use of video data was the workshop organizer and leader. Participants included 39 researchers in developmental science, educational research, computer science, and cognitive science, along with program officers from NSF, NICHD, and IES. Discussions focused on the promises and pitfalls of open video-based data-sharing in developmental science. The strong consensus was that the barriers were surmountable and potential benefits were many.
 
-Subsequently, Adolph assembled a new project team to flesh out a pair of project proposals that were ultimately funded by NSF and NICHD. From the beginning, the team included experts from a variety of units at the home institution, New York University (NYU) and the partner institution (PSU), including the library, information technology services, office of sponsored projects, and research compliance office. The goal of this effort was to inform project planning and ethics discussions with the broadest array of expertise available. At the same time, Adolph and Gilmore engaged experts in the developmental science community to provide guidance about the emerging project. The goal was to ensure that the repository was designed with the needs and perspectives of the target community directly in mind from the very beginning. 
+Subsequently, Adolph assembled a new project team to flesh out a pair of project proposals that were ultimately funded by NSF and NICHD. From the beginning, the team included experts from a variety of units at the home institution, New York University (NYU) and the partner institution (PSU), including the library, information technology services, office of sponsored projects, and research compliance office. The goal was to inform project planning and ethics discussions with the broadest array of expertise available. At the same time, Adolph and co-PI Gilmore engaged experts in the developmental science community to provide guidance about the emerging project. The goal was to ensure that the repository was designed with the needs and perspectives of the target community directly in mind from the very beginning. The result was a policy framework for sharing identifiable research data *with the permission of the individuals depicted.*
 
-#### Sharing identifiable data
-- Sharing with restricted community of researchers
-    + Datasets linked to publications
-        * Citations
-        * Excerpts
-        * Other research materials
-        * Raw data
-    + Cross-referencing among datasets, published papers/studies
-    + Expose as much metadata as possible
-    + Restricted access helps with data privacy/security concerns, but may slow adoption (see below).
+Building on the common practice of seeking a separate permission to use video recordings or photographs from a research session via a release form signed by participants or parents, the Databrary team developed template language that requests permission to share recordings and other personally identifying information with other researchers. The Databrary model involves open data sharing with other researchers, not the public at large. Researchers who seek access to Databrary must register and receive authorization from an institution that verifies the individual's identity, research ethics training, and status as an independent researcher whose scientific activities are supervised by a research ethics board. In turn, researchers promise to treat data from Databrary with care, respect the wishes of research participants and guard their privacy, and closely monitor access to Databrary by students or staff they supervise.
 
-#### Committed contributors, community outreach...
+This access model has proven successful. Databrary began accepting contributions in early 2014 and opened for general use in October 2014. In less than a year of operation, the number of institutions with authorized users had grown to 40, with 79 individual investigators from North America, Europe, South America, and Australia. As of March 2015, 35 individual contributors representing 25 different universities had contributed video data or excerpts.
 
-We think the Databrary approach is novel. The same experts who helped plan the initial project proposals in the spring of 2012 sit on the advisory board and participate actively in the twice yearly board meetings. Our repository is designed in the context of researchers, not as an isolated project initiated by either the library or the central IT dept. Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use. Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
+## Cornerstones of Success
 
-### The Technical Infrastructure (Drew)
+The project remains in its early phase, so its long-term success is not yet known. Nevertheless, we attribute our early success to several facets: a focus on community outreach, attention to data privacy, the provision of services for scholarly communication, services for guided and active data curation, support from institutional partners, and a strong technical infrastructure.
 
-The Databrary web application is open-source and built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming. The backend is a PostgresSQL relational database. The user interface is built primarily on the JavaScript Angular web framework, and all data access is performed through an open JSON API. 
+### Community Outreach and Scholarly Communication
 
-As part of the curation process, Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file if it was digital, or a 10-bit YUV digital preservation copy if the original version was not digital. Currently, the access version format is H.264 (HiP) with AAC audio in an MPEG-4 container, although we expect the appropriate video formats to change over time, as has been the case with many digital video formats in
-recent years.
+In developing Databrary, the project team came to understand that researchers were more likely to want to share video data with colleagues who were part of the same scholarly community and shared the same understanding about the sensitivities involved. At the same time, the project team understood that it would have to change prevailing sentiments in the developmental science community about the feasbility of sharing video data openly. Indeed, one of the original funding proposals' specific aims involved changing the culture of research around video data sharing. This led to a decision to hire a staff member with specific responsibilities for community outreach and to the hiring of a staff member with experience in library and information science. These team members interact directly with researchers to provide hands-on support at every stage of the researcher's interactions with Databrary. Staff assist with initial registration and consultation with research ethics boards, and with planning for archival or new data curation (see Curation below). The Databrary team actively seeks out new potential contributors and datasets, and the team has established partnerships with some of the main scholarly associations in the developmental and learning sciences: the Society for Research in Child Development (SRCD), the International Society on Infant Studies (ISIS), the Cognitive Development Society (CDS), and the American Educational Research Association (AERA).
 
-For preservation, the original file (if digital) or the preservation copy will be stored in a long-term preservation repository managed jointly by the NYU Libraries and the central Information Technology Services unit. This repository ensures that each content item has a METS structural metadata file that associates the digital asset with its metadata. It stores files in two mirrored and geographically distributed
-locations, and a third copy on offsite tape; it performs regular fixity checks; and it provides a format migration capacity, in the event that astored format becomes at risk of obsolescence.
+Databrary has also attempted to forge a consensus on professional values concerning the questions of what materials to share, when in the research life cycle should materials be shared, who should share, and how one should acknowledge the use of shared data and other materials. Databrary's Data Sharing Manifesto (http://databrary.org/access/policies/data-sharing-manifesto.html) suggests that *all* researchers should share as much material as they are comfortable sharing and have permission to share, researchers should share as early on in the research life cycle as possible, and researchers should properly acknowledge all materials contributed by others that inform their research products. To that end, Databrary provides valid uniform resource identifiers (URIs) in a standard format for datasets as a whole and for subcomponents within them, links to persistent identifiers for publications associated with a dataset, and persistent identifiers (DOIs) for datasets hosted on Databrary. Library and information science experts have been instrumental in shaping the design and implementation of these features.
 
-### Enticing Contributors: Data Privacy and Community Outreach (Rick? Drew?)
+### Data Privacy
 
-In order to attract data deposits, Databrary has had to confront some the potent barriers to sharing.
+Sharing identifiable research data requires that the Databrary system restrict access to materials on the basis of both the permissions granted by individual participants and on the level of sharing a researcher has granted. Data owners provide Databrary information about the sharing permission or release level associated with each individual file. In turn, data owners decide when to share datasets -- at the end of data collection, when an associated publication goes to press, at the end of a grant -- and with whom -- selected lab members or collaborators or the Databrary research community writ large.
 
-#### Securely sharing identifiable research data
-- Videos are identifiable
-    + Can't be anonymized without undermining/destroying data reuse value.
-    + How to share while maintaining participant privacy
-    + Concerns especially significant when considering infants and children, the main focus of Databrary's initial target research community.
-- IRB and privacy concerns that needed to be addressed - community building that follows from this
--  Privacy concerns impact the curation process in that video data has identifiable data and so that would either need to be reviewed for access or completely redacted before being ingested. Ensuring proper access restrictions was also an important component in contributor buy-in.
-- What to share? When to share? Who should share?
-    - Data Sharing Manifesto
+Privacy concerns impact the data curation process, as well. Databrary staff work closely with data contributors to determine that materials they wish to share have appropriate participant permissions. In turn, that ensuring access restrictions are enforced has turned out to be an important feature in convincing data contributors to make deposits.
 
-- Databrary is designed to work more closely with researchers (i.e."designed in the context of researchers").
-- Community outreach/training, hands-on support.
-- Meeting researchers more than half-way.
-- Bringing expertise from library/information science to the research enterprise at an early stage (research informationists).
-- Approach is working
-    - 70+ users in first year, 35 contributors, X files
-
-### Institutional Positioning: Support from University Entities and funding partners (David)
+### Institutional Positioning
 
 - "Relationship with not only the central library but also with other university central services, such as central IT, sponsored projects, legal."
 - Privacy policies, language developed with sponsored projects and IRB staff at NYU and PSU.
 - Cooperative agreement, active participation by agency officials.
 
-### Services for Scholarly Communication (Rick?)
-
-- Provide valid citations in standard format
-- Citations for subcomponents (e.g., excerpts)
-- Other research materials
-- Raw data
-
-### Curation (Drew)
+### Curation
 
 Databrary supports both after the fact and active curation. After the fact curation consists of ingesting datasets after collection has been completed and largely after all study derivatives (research papers, analyses, etc.) have been created. Active curation refers to Databrary's user interface that allows researchers upload their video data and attaching metadata as they collect it during the course of their study. 
 
-We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researches, reducing their incentive to participate. The end result of both available curation processes is a system that defines and supports a minimum requirement for metadata to standardize representation of datasets while facilitatin discovey and sharing, while allowing researchers and staff to add additional metadata where time and resources permit. The two different curation methods are described in more detail below. 
+We learned early on that a minimal amount of metadata for finding and reusing datasets was preferable to exhaustive descriptions of data. The latter burdens researchers, reducing their incentive to participate. The end result of both available curation processes is a system that defines and supports a minimum requirement for metadata to standardize representation of datasets while facilitatin discovey and sharing, while allowing researchers and staff to add additional metadata where time and resources permit. The two different curation methods are described in more detail below. 
 
 #### After-the-fact/archival curation 
 
@@ -166,6 +132,20 @@ Though in order to be useful, data management through Databrary would have to re
 [Screen shots since no page limit?]
 
 It is the active curation feature that differentiates Databrary from institutional repositories and could not have been possible with out the focus on a particular research field as well as the positioning and mission to more actively include its intended community throughout its development. The decision to create a spreadsheet that focuses on sessions gets derived from the observational session being the basic analytic unit of behavioral science (Bakeman & Quera, 2012). Using a timeline for display and management of video assets comes from desktop coding tools like ____, which many researchers in this field use to code their videos for the behaviors and phenomena of interest for their study. As such, being closely tied to the practices of researchers in this domain allowed us to elaborate on the idea of a repository to provide them not only with representational modelf for their data that they are familiar with, but also a workflow to make management of their data more efficient, and also contribute to a more common practice across labs and institutions.
+
+### The Technical Infrastructure (Drew)
+
+Databrary is a new open-source (http://github.com/databrary) web application built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming. The backend is a PostgresSQL relational database. The user interface is built primarily on the Angular.js JavaScript framework, and all data access is performed through an open JSON API. 
+
+As part of the curation process, Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file if it was digital, or a 10-bit YUV digital preservation copy if the original version was not digital. Currently, the access version format is H.264 (HiP) with AAC audio in an MPEG-4 container, although we expect the appropriate video formats to change over time, as has been the case with many digital video formats in recent years. The system uses NYU's high performance computing (HPC) cluster to transcode videos in the background using ffmpeg.
+
+For preservation, the original file (if digital) or the preservation copy will be stored in a long-term preservation repository managed jointly by the NYU Libraries and the central Information Technology Services (ITS) unit. This repository ensures that each content item has a METS structural metadata file that associates the digital asset with its metadata. It stores files in two mirrored and geographically distributed locations, and a third copy on offsite tape; it performs regular fixity checks; and it provides a format migration capacity, in the event that astored format becomes at risk of obsolescence.
+
+NYU Libraries have played a critical role in advising the development team about storage and computing technologies available within the NYU IT system, and in helping negotiate access to and cost-models for IT services.
+
+### Lessons learned
+
+We think the Databrary approach is novel. The same experts who helped plan the initial project proposals in the spring of 2012 sit on the advisory board and participate actively in the twice yearly board meetings. Our repository is designed in the context of researchers, not as an isolated project initiated by either the library or the central IT dept. Through the development of Databrary and engaging a community of researchers to get their data and their active involvement in a community of sharing (and practice), we have learned a lot so far about the curation needs involved working with datasets that came together through very different lab processes as well as how to represent those datasets in a standard fashion, for future access and re-use. Where there is an active discussion amongst library practitioners of the role of libraries in the collecting and management of research data, Databrary offers a model that suggests that research data repositories could benefit from working more closely to the actual research it houses data for, while also being strategically and structurally attached to Library systems through management and staff as well as through technology integrations.
 
 ## Next Steps
 
@@ -222,3 +202,25 @@ So, video poses significant challenges to the ideal of open data sharing, but th
         * Technical barriers -- videos are large
         * Curation for sharing not part of scientific workflow
             - No incentive to share, many discincentives
+
+- Sharing with restricted community of researchers
+    + Datasets linked to publications
+        * Citations
+        * Excerpts
+        * Other research materials
+        * Raw data
+    + Cross-referencing among datasets, published papers/studies
+    + Expose as much metadata as possible
+    + Restricted access helps with data privacy/security concerns, but may slow adoption (see below).
+
+
+Concealing participants’ identity (e.g., by pixilation or blocking faces) would limit the utility of the data. 
+
+As of January 2015, it hosts 5700 video files totaling 1600 hours of recordings along with 2200 additional files. These files comprise 2400 sessions and are covered by 1300 records (including 1100 individual participants). 
+
+In developing the project team and Advisory Board, Databrary's leaders specifically sought out a diverse array of expertise- Databrary is designed to work more closely with researchers (i.e."designed in the context of researchers").
+- Community outreach/training, hands-on support.
+- Meeting researchers more than half-way.
+- Bringing expertise from library/information science to the research enterprise at an early stage (research informationists).
+- Approach is working
+    - 70+ users in first year, 35 contributors, X files
