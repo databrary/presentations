@@ -141,7 +141,7 @@ Analogous tagging and annotating, we also expect to enhance tools for researcher
 
 It is important to acknowledge, also, that we will need to improve our connection with existing library services (i.e. the library catalog and any other aggregate searches over exising data repositories). Going forward, we are well positioned to provide interoperability with library-based metadata schemas (such as export of data packages cross-walked to Dublin Core or METS) and reach OAI-PMH compliance. This will automatically incorporate data that researchers add to Databrary into federated library searches with other domain-specific data repositories.
 
-Additionally, By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets in a more automated fasion. Minting DOIs for datasets in Databrary will also allow them to be more citeable in future journal articles.
+Additionally, By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we can also allow libraries and other information systems to tap into Databrary datasets in a more automated fashion. Minting DOIs for datasets in Databrary will also allow them to be more citeable in future journal articles.
 
 ### Plan for long-term sustainability
 
