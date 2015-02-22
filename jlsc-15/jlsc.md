@@ -14,54 +14,11 @@ In this paper, we will discuss how Databrary is similar to and differs from exis
 
 ## Literature Review (Drew)
 
-- Papers that discuss existing data repositories
-    + Domain-general vs. domain specific
-- Papers that discuss theory or practice of librarianship around data repositories
-    + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)? 
-- Papers that discuss funding and institutional models for supporting research data repositories
+A sampling of the current literature on data repositories and data curation largely focus on projects that establish services for an institution or a research community or the evolving practices and theory involved in developing and managing these repositories. These projects have varied scopes. Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini etal 2013). While there are a number of challenges inherent in creating and running a research data repository, one of important factors in their functioning is how are the established institutionally and how do they interface with researchers and producers of repository content. Witt (2012) dicsusses the collaboration between Purdue Library Systems and Information Technology at Purdue (ITaP). The Inter-university Consortium for Political and Social Research (ICPSR), as discussed in Lyle (2014), instead grew as a consortium of partners that cuts across institutions and is based out of the Institute for Social Research at the University of Michigan. Peer and Green (2012) report on an open data repository for the social sciences that is a collaboration between Yale’s Office of Digital Assets and Infrastructure (ODAI) and their Institution for Social and Policy Studies (ISPS). A pattern of collaboration between libraries and research institutes begins to emerge, but the literature is not as detailed on which collaborators get involved at what points.
 
-<!-- Repositories big and small (in scope, not in size) and how they are situated in their institution -->
+The literature on library practices and resposibilities is more abundant and can be organized into two main subtopics: new policies and practices around communicating with the scientific community and new practices for managing different workflows involving technology and metadata creation. Carlson (2012) discusses how Purdue's Data Curation Center (DCC) has developed a process for interviewing researchers about their data curation needs in contributing to data repositories and that library staff need to understand how to conduct these interviews. A finding of their research is that without the right kind of communication with researchers about these needs, "services that do not align with real-world needs of researchers will not be used." Librarians, with their strengths in metadata creation and standardization across domains, are in a key position for understanding and tackling the barriers to sharing that often plague the dissemination of research data, particularly where research cultures differ drastically across domains (MacMillian 2014). Not only does a librarian working with researchers help in the pursuit of building a repository, but a librarian whose role is more embedded and regularly interacting with the work of researchers results in a more valuable set of research outcomes due to better description and documentation within labs (Federer 2012). McClure etal. (2014) suggests that the role of liaison librarians will increase in the service of building these projects, and that their ability to convince researchers to contribute their data as well as unloading the burden of describing and preparing those data for preservation is a welcome role. 
 
-- Peer & Green, 2012
-- Lagoze etal, 2014 (?)
-- Lyle, 2014
-- Witt, 2012
-- Ardini, Pan, Qin, Cooley, 2013
-While there are more data repositories than there are published articles that discuss them, a sampling of the current literature on data repositories and data curation largely focusing on projects that establish services for an institution or a research community. These projects have varied scopes. Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini etal 2013). In either case, a main challenge to any data repository, no matter the scope, is creating a schema and workflow that is general enough to incorporate many different datasets, but focused enough that standardization and search does not become a burden to administrators, curators, and users. Amongst the important questions in terms of how these respoitories function is how are the established institutionally and how do they interface with researchers and producers of repository content. Witt (2012) dicsusses the collaboration between Purdue Library Systems and Information Technology at Purdue (ITaP). ICPSR, as discussed in Lyle (2014), instead grew as a consortium of different research institutions. P
-
-<!-- New practices for library staff - communication with researchers/policy-->
-Regardless of the repositories scope or where it is located, there is another, more general discussion about the new responsibilities and workflows that fall from these systems make up an important question for the future of these services for researchers and the role of libraries and information professionals in the development and management of these systems. 
-- Bardyn, Resnick, & Camina, 2012
-- Carlson, 2012
-- Castelli, Manghi, & Thanos, 2013
-- Federer, 2013
-- Macdonald & Martinez-Uribe, 2010 (collaboration and expertise)
-- McClure, 2014 (data profiles)
-- MaCmillan, 2014 
-Amongst the research and practice around research data and the library, the discussion focuses on the emerging role of librarians with domain expertise aimed at the research data they aspire to collect as well as the evolving roles librarians need to take in communicating the importance and specific practices in organizing and managing data, as well as taking on roles as curators of digital data. The goal of these new roles and responsibilities aim at lessening or eliminating the barriers to sharing as well as helping other researchers find and reuse the data being added to repositories. 
-
-<!-- New practices for library staff metadata creation and technical workflow -->
-- Greenberg, White, Carrier, & Scherle, 2009
-- Yoon & Tibbo, 2011
-- Witt, Carlson, Cragin, & Brandt, 2009
-- Heidorn, 2011
-- Hilliker, Wacker, & Nurnberger, 2013 (linked data and discoverability - kind of an aside)
-- Nielson, 2014
-- Wickett, 2012
-- Pinfield etal, 2014 (but also in communication), 
-- Simons & Richardson, 2012 (JLSC publication)
-- Weber, Palmer, & Chao, 2012
-Accompanying the discussion on new roles is a more more low level and technical assessment of the basic requirements for identifying and representing digital datasets. The questions of what is a dataset and how do we best identify any number of them in a consistent way for preservation and accessibility vary depending on how broadly or narrowly we define the domain around which a repository is built. What are the practical underpinnings to curating research data?
-
-<!-- Outside of the library, there is discussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
-- Borgman 2012
-- 
-A challenge for researchers sharing their data involves whether their data will make sense removed from their original context (Borgman 2012).
-
-<!-- Overview/Tying together and prelude to rest of paper --> 
-Within these intersecting discussions, we note that there is a tension between breadth and depth in collecting and preserving research data, as well as challenges and new skills for repository and library staff to learn in communicating and working with researchers around collecting their data. The latter includes anticipating their needs, mediating burdens and hardships to their participation, and enusuring the quality and provenance of their data. A lot of these concerns fall from the instutitional position of the repository and to what extent and how they include the input of researchers, research data librarians, technology support, and other stakeholders.
-
-Finally, we understand that the specific features and virtues of a repository will come down to the community they serve, the available staff and resources available to handle not only incorporation of data but the precluding communication and exchange between researchers and repository owners, and peculiarities of the types and formats of data the repository stores.
+Accompanying the discussion on new roles in communication and interaction with repository users is an assessment of the more technical requirements for identifying and representing digital datasets. That is, research data are different than the products of research (i.e. books, journal articles), so how do we represent a dataset in a manner that can be cataloged, preserved, and cited (Wickett etal 2012)? As it stands, it is still not certain whether it is the library that can meet the needs of the researcher who is more and more responsible for documenting and sharing the data of their research along with its products and derivatives (Heidorn 2011, Greenberg etal 2009). Castelli, Manghi, & Thanos (2013) understand the problem as one of propagating research data as a core component of scientific communication, and that a bridge between researchers and repository staff must be built to faciliate that propagation. Simons and Richardson (2012) conducted a survey of repository staff workers in Australia and New Zealand and found that work with digital repositories will require the library workers develop skills related more to the software driving these repositories and commnicating with IT departments, as well as semantic web-based metadata schema like RDF, multimedia file formats, and access concerns like copyright legislation and open access standards. 
 
 ## Data-sharing in Developmental Science and the Origins of Databrary
 
@@ -224,3 +181,17 @@ In developing the project team and Advisory Board, Databrary's leaders specifica
 - Bringing expertise from library/information science to the research enterprise at an early stage (research informationists).
 - Approach is working
     - 70+ users in first year, 35 contributors, X files
+
+
+Lit Review Bullet points:
+
+- Papers that discuss existing data repositories
+    + Domain-general vs. domain specific
+- Papers that discuss theory or practice of librarianship around data repositories
+    + If we build it, will they come vs. If we build it, how will we handle the responsibility (staff, resources, how much can we help)? 
+- Papers that discuss funding and institutional models for supporting research data repositories
+
+<!-- Outside of the library, there is disussion amongst researchers about the who what where and why of data sharing. This should not be too long.-->
+- Borgman 2012
+- 
+A challenge for researchers sharing their data involves whether their data will make sense removed from their original context (Borgman 2012).
