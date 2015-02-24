@@ -1,4 +1,4 @@
-# Databrary: A digital data library for storing and sharing research video
+# Researcher-librarian collaborations: Data repositories as a service for researchers
 
 ## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
 
@@ -7,13 +7,14 @@
 Libraries have long provided a home for a diverse range of scholarly products, but new interest has arisen in organizing, preserving, and sharing the raw materials -- the data and metadata -- that undergird the published products of research.
 Library and information science professionals have valuable expertise to bring to bear in the effort to create larger, more diverse, and more widely used data libraries.
 However, for libraries to be maximally successful in providing the research data management and preservation services required of a successful data repository, librarians must work especially closely with researchers and embed themselves in data management workflows as much as possible.
-The Databrary digital data library provides a model for how library and information science experts, working in a diverse team, can inform the development and implementation of a data repository that is closely linked to the needs of a specific research community.
-In Databrary's case, the target scholarly community represents researchers who use video as a main source of data to study human and animal development.
+The Databrary project provides a model for how library and information science experts, working in a diverse team, can inform the development and implementation of a data repository that is closely linked to the needs of a specific research community.
+In Databrary's case, the target scholarly community represents researchers who use video as a main source of data to study human development and learning.
 Storing and sharing video poses policy and technical challenges that Databrary staff have solved in ways that may prove informative to the library and information science community.
 
-## Introduction
+## Introduction 
+<!--We could call this "Background" instead, as other papers have done, which then would help make sense of the -->
 
-Databrary (<http://databrary.org>), is a digital data library specialized for storing and sharing videos collected as raw data in the context of research about human and animal behavior.
+Databrary (<http://databrary.org>), is a library specialized for storing and sharing videos collected as raw data in the context of research about human development and learning.
 The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595).
 New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU).
 Databrary began sharing video data in 2014.
@@ -28,39 +29,7 @@ We will describe Databrary's solutions to many of them, including the developmen
 Finally, in laying out a roadmap for enhancements and extensions of Databrary, we will discuss our views about what lessons library and information scientists might draw from the Databrary experience.
 We demonstrate that information professionals have important roles to play in partnership with researchers in many scholarly domains.
 
-## Literature Review
-
-Databrary is a domain-specific data repository with strong ties to NYU library, but largely autonomous operations.
-A sampling of the current literature on data repositories and data curation shows that these features fall well within established repository norms.
-Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini et al.
-2013).
-There are a number of challenges inherent in creating and running a research data repository, but how repositories are established institutionally and how they interface with researchers and content producers turn out to be critical.
-
-
-Collaborations between libraries and research entities are common.
-Witt (2012) discusses the collaboration between Purdue Library Systems and Information Technology at Purdue (ITaP).
-The Inter-university Consortium for Political and Social Research (ICPSR), as discussed in Lyle (2014), emerged from the Institute for Social Research at the University of Michigan to encompass a consortium of institutional partners.
-An open data repository for the social sciences at Yale (Peer & Green, 2012) represents a collaboration between Yale’s Office of Digital Assets and Infrastructure (ODAI) and the Institution for Social and Policy Studies (ISPS).
-However, the literature provides little detail about how these sorts of collaborations emerge or about which collaborators take the initiative.
-
-In contrast, the literature on library practices and resposibilities describes how new policies and practices around communication with the scientific community have been critical to the success of some data respositories.
-Purdue's Data Curation Center (DCC), for example, has developed a process for interviewing researchers about their data curation needs in contributing to data repositories; library staff need to understand how to conduct these interviews (Carlson, 2012).
-Carlson (2012) finds that without the right kind of communication with researchers, "services that do not align with real-world needs of researchers will not be used."
-Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
-Not only does a librarian working with researchers help in building a better repository, but a librarian whose role is embedded in and informed by working with researchers can ensure better material description and documentation.
-This results in more productive research outcomes (Federer 2012).
-Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure et al., 2014).
-
-New practices for managing workflows involving technology and metadata creation will be needed in the development of successful data repositories.
-Research data differ from other products of research such as journal articles and books.
-From this, important questions arise.
-How should libraries represent a dataset in a manner that allows it to be cataloged, preserved, and cited (Wickett et al., 2012)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman 2012).
-Also, can libraries meet the needs of researchers who are increasingly held responsible for documenting and sharing the raw data from their research along with its products and derivatives (Heidorn, 2011; Greenberg et al., 2009)? Propagating research data is fast becoming a core component of scientific communication, but a bridge between researchers and repository staff must be built to faciliate that propagation (Castelli, Manghi, & Thanos, 2013).
-A survey of repository staff workers in Australia and New Zealand found that building digital data repositories will require library workers to develop new skills related to the software driving these repositories and skills to communicate with IT departments (Simons & Richardson, 2012).
-Library staff will also need to develop working knowledge about semantic web-based metadata schema like RDF, multimedia file formats, and access concerns like copyright legislation and open access standards (Simons & Richardson, 2012).
-The Databrary project team's experience echos many of these points.
-
-## Data-sharing in Developmental Science and the Origins of Databrary
+<!--## Data-sharing in Developmental Science and the Origins of Databrary-->
 
 In some fields, such as the Earth and space sciences or high energy physics, open data sharing has been a longstanding norm (e.g., DataONE, Virtual Observatory, Hubble, etc.).
 Federal agencies that fund behavioral research have implemented data management planning and sharing requirements for applicants, but ethical and technical barriers to sharing sensitive data about human participants have made open data sharing uncommon in the behavioral sciences [CITE?].
@@ -73,12 +42,11 @@ Further, the collection of video or other identifiable or sensitive information 
 The consent process formalizes a promise by the research team that a participant's identity will not be disclosed.
 Thus, researchers risk violating participants’ privacy if digital images are viewed or released to others without authorization.
 
-
 At the same time, video has significant potential for re-use.
 Video uniquely captures the complexity and richness of behavior.
-Accordingly, videos recorded in one experimental setting for one purpose may often be used by other investigators for other purposes (c.f., Raudies & Gilmore, 2014).
+Accordingly, videos recorded in one experimental setting for one purpose may often be used by other investigators for other purposes.
 
-### Origins of Databrary
+<!--### Origins of Databrary-->
 
 Recognizing that solving the problems of open video data sharing is a high priority for the developmental science research community, the NSF sponsored a workshop in September 2011 focused on assessing how to overcome the barriers to open video data sharing.
 Karen Adolph at NYU, a leading researcher in developmental science and an advocate for the use and re-use of video data, was the workshop organizer and leader.
@@ -102,6 +70,40 @@ This access model has proven successful.
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 In less than a year of operation, the number of institutions with authorized users had grown to 40, with 79 individual investigators from North America, Europe, South America, and Australia.
 As of March 2015, 35 individual contributors representing 25 different universities had contributed video data or excerpts.
+
+## Literature Review
+
+Databrary is a domain-specific data repository with strong ties to NYU library, but largely autonomous operations.
+A sampling of the current literature on data repositories and data curation shows that these features fall well within established repository norms.
+Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini et al.
+2013).
+There are a number of challenges inherent in creating and running a research data repository, but how repositories are established institutionally and how they interface with researchers and content producers turn out to be critical.
+
+Collaborations between libraries and research entities are common.
+Witt (2012) discusses the collaboration between Purdue Library Systems and Information Technology at Purdue (ITaP).
+The Inter-university Consortium for Political and Social Research (ICPSR), as discussed in Lyle (2014), emerged from the Institute for Social Research at the University of Michigan to encompass a consortium of institutional partners.
+An open data repository for the social sciences at Yale (Peer & Green, 2012) represents a collaboration between Yale’s Office of Digital Assets and Infrastructure (ODAI) and the Institution for Social and Policy Studies (ISPS).
+However, the literature provides little detail about how these sorts of collaborations emerge or about which collaborators take the initiative.
+
+In contrast, the literature on library practices and resposibilities describes how new policies and practices around communication with the scientific community have been critical to the success of some data respositories.
+Purdue's Data Curation Center (DCC), for example, has developed a process for interviewing researchers about their data curation needs in contributing to data repositories; library staff need to understand how to conduct these interviews (Carlson, 2012).
+Carlson (2012) finds that without the right kind of communication with researchers, "services that do not align with real-world needs of researchers will not be used."
+Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
+Not only does a librarian working with researchers help in building a better repository, but a librarian whose role is embedded in and informed by working with researchers can ensure better material description and documentation.
+This results in more productive research outcomes (Federer 2012).
+Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure et al., 2014).
+
+New practices for managing workflows involving technology and metadata creation will be needed in the development of successful data repositories.
+Research data differ from other products of research such as journal articles and books.
+From this, important questions arise.
+How should libraries represent a dataset in a manner that allows it to be cataloged, preserved, and cited (Wickett et al., 2012)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman 2012).
+Also, can libraries meet the needs of researchers who are increasingly held responsible for documenting and sharing the raw data from their research along with its products and derivatives (Heidorn, 2011; Greenberg et al., 2009)? Propagating research data is fast becoming a core component of scientific communication, but a bridge between researchers and repository staff must be built to facilitate that propagation (Castelli, Manghi, & Thanos, 2013).
+A survey of repository staff workers in Australia and New Zealand found that building digital data repositories will require library workers to develop new skills related to the software driving these repositories and skills to communicate with IT departments (Simons & Richardson, 2012).
+Library staff will also need to develop working knowledge about semantic web-based metadata schema like RDF, multimedia file formats, and access concerns like copyright legislation and open access standards (Simons & Richardson, 2012).
+The Databrary project team's experience echos many of these points.
+
+## Description of services
+<!--looking at sections advised by journal, i think we need to stick closer to their structure-->
 
 ## Cornerstones of Success
 
