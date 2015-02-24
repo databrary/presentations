@@ -1,5 +1,7 @@
 Albertson, D. (2013). An interaction and interface design framework for video digital libraries (English). Journal of documentation, 69(5), 667-692. 
 
+Ardini, M. A., Pan, H., Qin, Y., & Cooley, P. C. (2014). Sample and data sharing: Observations from a central data repository. Clinical Biochemistry, 47(4-5), 252-257. doi: 10.1016/j.clinbiochem.2013.11.014
+
 Ayoung Yoon, a. e. u. e., & Tibbo, H. t. e. u. e. (2011). Examination of Data Deposit Practices in Repositories with the OAIS Model. IASSIST Quarterly, 35(4), 6-13. 
 
 Bardyn, T. P., Resnick, T., & Camina, S. K. (2012). Translational Researchers' Perceptions of Data Management Practices and Data Curation Needs: Findings from a Focus Group in an Academic Health Sciences Library. Journal of Web Librarianship, 6(4), 274-287. doi: 10.1080/19322909.2012.730375
@@ -22,11 +24,13 @@ Heidorn, P. B. h. e. a. e. (2011). The Emerging Role of Libraries in Data Curati
 
 Hilliker, R. J., Wacker, M., & Nurnberger, A. L. (2013). Improving Discovery of and Access to Digital Repository Contents Using Semantic Web Standards: Columbia University's Academic Commons (English). Journal of library metadata, 13(2-3), 80-94. 
 
+Hourclé, J. A. (2008). FRBR applied to scientific data. Proceedings of the ASIST Annual Meeting, 45. 
+
 Lagoze, C., Vilhuber, L., Williams, J., Perry, B., & Block, W. C. (2014, 2014 / 12 / 01 /). CED2AR: The Comprehensive Extensible Data Documentation and Access Repository.
 
 Lanagan, J., & Smeaton, A. F. (2012). Video digital libraries: Contributive and decentralised. International Journal on Digital Libraries, 12(4), 159-178. doi: 10.1007/s00799-012-0078-z
 
-Lyle, J. l. u. e. (2014). ICPSR: A Consortial Model to Advance and Expand Social and Behavioral Research. 027.7, 2(1), 19-29.
+Lyle, J. l. u. e. (2014). ICPSR: A Consortial Model to Advance and Expand Social and Behavioral Research. 027.7, 2(1), 19-29. 
 
 Macdonald, S., & Martinez-Uribe, L. (2010). Collaboration to Data Curation: Harnessing Institutional Expertise. New Review of Academic Librarianship, 16, 4-16. doi: 10.1080/13614533.2010.505823
 
@@ -34,7 +38,10 @@ MacMillan, D. (2014). Data Sharing and Discovery: What Librarians Need to Know. 
 
 McLure, M., Level, A. V., Cranston, C. L., Oehlerts, B., & Culbertson, M. (2014). Data Curation: A Study of Researcher Practices and Needs. portal: Libraries & the Academy, 14(2), 139-164. 
 
-Nielsen, H. J., & Hjørland, B. (2014). Curating research data: The potential roles of libraries and information professionals. Journal of Documentation, 70(2), 221-240. doi: 10.1108/JD-03-2013-0034
+Nielsen, H. J., & Hjørland, B. (2014). Curating research data: The potential roles of libraries and 
+information professionals. Journal of Documentation, 70(2), 221-240. doi: 10.1108/JD-03-2013-0034
+
+Orchard, S. (2014). Review: Data Standardization and Sharing—The work of the HUPO-PSI. BBA - Proteins and Proteomics, 1844(Part A), 82-87. doi: 10.1016/j.bbapap.2013.03.011
 
 Pinfield, S., Cox, A. M., & Smith, J. (2014). Research data management and libraries: Relationships, activities, drivers and influences. PLoS ONE, 9(12). doi: 10.1371/journal.pone.0114734
 
@@ -42,9 +49,11 @@ Simons, N., & Richardson, J. (2012). New Roles, New Responsibilities: Examining 
 
 Steinhart, G. (2013). Partnerships Between Institutional Repositories, Domain Repositories and Publishers. Bulletin of the Association for Information Science & Technology, 39(6), 19-22. 
 
-Thompson, C. A., Robertson, W. D., & Greenberg, J. (2014). Where have all the scientific data gone? LIS perspective on the data-at-risk predicament. College and Research Libraries, 75(6), 842-861. doi: 10.5860/crl.75.6.842
+Thompson, C. A., Robertson, W. D., & Greenberg, J. (2014). Where have all the scientific data gone? 
+LIS perspective on the data-at-risk predicament. College and Research Libraries, 75(6), 842-861. doi: 10.5860/crl.75.6.842
 
-Weber, N. M., Palmer, C. L., & Chao, T. C. (2012). Current Trends and Future Directions in Data Curation Research and Education. Journal of Web Librarianship, 6(4), 305-320. doi: 10.1080/19322909.2012.730358
+Weber, N. M., Palmer, C. L., & Chao, T. C. (2012). Current Trends and Future Directions in Data 
+Curation Research and Education. Journal of Web Librarianship, 6(4), 305-320. doi: 10.1080/19322909.2012.730358
 
 Wickett, K. M., Sacchi, S., Dubin, D., & Renear, A. H. (2012). Identifying content and levels of representation in scientific data. Proceedings of the ASIST Annual Meeting, 49(1). doi: 10.1002/meet.14504901199
 
