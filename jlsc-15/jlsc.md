@@ -48,7 +48,7 @@ Databrary began accepting contributions in early 2014 and opened for general use
 In less than a year of operation, the number of institutions with authorized users had grown to 40, with 79 individual investigators from North America, Europe, South America, and Australia.
 As of March 2015, 35 individual contributors representing 25 different universities had contributed video data or excerpts.
 
-In this paper, we will discuss how Databrary has a established itself as a data repository that has the unique position of working regularly with researchers.
+In this paper, we will discuss how Databrary has a established itself as a data repository that has the unique position of working closely and frequently with researchers.
 The storage and sharing of identifiable recordings poses a variety of challenges.
 We will describe Databrary's solutions to many of them vis-a-vis close interaction with our intended community of users and contributors. This includes the development of policies and procedures to enable the sharing of identifiable data as well as curation practices and technologies customized for the target research community.
 Finally, in laying out a roadmap for enhancements and extensions of Databrary, we will discuss our views about what lessons library and information scientists might draw from the Databrary experience.
@@ -90,8 +90,7 @@ The Databrary project team's experience echos many of these points.
 <!--looking at sections advised by journal, i think we need to stick closer to their structure-->
 <!--## Cornerstones of Success-->
 
-Databrary remains in its early phase, so its long-term impact is not yet known.
-Nevertheless, the project team attributes its early success to several facets: a focus on community outreach, attention to data privacy, the provision of services for scholarly communication, services for guided and active data curation developed with the guidance of information professionals, support from institutional partners, and a strong technical infrastructure.
+Databrary's core compentencies and are: a focus on community outreach, attention to data privacy, the provision of services for scholarly communication, services for guided and active data curation developed with the guidance of information professionals, support from institutional partners, and a strong technical infrastructure.
 
 ### Community Outreach and Scholarly Communication
 
