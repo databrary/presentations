@@ -1,8 +1,6 @@
 # Databrary: A digital data library for storing and sharing research video
 
-## Andrew Gordon, Lisa Steiger, David S.
-Millman, Rick O.
-Gilmore
+## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
 
 ## Abstract
 
@@ -47,7 +45,8 @@ However, the literature provides little detail about how these sorts of collabor
 
 In contrast, the literature on library practices and resposibilities describes how new policies and practices around communication with the scientific community have been critical to the success of some data respositories.
 Purdue's Data Curation Center (DCC), for example, has developed a process for interviewing researchers about their data curation needs in contributing to data repositories; library staff need to understand how to conduct these interviews (Carlson, 2012).
-Carlson (2012) finds that without the right kind of communication with researchers, "services that do not align with real-world needs of researchers will not be used." Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
+Carlson (2012) finds that without the right kind of communication with researchers, "services that do not align with real-world needs of researchers will not be used."
+Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
 Not only does a librarian working with researchers help in building a better repository, but a librarian whose role is embedded in and informed by working with researchers can ensure better material description and documentation.
 This results in more productive research outcomes (Federer 2012).
 Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure et al., 2014).
