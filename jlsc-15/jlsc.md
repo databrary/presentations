@@ -38,7 +38,7 @@ Thus, researchers risk violating participants’ privacy if digital images are v
 At the same time, video has significant potential for re-use.
 Video uniquely captures the complexity and richness of behavior.
 Accordingly, videos recorded in one experimental setting for one purpose may often be used by other investigators for other purposes.
-As such, there is a high incentive for sharing this format and type of research data, but it does not come without its own specific barriers to getting researcher buy-in and trust that their data will be treated with the proper sensitivities once it is placed in the context of a shared data repository. It is with close communication and expertise in handling information that we argue have one of the core reasons why Databrary has seen success in its early stages.
+As such, there is a high incentive for sharing this format and type of research data, but it does not come without its own specific barriers to getting researcher buy-in and trust that their data will be treated with the proper sensitivities once it is placed in the context of a shared data repository. It is with close communication and expertise in handling information that we argue as the core reasons why Databrary has seen success in its early stages.
 
 Databrary is designed in the context of researchers, not as an isolated project initiated by the library or the central IT dept.
 By engaging a community of researchers, Databrary has learned to try to reduce the many barriers that make data sharing difficult for researchers.
@@ -112,8 +112,8 @@ Because of this, Databrary staff work closely with data contributors to determin
 
 ### Institutional Positioning
 
-Databrary relies on several collaborations and partnerships within the University.
-For example, its technical architecture is based on a hybrid model, developed initially by the NYU Libraries together with the central IT organization, such that the Databrary web application uses central IT servers and storage.
+Databrary relies on several collaborations and partnerships within the University. Through this particulary configuration, we believe Databrary is more capable of navigating swiftly between the University Library and the community of researchers not only on campus but at institutions domesitcally and internationally.
+Its technical architecture is based on a hybrid model, developed initially by the NYU Libraries together with the central IT organization, such that the Databrary web application uses central IT servers and storage.
 The Libraries and central IT, in turn, guarantee the preservation of Databrary collections indefinitely, even if the project funding is interrupted.
 This partnership requires that Databrary follow digitial preservation best practices, described further below.
 This model is new for the Libraries and central IT, and represents a desired direction for enhanced central support for research data repositories across the University.
@@ -137,7 +137,6 @@ Researchers agree to treat data from Databrary with the same standards of resear
 Databrary supports after-the-fact and active curation.
 After-the-fact curation consists of ingesting datasets after collection has been completed, typically after all study derivatives (research papers, analyses, etc.) have been created.
 Active curation refers to Databrary's user interface that allows researchers to upload their video data and metadata as they collect it during the course of a study.
-
 
 Every data repository faces the problem of defining a metadata schema that will accept a wide variety of datasets, while adding a level of standardization that allows deposits to be easily searched (Hourclé 2008, Orchard 2012).
 The Databrary team learned early on that requiring only a minimal amount of metadata was preferable to making mandatory exhaustive descriptions of data.
