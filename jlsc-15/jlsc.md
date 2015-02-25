@@ -20,6 +20,11 @@ Databrary began accepting contributions in early 2014 and opened for general use
 In less than a year of operation, the number of institutions with authorized users had grown to 40, with 79 individual investigators from North America, Europe, South America, and Australia.
 As of March 2015, 35 individual contributors representing 25 different universities had contributed video data or excerpts.
 
+Databrary is designed in the context of researchers, not as an isolated project initiated by the library or the central IT dept.
+By engaging a community of researchers, Databrary has learned to try to reduce the many barriers that make data sharing difficult for researchers.
+That includes the development of policies to enable sharing of identifiable data, the creation of technical infrastructure that implements secure sharing, easy citation of data and related materials, and the adoption of practices that encourage researchers to share what, with whom, and when they are most comfortable.
+In encouraging researchers to contribute data and become actively involveed in a community of sharing, we have learned about the diverse curation requirements of datasets collected through very different lab processes, especially how to represent those datasets in a standard fashion for future access and re-use.
+
 Sharing personally identifiable research materials like video recordings has posed significant challenges.
 In meeting these challenges, Databrary has engaged a wide range of expertise, including experts in the NYU Library and project staff with training in library and information science.
 As such, the Databrary project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
@@ -40,10 +45,7 @@ Video uniquely captures the complexity and richness of behavior.
 Accordingly, videos recorded in one experimental setting for one purpose may often be used by other investigators for other purposes.
 As such, there is a high incentive for sharing this format and type of research data, but it does not come without its own specific barriers to getting researcher buy-in and trust that their data will be treated with the proper sensitivities once it is placed in the context of a shared data repository. It is with close communication and expertise in handling information that we argue as the core reasons why Databrary has seen success in its early stages.
 
-Databrary is designed in the context of researchers, not as an isolated project initiated by the library or the central IT dept.
-By engaging a community of researchers, Databrary has learned to try to reduce the many barriers that make data sharing difficult for researchers.
-That includes the development of policies to enable sharing of identifiable data, the creation of technical infrastructure that implements secure sharing, easy citation of data and related materials, and the adoption of practices that encourage researchers to share what, with whom, and when they are most comfortable.
-In encouraging researchers to contribute data and become actively involveed in a community of sharing, we have learned about the diverse curation requirements of datasets collected through very different lab processes, especially how to represent those datasets in a standard fashion for future access and re-use.
+
 
 In this paper, we will discuss how Databrary has a established itself as a data repository that has the unique position of working closely and frequently with researchers.
 The storage and sharing of identifiable recordings poses a variety of challenges.
