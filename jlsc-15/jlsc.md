@@ -13,7 +13,7 @@ Storing and sharing video poses policy and technical challenges that Databrary s
 
 ## Background 
 
-Databrary (<http://databrary.org>), is a library specialized for storing and sharing videos collected as raw data in the context of research about human development and learning.
+Databrary (Databrary, 2015a), is a library specialized for storing and sharing videos collected as raw data in the context of research about human development and learning.
 The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595).
 New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU).
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
@@ -58,7 +58,7 @@ We demonstrate that information professionals have important roles to play in pa
 
 Databrary is a domain-specific data repository with strong ties to NYU library, but largely autonomous operations.
 A sampling of the current literature on data repositories and data curation shows that these features fall well within established repository norms.
-Some repositories capture research data across domains (Lyle 2014, Witt 2012), while others commit to a specific field of study (Peer & Green 2012, Ardini et al.
+Some repositories capture research data across domains (Lyle, 2014; Witt, 2012), while others commit to a specific field of study (Peer & Green 2012; Ardini, Pan, Qin, & Cooley,
 2013).
 There are a number of challenges inherent in creating and running a research data repository, but how repositories are established institutionally and how they interface with researchers and content producers turn out to be critical.
 
@@ -73,14 +73,14 @@ Purdue's Data Curation Center (DCC), for example, has developed a process for in
 Carlson (2012) finds that without the right kind of communication with researchers, "services that do not align with real-world needs of researchers will not be used."
 Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
 Not only does a librarian working with researchers help in building a better repository, but a librarian whose role is embedded in and informed by working with researchers can ensure better material description and documentation.
-This results in more productive research outcomes (Federer 2012).
-Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure et al., 2014).
+This results in more productive research outcomes (Federer, 2013).
+Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure, Level, Cranston,Oehlerts, & Culbertson, 2014).
 
 New practices for managing workflows involving technology and metadata creation will be needed in the development of successful data repositories.
 Research data differ from other products of research such as journal articles and books.
 From this, important questions arise.
-How should libraries represent a dataset in a manner that allows it to be cataloged, preserved, and cited (Wickett et al., 2012)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman 2012).
-Also, can libraries meet the needs of researchers who are increasingly held responsible for documenting and sharing the raw data from their research along with its products and derivatives (Heidorn, 2011; Greenberg et al., 2009)? Propagating research data is fast becoming a core component of scientific communication, but a bridge between researchers and repository staff must be built to facilitate that propagation (Castelli, Manghi, & Thanos, 2013).
+How should libraries represent a dataset in a manner that allows it to be cataloged, preserved, and cited (Wickett, Sacchi, Dubin, & Renear, 2012)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman, 2012).
+Also, can libraries meet the needs of researchers who are increasingly held responsible for documenting and sharing the raw data from their research along with its products and derivatives (Heidorn, 2011; Greenberg, White, Carrier, & Scherle, 2009)? Propagating research data is fast becoming a core component of scientific communication, but a bridge between researchers and repository staff must be built to facilitate that propagation (Castelli, Manghi, & Thanos, 2013).
 A survey of repository staff workers in Australia and New Zealand found that building digital data repositories will require library workers to develop new skills related to the software driving these repositories and skills to communicate with IT departments (Simons & Richardson, 2012).
 Library staff will also need to develop working knowledge about semantic web-based metadata schema like RDF, multimedia file formats, and access concerns like copyright legislation and open access standards (Simons & Richardson, 2012).
 The Databrary project team's experience echos many of these points.
@@ -101,7 +101,7 @@ Staff assist with initial registration and consultation with research ethics boa
 The Databrary team actively seeks out new potential contributors and datasets, and the team has established partnerships with some of the main scholarly associations in the developmental and learning sciences: the Society for Research in Child Development (SRCD), the International Society on Infant Studies (ISIS), the Cognitive Development Society (CDS), and the American Educational Research Association (AERA).
 
 Databrary has also attempted to forge a consensus on professional values concerning the questions of what materials to share, when in the research life cycle should materials be shared, who should share, and how one should acknowledge the use of shared data and other materials.
-A Data Sharing Manifesto (http://databrary.org/access/policies/data-sharing-manifesto.html) articulates the project's philosophy.
+A Data Sharing Manifesto (Databrary, 2015b) articulates the project's philosophy.
 It suggests that *all* researchers should share as much material as they are comfortable sharing and have permission to share; researchers should share as early on in the research life cycle as possible; and researchers should properly acknowledge all materials contributed by others that inform their research products.
 To that end, Databrary provides valid uniform resource identifiers (URIs) in a standard format for datasets as a whole and for subcomponents within them, links to persistent identifiers for publications associated with a dataset, and persistent identifiers (DOIs) for datasets hosted on Databrary.
 Library and information science experts have been instrumental in shaping the design and implementation of these features.
@@ -128,7 +128,7 @@ Similarly the General Counsel's office, ordinarily a strictly administrative off
 By bringing together and creating collaborations among these various administrative offices in new ways, Databrary has effected research into these university administrative processes themselves.
 These relationships were envisioned from the start, with the collaborating units participating in conversations even before proposal writing began.
 
-Inter-institutional sharing is enabled by a document called the Databrary Access Agreement (http://databrary.org/access/policies/agreement.html).
+Inter-institutional sharing is enabled by a document called the Databrary Access Agreement (Databrary, 2015c).
 This agreement is signed by a university officer with authority to affirm the enforcement of research practices on behalf of their institution.
 This is typically the director of an Office of Sponsored Programs.
 Individual researchers at that institution may then be authorized by that officer to access and share data using Databrary.
@@ -140,7 +140,7 @@ Databrary supports after-the-fact and active curation.
 After-the-fact curation consists of ingesting datasets after collection has been completed, typically after all study derivatives (research papers, analyses, etc.) have been created.
 Active curation refers to Databrary's user interface that allows researchers to upload their video data and metadata as they collect it during the course of a study.
 
-Every data repository faces the problem of defining a metadata schema that will accept a wide variety of datasets, while adding a level of standardization that allows deposits to be easily searched (Hourclé 2008, Orchard 2012).
+Every data repository faces the problem of defining a metadata schema that will accept a wide variety of datasets, while adding a level of standardization that allows deposits to be easily searched (Hourclé, 2008; Orchard, 2014).
 The Databrary team learned early on that requiring only a minimal amount of metadata was preferable to making mandatory exhaustive descriptions of data.
 The latter burdens researchers, reducing their incentive to participate.
 As a result, we have created a system that defines minimum requirements for metadata, but supports the addition of information beyond that minimum, after a dataset has been deposited.
@@ -202,7 +202,7 @@ If it works as intended, active curation will reduce significant barriers to sha
 ### Technical Infrastructure
 
 Since many of the system requirements for Databrary were novel and specific to a particular target domain, the team opted to build a new application rather than adapt an existing tool.
-The result is an open-source (http://github.com/databrary) web application built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming.
+The result is an open-source (Github, 2015) web application built in Scala on the Play Framework to support a responsive user interface, a complete application program interface (API), and high-performance streaming.
 The backend is a PostgresSQL relational database.
 The user interface is built primarily on the AngularJS JavaScript framework, and all data access is performed through an open JSON API.
 
@@ -243,7 +243,7 @@ As a result, staff continue to document and refine Databrary's curation processe
 ### Improve Active/Self-Curation
 
 As the Databrary user community grows and requests from new institutions and labs for adding their data to Databrary increase, we recognize this as an opportunity to refine and codify our curation and collection development processes.
-Additionaly, the more datasets we see, the more we can hone our metadata schema to more fully represent the datasets we bring into Databrary.In codifying our curation process, we look to the Data Curation Profiles Toolkit and similar inititives (McLure et al.
+Additionaly, the more datasets we see, the more we can hone our metadata schema to more fully represent the datasets we bring into Databrary.In codifying our curation process, we look to the Data Curation Profiles Toolkit and similar inititives (McLure et al.,
 2014) to incorporate best practices for documenting and understanding the datasets that researchers in our target audience wish to contribute.
 Additionally, while our user interface for active curation is still new, we plan to continue gathering feedback from users to improve the tools.
 We aim to have Databrary represent how researchers themselves would want to represent their data to others, while maintaining a consistent and predictable structure that makes information useful and discoverable by others.
@@ -277,8 +277,8 @@ Minting DOIs for datasets in Databrary will also allow them to be more citeable 
 For the time being, Databrary does not charge users for storage or curation services.
 Those costs are borne by the NSF and NICHD project grants.
 Sustaining domain specific research data repositories on project-specific grants is common, but the model is not ideal.
-Databrary is part of a consortium of domain specific repositories led by ICPSR that has called for new, more sustainable funding models (http://datacommunity.icpsr.umich.edu/sites/default/files/WhitePaper_ICPSR_SDRDD_121113.pdf).
-In the meantime, the project team continues to develop plans for long-term sustainability of Databrary, with focus on the ArXiv (arxiv.org) and ICSPR institutional subscription models, storage volume/curation load based fees-for-service, and professional society partnerships.
+Databrary is part of a consortium of domain specific repositories led by ICPSR that has called for new, more sustainable funding models (Ember et al., 2013).
+In the meantime, the project team continues to develop plans for long-term sustainability of Databrary, with focus on the ArXiv (ArXiv, 2015) and ICSPR institutional subscription models, storage volume/curation load based fees-for-service, and professional society partnerships.
 
 ## Conclusion
 
