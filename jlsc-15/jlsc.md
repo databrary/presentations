@@ -1,4 +1,4 @@
-# Researcher-librarian collaborations: Data repositories as a service for researchers
+# Researcher-library collaborations: Data repositories as a service for researchers
 
 ## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
 
@@ -113,12 +113,29 @@ Finally, through close communication with researchers concerns about sharing dat
 Sharing identifiable research data requires that the Databrary system restrict access to materials on the basis of both the permissions granted by individual participants and on the level of sharing a researcher has granted.
 Because of this, data access levels have been built into the system and Databrary staff work closely with data contributors to determine how a datasets original distribution restrictions (e.g. though IRB) translate to Databrary's access levels. As such, privacy becomes a significant component in the curation process.
 
-
 ### Institutional Positioning
 
-- "Relationship with not only the central library but also with other university central services, such as central IT, sponsored projects, legal."
-- Privacy policies, language developed with sponsored projects and IRB staff at NYU and PSU.
-- Cooperative agreement, active participation by agency officials.
+Databrary relies on several collaborations and partnerships within the University.
+For example, its technical architecture is based on a hybrid model, developed initially by the NYU Libraries together with the central IT organization, such that the Databrary web application uses central IT servers and storage.
+The Libraries and central IT, in turn, guarantee the preservation of Databrary collections indefinitely, even if the project funding is interrupted.
+This partnership requires that Databrary follow digitial preservation best practices, described further below.
+This model is new for the Libraries and central IT, and represents a desired direction for enhanced central support for research data repositories across the University.
+
+Another significant partnership has been with the Office of Sponsored Programs.
+Normally, this office does not work substantively with projects once their funding has been received.
+However, in the case of the Databrary project, this office has been an engaged participant, developing new policies and acting as a model university Authorized Organization Representative, a role that is critical in the legal and policy framework for sharing between institutions.
+Similarly the General Counsel's office, ordinarily a strictly administrative office that challenges or defends legal issues, has also been engaged to develop the legal and policy framework for inter-institutional sharing.
+
+By bringing together and creating collaborations among these various administrative offices in new ways, Databrary has effected research into these university administrative processes themselves.
+These relationships were envisioned from the start, with the collaborating units participating in conversations even before proposal writing began.
+
+Inter-institutional sharing is enabled by a document called the Databrary Access Agreement (http://databrary.org/access/policies/agreement.html).
+This agreement is signed by a university officer with authority to affirm the enforcement of research practices on behalf of their institution.
+This is typically the director of an Office of Sponsored Programs.
+Individual researchers at that institution may then be authorized by that officer to access and share data using Databrary.
+Researchers agree to treat data from Databrary with the same standards of research ethics that would apply to data they collect themselves, and to respect the desired release preferences of people depicted in data they contribute to Databrary.
+
+Databrary offers several levels of permissions, allowing researchers to share data only with their own lab, or with other authorized Databrary researchers, or in bi-lateral relationships with specific individual Databrary users, or in limited excerpts to the public.
 
 ### Curation
 
