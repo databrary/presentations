@@ -111,7 +111,9 @@ Library and information science experts have been instrumental in shaping the de
 
 Finally, through close communication with researchers concerns about sharing data, we found data privacy to be a crucial element for ensuring that contributors trust where their data will be stored.
 Sharing identifiable research data requires that the Databrary system restrict access to materials on the basis of both the permissions granted by individual participants and on the level of sharing a researcher has granted.
-Because of this, data access levels have been built into the system and Databrary staff work closely with data contributors to determine how a datasets original distribution restrictions (e.g. though IRB) translate to Databrary's access levels. As such, privacy becomes a significant component in the curation process.
+Databrary offers several levels of permissions, allowing researchers to share data only with their own lab, or with other authorized Databrary researchers, or in bi-lateral relationships with specific individual Databrary users, or in limited excerpts to the public.
+Because of this, Databrary staff work closely with data contributors to determine how a datasets original distribution restrictions (e.g. though IRB) translate to Databrary's access levels. As such, privacy becomes a significant component in the curation process.
+
 
 ### Institutional Positioning
 
@@ -134,8 +136,6 @@ This agreement is signed by a university officer with authority to affirm the en
 This is typically the director of an Office of Sponsored Programs.
 Individual researchers at that institution may then be authorized by that officer to access and share data using Databrary.
 Researchers agree to treat data from Databrary with the same standards of research ethics that would apply to data they collect themselves, and to respect the desired release preferences of people depicted in data they contribute to Databrary.
-
-Databrary offers several levels of permissions, allowing researchers to share data only with their own lab, or with other authorized Databrary researchers, or in bi-lateral relationships with specific individual Databrary users, or in limited excerpts to the public.
 
 ### Curation
 
