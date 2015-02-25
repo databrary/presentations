@@ -42,8 +42,8 @@ By engaging researchers in a community committed to data sharing, Databrary has 
 Accordingly, the Databrary project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
 
 In this paper, we will discuss how Databrary has a established itself as a data repository that has the unique position of working closely and frequently with researchers in a particular scholarly domain.
-We will how Databrary has found solutions to many of the barriers to sharing research videos vis-a-vis close interaction with that target community. 
-Finally, in laying out a roadmap for enhancements to Databrary, we will discuss what lessons library and information scientists might draw from the Databrary experience.
+We will also show how Databrary has found solutions to many of the barriers to sharing research videos vis-a-vis close interaction with that target community. 
+Finally, in laying out a roadmap for enhancements to Databrary, we confer what lessons library and information scientists might draw from the Databrary experience.
 
 ## Literature Review
 
@@ -57,7 +57,7 @@ The collaboration between Purdue Library Systems and Information Technology at P
 The Inter-university Consortium for Political and Social Research (ICPSR) provides another.
 ICPSR emerged from the Institute for Social Research at the University of Michigan to encompass a consortium of institutional partners (Lyle, 2014).
 An open data repository for the social sciences at Yale (Peer & Green, 2012) represents a collaboration between Yale’s Office of Digital Assets and Infrastructure (ODAI) and the Institution for Social and Policy Studies (ISPS).
-However, the literature provides little detail about how these sorts of collaborations emerge or about which collaborators take the initiative.
+However, the literature provides some but not an abundant amount of detail about how these sorts of collaborations emerge or about which collaborators take the initiative.
 
 In contrast, the literature on library practices and resposibilities describes how new policies and practices around communication with the scientific community have been critical to the success of some data respositories.
 Purdue's Data Curation Center (DCC), for example, has developed a process for interviewing researchers about their data curation needs in contributing to data repositories; library staff need to understand how to conduct these interviews (Carlson, 2012).
@@ -70,12 +70,12 @@ Some predict that the role of liaison librarians in data repository building wil
 New practices for managing workflows involving technology and metadata creation will be needed to develop successful data repositories.
 Research data includes diverse materials related to scholarly process and scholarly products.
 This means that research data differ from other products of research such as journal articles and books, and it raises questions about how libraries should respond.
-How should libraries represent datasets in a manner that allows them to be cataloged, preserved, and cited (Wickett, Sacchi, Dubin, & Renear, 2012)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman, 2012).
+How should libraries represent datasets in a manner that allows them to be cataloged, preserved, and cited (Wickett, Sacchi, Dubin, & Renear, 2012; Hourclé, 2008)? Representing research data outside of its original context risks making the data more difficult to interpret (Borgman, 2012).
 Can libraries meet the needs of researchers who are increasingly held responsible for documenting and sharing the raw data from their research along with its products and derivatives (Heidorn, 2011; Greenberg, White, Carrier, & Scherle, 2009)? Propagating research data is fast becoming a core component of scientific communication, but a bridge between researchers and repository staff must be built to facilitate that propagation (Castelli, Manghi, & Thanos, 2013).
 A survey of repository staff workers in Australia and New Zealand illustrates some of the challenges ahead. 
 It found that building digital data repositories will require library workers to develop new skills related to the software driving these repositories and skills to communicate with IT departments (Simons & Richardson, 2012).
 Library staff will also need to develop working knowledge about semantic web-based metadata schema like RDF, multimedia file formats, and access concerns like copyright legislation and open access standards (Simons & Richardson, 2012).
-The Databrary project team's experience echos many of these points. Staff without library or information science backgrounds have had to learn about curation, preservation, and metadata, and staff with library science backgrounds have had to acquire a range of new technical skills.
+The Databrary project team's experience echos many of these points. Staff without library or information science backgrounds have had to learn about curation, preservation, and metadata, and staff with library science backgrounds have had to acquire a range of new technical skills common to the industry of software development.
 
 ## Description of services
 
@@ -141,9 +141,9 @@ The latter burdens researchers, reducing their incentive to participate.
 As a result, we have created a system that defines minimum requirements for metadata, but supports the addition of information beyond that minimum, after a dataset has been deposited.
 This approach standardizes the internal representation of datasets from the outset while facilitating discovery and sharing.
 
-#### After-the-fact/archival curation 
+#### After-the-fact curation 
 
-Communication with researchers remains a key component in the curation of archival data.
+Communication with researchers remains a key component in the curation of data they have already collected. This includes mostly video data from a study that completed recently, but also video data that had been collected many decades ago and has been stored archivally.
 Databrary staff with expertise in library and information science discuss datasets with researchers planning on making contributions from the earliest steps in the process.
 Regular communication with researchers helps the Databrary staff understand how target contributors envision the representation of their data inside the repository.
 The discussions also inform the ongoing development of the metadata schema, ensuring that it continues to meet the diverse needs of a wide range of individual labs.
@@ -218,7 +218,7 @@ Priorities for the next several years include expanding the number and diversity
 
 ### Expand number and diversity of datasets
 
-At present, the materials stored in Databrary represent a relatively small number of research topics from a subset of investigators who already have on hand archival materials with suitable permissions that permit widespread sharing.
+At present, the materials stored in Databrary represent a relatively small number of research topics from a subset of investigators who already have on hand materials with suitable permissions that permit widespread sharing.
 With increasing numbers of researchers beginning to adapt research protocols to enable video data sharing following the Databrary access model, we anticipate that the number and diversity of datasets will grow.
 The team has also identified a use case for Databrary materials that may accelerate the pace of contributions -- excerpts or clips for teaching.
 Many developmental scientists already use excerpts to illustrate methods or key phenomena, and researchers widely share excerpts with one another on an informal *ad hoc* basis.
@@ -279,7 +279,7 @@ The project also demonstrates that being strategically and structurally attached
 
 We do not assume that all data repositories will be able to replicate the exact process Databrary has undertaken.
 Larger scale data repository projects that serve different fields of research will most likely not have the available staff to shadow every domain their datasets come from.
-Though, as discussed in much of the existing literature [SITE!], the development of data repositories will require new practices.
+Though, as discussed in much of the existing literature (Heidord, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
 It will require the work of information professionals equipped with new skillsets that allow them to translate the needs of the library to research teams. It will require leaders capable of navigating between repository, policy, and library workflows, and committed to embedding themselves in the work of researchers who may not have the time or capability of properly preserving their data for the long term.
 
 
