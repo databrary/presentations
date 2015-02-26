@@ -182,9 +182,9 @@ It allows users to upload and position video files to reflect the temporal order
 These tags become additional metadata indices for search and discovery.
 Databrary's active curation features emerged from ongoing discussions with Databrary users and potential users, and we continue to refinine them on the basis of user feedback. 
 
-INSERT FIGURE 1 ABOUT HERE
+INSERT FIGURE 1 ABOUT HERE (Fabricius, 2014)
 
-INSERT FIGURE 2 ABOUT HERE
+INSERT FIGURE 2 ABOUT HERE (Fabricius, 2014)
 
 Active curation distinguishes Databrary from most repositories.
 The decision to make active curation a priority emerged from Databrary's focus on reducing the barriers to data sharing faced by its target research field.
