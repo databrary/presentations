@@ -280,7 +280,7 @@ The project also demonstrates that being strategically and structurally attached
 
 We do not assume that all data repositories will be able to replicate the exact process Databrary has undertaken.
 Larger scale data repository projects that serve different fields of research will most likely not have the available staff to shadow every domain their datasets come from.
-Though, as discussed in much of the existing literature (Heidord, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
+Though, as discussed in much of the existing literature (Heidorn, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
 It will require the work of information professionals equipped with new skillsets that allow them to translate the needs of the library to research teams. It will require leaders capable of navigating between repository, policy, and library workflows, and committed to embedding themselves in the work of researchers who may not have the time or capability of properly preserving their data for the long term.
 
 
