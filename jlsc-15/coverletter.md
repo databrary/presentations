@@ -1,6 +1,6 @@
 <!-- Address? -->
 
-Dr. ______,
+Dear. ______,
 
 Included in this submission, please find a manuscript entitled: "", which we submit for exclusive consideration of publication in the Summer 2015 issue of Journal of Librarianship and Scholarly Communication.
 
