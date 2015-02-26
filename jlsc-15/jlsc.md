@@ -12,7 +12,7 @@ The Databrary project provides a model for how library and information science e
 ## Background 
 
 Databrary (Databrary, 2015a), is a library specialized for storing and sharing videos collected as raw data in the context of research about human development and learning.
-The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595).
+The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595-01).
 New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU).
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 In less than a year of operation, the number of institutions with authorized users had grown to 40, with 79 individual investigators from North America, Europe, South America, and Australia.
@@ -283,6 +283,10 @@ Larger scale data repository projects that serve different fields of research wi
 Though, as discussed in much of the existing literature (Heidorn, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
 It will require the work of information professionals equipped with new skillsets that allow them to translate the needs of the library to research teams. It will require leaders capable of navigating between repository, policy, and library workflows, and committed to embedding themselves in the work of researchers who may not have the time or capability of properly preserving their data for the long term.
 
+## Acknowledgments
+
+This work was supported by the NSF (BCS-1238599) and the NICHD (U01-HD-076595-01).
+The authors gratefully acknowledge the NYU Libraries for their valuable advice and consultation.
 
 
 ----
