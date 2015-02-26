@@ -1,7 +1,5 @@
 # Researcher-library collaborations: Data repositories as a service for researchers
 
-## Andrew Gordon, Lisa Steiger, David S. Millman, Rick O. Gilmore
-
 ## Abstract
 
 Libraries have long provided a home for a diverse range of scholarly products, but new interest has arisen in organizing, preserving, and sharing the raw materials -- the data and metadata -- that undergird the published products of research.
