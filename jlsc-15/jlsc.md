@@ -101,12 +101,12 @@ Library and information science experts have been instrumental in shaping the de
 Finally, through close communication with researchers concerns about sharing data, we found data privacy to be a crucial element for ensuring that contributors trust where their data will be stored.
 Sharing identifiable research data requires that the Databrary system restrict access to materials on the basis of both the permissions granted by individual participants and on the level of sharing a researcher has granted.
 Databrary offers several levels of permissions, allowing researchers to share data only with their own lab, in bi-lateral relationships with specific individual Databrary users, with the entire community of authorized Databrary researchers, or in limited cases, with the general public.
-Because of this, Databrary staff work closely with data contributors to determine how a datasets original distribution restrictions, usually governed by a research ethics board (e.g., IRB), translate to Databrary's access levels.As such, privacy becomes a significant component in the curation process.
+Because of this, Databrary staff work closely with data contributors to determine how a datasets original distribution restrictions, usually governed by a research ethics board (e.g., IRB), translate to Databrary's access levels. As such, privacy becomes a significant component in the curation process.
 
 ### Institutional Positioning
 
 Databrary relies on several collaborations and partnerships within NYU.
-These enable Databrary to navigate swiftly between the University Library and the community of researchers only on campus and elsewhere.
+These enable Databrary to navigate swiftly between the University Library and the community of researchers on campus and elsewhere.
 The system's technical architecture is based on a hybrid model, developed initially by the NYU Libraries together with the central IT organization.
 The Databrary web application uses central IT servers and storage.
 The Libraries and central IT, in turn, guarantee the preservation of Databrary collections indefinitely, even if the project funding is interrupted.
@@ -143,15 +143,15 @@ This approach standardizes the internal representation of datasets from the outs
 
 #### After-the-fact curation 
 
-Communication with researchers remains a key component in the curation of data they have already collected. This includes mostly video data from a study that completed recently, but also video data that had been collected many decades ago and has been stored archivally.
-Databrary staff with expertise in library and information science discuss datasets with researchers planning on making contributions from the earliest steps in the process.
+Communication with researchers remains a key component in the curation of data they have already collected. This includes mostly video data from a study that completed recently, but also video data that had been collected many years or decades ago and has been stored archivally.
+Databrary staff with expertise in library and information science discuss datasets with researchers planning on making contributions from the earliest steps in the curation process.
 Regular communication with researchers helps the Databrary staff understand how target contributors envision the representation of their data inside the repository.
 The discussions also inform the ongoing development of the metadata schema, ensuring that it continues to meet the diverse needs of a wide range of individual labs.
 
 Since Databrary's model for seeking permission to share data is new, most data eligible for after-the-fact curation was gathered under a different set of provisions.
 So, communication between Databrary staff and the researcher helps forge a mutual understanding about how to interpret pre-existing restrictions on the data in a way compatible with Databrary's policies and research ethics.
 Indeed, access restrictions are themselves essential metadata.
-Because access restrictions apply to the study level, session, and individual file levels, gathering these metadata constitutes a non-trivial curation effort.
+Because access restrictions apply to the study level, session level (i.e. analytic units within studies), and individual file levels, gathering these metadata constitutes a non-trivial curation effort.
 However, the problems enountered with and solved in curating each new dataset informs the process of curating new contributions.
 Finally, embedded library staff and staff familiar with the practices and interpretation of data within the content domain collaborate to ensure that all data ingested is well-organized and of the highest quality.
 
@@ -166,9 +166,8 @@ Once data have been uploaded, videos are clipped, as needed, to remove identifyi
 
 #### Active curation
 
-After-collection data curation has a central drawback of being resource intensive.
+Curation of data well after it had been first collected has a central drawback of being resource intensive.
 Moreover, Databrary staff learned early on that many researchers balk at the prospect of preparing data for sharing once a study has ended.
-Unless a particular publication outlet or funding agency requires it, after-the-fact curation carries few rewards.
 Further, Databrary's founders envisioned the site as more than a passive repository, but an active community where users browse, comment on, excerpt, cite, modify, desposit, and reuse data.
 Realizing this vision meant that Databrary needed to provide tools that would assist contributors in managing and preserving research data from early on in the research life cycle.
 In order to be useful, data management through Databrary would have to reflect what we observed to be some of the common practices undertaken in collecting and keeping track of data through its lifecycle.
@@ -218,8 +217,10 @@ Priorities for the next several years include expanding the number and diversity
 
 ### Expand number and diversity of datasets
 
-At present, the materials stored in Databrary represent a relatively small number of research topics from a subset of investigators who already have on hand materials with suitable permissions that permit widespread sharing.
-With increasing numbers of researchers beginning to adapt research protocols to enable video data sharing following the Databrary access model, we anticipate that the number and diversity of datasets will grow.
+<!-- I feel like this section is a little tangential -->
+
+At present, the materials stored in Databrary represent a relatively small number of research topics from a subset of investigators who already have data on hand with suitable permissions that permit widespread sharing.
+With increasing numbers of researchers beginning to adapt research protocols to enable video data sharing like the Databrary access model [CITE?], we anticipate that the number and diversity of datasets will grow.
 The team has also identified a use case for Databrary materials that may accelerate the pace of contributions -- excerpts or clips for teaching.
 Many developmental scientists already use excerpts to illustrate methods or key phenomena, and researchers widely share excerpts with one another on an informal *ad hoc* basis.
 Databrary has begun to seek out contributions like this as a way to broaden the base of materials for viewing and to create easy ways for more researchers to contribute.
@@ -245,7 +246,7 @@ We aim to have Databrary represent how researchers themselves would want to repr
 With Databrary established as a working service that is actively gathering new data daily, we will next turn our attention to enhancing the system in ways that will help researchers better find and access Databrary's materials.
 Allowing users to tag and annotate video segments is a natural next step.
 While full-text search is becoming relatively trivial with off the shelf search engines like Apache Solr or Elasticsearch, the same cannot be said about video data.
-Higher level descriptions of video data can assist viewers in finding relevant content relevant, though it is not easy to creat metadata that describes video file content, particularly on a frame-by-frame basis.
+Higher level descriptions of video data can assist viewers in finding relevant content relevant, though it is not easy to create metadata that describes video file content, particularly on a frame-by-frame basis.
 By extending the video tagging and annotation tools on the session timeline, we will allow the researchers themselves to add metadata that will be useful for others to identify interesting segments of video.
 Similarly, we will enhance tools for researchers to create their own excerpts -- separate clips from larger video files -- that contain some salient event or example of a phenomenon.
 With the permission of the participant, investigators may share excerpts with other scholars, and use them in the classroom and at conferences.
@@ -260,7 +261,7 @@ Databrary we will need to improve its connection with existing library services 
 Going forward, we are well positioned to provide interoperability with library-based metadata schemas (such as export of data packages cross-walked to Dublin Core) and reach OAI-PMH compliance.
 This will automatically incorporate data that researchers add to Databrary into federated library searches with other domain-specific data repositories.
 
-Additionally, By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we will also allow libraries and other information systems to tap into Databrary datasets in a more automated fashion.
+Additionally, By providing a refined API and assigning Digital Object Identifiers (DOIs) to volumes, we will provide libraries and other information systems the opportunity to tap into Databrary datasets in a more customized fashion.
 Minting DOIs for datasets in Databrary will also allow them to be citeable in future journal articles. This helps contributors by making measurable the scholarly impact of deposited data.
 
 ### Plan for long-term sustainability
