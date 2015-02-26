@@ -1,5 +1,7 @@
 # Researcher-library collaborations: Data repositories as a service for researchers
 
+###Keywords: Research data repositories, Data sharing, open science, Embedded librarians 
+
 ## Abstract
 
 Libraries have long provided a home for a diverse range of scholarly products, but new interest has arisen in organizing, preserving, and sharing the raw materials -- the data and metadata -- that undergird the published products of research.
