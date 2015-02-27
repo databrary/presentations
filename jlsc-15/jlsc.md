@@ -5,13 +5,13 @@
 ## Abstract
 
 Libraries have long provided a home for a diverse range of scholarly products, but new interest has arisen in organizing, preserving, and sharing the raw materials -- the data and metadata -- that undergird the published products of research.
-Library and information science professionals have valuable expertise to bring to bear in the effort to create larger, more diverse, and more widely used data libraries.
+Library and information science professionals have valuable expertise to bring to bear in the effort to create larger, more diverse, and more widely used data repositories.
 However, for libraries to be maximally successful in providing the research data management and preservation services required of a successful data repository, librarians must work especially closely with researchers and embed themselves in data management workflows as much as possible.
 The Databrary project provides a model for how library and information science experts, working in a diverse team, can inform the development and implementation of a data repository that is closely linked to the needs of a specific scholarly community -- researchers who use video as a main source of data to study human development and learning.
 
 ## Background 
 
-Databrary (Databrary, 2015a), is a library specialized for storing and sharing videos collected as raw data in the context of research about human development and learning.
+Databrary (Databrary, 2015a), is a repository for storing and sharing videos collected as raw data in the context of research about human development and learning.
 The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595-01).
 New York University (NYU) hosts the library and its staff, with additional support from The Pennsylvania State University (PSU).
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
@@ -41,12 +41,13 @@ That expertise has played a vital role.
 By engaging researchers in a community committed to data sharing, Databrary has learned about the diverse curation requirements of datasets collected through very different lab processes, especially how to represent those datasets in a standard fashion for future access and re-use.
 Accordingly, the Databrary project offers insights about ways libraries and librarians may engage with scholars in specific topical domains in order to serve emerging demands for sharing research data.
 
-In this paper, we will discuss how Databrary has a established itself as a data repository that closely and frequently with researchers in a particular scholarly domain.
-We will also show how Databrary has found solutions to many of the barriers that limit video sharing through close interaction with that target community.Finally, in laying out a roadmap for enhancements to Databrary, we suggest lessons library and information scientists might draw from the Databrary experience.
+In this paper, we will discuss how Databrary has established itself as a data repository that works closely and frequently with researchers in a particular scholarly domain.
+We will also show how Databrary has found solutions to many of the barriers that limit video sharing through close interaction with that target community. 
+Finally, in laying out a roadmap for enhancements to Databrary, we suggest lessons library and information scientists might draw from the Databrary experience.
 
 ## Literature Review
 
-Databrary is a domain-specific data repository with strong ties to the NYU library, but largely autonomous operations.
+Databrary has strong ties to the NYU library, but largely autonomous operations.
 A sampling of the current literature on data repositories and data curation shows that these structural features fall well within established repository norms.
 Some repositories capture research data across domains (Lyle, 2014; Witt, 2012), while others commit to a specific field of study (Peer & Green 2012; Ardini, Pan, Qin, & Cooley, 2013).
 Creating and operating research data repositories pose many challenges, but how repositories are established within their host institutions and how they interface with content producers turn out to be critical.
@@ -79,7 +80,7 @@ The Databrary project team's experience echos many of these points. Staff withou
 
 ## Description of services
 
-Databrary's core competencies are a focus on community outreach, attention to data privacy, the provision of services for scholarly communication, services for guided and active data curation developed with the guidance of information professionals, support from institutional partners, and a strong technical infrastructure. 
+Databrary's core competencies are a focus on community outreach and the provision of services for scholarly communication, support from institutional partners, services for data curation developed with the guidance of information professionals, and a strong technical infrastructure. 
 We discuss each of these in turn.
 
 ### Community Outreach and Scholarly Communication
@@ -89,13 +90,13 @@ Early on, the project team came to understand that researchers were more likely 
 At the same time, the team understood that it would have to change prevailing sentiments in the developmental science community about the feasbility of sharing video data openly and bring knowledge about data curation and preservation practices to researchers largely unfamiliar with these topics.
 This led to a decision to hire a staff member with specific responsibilities for community outreach and to the hiring of a staff member with experience in library and information science.
 These team members and our technical staff interact directly with researchers, providing hands-on support at every stage of the researcher's interactions with Databrary.
-Staff assist with initial user registration, consult with research ethics boards, and plan for archival or new data curation (see Curation below).
+Staff assist with initial user registration, consult with research ethics boards, and manage data curation (see Curation below).
 The Databrary team actively seeks out new potential contributors and datasets, and the team has established partnerships with some of the main scholarly associations in the developmental and learning sciences: the Society for Research in Child Development (SRCD), the International Society on Infant Studies (ISIS), the Cognitive Development Society (CDS), and the American Educational Research Association (AERA).
 
 Databrary has also attempted to forge a consensus on professional values concerning the questions of what materials to share, when in the research life cycle should materials be shared, who should share, and how one should acknowledge the use of shared data and other materials.
 A Data Sharing Manifesto (Databrary, 2015b) articulates the project's philosophy.
 It suggests that *all* researchers should share as much material as they are comfortable sharing and have permission to share; researchers should share as early on in the research life cycle as possible; and researchers should properly acknowledge all materials contributed by others that inform their research products.
-To that end, Databrary provides valid uniform resource identifiers (URIs) in a standard format for datasets as a whole and for subcomponents within them. 
+To support proper citation behavior, Databrary provides valid uniform resource identifiers (URIs) in a standard format for datasets as a whole and for subcomponents within them. 
 The system provides links to persistent identifiers for publications associated with a dataset, and persistent identifiers (DOIs) for hosted datasets.
 Library and information science experts have been instrumental in shaping the design and implementation of these features.
 
@@ -135,7 +136,7 @@ These relationships were envisioned from the start, with the collaborating units
 
 Of course, the main purpose of Databrary's community outreach efforts, internal partnerships, and policy framework is to secure data deposits.
 Databrary supports after-the-fact and active curation.
-After-the-fact curation consists of ingesting datasets after collection has been completed, typically after all study derivatives (research papers, analyses, etc.) have been created.
+After-the-fact curation consists of ingesting datasets after collection by researchers has been completed, typically after all study derivatives (research papers, analyses, etc.) have been created.
 Active curation refers to Databrary's user interface that allows researchers to upload their video data and metadata as they collect it during the course of a study.
 
 Every data repository faces the problem of defining a metadata schema that will accept a wide variety of datasets, while adding a level of standardization that allows deposits to be easily searched (Hourclé, 2008; Orchard, 2014).
@@ -167,16 +168,16 @@ In the case of older video collections, where relevant metadata may have been lo
 In these circumstances, it helps to have staff with expertise in library science and in behavioral science work side by side.
 
 Finally, once all the metadata has been organized into a set of comma-separated value (CSV) files, and video files have been uploaded to a staging server for ingest, a set of server scripts merge the metadata into a JSON file which is then uploaded via the web application.
-This initiates the uploading of the video assets, the creation of research sessions and records, and video transcoding into to a standard format.
-Once data have been uploaded, videos are clipped, as needed, to remove identifying information, and the results stored on the long-term preservation location within NYU's ITS data centers.
+This initiates the uploading of the video assets, the creation of research sessions and records, video transcoding into to a standard format, and clipping of video assets to remove identifying information where specified in the ingest script.
+After upload, and the results stored on the long-term preservation location within NYU's ITS data centers.
 
 #### Active curation
 
 The curation of data well after its collection requires signficant resources.
 Moreover, Databrary staff learned early on that many researchers balk at the prospect of preparing data for sharing once a study has ended.
 Data sharing has few concrete rewards relative to other scholarly activities.
-Thus, while providing expertise to assist with after-the-fact data curation reduces barriers to sharing, the time commitment required of the researcher  remains a substantial deterrent. 
-Further, Databrary's founders envisioned the site as more than a passive repository, but as an active community where users browse, comment on, excerpt, cite, modi.fy, desposit, and reuse data.
+Thus, while providing expertise to assist with after-the-fact data curation reduces barriers to sharing, the time commitment required of the researcher remains a substantial deterrent. 
+Further, Databrary's founders envisioned the site as more than a passive repository, but as an active community where users browse, comment on, excerpt, cite, modify, desposit, and reuse data.
 Realizing this vision meant that Databrary needed to provide tools that would assist contributors in managing and preserving research data from early on in the research life cycle.
 In order to be useful, data management through Databrary would have to reflect what we observed to be some of the common practices undertaken in collecting and keeping track of data through its lifecycle.
 
@@ -222,14 +223,16 @@ It stores files in two mirrored and geographically distributed locations, and a 
 ## Next Steps
 
 The Databrary team continues to build upon the lessons learned during the project's design and initial roll-out.
-Priorities for the next several years include expanding the number and diversity of datasets, enhancing features beyond storage and preservation, improving active/self-curation capabilities, more extensive integration with other services, and planning for long-term sustainability.
+Priorities for the next several years include expanding the number and diversity of datasets, improving active/self-curation capabilities, enhancing features beyond storage and preservation, more extensive integration with other services, and planning for long-term sustainability.
 
 ### Expand number and diversity of datasets
 
 <!-- I feel like this section is a little tangential -->
 <!-- I don't feel especially strongly about this section, but I'd understood that digital video was a new frontier for libraries, at least where video as research data is concerned. So, we are breaking new ground and solving problems that may apply in other domains. -->
+<!-- I tried reflecting that more in the section below, but if it still doesn't work, we might want to think about striking it.-->
 
 At present, the materials stored in Databrary represent a relatively small number of research topics from a subset of investigators who already have data on hand with suitable permissions that permit widespread sharing.
+However, as our approach has focused more generally on how researchers store and manage video data in a repository context, we anticipate that Databrary can apply its solutions across a broader set of domains as we meet the needs of researchers outside of the community we currently serve.   
 With increasing numbers of researchers beginning to adapt research protocols to enable video data sharing like the Databrary access model, we anticipate that the number and diversity of datasets will grow.
 The team has also identified a use case for Databrary materials that may accelerate the pace of contributions -- excerpts or clips for teaching.
 Many developmental scientists already use excerpts to illustrate methods or key phenomena, and researchers widely share excerpts with one another on an informal *ad hoc* basis.
@@ -287,10 +290,10 @@ In the meantime, the project team continues to develop plans for long-term susta
 
 There is an active discussion among library practitioners on the proper role of libraries in the collection and management of research data.
 Databrary offers a working model that demonstrates how a research data repository can benefit from interacting closely with the research community.
-The project also demonstrates that being strategically and structurally attached to library systems through management, staff and technology is an important ingredient for success in building a repository.
+The project also demonstrates that being strategically and structurally attached to library systems through management, staff, and technology is an important ingredient for success in building a repository.
 
 We do not assume that all data repositories will be able to replicate the exact process Databrary has undertaken.
-Larger scale data repository projects that serve different fields of research will most likely not have the available staff to shadow every domain their datasets come from.
+Larger scale data repositories that serve different fields of research will most likely not have the available staff to shadow every domain their datasets come from.
 Though, as discussed in much of the existing literature (Heidorn, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
 It will require the work of information professionals equipped with new skillsets that allow them to translate the needs of the library to research teams. 
 It will require leaders capable of navigating between repository, policy, and library workflows, and committed to embedding themselves in the work of researchers who may not have the time or capability of properly preserving their data for the long term.
