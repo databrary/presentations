@@ -9,7 +9,7 @@ Library and information science professionals have valuable expertise to bring t
 However, for libraries to be maximally successful in providing the research data management and preservation services required of a successful data repository, librarians must work especially closely with researchers and embed themselves in data management workflows as much as possible.
 The Databrary project provides a model for how library and information science experts, working in a diverse team, can inform the development and implementation of a data repository that is closely linked to the needs of a specific scholarly community -- researchers who use video as a main source of data to study human development and learning.
 
-## Background 
+## Introduction 
 
 Databrary (Databrary, 2015a), is a repository for storing and sharing videos collected as raw data in the context of research about human development and learning.
 The project has financial support from the National Science Foundation (BCS-1238599) and the National Institute of Child Health and Human Development (U01-HD-076595).
@@ -66,7 +66,7 @@ Carlson (2012) finds that without the right kind of communication with researche
 Librarians, with their strengths in metadata creation and standardization across domains, can help reduce the barriers to sharing that often plague the dissemination of data, particularly where research cultures differ drastically across domains (MacMillian, 2014).
 Not only does a librarian working with researchers help in building a better repository, but a librarian whose role is embedded in and informed by working with researchers can ensure better material description and documentation.
 This results in more productive research outcomes (Federer, 2013).
-Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure, Level, Cranston,Oehlerts, & Culbertson, 2014). The Databrary team's experiences working with investigators to curate archival data bear out these predictions.
+Some predict that the role of liaison librarians in data repository building will increase: Researchers will welcome assistance in reducing the burden of describing and preparing data for preservation, and this will convince more researchers to contribute data (McClure, Level, Cranston, Oehlerts, & Culbertson, 2014). The Databrary team's experiences working with investigators to curate archival data bear out these predictions.
 
 New practices for managing workflows involving technology and metadata creation will be needed to develop successful data repositories.
 Research data includes diverse materials related to scholarly process and scholarly products.
@@ -138,10 +138,10 @@ These relationships were envisioned from the start, with the collaborating units
 Of course, the main purpose of Databrary's community outreach efforts, internal partnerships, and policy framework is to secure data deposits.
 Databrary supports 'after-the-fact' and 'active' curation.
 After-the-fact curation consists of ingesting datasets after data collection has been completed, typically after all study derivatives (research papers, analyses, etc.) have been created. 
-After-the-fact curation nearly always involves significant assistance and effort from a [drew] and time and energy on the part of the original researcher to [...].
+After-the-fact curation nearly always involves significant assistance and effort from a library and information science professional and time and energy on the part of the original researcher to convey the essential aspects of their dataset for ingestion.
 Active curation involves tools that enable researchers to organize and manage their raw data and metadata while they are actively in the midst of collecting data. 
 Databrary has built a user interface that allows researchers to enter study metadata and upload their videos after each data collection. 
-<!--a point about building curation into their workflow to make sharing easier when they are ready-->
+Making active curation a regular part of a researcher's workflow then makes sharing a quick and final step when they are ready.
 
 Every data repository faces the problem of defining a metadata schema that will accept a wide variety of datasets, while adding a level of standardization that allows deposits to be easily searched (Hourclé, 2008; Orchard, 2014).
 The Databrary team learned early on that requiring only a minimal amount of metadata was preferable to making exhaustive data descriptions mandatory.
@@ -196,9 +196,9 @@ It allows users to upload and position video files to reflect the temporal order
 These tags become additional metadata indices for search and discovery.
 Databrary's active curation features emerged from ongoing discussions with Databrary users and potential users, and we continue to refinine them on the basis of user feedback. 
 
-INSERT FIGURE 1 ABOUT HERE (Fabricius, 2014)
+INSERT FIGURE 1 ABOUT HERE [A screenshot of a volume's spreadsheet view in Databrary (Fabricius, 2014)]
 
-INSERT FIGURE 2 ABOUT HERE (Fabricius, 2014)
+INSERT FIGURE 2 ABOUT HERE [A screenshot of a session's timeline view in Databrary (Fabricius, 2014)]
 
 Active curation distinguishes Databrary from most repositories.
 The decision to make active curation a priority emerged from Databrary's focus on reducing the barriers to data sharing faced by its target research field.
@@ -284,7 +284,7 @@ The project also demonstrates that being strategically and structurally attached
 
 We do not assume that all data repositories will be able to replicate the exact process Databrary has undertaken.
 Larger scale data repositories that serve different fields of research will most likely not have the available staff to shadow every domain their datasets come from.
-Though, as discussed in much of the existing literature (Heidorn, 2011; McLure et al. 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
+Though, as discussed in much of the existing literature (Heidorn, 2011; McLure et al., 2014; Simons & Richardson, 2012; MacMillan, 2014), the development of data repositories will require new practices.
 It will require the work of information professionals equipped with new skillsets that allow them to translate the needs of the library to research teams. 
 It will require leaders capable of navigating between repository, policy, and library workflows, and committed to embedding themselves in the work of researchers who may not have the time or capability of properly preserving their data for the long term.
 

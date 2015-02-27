@@ -1,6 +1,6 @@
 Ardini, M. A., Pan, H., Qin, Y., & Cooley, P. C. (2014). Sample and data sharing: Observations from a central data repository. Clinical Biochemistry, 47(4-5), 252-257. doi: 10.1016/j.clinbiochem.2013.11.014
 
-ArXiv (2015). arXiv.org e-Print archive. Retrieved from http://arxiv.org
+ArXiv (2015). arXiv.org e-Print archive. Retrieved February 26, 2015 from http://arxiv.org
 
 Bakeman, R., & Quera, V. (2012). Behavioral observation. In H. Cooper, P. M. Camic, D. L. Long, A. T. Panter, D. Rindskopf, & K. J. Sher (Eds.), APA handbook of research methods in psychology, Vol 1: Foundations, planning, measures, and psychometrics (pp. 207-225). Washington, DC, US: American Psychological Association. doi: 10.1037/13619-013
 
@@ -10,19 +10,19 @@ Carlson, J. (2012). Demystifying the data interview Developing a foundation for 
 
 Castelli, D., Manghi, P. & Thanos, C. (2013). A vision towards Scientific Communication Infrastructures: On bridging the realms of Research Digital Libraries and Scientific Data Centers. International Journal on Digital Libraries, 13(3/4), 155-169. doi: 10.1007/s00799-013-0106-7
 
-Databrary (2015a). Databrary: An Open Data Library for Developmental Science. Retrieved from http://databrary.org/
+Databrary (2015a). Databrary: An Open Data Library for Developmental Science. Retrieved February 26, 2015 from http://databrary.org/
 
-Databrary (2015b). Data Sharing Manifesto. Retrieved from http://databrary.org/access/policies/data-sharing-manifesto.html
+Databrary (2015b). Data Sharing Manifesto. Retrieved February 26, 2015 from http://databrary.org/access/policies/data-sharing-manifesto.html
 
-Databrary (2015c). Databrary Access Agreement. Retrieved from http://databrary.org/access/policies/agreement.html
+Databrary (2015c). Databrary Access Agreement. Retrieved February 26, 2015 from http://databrary.org/access/policies/agreement.html
 
-Ember, C., Hanisch, R., Alter, G., Berman, H., Hedstrom, M., & Vardigan, M. (2013). Sustaining Domain Repositories for Digital Data: A White Paper. Workshop on Sustained Domain Repositories for Digital Data. Retrieved from http://datacommunity.icpsr.umich.edu/sites/default/files/WhitePaper_ICPSR_SDRDD_121113.pdf
+Ember, C., Hanisch, R., Alter, G., Berman, H., Hedstrom, M., & Vardigan, M. (2013). Sustaining Domain Repositories for Digital Data: A White Paper. Workshop on Sustained Domain Repositories for Digital Data. Retrieved February 26, 2015 from http://datacommunity.icpsr.umich.edu/sites/default/files/WhitePaper_ICPSR_SDRDD_121113.pdf
 
 Fabricius, W. (2014). Construct Validity of Standard False Belief Tasks: A Failure to Replicate. Databrary. Retrieved February 26, 2015 from http://databrary.org/volume/98.
 
 Federer, L. (2013). The librarian as research informationist: a case study (English). Journal of the Medical Library Association, 101(4), 298-302. 
 
-Github (2015). Databrary on Github. Retrieved from https://github.com/databrary/
+Github (2015). Databrary on Github. Retrieved February 26, 2015 from https://github.com/databrary/
 
 Greenberg, J., White, H. C., Carrier, S., & Scherle, R. (2009). A metadata best practice for a scientific data repository. Journal of Library Metadata, 9(3-4), 194-212. doi: 10.1080/19386380903405090
 
