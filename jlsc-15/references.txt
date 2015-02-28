@@ -36,6 +36,8 @@ MacMillan, D. (2014). Data Sharing and Discovery: What Librarians Need to Know. 
 
 McLure, M., Level, A. V., Cranston, C. L., Oehlerts, B., & Culbertson, M. (2014). Data Curation: A Study of Researcher Practices and Needs. portal: Libraries & the Academy, 14(2), 139-164. 
 
+Peer, L., & Green, A. (2012). Building an Open Data Repository for a Specialized Research Community: Process, Challenges and Lessons. International Journal of Digital Curation, 7(1), 151-162. doi: 10.2218/ijdc.v7i1.222
+
 Orchard, S. (2014). Review: Data Standardization and Sharing—The work of the HUPO-PSI. BBA - Proteins and Proteomics, 1844(Part A), 82-87. doi: 10.1016/j.bbapap.2013.03.011
 
 Simons, N., & Richardson, J. (2012). New Roles, New Responsibilities: Examining Training Needs of Repository Staff. Journal of Librarianship & Scholarly Communication, 1(2), 1-16. doi: 10.7710/2162-3309.1051
