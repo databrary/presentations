@@ -1,0 +1,145 @@
+\documentclass{sig-alternate}
+
+\begin{document}
+\conferenceinfo{JCDL}{'15 Knoxville, Tennessee USA}
+
+\title{Databrary: Enabling sharing and reuse of research video}
+
+\numberofauthors{4}
+
+\author{
+\alignauthor
+Dylan A. Simon\\
+	\affaddr{Databrary Project}\\
+	\affaddr{New York University}\\
+	\affaddr{New York, NY, USA}\\
+	\email{dylan@databrary.org}
+\alignauthor
+Andrew Gordon\\
+	\affaddr{Databrary Project}\\
+	\affaddr{New York University}\\
+	\affaddr{New York, NY, USA}\\
+	\email{drew@databrary.org}
+\alignauthor
+Lisa Steiger\\
+	\affaddr{Databrary Project}\\
+	\affaddr{New York University}\\
+	\affaddr{New York, NY, USA}\\
+	\email{lisa@databrary.org}
+\and
+Rick O. Gilmore\\
+	\affaddr{Department of Psychology}\\
+	\affaddr{Penn State}\\
+	\affaddr{University Park, PA, USA}\\
+	\email{rogilmore@psu.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+Video and audio recordings serve as a primary data source in many fields, especially in the social and behavioral sciences.
+Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes.
+Databrary provides a web-based service for sharing and reusing the video data created by researchers in the developmental and learning sciences.
+By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share recordings in a standardized way.
+This demo will take a tour through the Databrary service, hightlighting how it controls user access to restricted data based on human research subjects, how it facilitates browsing and discoverability of datasets, and how it provides a service for researchers to upload and manage their data as they collect it.
+\end{abstract}
+
+\category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
+\category{H.3.5}{Information Storage and Retrieval}{Online Information Systems}[data sharing, web-based services]
+
+\terms{Design, Standardization}
+
+\keywords{Data sharing, open science, video, psychology, developmental science}
+
+\section{Introduction/Background}
+
+Video and audio recordings serve as a primary data source for scientific research in psychology, linguistics, education, anthropology, and many other disciplines.
+They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools, as human observers can directly glean much of the data's richness.
+% access in the sense of "what format is it in":
+This allows recordings collected in one context to be used by others for different purposes with minimal explanation, naturally reducing the problems of documentation, provenance, formatting, and access that plague many research repositories.
+On the other hand, automated analysis of videos is an active but still immature research area, so the problems of search, discovery, and meta-analysis over these media remain \cite{Albertson_2013, Lanagan_Smeaton_2012}.
+
+Unfortunately, researchers rarely share recordings with others, due largely to entrenched practices and perceived privacy requirements.
+%something here or somewhere else about aversion (fear) to changing practices...
+Despite their inherent reusability, this lack of sharing inhibits the reuse of recordings and impedes scientific discovery.
+To address this problem, the Databrary project\footnote{https://databrary.org/} aims to build tools and policies that facilitate repurposing and reuse of recordings without placing undue burden on data contributors.
+We have created a web-based data library to store and organize recordings and to capture contextual information necessary for reuse in standardized ways, allowing for understanding and discovery.
+
+Research data repositories require a balance between generality and specificity.
+General purpose repositories permit unstructured storage of arbitrary files (e.g., Dataverse\footnote{http://dataverse.org/}, Dryad\footnote{http://datadryad.org/}, PURR\footnote{https://purr.purdue.edu/}), while those with rigorously structured schema require contributions to be carefully formatted (e.g., Human Connectome Project\footnote{http://www.humanconnectomeproject.org/}, Per\-son\-al Ge\-nome Pro\-ject\footnote{http://www.personalgenomes.org/}, TalkBank\footnote{http://talkbank.org/}).
+The flexibility of general-purpose repositories make them especially well-suited to capture and archive entire datasets, but these systems do not facilitate search, understanding, or reuse without extensive, usually labor-intensive curation to summarize or extract metadata \cite{Peer_2012}.
+Targeted repositories, on the other hand, generate large-scale, homogeneous data sources that facilitate meta- and re-analysis, but are limited to specific research questions, losing the full richness, context, and innovation of the source materials and field.
+
+Our approach is to focus on video and audio recordings in particular research domains, and build appropriate structured and unstructured resources around this functional core.
+We designed the system by investigating how researchers studying human development and education organize their own data, deriving from those observations a unifying set of principles for organizing contextual metadata.
+This facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
+We achieve this conformance through in-depth, investigative curation of previously collected datasets, along with user interfaces allowing researchers to upload their own research data as they acquire it.
+In the future, we hope to capture the additional annotation data researchers already produce while analyzing recordings to further improve our discovery capabilities.
+
+\subsection*{Repository Overview}
+
+Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
+It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
+These files make up 2,400 sessions and are covered by 1,300 metadata records (including 1,100 individual participants).
+Data originates from 35 individual contributors across 25 different universities.
+
+Databrary is a new, open-source web application\footnote{http://github.com/databrary/databrary}, built in Scala on the Play Framework\footnote{http://playframework.com/} to support a responsive user interface, a complete API, and high-performance streaming.
+Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
+All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
+This transcoding utilizes the high performance computing cluster at the host campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
+The user interface is built primarily on the Angular web framework\footnote{http://angularjs.org/}, and all data access is performed through an open JSON API.
+
+\section{???}
+
+
+\section{Interface}
+
+\subsection{Normalization}
+
+We have adopted an approach that encourages adherence to existing standardized options but still allows new types to be created as the data require it.
+Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered without burdening or constraining researchers.
+However, since we expect the bulk of the data in the library to come from newly collected sources (due largely to privacy constraints on existing datasets), we have additionally taken a distinct, user-driven approach.
+
+While some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools.
+Most use a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and local filesystem storage.
+This suggested the opportunity to supply a cohesive data management platform where all collected raw data---including recordings, contextual information, and measurements---could be entered, stored, and exported for later off-line analysis.
+Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset, through liberal use of visualization, auto-completion, and suggestions.
+In turn, this adds convenience and functionality for researchers over existing practices while alleviating storage burdens.
+
+\subsection{Discovery}
+
+While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
+This problem is compounded for us because we expect data collected in one research area to be useful for entirely different purposes.
+That is, data arrives labeled with contextual information that may not fully describe the range of features present.
+Ultimately, determining usefulness requires direct, human observation of the recordings, and so a large part the discovery solution will be simply to present researchers with short, representative samples from a variety of datasets.
+
+Another important source for search targets comes from annotations supplied by the original researchers during analysis, as well as by the community.
+We are currently working to support import and export workflows for existing annotation tools that add meaningful definitions to these often opaque codes, while allowing researchers to continue their current practices.
+Beyond that, we also plan to build a new, more efficient and structured annotation web interface supporting more of the analysis workflow directly within our system.
+In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
+
+\section{Conclusions}
+
+We have built a research data repository focused on video and audio recordings, allowing for normalized presentation and discovery of data across the site, and introducing temporal structure to metadata driven by the nature of these recordings.
+By limiting both file and metadata organization to a flat (but overlapping) set of sessions and records, we capture session-based research data within a cohesive and intuitive user interface.
+Although we allow additional data files, we encourage users with other types of rich data, such as physiological recordings, to store and link to those resources externally.
+Similarly, by targeting reuse of existing research data, rather than replication or meta-analysis, we limit the scope of accepted data to the original recordings and early analysis phases that generate the most value.
+Focus on a particular research domain allows us to achieve a sustainable balance between standardization and flexibility without burdening contributors.
+
+Having made significant progress building ingest and data entry services that have let us grow the library, we now must turn our efforts towards discovery and reuse, finding ways to better describe and elaborate on collected data.
+To do this we look both to the original data contributors for ways that their existing analysis workflows can generate usable content descriptions, and to the community of researchers to label and comment on datasets as they explore and reuse.
+Thus we seek to incorporate these annotation processes into Databrary, both to capture and define these annotations as generalizable search terms, and to make these workflows more convenient by obviating existing file transfer and transformation burdens.
+Ultimately we hope to allow and capture instances of data reuse in this same way, so that content descriptions are aggregated from multiple annotation passes from different users, and existing data can continuously increase in value for researchers.
+
+The success we've had in engaging, involving, and extracting data from researchers is due largely to our focus on a specific community, but it has come at the cost of limitations in scope and difficulties of interoperability and discovery that many more traditional repositories avoid.
+By slowly growing our scope and relaxing some of these limitations, we hope to leverage more of the established knowledge of the digital library community in order to make this repository more globally applicable to the storage and accessibility of research data.
+
+\section*{Acknowledgments}
+
+This work was supported by the NSF (BCS-1238599) and the NICHD (U01-HD-076595-01).
+The authors gratefully acknowledge the NYU Libraries for their valuable advice and consultation.
+
+\bibliographystyle{abbrv}
+\bibliography{references}
+
+\end{document}
