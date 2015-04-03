@@ -67,10 +67,9 @@ Our approach is to focus on video and audio recordings in particular research do
 We designed the system by investigating how researchers studying human development and education organize their own data, deriving from those observations a unifying set of principles for organizing contextual metadata.
 This facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
 We achieve this conformance through in-depth, investigative curation of previously collected datasets, along with user interfaces allowing researchers to upload their own research data as they acquire it.
-In the future, we hope to capture the additional annotation data researchers already produce while analyzing recordings to further improve our discovery capabilities.
 
 \subsection*{Repository Overview}
-
+%might not want to keep this section, 2-pages is pretty short.
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
 These files make up 2,400 sessions and are covered by 1,300 metadata records (including 1,100 individual participants).
@@ -88,31 +87,29 @@ Focus on a particular research domain allows us to achieve a sustainable balance
 The success we've had in engaging, involving, and extracting data from researchers is due largely to our focus on a specific community, but it has come at the cost of limitations in scope and difficulties of interoperability and discovery that many more traditional repositories avoid.
 By slowly growing our scope and relaxing some of these limitations, we hope to leverage more of the established knowledge of the digital library community in order to make this repository more globally applicable to the storage and accessibility of research data.
 
-\section{Interface}
-
-\subsection{Normalization}
-
-We have adopted an approach that encourages adherence to existing standardized options but still allows new types to be created as the data require it.
-Initially we have achieved this through manual review and off-line curation of contributions, dynamically extending the system as new types of data were discovered without burdening or constraining researchers.
-However, since we expect the bulk of the data in the library to come from newly collected sources (due largely to privacy constraints on existing datasets), we have additionally taken a distinct, user-driven approach.
-
 While some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools.
 Most use a combination of hand-written paper, simple spreadsheets, existing video annotation tools, statistical analysis software, and local filesystem storage.
 This suggested the opportunity to supply a cohesive data management platform where all collected raw data---including recordings, contextual information, and measurements---could be entered, stored, and exported for later off-line analysis.
 Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset, through liberal use of visualization, auto-completion, and suggestions.
 In turn, this adds convenience and functionality for researchers over existing practices while alleviating storage burdens.
 
-\subsection{Discovery}
+
+\section{Uploading and Managing Data}
+
+The team incorporated insights drawn from observations of data management practices in a sample of laboratories. 
+From them we created a set of data management features that empower researchers to actively curate their own projects – to upload data with accompanying metadata – as each study unfolds. 
+We have designed and implemented a spreadsheet interface (see Figure 1) for entering, editing, and viewing session-level metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups etc.). 
+Most researchers use desktop spreadsheets for precisely this purpose in their own labs, making the interface and functionality transparent to users.  We have also implemented a timeline for uploading, viewing, and tagging video assets related to sessions.  The timeline view is designed to look and operate like video editing software commonly used in many research labs (see Figure 2).
+It allows users to upload video files, position them to reflect the temporal order of each component of data collection, and annotate video sections with user-generated tags. 
+These tags become additional metadata indices for search and discovery. 
+Databrary’s staff continue to refine the active curation features on the basis of user feedback.
+
+\section{Discovery and Scholarly Communication}
 
 While increased normalization facilitates filtering and targeted searches for data, the general problems of browsing and discovery remain largely unsolved.
 This problem is compounded for us because we expect data collected in one research area to be useful for entirely different purposes.
 That is, data arrives labeled with contextual information that may not fully describe the range of features present.
 Ultimately, determining usefulness requires direct, human observation of the recordings, and so a large part the discovery solution will be simply to present researchers with short, representative samples from a variety of datasets.
-
-Another important source for search targets comes from annotations supplied by the original researchers during analysis, as well as by the community.
-We are currently working to support import and export workflows for existing annotation tools that add meaningful definitions to these often opaque codes, while allowing researchers to continue their current practices.
-Beyond that, we also plan to build a new, more efficient and structured annotation web interface supporting more of the analysis workflow directly within our system.
-In this way, Databrary will allow researchers to work with their recordings directly in raw form without having to transfer or transform them, while also capturing more meaningful and standardized contextual information from this process.
 
 \section*{Acknowledgments}
 
