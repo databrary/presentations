@@ -51,7 +51,7 @@ This demo will take a tour through the Databrary service, hightlighting how it c
 
 \keywords{Data sharing, open science, video, psychology, developmental science}
 
-\section{1. Introduction/Background}
+\section{Introduction/Background}
 
 Video and audio recordings serve as a primary data source for scientific research in psychology, linguistics, education, anthropology, and many other disciplines.
 They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools, as human observers can directly glean much of the data's richness.
@@ -66,7 +66,7 @@ Our approach is to focus on video and audio recordings in particular research do
 We designed the system by investigating how researchers studying human development and education organize their own data, deriving from those observations a unifying set of principles for organizing contextual metadata.
 This facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
 
-\section{2. Designated Community}
+\section{Designated Community}
 
 Focus on a particular research domain allows us to achieve a sustainable balance between standardization and flexibility without burdening contributors.
 While some researchers in our target domains have standardized data management practices, a large majority have no special data management or collection tools.
@@ -75,14 +75,14 @@ This suggested the opportunity to supply a cohesive data management platform whe
 Providing a targeted user interface to meet the existing and evolving needs of our contributed data allows us to control the means of data entry and thus achieve a greater amount of normalization in the data from the outset, through liberal use of visualization, auto-completion, and suggestions.
 In turn, this adds convenience and functionality for researchers over existing practices while alleviating storage burdens.
 
-\section{3. Access Policies}
+\section{Access Policies}
 
 A primary design principle for the development of the Databrary repository is site accessibility. 
 Because video data involving human subjects contains many points of identifiability, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the original participant consents under which the data were collected. User registration also involves an authorization process by which site users are verified to be faculty, student, or researcher affiliated with an educational institution.
 Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of reseach data that has a high disclosure risk.
 Finally, contributors are offerred session release levels and file classifications that allow them the capacity to fine-tune who has access to the data they contribute. 
 
-\section{4. Repository Overview}
+\section{Repository Overview}
 %might need to rethink this section, 2-pages is pretty short.
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 It currently hosts 5,700 video files totaling 1,600 hours of recordings along with 2,200 additional files.
@@ -95,7 +95,7 @@ All uploaded recordings are automatically transcoded to a standard format to ena
 This transcoding utilizes the high performance computing cluster at the host campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
 The user interface is built primarily on the Angular web framework\footnote{http://angularjs.org/}, and all data access is performed through an open JSON API.
 
-\section{5. Uploading and Managing Data}
+\section{Uploading and Managing Data}
 
 Databrary was designed from insights drawn from observations of data management practices in a sample of laboratories. 
 From them we created a set of data management features that empower researchers to actively curate their own projects – to upload data with accompanying metadata – as each study unfolds. 
@@ -105,7 +105,7 @@ It allows users to upload video files, position them to reflect the temporal ord
 These tags become additional metadata indices for search and discovery. 
 Databrary’s staff continue to refine the active curation features on the basis of user feedback.
 
-\section{6. Discovery and Scholarly Communication}
+\section{Discovery and Scholarly Communication}
 
 As a platform for also sharing and reusing video-based research data, discoverability and features for facilitating the referencing and display of datasets in scholarly communication are an important aspect of the repository. 
 Currently basic text search over the entire repository is supported and soon we will begin to implement more refined search that allows faceting of search results based on dataset tags and keywords and session metadata such as participant age group, task, study condition, and location.
@@ -113,12 +113,12 @@ Additionally, we allow for the creation of tags that annotate videos and video s
 Each dataset comes with a formatted citation, a persistent URI, and soon will also mint and provide a DOI for referencing in scholarly publications and presentations.
 One of the more unique features of Databrary is the ability to excerpt or highlight clips from videos in such a way that they might serve as an exemplar clip for the dataset or be used in the classroom as an education tool or at professional conferences [figure?]
 
-\section*{7. Acknowledgments}
+\section*{Acknowledgments}
 
 This work was supported by the NSF (BCS-1238599) and the NICHD (U01-HD-076595-01).
 The authors gratefully acknowledge the NYU Libraries for their valuable advice and consultation.
 
 \bibliographystyle{abbrv}
-\bibliography{8. references}
+\bibliography{references}
 
 \end{document}
