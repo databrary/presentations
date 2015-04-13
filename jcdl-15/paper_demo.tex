@@ -41,7 +41,7 @@ Video and audio recordings serve as a primary data source in many fields, especi
 Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes.
 Databrary provides a web-based service for sharing and reusing the video data created by researchers in the developmental and learning sciences.
 By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share recordings in a standardized way.
-This demo will take a tour through the Databrary service, hightlighting how it controls user access to restricted data based on human research subjects, how it facilitates browsing and discoverability of datasets, and how it provides a service for researchers to upload and manage their data as they collect it.
+This demo will provide a tour through the Databrary service, hightlighting how it promotes storage, sharing, and data management for research data, controls user access to restricted data based on human research subjects, and how it facilitates browsing and discoverability of datasets.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -57,7 +57,7 @@ Video and audio recordings serve as a primary data source for scientific researc
 They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools, as human observers can directly glean much of the data's richness.
 This allows recordings collected in one context to be used by others for different purposes with minimal explanation, naturally reducing the problems of documentation, provenance, formatting, and access that plague many research repositories.
 
-Unfortunately, researchers rarely share recordings with others, due largely to entrenched practices and perceived privacy requirements.
+Unfortunately, researchers rarely share recordings with others \cite{MacWhinney2001}, due largely to entrenched practices and perceived privacy requirements.
 Despite their inherent reusability, this lack of sharing inhibits the reuse of recordings and impedes scientific discovery.
 To address this problem, the Databrary project\footnote{https://databrary.org/} aims to build tools and policies that facilitate repurposing and reuse of recordings without placing undue burden on data contributors.
 We have created a web-based data library to store and organize recordings and to capture contextual information necessary for reuse in standardized ways, allowing for understanding and discovery.
@@ -77,10 +77,11 @@ In turn, this adds convenience and functionality for researchers over existing p
 
 \section{Access Policies}
 
-A primary design principle for the development of the Databrary repository is site accessibility. 
-Because video data involving human subjects contains many points of identifiability, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the original participant consents under which the data were collected. User registration also involves an authorization process by which site users are verified to be faculty, student, or researcher affiliated with an educational institution.
-Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of reseach data that has a high disclosure risk.
-Finally, contributors are offerred session release levels and file classifications that allow them the capacity to fine-tune who has access to the data they contribute. 
+A primary design principle for the development of the Databrary repository is restricting site accessibility to ensure contributors that their data will retain the privacy contraints defined in their studies' release consent language. 
+Because video data involving human subjects contains many points of identifiability, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the original participant consents under which the data were collected. 
+User registration for gaining access to Databrary also involves an authorization process by which site users are verified to be faculty, student, or researcher affiliated with an educational institution.
+Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of reseach data that has a high disclosure risk\footnote{https://databrary.org/policies/agreement.pdf}.
+Finally, contributors are offerred session release levels and file classifications that allow them the capacity to fine-tune who has access to their data. 
 
 \section{Repository Overview}
 %might need to rethink this section, 2-pages is pretty short.
@@ -89,9 +90,10 @@ It currently hosts 5,700 video files totaling 1,600 hours of recordings along wi
 These files make up 2,400 sessions and are covered by 1,300 metadata records (including 1,100 individual participants).
 Data originates from 35 individual contributors across 25 different universities.
 
-Databrary is a new, open-source web application\footnote{http://github.com/databrary/databrary}, built in Scala on the Play Framework\footnote{http://playframework.com/} to support a responsive user interface, a complete API, and high-performance streaming.
+Databrary is an open-source web application\footnote{http://github.com/databrary/databrary}, built in Scala on the Play Framework\footnote{http://playframework.com/} to support a responsive user interface, a complete API, and high-performance streaming.
 Recordings and other files are placed in content-based filesystem storage, and all structured data are stored in a PostgreSQL database, leveraging its geometric indexing capabilities for temporal data.
-All uploaded recordings are automatically transcoded to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
+Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file.
+The access copy is generated by automatically transcoded the uploaded file to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
 This transcoding utilizes the high performance computing cluster at the host campus of New York University, using ffmpeg's libav bindings for both this and direct access to video frames and clips.
 The user interface is built primarily on the Angular web framework\footnote{http://angularjs.org/}, and all data access is performed through an open JSON API.
 
@@ -99,11 +101,11 @@ The user interface is built primarily on the Angular web framework\footnote{http
 
 Databrary was designed from insights drawn from observations of data management practices in a sample of laboratories. 
 From them we created a set of data management features that empower researchers to actively curate their own projects – to upload data with accompanying metadata – as each study unfolds. 
-We have designed and implemented a spreadsheet interface (see Figure 1) for entering, editing, and viewing session-level metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups etc.). 
-Most researchers use desktop spreadsheets for precisely this purpose in their own labs, making the interface and functionality transparent to users.  We have also implemented a timeline for uploading, viewing, and tagging video assets related to sessions.  The timeline view is designed to look and operate like video editing software commonly used in many research labs (see Figure 2).
+We have designed and implemented a spreadsheet interface (see Figure 1) for entering, editing, and viewing session-level metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups and condition etc.). 
+Most researchers use desktop spreadsheets for precisely this purpose in their own labs, making the interface and functionality transparent to users. 
+We have also implemented a timeline for uploading, viewing, and tagging video assets related to sessions.  The timeline view is designed to look and operate like video editing software commonly used in many research labs (see Figure 2).
 It allows users to upload video files, position them to reflect the temporal order of each component of data collection, and annotate video sections with user-generated tags. 
 These tags become additional metadata indices for search and discovery. 
-Databrary’s staff continue to refine the active curation features on the basis of user feedback.
 
 \section{Discovery and Scholarly Communication}
 
