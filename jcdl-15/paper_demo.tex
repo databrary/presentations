@@ -41,7 +41,7 @@ Video and audio recordings serve as a primary data source in many fields, especi
 Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes.
 Databrary provides a web-based service for sharing and reusing the video data created by researchers in the developmental and learning sciences.
 By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share recordings in a standardized way.
-This demo will provide a tour through the Databrary service, hightlighting how it promotes storage, sharing, and data management for research data, controls user access to restricted data based on human research subjects, and how it facilitates browsing and discoverability of datasets.
+This demo will provide a tour through the Databrary service, highlighting how it promotes storage, sharing, and data management for research data, controls user access to restricted data based on human research subjects, and how it facilitates browsing and discoverability of datasets.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -77,11 +77,11 @@ In turn, this adds convenience and functionality for researchers over existing p
 
 \section{Access Policies}
 
-A primary design principle for the development of the Databrary repository is restricting site accessibility to ensure contributors that their data will retain the privacy contraints defined in their studies' release consent language. 
+A primary design principle for the development of the Databrary repository is restricting site accessibility to ensure contributors that their data will retain the privacy constraints defined in their studies' release consent language. 
 Because video data involving human subjects contains many points of identifiability, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the original participant consents under which the data were collected. 
 User registration for gaining access to Databrary also involves an authorization process by which site users are verified to be faculty, student, or researcher affiliated with an educational institution.
-Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of reseach data that has a high disclosure risk\footnote{https://databrary.org/policies/agreement.pdf}.
-Finally, contributors are offerred session release levels and file classifications that allow them the capacity to fine-tune who has access to their data. 
+Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of research data that has a high disclosure risk\footnote{https://databrary.org/policies/agreement.pdf}.
+Finally, contributors are offered session release levels and file classifications that allow them the capacity to fine-tune who has access to their data. 
 
 \section{Repository Overview}
 %might need to rethink this section, 2-pages is pretty short.
@@ -100,8 +100,8 @@ The user interface is built primarily on the Angular web framework\footnote{http
 \section{Uploading and Managing Data}
 
 Databrary was designed from insights drawn from observations of data management practices in a sample of laboratories. 
-From them we created a set of data management features that empower researchers to actively curate their own projects – to upload data with accompanying metadata – as each study unfolds. 
-We have designed and implemented a spreadsheet interface (see Figure 1) for entering, editing, and viewing session-level metadata (e.g. participants, conditions of study, tasks in the experiment, session access levels, study groups and condition etc.). 
+From them we created a set of data management features that empower researchers to actively curate their own projects---to upload data with accompanying metadata---as each study unfolds. 
+We have designed and implemented a spreadsheet interface (see Figure 1) for entering, editing, and viewing session-level metadata (e.g., participants, conditions of study, tasks in the experiment, session access levels, study groups and conditions, etc.). 
 Most researchers use desktop spreadsheets for precisely this purpose in their own labs, making the interface and functionality transparent to users. 
 We have also implemented a timeline for uploading, viewing, and tagging video assets related to sessions.  The timeline view is designed to look and operate like video editing software commonly used in many research labs (see Figure 2).
 It allows users to upload video files, position them to reflect the temporal order of each component of data collection, and annotate video sections with user-generated tags. 
