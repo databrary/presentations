@@ -1,5 +1,5 @@
 BIBFILES=references
-default: paper.pdf paper.aux paper.bbl
+default: demo.pdf demo.aux demo.bbl
 
 %.aux: %.tex
 	pdflatex -shell-escape -interaction=nonstopmode $<
