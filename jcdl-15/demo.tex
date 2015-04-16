@@ -38,11 +38,10 @@ Rick O. Gilmore\\
 
 \begin{abstract}
 Video and audio recordings serve as a primary data source in many fields, especially in the social and behavioral sciences.
-Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes. 
-Though they also present a challenge in that they are often more identifiable than data provided in other formats.
+Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes, but also present challenges around respecting the privacy of individuals depicted.
 Databrary is a web-based service for sharing and reusing the video data created by researchers in the developmental and learning sciences.
 By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share recordings in a standardized way.
-This demo will provide a tour through the Databrary service, highlighting how it promotes storage, sharing, and data management for research data, controls user access to restricted data based on human research subjects, and facilitates browsing and discoverability of datasets.
+This demo will provide a tour through the Databrary service, highlighting how it promotes storage, sharing, and management for research data, controls user access to restricted human subject data, and facilitates browsing and discoverability of datasets.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -52,67 +51,68 @@ This demo will provide a tour through the Databrary service, highlighting how it
 
 \keywords{Data sharing, open science, video, psychology, developmental science}
 
-\section{Introduction/Background}
+\section{Introduction}
 
 Video and audio recordings serve as a primary data source for scientific research in psychology, linguistics, education, anthropology, and many other disciplines.
-They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools, as human observers can directly glean much of the data's richness.
+They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools as human observers can directly glean much of the data's richness.
 This allows recordings collected in one context to be used by others for different purposes with minimal explanation.
 
-While video data has many benefits, it also presents a challenge in being highly identifiable.
-Video often depicts participants' faces, and their names are often spoken aloud. 
-Because of this, sharing video data presents challenges related to the privacy of human subjects. 
-In contrast to other forms of data which are non-identifiable or can be easily de-identified, video data cannot be easily de-identified without significantly diminishing its value and richness. 
-Therefore, any solution for video sharing must provide appropriate policy and access frameworks to ensure appropriate protection of research participants.
+While video data have many benefits, they also contain highly identifiable aspects of depicted human participants: recordings contain participants' faces and voices, and their names are often spoken aloud.
+Because of this, sharing video data presents challenges related to the privacy of human subjects.
+In contrast to other forms of data that are non-identifiable or can be easily de-identified, video data cannot be easily de-identified without significantly diminishing its value and richness. 
+Therefore, any solution for video sharing must provide a policy and access framework to ensure appropriate protection of research participants.
 
 Despite their inherent reusability, researchers rarely share recordings with others, due largely to entrenched practices and perceived privacy requirements.
-This lack of sharing inhibits the reuse of recordings and impedes scientific discovery.
+This lack of sharing prevents extracting the full value from recordings and impedes scientific discovery.
 To address this problem, the Databrary project\footnote{https://databrary.org/} aims to build tools and policies that facilitate repurposing and reuse of recordings without placing undue burden on data contributors.
 We have created a web-based data library to store and organize recordings and to capture contextual information necessary for reuse in standardized ways.
 
-Our approach is to focus on video and audio recordings in a particular research domain, and build appropriate structured and unstructured resources around this functional core.
+Our approach is to focus on video and audio recordings in a particular research domain, and build appropriate structured and unstructured resources around this core.
 We designed the system by investigating how researchers studying human development and education organize their own data, deriving from those observations a unifying set of principles for organizing contextual metadata.
-Thus it facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
+Thus, it facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
 
-\section{Technical details}
+\section{Repository Details}
 
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 As of April 2015, it hosts 7,340 video files totaling 2,409 hours of recordings along with 2,647 additional files.
 These files make up 3,108 study sessions and are covered by 2,000 metadata records (including 1,804 individual participants).
-Data originates from 35 individual contributors across 25 different universities.
+Data originate from 35 individual contributors across 25 different universities.
 
-Databrary is an open-source web application\footnote{http://github.com/databrary/databrary}, featuring a responsive user interface, a RESTful API, and high-performance video streaming.
+Databrary is an open-source web application\footnote{http://github.com/databrary/databrary}, featuring a responsive user interface, a JSON API, and high-performance video streaming.
 Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file.
 The access copy is generated by automatically transcoding the uploaded file to a standard format to enable cross-platform HTML5-based streaming and downloading for off-line access, currently H.264/AAC in an MPEG-4 container for video.
 
-\section{Data Management for a Designated Community}
+\section{Data Management}
 
-Focusing on a particular research domain allows us to develop a tool that is informed by how the intended community of users currently works, while enhancing that labor as well as accomodating the specific privacy concerns for data that often has a high disclosure risk.
-This has resulted in the creation of a set of data management features that empower researchers to actively manage their own projects---to upload data with accompanying metadata---as each study unfolds. 
-To this end, we have designed and implemented a spreadsheet interface for entering, editing, and viewing session-level metadata (e.g., participants, conditions of study, tasks in the experiment, session access levels, study groups and conditions, etc.). 
+Focusing on a particular research domain allows us to develop tools informed by how the intended community of users currently works, while accommodating the specific privacy concerns for data that often has a high disclosure risk.
+We have created of a set of data management features that empower researchers to actively manage their own projects---to upload data with accompanying metadata---as each study unfolds. 
+These features include a spreadsheet interface for entering, editing, and viewing session-level metadata: participant demographics, conditions of study, tasks in the experiment, permission levels, study groups and conditions, etc. 
 Most researchers use desktop spreadsheets for precisely this purpose in their own labs, making the interface and functionality intuitive to users. 
 We have also implemented a timeline for uploading, viewing, and tagging video assets related to sessions.
 The timeline view is designed to look and operate like video editing software commonly used in many research labs.
 It allows users to upload video files, position them to reflect the temporal order of each component of data collection, and annotate video sections with user-generated tags. 
-These tags become additional metadata indices for search and discovery.
 
 Providing a targeted user interface to meet the existing and evolving needs of our user base allows us to control and standardize the means of data entry and thus achieve a greater amount of normalization in the data from the outset, through liberal use of visualization, auto-completion, and suggestions.
 In turn, this adds convenience and functionality for researchers over existing practices and alleviates storage burdens.
 
-In addition, because video data involving human subjects is more highly indentifiable, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the original participant consents under which the data were collected. 
-User registration for gaining access to Databrary also involves an authorization process by which site users are verified to be faculty, student, or researcher affiliated with an educational institution.
-Users are also required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of research data involving human subjects\footnote{https://databrary.org/policies/agreement.pdf}.
-Finally, contributors are offered release levels for files and groups of files that allow them to fine-tune who has access to their data. 
+In addition, because video data involving human subjects is identifiable, a core challenge to storing and sharing this type of research data is creating the access checks necessary to honor the participant consents under which the data were collected. 
+User registration for gaining access to Databrary involves an authorization process by which site users are verified to be faculty, students, or researchers affiliated with an educational institution.
+Users are required to review and sign an access agreement stating that they will treat the data they are able to access through Databrary in a manner that complies with the ethical handling of research data involving human subjects\footnote{http://databrary.org/access/policies/agreement.html}.
+Finally, contributors are offered permission levels for files and groups of files that allow them to fine-tune who has access to their data. 
 
-\section{Discovery, Reuse, and Next Steps}
+\section{Discovery, Reuse, and Beyond}
 
-Though central to Databrary's mission is not merely the storage and management of research data, but making that data discoverable by other researchers and facilitating the reuse of that data in future studies and in scholarly communication as a citeable resource as well as an aid to educational presentation.
-Currently basic text search over the entire repository is supported and soon we will begin to implement more refined search that allows faceting of search results based on tags, keywords, and session metadata such as participant age group, task, study condition, and location.
-Additionally, Databrary allows for the annotatation of videos and video segments with tags, which will also serve as an index point for this more refined search functionality.  
+Databrary's mission is not merely the storage and management of research data, but also to make these data discoverable by other researchers and to facilitate their reuse.
+Currently we support text searching over the entire repository, and we plan to continue implement more refined searches that allows faceting of search results based on tags, keywords, and session metadata such as participant age, task, study condition, and context.
+Additionally, Databrary allows for the annotation of videos and video segments with tags, which can serve as an index point for more refined search functionality.  
 
+We aim to allow data to be reused in future studies, cited in scholarly communication, as well as used an aid in scientific and educational presentations.
 To aid in using datasets as a bibliographic source, each dataset comes with a formatted citation, a persistent URI, and soon will also be assigned a Digital Object Identifier (DOI) for referencing in scholarly publications and presentations.
 Based on input from site users we have also built in the ability to excerpt or highlight clips from videos in such a way that they might serve as an exemplar clip for the dataset or be used in the classroom as an education tool or at professional conferences.
 
-As we continue to gather feedback from our intended user base, we not only see Databrary as a tool that facilitates the standardized management of research data, but also as an opportunity to enhance the ability for academics communicate about and augment their research. We already addressed the basic upload, data management, and storage needs of our target community, and have sufficiently answered the question of how to protect sensitive video data while providing wider opportunities to share that data. Going forward, we hope to focus more on developing the tools for searching, discovering, and reusing that data, allowing researchers to work with their data in ways they had not previously imagined.
+As we continue to gather feedback from our intended user base, we not only see Databrary as a tool that facilitates the standardized management of research data, but also as an opportunity to enhance the ability for academics communicate about and augment their research.
+We have already addressed the basic upload, data management, and storage needs of our target community, and have sufficiently answered the question of how to protect sensitive video data while providing wider opportunities to share those data.
+Going forward, we hope to focus more on developing the tools for searching, discovering, and reusing those data, allowing researchers to work with their data in ways they had not previously imagined.
 
 \section*{Acknowledgments}
 
