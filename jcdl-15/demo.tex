@@ -53,10 +53,10 @@ Rick O. Gilmore\\
 
 \begin{abstract}
 Video and audio recordings serve as a primary data source in many fields, especially in the social and behavioral sciences.
-Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes, but also present challenges around respecting the privacy of individuals depicted.
+Recordings present unique opportunities for reuse and reanalysis for novel scientific purposes, but also present challenges due around respecting the privacy of individuals depicted.
 Databrary is a web-based service for sharing and reusing the video data created by researchers in the developmental and learning sciences.
 By investigating how researchers organize, analyze, and mine their own recordings, we have implemented a system that empowers researchers to capture, store, and share recordings in a standardized way.
-This demo will provide a tour through the Databrary service, highlighting how it promotes storage, sharing, and management for research data, controls user access to restricted human subject data, and facilitates browsing and discoverability of datasets.
+This demo will provide a tour through the Databrary service, highlighting how it promotes storage, management, sharing, and reuse of research data, controls access privileges to restricted human subject data, and facilitates browsing and discoverability of datasets.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[scientific databases, image databases]
@@ -70,8 +70,9 @@ This demo will provide a tour through the Databrary service, highlighting how it
 \section{Introduction}
 
 Video and audio recordings serve as a primary data source for scientific research in psychology, linguistics, education, anthropology, and many other disciplines.
-They are, in contrast to most timeseries data, human-consumable and largely self-documenting, and are often analyzed without the use of sophisticated tools as human observers can directly glean much of the data's richness.
+They are, in contrast to other timeseries data, human-consumable and largely self-documenting. 
 This allows recordings collected in one context to be used by others for different purposes with minimal explanation.
+Moreover, video and audio recordings are often analyzed without the use of sophisticated tools as human observers can directly glean much of the data's richness.
 
 While video data have many benefits, they also contain highly identifiable aspects of depicted human participants: recordings contain participants' faces and voices, and their names are often spoken aloud.
 Because of this, sharing video data presents challenges related to the privacy of human subjects.
@@ -79,20 +80,20 @@ In contrast to other forms of data that are non-identifiable or can be easily de
 Therefore, any solution for video sharing must provide a policy and access framework to ensure appropriate protection of research participants.
 
 Despite their inherent reusability, researchers rarely share recordings with others, due largely to entrenched practices and perceived privacy requirements.
-This lack of sharing prevents extracting the full value from recordings and impedes scientific discovery.
+This lack of sharing prevents others from extracting the full value out of recordings and impedes scientific discovery.
 To address this problem, the Databrary project\footnote{https://databrary.org/} aims to build tools and policies that facilitate repurposing and reuse of recordings without placing undue burden on data contributors.
 We have created a web-based data library to store and organize recordings and to capture contextual information necessary for reuse in standardized ways.
 
 Our approach is to focus on video and audio recordings in a particular research domain, and build appropriate structured and unstructured resources around this core.
 We designed the system by investigating how researchers studying human development and education organize their own data, deriving from those observations a unifying set of principles for organizing contextual metadata.
-Thus, it facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings at an unprecedented scale.
+We aimed to design a system that facilitates the capture, standardization, discovery, and understanding of data to enable reuse of recordings for novel purposes at an unprecedented scale.
 
 \section{Repository Details}
 
 Databrary began accepting contributions in early 2014 and opened for general use in October 2014.
 As of April 2015, it hosts 7,300 video files totaling 2,400 hours of recordings along with 2,600 additional files.
 These files make up 3,100 study sessions and are covered by 2,000 metadata records (including 1,800 individual participants).
-Data originate from 35 individual contributors across 25 different universities.
+Data originate from 35 individual contributors across 25 different universities. 50 universities have granted access to the repository to over 95 researchers.
 
 Databrary is an open-source web application\footnote{http://github.com/databrary/databrary}, featuring a responsive user interface, a JSON API, and high-performance video streaming.
 Databrary stores at least two versions of each item of Databrary video content: a copy for access, and the received original file.
@@ -129,7 +130,7 @@ We aim to allow data to be reused in future studies, cited in scholarly communic
 To promote using datasets as a bibliographic source, each dataset comes with a formatted citation, a persistent URI, and soon will also be assigned a Digital Object Identifier (DOI) for referencing in scholarly publications and presentations.
 Based on input from site users we have also built in the ability to excerpt or highlight clips from videos in such a way that they might serve as an exemplar clip for the dataset---providing users unfamiliar with a dataset a quick summary of what is contained therein---or be used in the classroom as an education tool or at professional conferences.
 
-As we continue to gather feedback from our intended user base, we not only see Databrary as a tool that facilitates the standardized management of research data, but also as an opportunity to enhance the ability for academics to communicate about and augment their research.
+As we continue to gather feedback from our user base, we not only see Databrary as a tool that facilitates the standardized management of research data, but also as an opportunity to enhance the ability for academics to communicate about and enhance their own research.
 We have already addressed the basic upload, data management, and storage needs of our target community, and have sufficiently answered the question of how to protect sensitive video data while providing wider opportunities to share those data.
 Going forward, we hope to focus more on developing the tools for searching, discovering, and reusing those data, allowing researchers to work with their data in ways they had not previously imagined.
 
