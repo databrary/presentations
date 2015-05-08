@@ -33,7 +33,7 @@ The application of insights from research to essential human needs such as impro
 Open data sharing promotes greater transparency and peer oversight, supports inquiry into data collection methods and measurement, stimulates new work, encourages diversity of analysis and opinion, allows for testing of new or alternative hypotheses, facilitates the education of new researchers, permits integrative analyses by creating new datasets from multiple sources, allows future research to build on earlier efforts, and enables exploration of topics not envisioned by the original investigators. 
 Open data sharing increases the impact of public investments in research and leads to better and more effective public policy.
 Open data sharing is a scientific imperative and common practice in many areas of biomedical, physical, and earth sciences where it has accelerated the pace of discovery. 
-Unfortunately, research on human development and learning remains shrouded in a culture of isolation. 
+Unfortunately, despite the efforts of professional organizations to make data sharing a norm \cite[e.g.]{AERA-Code-2011} most research on human development and learning remains shrouded in a culture of isolation. 
 Rather than providing direct access to raw data, researchers in the developmental and learning sciences share interpretations of distilled data almost exclusively through publications and presentations.
 The path from raw data to finding to conclusion cannot be traced or validated by others, nor can new questions be posed by others building on the same, often expensive-to-collect, raw data.
 To realize significant advances in our understanding of teaching and learning and for those insights to have meaningful impact on educational practice and policy, open data sharing must become an established norm, not the rare exception.
@@ -52,7 +52,7 @@ Personally identifying information can be removed from text-based data.
 Videos may contain faces, voices, names spoken aloud, views or voices of non-participants, views of classroom interiors and sometimes views of the homes of research participants. 
 These elements cannot be removed without reducing the information content and reuse value to others. 
 The collection of video or other identifiable or sensitive information requires approval by a research ethics board.
-It also requires informed consent or assent from the participants, and possibly parental, teacher, and school district approval.
+It also requires informed consent from participants, and possibly parental, teacher, and school district approval.
 Researchers risk violating participants’ privacy if digital images are viewed or released to others without authorization.
 For these and other reasons, no culture of widespread open sharing of video data has emerged in the education, learning, and developmental sciences. 
 
@@ -108,7 +108,7 @@ The size of the file varies by format and resolution, and recordings vary widely
 Many settings, like classrooms, require multiple camera views to capture the desired behaviors.
 Some questions involve the collection of multiple, temporally dense data streams (physiological recordings, motion tracking, eye tracking, verbal transcripts, keyboard/controller responses).
 These require tools for synchronization across camera views and data streams.
-The use of video creates a data explosion: A typical lab studying infant or child development collects 8-12 hours of video/week [cite18] in widely varied formats. 
+The use of video creates a data explosion: A typical lab studying infant or child development collects 8-12 hours of video/week in widely varied formats \cite{Survey2012}. 
 Thus, sharing digital video requires substantial storage capacity, significant computational resources for transcoding videos into common, preservable formats, and powerful search and streaming tools. 
 
 After videos are recorded, human raters evaluate videos and apply text-based annotations or numeric codes to videos.
@@ -116,81 +116,71 @@ Raters use a wide-range of commercial (Noldus Observer, Mangold Interact, MaxQDA
 Some tools (Datavyu, Mangold, V-Note) offer text-based export to interoperable file formats like comma-separated value (CSV), but the tools have no standard format for data storage or export.
 Some tools offer web/cloud based storage (e.g., Datavyu via Databrary, Transana, V-Note), but otherwise coded data are not easily shared within tools, much less between them.
 
-With few exceptions (Chen Yu; Gilmore \& Raudies, Rehg?, others), machine learning has not been applied to video data coding in the developmental and learning sciences.
-But, there is explosive growth in the use of machine learning and computer vision tools to tag images and videos in commercial settings.
-This may create opportunities for future projects that supply machine-generated tags to videos collected in educational and developmental research.
+There has been explosive growth in the use of machine learning and computer vision tools to tag images and videos in commercial settings %\cite{Google2014}. 
+But, with few exceptions %\cite{ChenYu2013, Raudies2014, Fathi2012}
+, these techniques have not been applied to video data coding in the developmental and learning sciences. 
+The application of machine-generated tags to research videos presents an as-yet-untapped opportunity to apply big data tools to educational and developmental research.
 
 \subsection{Ethics and Privacy}
 
-Sharing video recordings poses a unique challenge to existing data sharing policies because videos contain personally identifying information—specifically participants’ faces and voices and often the
-insides of their homes and classrooms. 
-Sharing personally identifiable information puts research participants and others depicted in recordings at increased risk for loss of privacy. 
-At the same time, blurring or altering original recordings to hide identities undermines or eliminates
-their value to other researchers. 
-Often, participants’ faces and voices produce the behaviors of interest.
-A challenge for future education research is to find ways to preserve the value of video for reuse by others while protecting the privacy of research participants.
-Databrary has developed an access model described below that provides an example of how this might be accomplished.
+Sharing video recordings poses a challenge to existing data sharing policies.
+De-identified data %\cite{HHS} 
+may often be openly shared, but since the faces and and voices contained in video are considered identifiable information, de-identifying video requires their removal.
+This severely diminishes the reuse value of video and poses additional costs and burdens on researchers.
+So, sharing video data openly requires the development of new policies that protect the privacy of research participants while preserving the integrity of raw video for reuse by others.
+Databrary has developed an access model that demonstrates how this might be accomplished by building on the well-established principle of informed consent and restricting access to authorized individuals who meet specific criteria.
+We discuss the access model in detail below.
 
 \subsection{Data Management}
-A primary impediment to sharing is researchers’ lack of time to find, label, clean, organize, and copy their files into formats that can be used and understood by others15. 
-Even scientists committed to data sharing find it difficult to do. Data management systems that make sharing convenient, reliable—and optimally automatic29—can help.
+
+As in other fields \cite{Overpeck2011}, developmental and education science is inundated by an explosion of digital data, most of which is inaccessible to other researchers.
+A primary impediment to sharing is researchers’ lack of time to find, label, clean, organize, and copy their files into formats that can be used and understood by others \cite{Ascoli2006}. 
+Even scientists committed to data sharing can find it difficult to do. 
+Data management systems that make sharing convenient, reliable—and optimally automatic—can help.
 
 Existing data management practices pose challenges for video sharing.
 Despite similar research methods, study designs vary widely. 
-No two developmental science labs manage data in the same way. 
-Some studies are longitudinal, where researchers observe the same participants at
-multiple sessions. 
-Some are cross-sectional, where researchers observe
-each participant at only one session. 
-The timing of observations may be
-determined by participants’ age (e.g., 4-month-olds, 8-month-olds,
-12-month-olds) or abilities (e.g., preverbal, one-word utterances,
-sentences), experimentally determined variables (e.g., pre- and
-post-intervention), or other factors. 
-Some labs organize longitudinal data by grouping files first by participant and then by session date.
-Other labs organize longitudinal data by session and then by
-participant. 
-Still others organize longitudinal data based on task (book reading, block building, free play). Some researchers institute a central data management system to be followed by all the lab members, providing easier access and greater transparency for the entire lab but not necessarily providing the structure for similar benefits to
-researchers unfamiliar with the lab’s practices. 
+No two labs manage data in the same way. 
+Some studies are longitudinal, where researchers observe the same participants at multiple sessions. 
+Some are cross-sectional, where researchers observe each participant at only one session. 
+The timing of observations may by determined by participants’ age (e.g., kindergarteners) or abilities (e.g., readers), experimentally determined variables (e.g., pre- and post-intervention), or other factors. 
 Other researchers allow their students to keep separate records, making it difficult to share
 data even within the lab. 
-Some researchers keep videos, metadata, and analyses together, and some do not. Idiosyncratic terms, record-keeping, and data management systems are the norm. 
-Databrary must enable researchers to discover and understand each other’s materials, regardless of the original investigator’s data management system.
-As in other fields22, developmental science is inundated by an explosion of digital data, most of which is inaccessible to other researchers. The data deluge stems from the advent of cheap, high-resolution digital cameras. The average developmental lab collects 12 hours of video/week23. Raw data without information about workflow and data provenance is essentially “orphaned” and cannot be understood by subsequent researchers who weren’t part of the original team24. Moreover, video files must be electronically linked with participant permissions and relevant metadata. An effective data management system for video does not currently exist. We will build one to allow researchers within labs to benefit from each other’s work, facilitate interdisciplinary collaborations, and provide a solid foundation for open sharing25
+Some researchers keep videos, metadata, and analyses together, and some do not. 
+Idiosyncratic terms, record-keeping, and data management systems are the norm. 
+Raw data without information about workflow and data provenance is essentially “orphaned” and cannot be understood by subsequent researchers who weren’t part of the original team \cite{curry2011}. 
+Moreover, even though video requires minimal metadata to be suitable for reuse, video files should be electronically linked to whatever relevant metadata do exist, and there must be information linked to the videos that determines what level of access is permitted. 
+We describe below Databrary's data management system that enables users to manage the uploading of research videos and related metadata as these are collected.
 
 \subsection{Changing Community Practices}
 
-Data sharing is an established best practice in some areas of educational research (AERA ethics guide), but it is not necessarily widespread.
+Data sharing is an established best practice in some areas of educational research \cite{AERA-Code-2011}, but it is not necessarily widespread.
+
+[SAY MORE OR CUT]
 
 \section{Databrary.org}
-Databrary (databrary.org) is a digital data library specialized for storing and sharing video and research data and metadata.
-Databrary is a joint project of New York University (NYU) and The Pennsylvania State University (Penn State). 
-The Databrary project began with a workshop on open video data sharing funded by the National
-Science Foundation (NSF) under Grant No. BCS-1139702 at which developmental scientists, computer scientists, library scientists, and federal agency program officers discussed the promises and challenges of
-sharing video data. 
-NSF and the National Institute of Child Health and Human Development (NICHD) have provided funding under grant No. BCS-1238599 and Cooperative Agreement U01-HD-076595, respectively. 
-The interdisciplinary team bring expertise in developmental and neural
-science, information technology, library science, software development,
-data curation, and community engagement. 
-In addition, a board of expert
-advisors composed of developmental scientists, library scientists, and
-leaders of data repositories in the behavioral and social sciences
-provide guidance.
-No large-scale repository for sharing video data currently exists. So, we will create a web-based Databrary repository. 
+
+The Databrary project (databrary.org) arose to meet the challenges of sharing research video and deliver on the promise of open data sharing in educational and developmental science.
+With funding from NSF (BCS-1238599) and the National Institute of Child Health and Human Development (NICHD U01-HD-076595) the project has focused on building a data library specialized for video, creating data management tools, creating new policies to enable video sharing, and creating a community of researchers who embrace video sharing.
+A fifth aim focuses on the development of a free, open-source video annotation tool, Datavyu (http://datavyu.org).
+Our interdisciplinary team brings expertise in developmental and neural science, information technology, library science, software development, data curation, and community engagement. 
+The project receives guidance from a board of expert advisors composed of developmental scientists, library scientists, and leaders of data repositories in the behavioral and social sciences provide guidance.
+The project received funding in 2012-2013, began a private beta testing phase in the spring of 2014 and opened for full use in October 2015.
 
 \subsection{System Design}
 
 Databary is built on a PostreSQL database using the Scala Play framework and JavaScript.
 Data are preserved indefinitely in a secure data storage facility at NYU managed by central IT.
-There is no cost to use the system; an institutional subscription model is under development.
-All code is hosted on GitHub.
+There is no cost to use the system, but an institutional subscription model is under development.
+All code is hosted on GitHub (http://github.com/databrary).
 Databrary can house video, audio, PDF, spreadsheet, image, and text-based files (along with associated metadata), as well as executable scripts in Ruby, R and Matlab that facilitate data analysis.
-Video and audio data are transcoded into standard and HTML5-compatible formats, currently H.264+AAC as MP4. Databrary stores other data in native formats (e.g., .doc, .docx, .xls, .xlsx, .txt, .csv, .pdf, .jpg, .png).
+Video and audio data are transcoded into standard and HTML5-compatible formats, currently H.264+AAC as MP4.
+This ensures that video and audio data can be streamed and downloaded by any operating system that supports a modern browser. 
+Databrary stores other data in native formats (e.g., .doc, .docx, .xls, .xlsx, .txt, .csv, .pdf, .jpg, .png).
+Since common video coding/tagging file formats are required for users to build on earlier coding efforts, Databrary plans to develop tools for converting files from other coding tools into a common format.
 
-Common video and coding file formats are required for users to build on earlier coding efforts, perform integrative analyses across shared files, and search effectively in a shared repository. We will develop tools for converting files from other coding tools into a common format for the Databrary.
-
-Behavior is rich and complex. Research interests and methods are diverse. Naturally, video coding is idiosyncratic. The only universal tags in developmental research are children’s age and sex. Thus, OpenSHAPA is powerful and flexible. It is designed to help researchers understand behavior—or any other time series—using codes of their choosing. As the PI's experience demonstrates, OpenSHAPA will strengthen work within labs. It will also provide the common coding format for files in the Databrary.
 \subsection{Policies for Safe, Secure, \& Sharing}
+
 Shared videos are maximally informative when participants’ faces are visible and their vocalizations are audible. Thus, anonymity cannot be ensured as it is for flat file or imaging data. 
 To address issues of confidentiality, access, and IRB approval for sharing video data, we will develop template data sharing permission forms and contributor and user agreements with input from the community, from human compliance officers, and from leaders of previous data sharing efforts.
 Databrary has elected to maximize the potential for data re-use by keeping recordings in their original
