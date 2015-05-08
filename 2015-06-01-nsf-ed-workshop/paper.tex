@@ -1,15 +1,15 @@
-\documentclass[letterpaper,man,natbib]{apa6}
+\documentclass[letterpaper,man,apacite]{apa6}
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
 
 \title{The Role of Video Data Sharing in Advancing Education Policy and Practice}
 \shorttitle{Video Data Sharing in Education}
-\author{Rick O. Gilmore, Karen E. Adolph, David S. Millman}
-\affiliation{The Databrary (databrary.org) Project}
+
+\twoauthors{Rick O. Gilmore}{Karen E. Adolph, David S. Millman}
+\twoaffiliations{The Pennsylvania State University}{New York University}
 
 \abstract{
 Video captures the complexity, richness, and diversity of behavior unlike any other measure. 
@@ -19,7 +19,7 @@ This potential remains largely unrealized because videos are rarely shared.
 Video often contains information about personal identities, so considerations about research ethics pose
 challenges to sharing. 
 The relatively large size of video files and diversity of formats and software tools for coding pose technical challenges. 
-In this thought paper, we will describe how the Databrary data library has overcome the most significant barriers to sharing video within the developmental sciences community, including solutions to maintaining participant privacy, data tagging, and data management.
+In this paper, we will describe how the Databrary data library has overcome the most significant barriers to sharing video within the developmental sciences community, including solutions to maintaining participant privacy, data tagging, and data management.
 Databrary suggests ways that video and other identifiable data collected in the context of education research might be shared.
 Widespread open sharing of high value, high impact data will advance education policy and improve practice.
 }
@@ -63,7 +63,7 @@ Fostering the open sharing and reuse of high value, high impact data like video 
 
 \section{The Promise of Video}
 
-More than 1 billion users worldwide uploade more than 300 hours of video to YouTube every minute (https://www.youtube.com/yt/press/statistics.html). 
+More than 1 billion users worldwide uploade more than 300 hours of video to YouTube every minute \cite{YouTube2015}. 
 Google, YouTube's owner, has built an immense data infrastructure to upload, store, convert, tag, and stream video. 
 The current scale of video collection in developmental and education contexts is undoubtedly smaller and more focused in purpose, but it is large and growing. 
 The Gates Foundation-funded Measures of Effective Teaching (MET; http://www.metproject.org/) Project generated more than 1,000 full-length video segments from K-12 classrooms, covering core subjects such as mathematics, language arts from multiple camera angles. 
@@ -76,10 +76,11 @@ Video captures the richness and complexity of human behavior and interactions be
 Video captures what people say and what they do.
 It captures when and where they look or gesture, when, where and how they move, and how their looking, gesturing, and moving corresponds to what others are doing.
 These characteristics mean that video has multiple use cases in the study of learning and development.
-In laboratory contexts, researchers use videos to study how infants, children, and adults behave spontaneously or when presented with specific researcher-specified tasks.
-In educational contexts, educators, teacher trainers and evaluators use video to record what other teachers do to help improve teaching practices or evaluate performance.
-Researchers may record videos of learners in classrooms or museums to understand what teachers and docents do and how audiences respond.
-In lab, classroom, or museum settings, video-based eye tracking systems provide information about where people look and for how long.
+In laboratory contexts, researchers use videos to study how \cite{Karasik2014}.
+In educational contexts, educators, teacher trainers and evaluators use video to record what other teachers do to help improve teaching practices or evaluate performance \cite{Blomberg2014, Masats20111151, Baecher2013189}.
+.
+Researchers may record videos of learners in classrooms \cite{Alibali2012} or museums to understand what teachers do and how audiences respond or how using video affects what museum-goers learn \cite{Bakken2015}.
+In lab \cite{Kretch2014}, classroom \cite{Mason2015, Prieto:2014:STC:2669485.2669543}, or museum settings video-based eye tracking systems provide information about where people look and for how long.
 While not strictly video recordings, image streams from computer-based tasks or learning-rich video games may be combined with information about user keyboard or controller inputs to study real-time perfomance.
 When combined with other quantitative and qualitative measures about learning outcomes, video can provide information about what kinds of teaching techniques boost learning for what kinds of students.
 Video may even be used to study engagement by students enrolled in online/web-based courses or to monitor compliance with academic integrity rules.
@@ -108,13 +109,12 @@ Many settings, like classrooms, require multiple camera views to capture the des
 Some questions involve the collection of multiple, temporally dense data streams (physiological recordings, motion tracking, eye tracking, verbal transcripts, keyboard/controller responses).
 These require tools for synchronization across camera views and data streams.
 The use of video creates a data explosion: A typical lab studying infant or child development collects 8-12 hours of video/week [cite18] in widely varied formats. 
-Thus, sharing digital video requires substantial storage capacity, significant computational resources for transcoding videos into common, preservable formats, and powerful search and streaming tools,. 
+Thus, sharing digital video requires substantial storage capacity, significant computational resources for transcoding videos into common, preservable formats, and powerful search and streaming tools. 
 
-After videos are recorded, human coders evaluate videos and apply text-based annotations or numeric codes to videos.
-Coders use a wide-range of commercial (Noldus Observer, Mangold Interact, MaxQDA, V-Note), and academic (Transana, Elan, Datavyu) software tools, among others.
-Some researchers use spreadsheets or pencil and paper.
-Some tools (Datavyu, Mangold, V-Note) offer text-based export to interoperable file formats, but the tools have no standard format for data storage or export.
-Some tools offer web/cloud based storage (e.g., Datavyu via Databrary, Transana, V-Note), but otherwise coded data are easily shared within tools, much less between them.
+After videos are recorded, human raters evaluate videos and apply text-based annotations or numeric codes to videos.
+Raters use a wide-range of commercial (Noldus Observer, Mangold Interact, MaxQDA, V-Note), and academic (Transana, Elan, Datavyu) software tools, spreadsheets or even pencil and paper.
+Some tools (Datavyu, Mangold, V-Note) offer text-based export to interoperable file formats like comma-separated value (CSV), but the tools have no standard format for data storage or export.
+Some tools offer web/cloud based storage (e.g., Datavyu via Databrary, Transana, V-Note), but otherwise coded data are not easily shared within tools, much less between them.
 
 With few exceptions (Chen Yu; Gilmore \& Raudies, Rehg?, others), machine learning has not been applied to video data coding in the developmental and learning sciences.
 But, there is explosive growth in the use of machine learning and computer vision tools to tag images and videos in commercial settings.
@@ -130,6 +130,7 @@ their value to other researchers.
 Often, participants’ faces and voices produce the behaviors of interest.
 A challenge for future education research is to find ways to preserve the value of video for reuse by others while protecting the privacy of research participants.
 Databrary has developed an access model described below that provides an example of how this might be accomplished.
+
 \subsection{Data Management}
 A primary impediment to sharing is researchers’ lack of time to find, label, clean, organize, and copy their files into formats that can be used and understood by others15. 
 Even scientists committed to data sharing find it difficult to do. Data management systems that make sharing convenient, reliable—and optimally automatic29—can help.
@@ -233,6 +234,7 @@ data will be made available.
 Specifically, researchers must remove any clauses in research consent documents that require data destruction
 after some fixed period of time since Databrary intends to store shared
 data indefinitely.
+
 \subsection{Managing Data for Sharing}
 Raw video is most informative when it is linked with coding spreadsheets, codebooks, protocols, statistical analyses, and manuscripts. 
 A data management system is required to link related files, document workflow and data provenance, and tag files with appropriate permission levels for sharing. 
@@ -297,6 +299,7 @@ Based on discussions at the NSF workshop, we expect to see most contributions af
 From data sharing to best lab practices. The developmental science community is hungry for new practices that will enhance research, as demonstrated by the number of committed contributors. LIMS in other fields embody additional functions. We envision that the data and tool sharing enabled by Databrary will spark interest in other lab management enhancements. For example, the data management system could facilitate participant recruitment and scheduling, task/project management and scheduling, workflow processing, and quality assurance (e.g., reliability testing). We plan to seek community input—via online comments, conference workshops on best lab practices, and other avenues—about which features should be the highest priorities for data management tool developers. Extending the data management tool to incorporate the highest priority features will be a focus of the front-end programmer in Years 4-5.
 
 \subsection{Building A Community That Embracing Sharing}
+
 Data sharing works only when the scientific community embraces it. 
 To make video-based data sharing succeed, we will build a diverse contributor/user community committed to open data sharing. 
 Based on continual community input, we will expand the OpenSHAPA video coding tool, build data management tools, and develop tools for uploading, browsing, and searching data in the Databrary repository. 
@@ -304,12 +307,14 @@ These tools will enable sharing within labs, among collaborators, and among user
 To ensure continued community engagement, Databrary personnel will provide technical support to individual labs and provide information to the community about new data contributions, citations of shared data, and use cases.
 
 \section{Conclusion}
+
 As Gesell once noted, cameras can record child behavior in ways that make it "...as tangible as tissue."38 The Databrary project will strengthen traditional ways of conducting video-based research by facilitating better coding, data mining, and data management practices within labs while building the culture and infrastructure to enable a new tradition of open data sharing in developmental science. The Databrary project is potentially transformative. We will increase transparency by sharing the traditionally private activity of data collection, coding, and analysis. We will speed progress by enabling later researchers to benefit from previous work. Ultimately, we will better understand human development and how to transform knowledge into improvements in health.
 
 \section{Acknowledgments}
+
 Databrary is based on work supported by the National Science Foundation under Grant No. BCS-1238599, the Eunice Kennedy Shriver National Institute of Child Health and Human Development under Cooperative Agreement U01-HD-076595, and the Society for Research in Child Development.
 Any opinions, findings, and conclusions or recommendations expressed in the material contributed here are those of the author(s) and do not necessarily reflect the views of the National Science Foundation, the Eunice Kennedy Shriver National Institute of Child Health and Human Development, or the Society for Research in Child Development.
 
-\bibliography{example}
+\bibliography{paper}
 
 \end{document}
