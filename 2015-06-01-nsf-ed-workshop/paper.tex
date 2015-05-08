@@ -41,7 +41,8 @@ Moreover, we must find ways to share the most valuable raw data, the data with t
 
 Video is a uniquely rich medium for capturing in real time the interactions that occur in classrooms, muesuems, laboratory, home, and other informal learning settings.
 Many researchers and practitioners in the developmental, learning, and education sciences collect video as raw data.
-Video recordings capture what teachers say and do and what students say and do in ways that offer the potential to discover when, why, and how learning actually works.
+Video recordings capture what teachers, docents, parents, tutors and peers say and do and what learners say and do in response.
+The recordings capture these dynamics in ways that offer the potential to discover who did what, and when, why, and how it influenced learning.
 Still, the open sharing of video data is rare, even within labs or among collaborators.
 Video data should be conducive to sharing.
 Video captures behavior that others can readily inspect.
@@ -60,45 +61,67 @@ In this paper, we will describe how Databrary has overcome the most significant 
 In developing technology and policies that enable the safe and secure sharing of video and other identifiable research data, Databrary suggests ways that video and other identifiable data collected in the context of research on teaching and learning might be shared.
 Fostering the open sharing and reuse of high value, high impact data like video promises to advance education policy and improve practice.
 
-\section{The Promise of Video Data Sharing}
+\section{The Promise of Video}
 
-More than 1 billion users worldwide uploade more than 300 hours of video to YouTube every minute (https://www.youtube.com/yt/press/statistics.html). Google, YouTube's owner, has built an immense data infrastructure to upload, store, convert, tag, and stream video. The current scale of video collection in developmental and education contexts is undoubtedly smaller, but it is not small. The Gates Foundation-funded Measures of Effective Teaching (MET) Project, hosted at ICPSR, contains X video segments from X classroom settings, representing tens of terabytes of data. In just over a year of operation, the Databrary digital library has collected more than 7,000 individual videos, representing 2,400 hours of recording, featuring more than 1,800 infant, child, and adult participants. Video data is big, and the interest in recording and sharing video for research, education, and policy purposes has grown.
+More than 1 billion users worldwide uploade more than 300 hours of video to YouTube every minute (https://www.youtube.com/yt/press/statistics.html). 
+Google, YouTube's owner, has built an immense data infrastructure to upload, store, convert, tag, and stream video. 
+The current scale of video collection in developmental and education contexts is undoubtedly smaller and more focused in purpose, but it is large and growing. 
+The Gates Foundation-funded Measures of Effective Teaching (MET; http://www.metproject.org/) Project generated more than 1,000 full-length video segments from K-12 classrooms, covering core subjects such as mathematics, language arts from multiple camera angles. 
+The data constituting tens of terabytes of storage are hosted at the University of Michigan (http://soe.mivideo.it.umich.edu/) and securely streamed to registered viewers across the country.
+Similarly, in just over a year of operation, the Databrary (http://databrary.org) digital library has collected more than 7,000 individual videos, representing 2,400 hours of recording, and featuring more than 1,800 infant, child, and adult participants.
+Databrary has more than 100 authorized researchers representing more than 50 institutions across the globe who access the videos.
+Video data is big, and the interest in recording and sharing video for research, education, and policy purposes continues to grow.
 
-\subsection{Video is Uniquely Rich}
+Video captures the richness and complexity of human behavior and interactions between people and their environment like no other measure.
+Video captures what people say and what they do.
+It captures when and where they look or gesture, when, where and how they move, and how their looking, gesturing, and moving corresponds to what others are doing.
+These characteristics mean that video has multiple use cases in the study of learning and development.
+In laboratory contexts, researchers use videos to study how infants, children, and adults behave spontaneously or when presented with specific researcher-specified tasks.
+In educational contexts, educators, teacher trainers and evaluators use video to record what other teachers do to help improve teaching practices or evaluate performance.
+Researchers may record videos of learners in classrooms or museums to understand what teachers and docents do and how audiences respond.
+In lab, classroom, or museum settings, video-based eye tracking systems provide information about where people look and for how long.
+While not strictly video recordings, image streams from computer-based tasks or learning-rich video games may be combined with information about user keyboard or controller inputs to study real-time perfomance.
+When combined with other quantitative and qualitative measures about learning outcomes, video can provide information about what kinds of teaching techniques boost learning for what kinds of students.
+Video may even be used to study engagement by students enrolled in online/web-based courses or to monitor compliance with academic integrity rules.
+Because video closely mimics the multisensory experiences of live human observers, recordings collected by one person for a particular purpose may be readily understood by another person and reused for another purpose.
+In other words, video requires less metadata and less manual curation than other data types, but offers greater potential for reuse.
+Moreover, the success, growth, and popularity of YouTube and other video-based social media (Vimeo, Periscope, Meerkat, SnapChat) demonstrates that video garners high levels of user interest and attention for interpersonal communication and entertainment uses.
+The success of these services also suggests that web-based video storage and streaming systems are now sufficiently well developed to satisfy large-scale demand.
+The question for researchers and policymakers is how to seize the moment in order to realize video's substantial potential to improve teaching and learning. 
 
-\subsection{Video Uses in Education}
+\section{The Challenge of Video}
 
-We record teachers in training and teachers in-service for evaluation.
-We record classrooms to capture what teachers do and how students respond.
-We record visitors and docents in museum settings.
-\section{The Challenges of Video Data Sharing}
-
-Sharing video poses challenges. 
+Sharing research video poses challenges.
 These include technical infrastructure, research ethics, privacy, and security, and data management. 
 Further, making open data sharing in education research an established norm requires changing understanding about how identifiable data might be shared and building a community of researchers and educators committed to making video data sharing work.
 
-\subsection{Technical}
+\subsection{Technical Challenges}
 
-Video poses two types of technical challenges related to the goal of increasing widespread sharing. One concerns the requirements for storing, sharing, streaming, and preserving large numbers of videos. The other concerns tools for extracting meaningful information from the episodes and behavior videos capture.
+Video poses two types of technical challenges related to the goal of increasing widespread sharing. 
+One concerns the requirements for storing, sharing, streaming, and preserving large numbers of videos. 
+The other concerns tools for extracting meaningful information from the episodes and behavior videos capture.
 
-\subsubsection{Video Data is Big}
+Videos are large.
+One hour of HD video (1080p, 1440x1080 @ 60 Hz) can consume more than 10 GB.
+The size of the file varies by format and resolution, and recordings vary widely, making it essential for video storage systems to convert files to a standard format.
+Many settings, like classrooms, require multiple camera views to capture the desired behaviors.
+Some questions involve the collection of multiple, temporally dense data streams (physiological recordings, motion tracking, eye tracking, verbal transcripts, keyboard/controller responses).
+These require tools for synchronization across camera views and data streams.
+The use of video creates a data explosion: A typical lab studying infant or child development collects 8-12 hours of video/week [cite18] in widely varied formats. 
+Thus, sharing digital video requires substantial storage capacity, significant computational resources for transcoding videos into common, preservable formats, and powerful search and streaming tools,. 
 
- 
-
-Video often accompanies other data streams (physiological recordings, brain imaging, EMG, motion tracking, eye tracking, verbal transcripts). 
-Multiple data streams—including two or more camera views—require tools for synchronization and integration and benefit from multivariate time series analyses. 
-Many labs lack the resources to adopt tools for detailed video coding and complex analyses. 
-Furthermore, widespread use of video creates a data explosion: The typical developmental lab collects 8-12 hours of video/week 18 in widely varied formats. 
-Thus, sharing digital video requires substantial storage capacity, powerful search and streaming tools, and significant computational resources for transcoding videos into common, preservable formats. 
-
-\subsubsection{Tools for Coding Video}
 After videos are recorded, human coders evaluate videos and apply text-based annotations or numeric codes to videos.
-Coders use a wide-range of commercial and academic software tools: Transana, StudioCode, V-code, MaxQDA, Noldus Observer, Mangold Interact, and Datavyu, among others.
-Some use spreadsheets or pencil and paper.
-The tools have no standard format for data storage or export.
-Some offer web/cloud based storage (e.g., Transana, V-code), but otherwise coded data may not be easily shared within tools, much less between them.
-With few exceptions, machine learning has not been applied to video data coding.
+Coders use a wide-range of commercial (Noldus Observer, Mangold Interact, MaxQDA, V-Note), and academic (Transana, Elan, Datavyu) software tools, among others.
+Some researchers use spreadsheets or pencil and paper.
+Some tools (Datavyu, Mangold, V-Note) offer text-based export to interoperable file formats, but the tools have no standard format for data storage or export.
+Some tools offer web/cloud based storage (e.g., Datavyu via Databrary, Transana, V-Note), but otherwise coded data are easily shared within tools, much less between them.
+
+With few exceptions (Chen Yu; Gilmore \& Raudies, Rehg?, others), machine learning has not been applied to video data coding in the developmental and learning sciences.
+But, there is explosive growth in the use of machine learning and computer vision tools to tag images and videos in commercial settings.
+This may create opportunities for future projects that supply machine-generated tags to videos collected in educational and developmental research.
+
 \subsection{Ethics and Privacy}
+
 Sharing video recordings poses a unique challenge to existing data sharing policies because videos contain personally identifying information—specifically participants’ faces and voices and often the
 insides of their homes and classrooms. 
 Sharing personally identifiable information puts research participants and others depicted in recordings at increased risk for loss of privacy. 
@@ -133,8 +156,11 @@ data even within the lab.
 Some researchers keep videos, metadata, and analyses together, and some do not. Idiosyncratic terms, record-keeping, and data management systems are the norm. 
 Databrary must enable researchers to discover and understand each other’s materials, regardless of the original investigator’s data management system.
 As in other fields22, developmental science is inundated by an explosion of digital data, most of which is inaccessible to other researchers. The data deluge stems from the advent of cheap, high-resolution digital cameras. The average developmental lab collects 12 hours of video/week23. Raw data without information about workflow and data provenance is essentially “orphaned” and cannot be understood by subsequent researchers who weren’t part of the original team24. Moreover, video files must be electronically linked with participant permissions and relevant metadata. An effective data management system for video does not currently exist. We will build one to allow researchers within labs to benefit from each other’s work, facilitate interdisciplinary collaborations, and provide a solid foundation for open sharing25
+
 \subsection{Changing Community Practices}
+
 Data sharing is an established best practice in some areas of educational research (AERA ethics guide), but it is not necessarily widespread.
+
 \section{Databrary.org}
 Databrary (databrary.org) is a digital data library specialized for storing and sharing video and research data and metadata.
 Databrary is a joint project of New York University (NYU) and The Pennsylvania State University (Penn State). 
@@ -150,7 +176,9 @@ advisors composed of developmental scientists, library scientists, and
 leaders of data repositories in the behavioral and social sciences
 provide guidance.
 No large-scale repository for sharing video data currently exists. So, we will create a web-based Databrary repository. 
+
 \subsection{System Design}
+
 Databary is built on a PostreSQL database using the Scala Play framework and JavaScript.
 Data are preserved indefinitely in a secure data storage facility at NYU managed by central IT.
 There is no cost to use the system; an institutional subscription model is under development.
