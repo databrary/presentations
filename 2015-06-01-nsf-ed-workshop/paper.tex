@@ -136,7 +136,7 @@ We discuss the access model in detail below.
 As in other fields \cite{Overpeck2011}, developmental and education science is inundated by an explosion of digital data, most of which is inaccessible to other researchers.
 A primary impediment to sharing is researchers’ lack of time to find, label, clean, organize, and copy their files into formats that can be used and understood by others \cite{Ascoli2006}. 
 Even scientists committed to data sharing can find it difficult to do. 
-Data management systems that make sharing convenient, reliable—and optimally automatic—could help.
+Data management systems that make sharing convenient, reliable—and optimally automatic—would help.
 
 But, even with the availability and widespread adoption of suitable data management tools, existing data management practices pose challenges for video sharing.
 Despite similar research methods, study designs vary widely. 
@@ -155,7 +155,7 @@ We describe below Databrary's data management system that enables users to manag
 
 Finall, we note that while data sharing is an established best practice in some areas of educational research \cite{AERA-Code-2011}, it is not widespread.
 The reasons are many \cite{Ascoli2006b,Ferguson2014}.
-Researchers cite intellectual property and privacy issues, the lack of data sharing requirements from funding agencies, and fears about the misuse, misinterpretation, or harm that might come from sharing.
+Researchers cite intellectual property and privacy issues, the lack of data sharing requirements from funding agencies, and fears about the misuse, misinterpretation, or professional harm that might come from sharing.
 Researchers also note that data shaving diverts energy and resources from other scholarly activities that are more heavily and frequently rewarded \cite{Ascoli2006b,Ferguson2014}.
 Put another way, data sharing involves mostly sticks and few carrots.
 In order to make data sharing become a scientific norm, these factors must be addressed.
@@ -171,6 +171,8 @@ The project received funding in 2012-2013, began a private beta testing phase in
 
 \subsection{System Design}
 
+No data sharing system would be complete without an information technology infrastructure that enables large numbers of video and related files to be uploaded, organized, stored, streamed, and tagged.
+Considerations about what file formats to support are also paramount.
 Databary is built on a PostreSQL database using the Scala Play framework and JavaScript.
 Data are preserved indefinitely in a secure data storage facility at NYU managed by central IT.
 There is no cost to use the system, but an institutional subscription model is under development.
@@ -182,127 +184,113 @@ Preservation copies of original video and audio files are also stored.
 Databrary stores other data in native formats (e.g., .doc, .docx, .xls, .xlsx, .txt, .csv, .pdf, .jpg, .png).
 Since common video coding/tagging file formats are required for users to build on earlier coding efforts, Databrary plans to develop tools for converting files from other coding tools into a common format.
 
+The system's data model embodies flexibility. 
+Researchers organize their materials by acquisition date and time into structures called sessions.
+A session corresponds to a unique recording episode and contains one or more recordings or related flat files (assets). 
+Researchers can group sessions in different ways, using whatever groupings are appropriate for
+the particular dataset. 
+These groupings may also identify particular time segments of a recording to distinguish tasks, events, or
+participants that comprise the session. 
+The aggregate of these flexible groupings is called a \emph{volume}. 
+In practice, researchers combine sessions or segments of sessions within and across datasets to form the raw material that are subsequently described in published articles and presentations. 
+Thus, Databrary contributors can combine sessions or segments within and across datasets with ancillary
+materials, such as coding manuals, coding spreadsheets, statistical analyses, questionnaires, IRB documents, computer code, sample displays, and links to published journal articles in an aggregate structure investigators call a \emph{study}. 
+Like datasets, studies are represented as volumes in the data model.
+
+The discovery and browsing interfaces offer content items at the volume (study or dataset) level to users searching the library. 
+The contributor-assigned groupings may include metadata about participants, tasks or measures, and locations.
+This enables users to quickly identify data that may be relevant to their own interests or research.
+Users can also add keyword tags at the study/dataset, session, or segment level, and can endorse or deprecate keywords that have been suggested by others. 
+Different users may have very different reasons for citing a study or using data, so these features are critical for fostering resuse. 
+Future implementations may extend the ability of authorized researchers to annotate studies with other kinds of metadata.
+
+The Databrary team recognizes that other data repositories enforce strict metadata ontologies and that these Doing may have benefits in sub-domains of research when there is community consensus on core concepts. 
+The Databrary team has chosen not to require strict metadata ontologies for several reasons. 
+We hope to reduce the pre-deposit curational demands on contributors and foster the rapid adoption of data sharing.Developing and achieving agreement on metadata ontologies can take significant amounts of time. 
+Video data are so rich and complex that in many domains, researchers have not settled on standard definitions for particular behaviors and may have little current need for standard tasks, procedures, or terminology. 
+However, Databrary empowers users to re-use tags and terminology by suggesting common or similar terms, without confining users to these suggestions. 
+User communities within Databrary may eventually converge on common conceptual and metadata ontologies based on the most common (and commonly endorsed) keyword tags, but standardized ontologies are not necessary for browsing and searching in most of the use cases we envision.
+The Databrary team believes that the effort spent creating this powerful and flexible system will enable it to be extended to a diverse communities engaged in educational research.
+
 \subsection{Policies for Safe \& Secure Video Sharing}
 
-Shared videos are maximally informative when participants’ faces are visible and their vocalizations are audible. Thus, anonymity cannot be ensured as it is for flat file or imaging data. 
-To address issues of confidentiality, access, and IRB approval for sharing video data, we will develop template data sharing permission forms and contributor and user agreements with input from the community, from human compliance officers, and from leaders of previous data sharing efforts.
-Databrary has elected to maximize the potential for data re-use by keeping recordings in their original
-unaltered form. 
-Instead of removing participants’ identities, Databrary restricts access to identifiable or sensitive data to authorized researchers. 
-Further, Databrary provides access only when the peopledepicted have given permission for their information to be shared with other researchers.
+Equally important for the success of a video data sharing enterprise are policies for openly identifiable data in ways that securely preserve participant privacy.
+As discussed previously, videos cannot be easily or cheaply de-identified without undermining their reuse value.
+Databrary has chosen to maximize the potential for data re-use by keeping recordings in their original
+unaltered form.
+To make unaltered raw videos available to others for reuse, Databrary has developed a two-pronged access model that i) restricts access to authorized individuals, and ii) enables access to identifiable data only with the permission of the people depicted.
 
-\subsubsection{Restricting Access}
-Databrary provides access to shared data only to authorized researchers who have agreed to uphold common practices concerning the responsible and ethical use of identifiable and sensitive data. 
-To become an authorized investigator, applicants must register on the site and electronically sign an Access Agreement, which must also be co-signed by the applicant’s institution. 
-Full privileges will be granted only to researchers with principal investigator (PI) status
-at their institutions. 
-Other researchers may be granted privileges if they are affiliated with a PI who agrees to sponsor and supervise their application. 
-Initially there will be a manual process to identify the institutional representative—typically the authorizing official of the university—who can co-sign the Investigator Agreement. 
-However, as the user groups at each university expand, Databrary may implement
-administrative accounts at each institution. 
-This will enable the authorizing official to independently manage the authorizations of
-individual researchers at her institution.
+To gain access to Databrary a person must register on the site and electronically sign an access agreement, which must be co-signed by the applicant's institution. 
+Applicants must agree uphold common practices concerning the responsible and ethical use of identifiable and sensitive data. 
+Full privileges will be granted only to researchers with independent researcher status at their institutions. 
+Others may be granted privileges if they are affiliated with researcher who agrees to sponsor and supervise their application.
+Ethics board or IRB approval is not required to gain access to Databrary since many use cases do not involve research.
+Approval is required for uses that involve research.
+Once authorized, a user may have full access to the site's shared data, and may browse, tag, download for later viewing, and conduct non- or pre-research activities. 
+
+Unique among data repositories, the Databrary access agreement authorizes data use and contribution.
+However, users may only store materials on Databrary for which they have approval from an ethics board or IRB and for identifiable data like video, permission from the people depicted. 
+Databrary has extended the commonly understood principle of informed consent to participate in research to encompass permission to share data with other researchers.
+In other words, identifiable data may be shared if the participants agree. 
 
 Data from a particular session may be stored in Databrary for the contributing researcher’s use whether the records are shared with other scientists or not. 
 When a researcher chooses to share, Databrary makes records openly available to the community of authorized researchers only if the people depicted in the recordings have given permission to release the data for sharing. 
-Thus, Databrary requires that people depicted in recordings grant permission before their information can be
-shared.
-Databrary’s policies extend currently accepted principles of informed consent to the situation where participants are granted authority to consent to (or refuse) the release of their identifiable data.
-
-We developed these ideas in close collaboration with the NYU and PSU IRB staff. 
-To formalize the process of acquiring permission, we developed a Participant Release Form Template, based on photo or video release language many researchers use currently. 
-The template release form has standard language that Databrary recommends investigators should use
-with study participants. 
+To formalize the process of acquiring permission, Databrary has developed a Participant Release Form Template, based on photo or video release language many researchers use currently. 
+The template release form has standard language that Databrary recommends investigators should use with study participants. 
 This language makes it easy for participants to understand what is involved in sharing their video data, with whom it will be shared, and the potential risks associated with releasing their video and other identifiable data to other researchers. 
 Use of the template also allows for the standardization of language associated with the release of identifiable or sensitive participant data.
 
 Some IRBs may deem an investigator’s existing, approved video or photo release form equivalent to the Databrary release. 
-This enables a researcher to share with Databrary recordings they have already
-collected. 
+This enables a researcher to share with Databrary recordings they have already collected. 
 However, most researchers will need to modify their research protocols, by adding the Databrary sharing permission procedures, prior to collecting new shareable video data. 
 Databrary staff are available to advise potential data contributors about how to amend existing research
 protocols so that the information acquired is Databrary-compliant.
-Protocol amendments involve seeking approval for use of the Databrary
-template release form and modifying the time period over which collected
-data will be made available. 
-Specifically, researchers must remove any clauses in research consent documents that require data destruction
-after some fixed period of time since Databrary intends to store shared
-data indefinitely.
+Protocol amendments involve seeking approval for use of the Databrary template release form and modifying the time period over which collected data will be made available. 
+Specifically, researchers must remove any clauses in research consent documents that require data destruction after some fixed period of time since Databrary intends to store shared data indefinitely.
+
+We developed these ideas in close collaboration with the NYU and PSU research ethics and administration official, and we took inspiration from the Human Connectome Project and Open Genome Project that have similarities.
+As of May 2015, Databrary has secured agreements with 55 institutions on behalf of 105 resesearchers representing a diverse array of entities in North and South America, Europe, and Australia.
+We believe that this model of sharing identifiable video data can be extended to other data types and other contexts.
+In the realm of education research, we recognize that the access model will have to adapt to meet the needs of users who are not affiliated with an institution as currently conceived and to address the role of other parties involved in the educational research enterprise, namely teachers, schools, and school districts.
+Nevertheless, we believe that the core ideas provide a strong foundation for enabling the widespread sharing of video and other identifiable data to the educational research community.
 
 \subsection{Managing Data for Sharing}
-Raw video is most informative when it is linked with coding spreadsheets, codebooks, protocols, statistical analyses, and manuscripts. 
-A data management system is required to link related files, document workflow and data provenance, and tag files with appropriate permission levels for sharing. 
-Consistent data management practices will strengthen work within labs and among collaborators, enable convenient and reliable file uploading, and enhance the value of shared data in the Databrary.
 
-The 2011 NSF workshop8 and PI Adolph's MacSHAPA/OpenSHAPA workshops over the last decade have revealed widely varying laboratory data management practices. Some minimal standardization across labs is required to make data sharing feasible. 
-In the biomedical sciences, use of laboratory information systems (LIMS) is increasingly common and shows promise for lowering barriers to sharing in other fields15. 
-Consistent with our overall approach, we will research, adapt, and adopt best laboratory management practices and open-source tools from other fields34, and we will prioritize implementation based on the preferences and priorities of the developmental science community.
-
-The full expressive flexibility of the data model is not evident to Databrary users. 
-Instead, users see different aspects of the data model at different times, depending on the context. Researchers organize their materials by acquisition date and time into structures called sessions.
-A session corresponds to a unique recording episode and contains one or more recordings or related flat files (assets). Researchers can group sessions in different ways, using whatever groupings are appropriate for
-the particular dataset. 
-These groupings may also identify particular time segments of a recording to distinguish tasks, events, or
-participants that comprise the session. 
-In the data model, the aggregate of these flexible groupings is called a volume. 
-In practice, researchers combine sessions or segments of sessions within and across datasets to
-form the raw material that are subsequently described in published
-articles and presentations. 
-Thus, Databrary contributors can combine sessions or segments within and across datasets with ancillary
-materials, such as coding manuals, Datavyu spreadsheets, statistical analyses, questionnaires, IRB documents, computer code, sample displays, and links to published journal articles in an aggregate structure
-investigators call a study. 
-Like datasets, studies are represented as volumes in the data model.
-
-The discovery and browsing interfaces offer content items at the volume (study or dataset) level to users searching the library. The contributor-assigned groupings (records), which may include relevant
-metadata about participants (measures, such as participant demographic information, domain-specific survey information, location data, condition variables, task descriptions, or other properties), allow a
-second level of filtering and organization within and between relevant
-identified studies or datasets.
-This enables users to quickly identify data that may be relevant to their own interests or research.
-
-Authorized Databrary Investigators can also add keyword tags at the study/dataset, session, or segment level, and can endorse or deprecate keywords that have been suggested by other authorized researchers. These
-abilities are critical because different researchers may have very different reasons for citing a study or using data. Future implementations may extend the ability of authorized researchers to
-annotate studies with other kinds of metadata.
-
-The Databrary team recognizes that other data repositories enforce strict metadata ontologies and that doing so may have benefits in sub-domains of research when there is community consensus [12]. 
-We will support standard data coding ontologies among researchers, but only enforce standardization for a small set of standard tags such as study date, participant birth date, and sex. We will also encourage
-contributors to report race, ethnicity, primary language, language of
-dataset, and location of session. 
-The Databrary team chose not to require strict metadata ontologies for several reasons. We hope to
-reduce the pre-deposit curational demands on contributors, encourage the repurposing of shared data, and foster the rapid adoption of data sharing. 
-Developing and achieving agreement on metadata ontologies can take significant amounts of time. 
-Video data are so rich and complex that in many domains, researchers have not settled on standard definitions for particular behaviors and may have little current need for standard tasks, procedures, or terminology. 
-However, we will also encourage users to re-use tags and terminology by suggesting common or similar terms, without confining users to these suggestions. 
-User communities within Databrary may eventually converge on common conceptual and metadata ontologies based on the most common (and commonly endorsed) keyword tags, but standardized ontologies are not
-necessary for browsing and searching in most of the use cases we
-envision.
-
+As we discussed earlier, even when researchers are willing to share data and have the required approvals to do so, varying data management practices make curating data for sharing after a research project has finished a difficult, often unrewarded chore.
+In order to make the raw data informative to others, it must be linked with coding spreadsheets, codebooks, protocols, statistical analyses, and manuscripts.
+But, the organization scheme that works for one research team does not necessarily work for general audiences unfamiliar with the nuances of a research project.
 Our experiences curating and ingesting archival datasets have highlighted the considerable value of contributors entering raw video data into Databrary as soon as recordings are acquired. 
-Immediate uploading reduces the workload on investigators, minimizes the risk of
-data loss and corruption, and accelerates the speed with which materials
-become openly available. 
+Immediate uploading reduces the workload on investigators, minimizes the risk of data loss and corruption, and accelerates the speed with which materials become openly available. 
+Accordingly, Databrary has developed a data management system that empowers researchers to curate their own data \emph{as it is collected}.
+
+The system employs familiar, easy-to-use spreadsheet and timeline-based interfaces that allow users to upload videos, add metadata about tasks, settings, and participants, link related files, document workflow and data provenance, and tag files with appropriate permission levels for sharing. 
 To encourage immediate uploading, Databrary provides a complete set of controls so that researchers can restrict
-access to their data to only their own labs or to other users of their
-choosing. 
+access to their data to only their own labs or to other users of their choosing. 
 Datasets can be shared at a later point when data collection and ancillary materials are complete, whenever the contributor is comfortable sharing, or when journals or funders require it. 
-Databrary has published a Data Sharing Manifesto [13] that explains to researchers the Databrary philosophy. Standards about when data should be shared are evolving. 
-Our philosophy is consistent with concepts and practices in other domains where data sharing is the norm (e.g., www.iedata.org).
-Planned enhancements to the Datavyu tool will allow contributors to organize video files and metadata as part of the analysis process. 
-This will facilitate the contribution of packaged datasets to Databrary.
 
-Based on discussions at the NSF workshop, we expect to see most contributions after data collection, coding, and analyses are completed. Researchers have widely differing practices for designing codebooks and spreadsheets, managing data collections, coding, analyses, collecting and managing participant data (demographic, anthropometric, etc.), and documenting workflow and data provenance. Our goal for Years 2-3 is to incorporate this more detailed type of information into the data management system. Doing so will strengthen sharing within labs, expand the usefulness of Databrary, and enable more powerful searches. The data management system will be extended to organize and package other files associated with contributors (position, expertise), studies (codebooks, protocols, analysis spreadsheets graphs, manuscripts, presentations, grant proposals, etc.), and participants (coded spreadsheets, test results, demographics, etc.). The same basic ideas will apply— standard file naming conventions and data tagged by contributor, study, and participant level. OpenSHAPA and other applications will communicate with the data management tool. The data management tool will be used to stitch together all the sharable files that comprise a study.
-From data sharing to best lab practices. The developmental science community is hungry for new practices that will enhance research, as demonstrated by the number of committed contributors. LIMS in other fields embody additional functions. We envision that the data and tool sharing enabled by Databrary will spark interest in other lab management enhancements. For example, the data management system could facilitate participant recruitment and scheduling, task/project management and scheduling, workflow processing, and quality assurance (e.g., reliability testing). We plan to seek community input—via online comments, conference workshops on best lab practices, and other avenues—about which features should be the highest priorities for data management tool developers. Extending the data management tool to incorporate the highest priority features will be a focus of the front-end programmer in Years 4-5.
+It is too early to evaluate the impact of Databrary's data management tools on researcher's willingness to share data.
+But, the developmental science community is hungry for new practices that will enhance research productivity, as demonstrated by the rapid growth in the number of authorized investigators.
+We are confident that consistent data management practices will strengthen work within labs and among collaborators, enable convenient and reliable file uploading, and enhance the value of shared data in the Databrary.
 
-\subsection{Building A Community That Embracing Sharing}
+\subsection{Building A Community That Embraces Sharing}
 
-Data sharing works only when the scientific community embraces it. 
-To make video-based data sharing succeed, we will build a diverse contributor/user community committed to open data sharing. 
-Based on continual community input, we will expand the OpenSHAPA video coding tool, build data management tools, and develop tools for uploading, browsing, and searching data in the Databrary repository. 
-These tools will enable sharing within labs, among collaborators, and among users in the larger community. To avoid pitfalls of previous data sharing efforts, leaders in data sharing, developmental science, and computer science will guide our work through an advisory board. 
-To ensure continued community engagement, Databrary personnel will provide technical support to individual labs and provide information to the community about new data contributions, citations of shared data, and use cases.
+Data sharing works only when the scientific community embraces it.
+From the beginning, Databrary has sought to cultivate a community of researchers who support data sharing and commit to enacting that support in their own work flows.
+Those efforts involve many interacting components.
+They include active engagement with professional associations, conference-based exhibits and training workshops, communications with research ethics and administration staff, talks and presentations to diverse audiences, and one-on-one consultations with individual researchers and research teams.
+These activities are time and labor-intensive, but we believe that they are critical if we are to change community attitudes toward data sharing in the educational and learning sciences.
+Looking ahead, it will be critical to engage professional organizations that have already made fostering video data sharing a priority in the effort to forge community consensus about the importance, feasibility, and potential of open video data sharing.
 
 \section{Conclusion}
 
-As Gesell once noted, cameras can record child behavior in ways that make it "...as tangible as tissue."38 The Databrary project will strengthen traditional ways of conducting video-based research by facilitating better coding, data mining, and data management practices within labs while building the culture and infrastructure to enable a new tradition of open data sharing in developmental science. The Databrary project is potentially transformative. We will increase transparency by sharing the traditionally private activity of data collection, coding, and analysis. We will speed progress by enabling later researchers to benefit from previous work. Ultimately, we will better understand human development and how to transform knowledge into improvements in health.
+As Gesell once noted, cameras can record behavior in ways that make it "...as tangible as tissue." \cite{Scott2011}.
+
+Video has considerable untapped potential for making tangible the anatomy of successful teaching and learning.
+Realizing this potential requires a multifaceted approach that reduces barriers to sharing video and fosters new community values that embrace it.
+The Databrary project has built technology and policies that overcome many of the most significant barriers to widespread video data sharing within the developmental sciences community, including solutions to maintaining participant privacy, data tagging, and data management., 
+Databrary suggests ways that video and other identifiable data collected in the context of education research might also be shared.
+Widespread open sharing of high value, high impact data promises to advance education policy and improve practice.
+The Databrary team welcomes collaborations with other like-minded parties who share our vision \cite{Adolph2012} for a future where open data sharing is the norm in the behavioral and social sciences.
 
 \section{Acknowledgments}
 
