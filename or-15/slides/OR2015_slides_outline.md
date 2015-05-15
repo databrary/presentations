@@ -61,7 +61,15 @@ OR 2015 Slides Outline
   - Works in some cases, but not all
   - Big challenge, very time consuming
 
-#10. Getting data in - self-deposit (service)
+#10. Getting data in and accessing it - self-deposit (service)
+  - Upload as you go
+  - spreadsheet (image of spreadsheet)
+    - suggested and auto-complete metadata
+  - timeline (image of timeline)
+    - annotation and syncing video
+    - can sync videos
+    - this is where you might do online coding of data
+  - reflecting video access and permissions
 
 #11. The data model (infrastucture)
   - What is our approach to representing a dataset (a study in general, might have a publication, might have grant funding)
