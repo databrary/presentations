@@ -2,7 +2,7 @@ OR 2015 Slides Outline
 ======================
 
 #0. Title, Introduction
-  - 
+
 #1. Front page screen
   - Databrary is a web-based video-data repository for developmental and learning sciences researchers
   - Today I will tell you about the project, including the reason for its existing, the challenges it aims to solve, how it approaches solving them (both through technology/data design and policy/community management. 
