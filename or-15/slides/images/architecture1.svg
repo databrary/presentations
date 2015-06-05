@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="architecture1.svg"
-   inkscape:export-filename="/Users/databrary/presentations/or-15/slides/images/arch_0.png"
+   inkscape:export-filename="/Users/databrary/presentations/or-15/slides/images/arch_1.png"
    inkscape:export-xdpi="239.90785"
    inkscape:export-ydpi="239.90785">
   <defs
@@ -623,7 +623,7 @@
          x="283.49741"
          sodipodi:role="line">RDBMS (PostgreSQL)</tspan></text>
     <rect
-       style="fill:#e6e6e6;fill-opacity:1;stroke:#ff00e0;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#ff00e0;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect44099"
        width="384"
        height="95.999985"
