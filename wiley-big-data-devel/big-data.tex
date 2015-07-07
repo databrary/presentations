@@ -1,0 +1,262 @@
+\documentclass[letterpaper,man,apacite]{apa6}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{From big data to deep insight in developmental science}
+\shorttitle{Big data in development}
+
+\oneauthor{Rick O. Gilmore}
+\twoaffiliations{The Pennsylvania State University, The Databrary Project}
+
+\abstract{}
+
+\authornote{Rick O. Gilmore is in the Department of Psychology, The Pennsylvania State University, University Park, PA 16802, rogilmore@psu.edu.
+Any opinions, findings, and conclusions or recommendations expressed in the material contributed here are those of the author and do not necessarily reflect the views of the National Science Foundation, the Eunice Kennedy Shriver National Institute of Child Health and Human Development, or the Society for Research in Child Development.}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+A brash new kid has moved in down the street, and she has stolen some limelight from the old guard.
+She's a data scientist, and she's teaching the old dogs of statistics some new tricks about how to detect, describe, and visualize patterns in complex sets of data.
+Like successful newcomers in many fields, data scientists build on some well-established ideas and tools, but combine and apply them in new ways to new problems \cite{Press2013b}.
+And, like many upstarts in recent memory, data scientists have ridden the wave created by the massive growth in the availability of information over the internet.
+In this paper, I will focus on how the increased availability of and interest in analyzing large, complex data sets has influenced the study of human development.
+I will begin by discussing the recent history of ``big data" and how, in principle, it has implications for developmental science.
+Then, I will survey a set of case studies that illustrate how large, complex data sets have been and are being used currently.
+To close, I will discuss a range of issues that the emergence of ``big data" approaches to developmental science pose for the future.
+
+\subsection{``Big Data" is big}
+
+When the government notices a cultural phenomenon, it is often well-established. 
+In March 2012, the U.S. Obama Administration announced an initiative to spend \$200 M dollars on a ``big data'' research and development (R\&D) initiative \cite{Gianchandani2012, Obama2012} with the expressed intent of applying data science techniques to large collections of digital data in order ``to solve some of the Nation's most pressing challenges..." \cite{Obama2012}.
+The press release that accompanied the announcement \cite{Obama2012} highlighted some of the big data initiatives already or soon-to-be underway at the federal level, and these include the U.S. National Science Foundation (NSF), U.S. National Institutes of Health (NIH), the Departments of Energy and Defense and the U.S. Geological Survey (USGS).
+The European Union (EU) has also taken public positions \cite{EU2013} about the importance of data to fostering social and economic well-being and has made it a priority to grant more open public access to data sets collected or managed by government entities \cite{EU2015}.
+These potential benefits for open access to public data extend to governments in the developing world \cite{Malik2015}, and to state and local governments in the U.S.
+For example, Indiana has embarked on an effort to reduce infant mortality using big data \cite{Ravindranath2014}.
+Notwithstanding the promises of big data to improving public well-being, governments recognize that privacy concerns loom large \cite{Obama2014}, a topic we will revisit in later sections.
+For researchers, the promise of government interest in big data extends beyond potentially new or expanded funding sources, such as the NIH's Big Data to Knowledge Initiative \cite{BD2K2015} or the now closed National Children's Study \cite{NCS2015}.
+It means potentially new or more widely available or readily accessible data sources accompanied by more stringent requirements for open data sharing \cite{NIMH2015, NSF2011}.
+We will revisit these topics again, as well.
+
+So, big data looms large in the minds of public agencies who fund most research on human development.
+In recognizing this, we note that the recent focus on big data has a history longer than the 21st century \cite{Press2013a}. 
+Indeed, developmental scientists have long recognized the importance of collecting and sharing data sets that are big along at least one dimension -- the number of individuals, number of time points sampled, or the number of measures collected.
+In turn, researchers in developmental science have continued to pioneer advanced analytical techniques that unpack and explain developmental phenomena across multiple levels of analysis and across wide-ranging timescales \cite{CDS2014, QuantDev}.
+
+ \subsection{What is big data?}
+
+    % + Three V's [^1],[^2]
+    %    + Volume
+    %    + Velocity
+    %    + Variety
+    % + Add
+    % 	+ variability
+    % 	+ complexity
+    % + Data types
+    % 	+ text, numeric
+    % 	+ image
+    % 	+ audio, video streams
+   	%  + Issues 
+    % 	- Data that cannot be processed by traditional databases or systems
+    % 	- Structured or unstructured data
+   	%  	- creation, capture, storage, sharing, analysis, transfer, visualization, privacy
+   	%  	- 2.5 exabytes (10^8 bytes)/day [^3]
+   	%  	- descriptive statistics; inferential; non-linear models; time series.
+   	%  - In developmental science, this may mean
+    % 	+ Numbers of participants
+    % 	+ Numbers of time points
+    % 	+ Numbers of measures
+
+\subsection{Big data about what?}
+
+    % + Biology
+    %     * Genes
+    %     * Brain activity, structure
+    %     * Growth and health
+    % + Behavior
+    %     * Perception
+    %     * Action
+    %     * Cognition
+    %     * Language
+    %     * Emotion / Personality / Temperament
+    %     * Friendships, families, & relationships
+    %     * Attitudes 
+    % + Educational and Employment aptitude/outcomes
+    % + Social/economic/cultural context
+
+\subsection{Why big data in developmental science?}
+    % + What develops?
+    % + Why does it develop that way?
+    %     * Changes in the environment?
+    %     * Changes in the person?
+    % + More precise estimates of small effects
+    %     * Trends within person
+    %     * across time...
+    %     * Example recent replication of GWAS with 100K, <http://pss.sagepub.com/content/early/2014/10/06/0956797614545132.full
+    % + Multi-level influences on development
+    %     * Influences at different spatial, temporal scales
+    %     * Nesting
+    % + Improve outcomes for children
+    %     * In general
+    %     * Disease/disorder focus
+
+\section{Case Studies}
+
+\subsection{Biology and Health}
+
+        % * Genes
+        % 	- EGADs/NEAD (Jenae Neiderhiser)
+        %   - Other twin/genetically informed studies 
+        % * Brain activity/structure
+        %     - Developmental Connectome Project, [website](http://www.developingconnectome.org/)
+        %     - David Edwards, Oxford, Imperial College, Kings College, [Centre for the Developing Brain](http://www.kcl.ac.uk/medicine/research/divisions/imaging/centres/cdb/index.aspx)
+        %     - John Richards' normative structural MRI series.
+        % * Growth and health
+        %     - NICHD Study of Early Child Care and Youth Development (SECCYD)
+        %     - [National Children's Study](http://www.niehs.nih.gov/research/programs/children-study/), [^11]
+        %         - In need of redesign? [^12], according to 2014 report from NAS [^13], 40 academic research centers have been dropped from the program [^14]
+        %         - Similar to Japan Environment and Children's Study [^15]
+        %         - WHO coordination efforts for Birth Cohort Studies [^16]
+        %         - British birth cohort studies [^17], site specificially describing UK longitudinal research datasets [^18]
+        %     - World Health Organization (WHO) Child Growth Standards, <http://www.who.int/childgrowth/en/>
+        %     - WHO Multicentre Growth Reference Study (MGRS), <http://www.who.int/childgrowth/en/>
+        %         - "The MGRS collected primary growth data and related information from approximately 8500 children from widely different ethnic backgrounds and cultural settings (Brazil, Ghana, India, Norway, Oman and the USA)."
+        %     - Adolescent Health, <http://www.cpc.unc.edu/projects/addhealth>
+        %     - Sex, drugs, alcohol and risky behavior
+        %         + Rob Turrisi, Eva Lewkowicz, Chuck Geier
+        %         + PSU Prevention Center
+        %     - Nutrition
+
+\subsection{Behavior}
+
+   % + Mass media interest in longitudinal perspective
+   %      * Up Series, <http://en.wikipedia.org/wiki/Up_Series>
+   %      * Boyhood
+   %       * Perception
+   %          - Teller Acuity Card norms
+   %              + <http://www.ncbi.nlm.nih.gov/pubmed/7890497>
+   %              + <http://www.ncbi.nlm.nih.gov/pubmed/7890496>
+   %          - Auditory testing norms
+   %      * Action
+   %          - Gesell?
+   %          - Bayley Scales of Infant and Toddler Development
+   %              + Nancy Bayley bio, <http://www.pearsonclinical.com/education/authors/bayley-nancy.html>
+   %      * Cognition
+   %          - Wechsler
+   %              + <http://www.iupui.edu/~flip/wechsler.html>
+   %              + Wechsler Adult Intelligence Scale (WAIS)
+   %              + Wechsler Intelligence Scale for Children (WISC-III), 6-16 year-olds
+   %              + Wechsler Preschool and Primary Scale of Intelligence (WPPSI-R), 4-6 1/2 years.
+   %      * Language
+   %          - Human Speechome, <http://www.media.mit.edu/cogmac/projects/hsp.html>
+   %          - [CHILDES/TalkBank](http://talkbank.org/)
+   %          - Smith, Aslin, Yu, Frank word learning, grammar
+   %          - MacArthur, CDI and Mike Frank's project (wordbank.stanford.edu)
+   %          - Cathie Tamis-Lemonda
+   %          - Gedeon Deak
+   %          - LENA, <http://www.lenafoundation.org/>
+   %      * Emotion / Personality / Temperament
+   %          - Ecological Momentary Assessment
+   %              + Matthias Mehl
+   %              + Diary studies
+   %          - Infant Behavior Questionnaire, CBC
+ 
+
+\subsection{Education and Employment}
+
+        %    - Bureau of Labor Statistics (BLS), youth employment, <http://www.bls.gov/news.release/youth.nr0.htm>
+        % * Education
+        %     - MOOCs
+        %         + Stanford, Coursera; Harvard, MIT, EdX.
+        %     - SAT, ACT scores, <http://www.erikthered.com/tutor/sat-act-history.html>
+        %     - Aptitude, <http://timss.bc.edu/>
+        %     - OECD PISA, <http://pisa2000.acer.edu.au/index.php>
+        %     - Measures of Effective Teaching (MET) Study, <http://www.metproject.org/>
+        %         - "The MET project was a research partnership between 3,000 teacher volunteers and dozens of independent research teams. The project's goal was to build and test measures of effective teaching to find out how evaluation methods could best be used to tell teachers more about the skills that make them most effective and to help districts identify and develop great teaching. Launched in 2009, the study has identified multiple measures and tools that – taken together – can provide an accurate and reliable picture of teaching effectiveness."
+        %         - "The project was funded by the Bill & Melinda Gates Foundation as part of ongoing efforts to give teachers the tools they need to be successful and to improve student achievement in public schools across the United States. 2. WHO WAS INVOLVED IN THE MET PROJECT?Truly understanding the skills and techniques that are hallmarks of great teaching requires collaboration between educators and researchers. The MET project was unprecedented: it was a partnership among thousands of teacher volunteers and administrators and union leaders from school districts across the country and dozens of independent researchers and education organizations. Teachers – more than 3,000 of them – were at the heart of the study. The teacher volunteers were recruited from Charlotte-Mecklenburg Schools, N.C.; Dallas Independent School District, Texas; Denver Public Schools, Colo.; Hillsborough County Public Schools, Fla.; Memphis City Schools, Tenn.; New York City Department of Education, N.Y.; and Pittsburgh Public Schools, Pa. Pittsburgh served as the project's pilot district, but no data from this district was analyzed. Lead researchers involved in the project were affiliated with Dartmouth College, Harvard University, the University of Michigan, the University of Virginia and Stanford University. Participating non-profits and education companies included RAND Corporation, Educational Testing Service, Teachscape, The Danielson Group, The New Teacher Center, National Math & Science Initiative and Westat."
+          %      * Attitudes
+   %          - Judith Torney-Purta, <http://www.nie.edu.sg/research-publications/cieclopediaorg/cieclopediaorg-a-to-z-listing/Judith-Torney-Purta>
+
+\subsection{Social, Economic, and Cultural Contexts of Development}
+
+       % * [Panel study on income dynamics](http://psidonline.isr.umich.edu/)
+       %  * [NIH study of early child care and youth development (SECCYD)](https://www.nichd.nih.gov/research/supported/Pages/seccyd.aspx)
+       %  * [Family Life Project](http://flp.fpg.unc.edu/)
+       %  + Normative vs. perturbed development
+       %      * Bucharest Early Intervention Project (BEIP), <http://www.childrenshospital.org/beip>
+       %      * NPR story, <http://www.npr.org/blogs/health/2014/02/20/280237833/orphans-lonely-beginnings-reveal-how-parents-shape-a-childs-brain>
+       %      * Ros Picard, ASD
+
+\section{The Future of Big Data}
+
+\subsection{Technical}
+
+\subsubsection{Collecting data with New technologies, data streams}
+        % * Social media
+        %     * Twitter, Facebook, Snapchat, etc.
+        % + Other web-based data collection tools
+        %     * Lookit
+        %     * Tablets
+        %     * Portable devices
+
+\subsubsection{Coding and analyzing big data}
+        % * Audio
+        % * Video
+        % * Surveys
+        % * Physiological data streams
+        % * Geo-location
+
+\subsection{Storing and sharing big data}
+        % * Where to store
+        % * What/when to share
+        % * How to share
+        % * NDAR
+        % * Dataverse
+        % * ICPSR
+        % * Databases of datasets
+        % * International Cross Time Cross System Dataset (XTXS), <http://www.intledstatsdatabase.org/>
+        % * APA's list, <http://www.apa.org/research/responsible/data-links.aspx>
+        %         * Domain-specific
+        %     - NDAR, etc.
+        %     - MacArthur Network
+        % * Domain-general
+        %     - UNC
+        %     - NYU, Berkeley, Washington, big data science centers
+        %     - PSU/Databrary
+        %     - Michigan
+
+\subsection{Conceptual and Theoretical}
+
+\subsubsection{Ethics}
+        % * Privacy
+        %     - FERPA
+        %     - HIPAA
+        %     - Differing standards across countries
+        %     - Commercial vs. academic research practices, cultures
+        %     - "Linking" data improves potential inferences, but increases privacy risk.
+        %     - Can minors consent to "indefinite" data storage?
+        % * Security
+        %     - Consent
+        %         + Open Humans Project, Personal Genome Project
+        %         + Databrary
+
+\subsubsection{Challenges of conducting big data developmental research}
+     %    * Cohort effects, development is developing
+     %    * What is normative? What is not?
+     %    * Instruments/measures public and open and free vs. private and closed and expensive
+     % Most of psychology (especially developmental?) is WEIRD
+    	% - How do large scale patterns arise from micro processes
+    	% - The end of theory? [^5], [^6], Chris Anderson.
+    	% - Questions for Big Data (boyd & Crawford), [^7] 
+    	% - Social Sciences are underpowered, most research findings are false. Ioanidis. [^9]. Center at Stanford on research methodology. METRICS. [^10]
+
+\section{Conclusion}
+
+\bibliography{big-data}
+
+\end{document}
