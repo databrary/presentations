@@ -21,10 +21,10 @@ Any opinions, findings, and conclusions or recommendations expressed in the mate
 
 \section{Introduction}
 
-A brash new kid has moved in down the street, and she has stolen some limelight from the old guard.
+A brash new kid has moved in down the street, and she has stolen the limelight from the old guard.
 She's a data scientist, and she's teaching the old dogs of statistics some new tricks about how to detect, describe, and visualize patterns in complex sets of data.
 Like successful newcomers in many fields, data scientists build on some well-established ideas and tools, but combine and apply them in new ways to new problems \cite{Press2013b}.
-And, like many upstarts in recent memory, data scientists have ridden the wave created by the massive growth in the availability of information over the internet.
+And, like many upstarts in recent memory, data scientists have ridden the wave created by the massive growth in the availability of information over the internet \cite{Borgmann2015}.
 In this paper, I will focus on how the increased availability of and interest in analyzing large, complex data sets has influenced the study of human development.
 I will begin by discussing the recent history of ``big data" and how, in principle, it has implications for developmental science.
 Then, I will survey a set of case studies that illustrate how large, complex data sets have been and are being used currently.
@@ -32,46 +32,50 @@ To close, I will discuss a range of issues that the emergence of ``big data" app
 
 \subsection{``Big Data" is big}
 
-When the government notices a cultural phenomenon, it is often well-established. 
+``Big data'' has become a significant cultural phenomenon \cite{borgman_big_2015}, with frequent feature articles in the popular \cite{lohr_big_2012, Marcus2013} and specialist press \cite{HBR2015, Press2013a}.
+While much of the public attention focused on big data concerns the influence of social media \cite{meyer_everything_2014}, impacts on economic development \cite{HBR2015} or on data security breaches \cite{Vinton2015}, the topic has also garnered the attention of government officials \cite{NSFBigData}, and private foundations \cite{ArnoldFdnEvidence, GatesFdn, MooreFdn} with interests in funding scientific research.
 In March 2012, the U.S. Obama Administration announced an initiative to spend \$200 M dollars on a ``big data'' research and development (R\&D) initiative \cite{Gianchandani2012, Obama2012} with the expressed intent of applying data science techniques to large collections of digital data in order ``to solve some of the Nation's most pressing challenges..." \cite{Obama2012}.
 The press release that accompanied the announcement \cite{Obama2012} highlighted some of the big data initiatives already or soon-to-be underway at the federal level, and these include the U.S. National Science Foundation (NSF), U.S. National Institutes of Health (NIH), the Departments of Energy and Defense and the U.S. Geological Survey (USGS).
 The European Union (EU) has also taken public positions \cite{EU2013} about the importance of data to fostering social and economic well-being and has made it a priority to grant more open public access to data sets collected or managed by government entities \cite{EU2015}.
 These potential benefits for open access to public data extend to governments in the developing world \cite{Malik2015}, and to state and local governments in the U.S.
 For example, Indiana has embarked on an effort to reduce infant mortality using big data \cite{Ravindranath2014}.
-Notwithstanding the promises of big data to improving public well-being, governments recognize that privacy concerns loom large \cite{Obama2014}, a topic we will revisit in later sections.
-For researchers, the promise of government interest in big data extends beyond potentially new or expanded funding sources, such as the NIH's Big Data to Knowledge Initiative \cite{BD2K2015} or the now closed National Children's Study \cite{NCS2015}.
-It means potentially new or more widely available or readily accessible data sources accompanied by more stringent requirements for open data sharing \cite{NIMH2015, NSF2011}.
-We will revisit these topics again, as well.
 
-Clearly, big data looms large in the minds of public officials whose agenciesfund most research on human development.
-In recognizing this, we note that the recent focus on big data has a history longer than the 21st century \cite{Press2013a}.
-Indeed, developmental scientists have long recognized the importance of collecting and sharing data sets that are big along at least one dimension -- the number of individuals, number of time points sampled, or the number of measures collected.
-In turn, researchers in developmental science have continued to pioneer advanced analytical techniques that unpack and explain developmental phenomena across multiple levels of analysis and across wide-ranging timescales \cite{CDS2014, QuantDev}.
-Developmental scientists have also been at the vanguard of efforts to create ways to share research data that preserve privacy and uphold ethical research principles \cite{Adolph2012, AERA2011, AERAVideo2015, Bakeman2011, Databrary2015}.
+Notwithstanding the promises of big data to improving public well-being, governments recognize that privacy and security concerns loom large \cite{Obama2014, Vinton2015} and must be addressed to fully realize the promise of big data science, especially in fields focused on human well-being.
+For researchers, the promise of government interest in big data extends beyond potentially new or expanded funding sources \cite{NSFBigData}, such as the NIH's Big Data to Knowledge Initiative \cite{BD2K2015} or the now closed National Children's Study \cite{NCS2015}.
+It means potentially new or more widely available or readily accessible data sources in open respositories \cite{databrary.org, dataverse.org, ICSPR, macwhinney_childes_2001} accompanied by more stringent requirements for open data sharing from funders \cite{NIMH2015, NSF2011, GatesFdn} and scientific publication outlets \cite{nosek_promoting_2015}.
+At the same time, the collection, storage and open sharing of large data sets about pose significant data management challenges that may require changes in technology use \cite{ProjectJupyter, osf} and scientific practice, including closer collaboration between researchers and librarians and information specialists with expertise in data management, storage and long-term preservation \cite{gordon_researcher-library_2015, lynch_big_2008}.
+We will revisit these topics later.
+
+On the other hand, developmental scientists have long recognized the importance of collecting and sharing data sets that are big along at least one dimension -- the number of individuals, number of time points sampled, or the number of measures collected \cite{macwhinney_childes_2001}.
+In turn, researchers in developmental science continue to pioneer advanced analytical techniques that unpack and explain developmental phenomena across multiple levels of analysis and across wide-ranging timescales \cite{bakeman_sequential_2011, CDS2014, QuantDev}.
+Developmental scientists have also been at the vanguard of efforts to create ways to share research data that preserve privacy and uphold ethical research principles \cite{Adolph2012, AERA2011, AERAVideo2015, Asilomar2014, Databrary2015}.
+Accordingly, the developmental research community may be especially well-positioned to turn big data into deep insight.
 
  \subsection{What is big data?}
 
-    % + Three V's [^1],[^2]
-    %    + Volume
-    %    + Velocity
-    %    + Variety
-    % + Add
-    % 	+ variability
-    % 	+ complexity
-    % + Data types
-    % 	+ text, numeric
-    % 	+ image
-    % 	+ audio, video streams
-   	%  + Issues 
-    % 	- Data that cannot be processed by traditional databases or systems
-    % 	- Structured or unstructured data
-   	%  	- creation, capture, storage, sharing, analysis, transfer, visualization, privacy
-   	%  	- 2.5 exabytes (10^8 bytes)/day [^3]
-   	%  	- descriptive statistics; inferential; non-linear models; time series.
-   	%  - In developmental science, this may mean
-    % 	+ Numbers of participants
-    % 	+ Numbers of time points
-    % 	+ Numbers of measures
+Doug Laney \cite{laney01controlling3v} was the first to describe the dimensions of data streams that make them especially ``big'' and which accordingly merit special consideration \cite{ibm_2015}: volume, velocity, and variety.
+So, data streams may be large in quantity, change rapidly, or consist of many distinct components.
+Of course, these dimensions or general statements about the total quantity of data generated per day \cite{ibm_2015} make little sense outside of a specific research context.
+What is high volume data to a a developmental psychologist, an archive of 10 terabytes (TB) of video and flat-file data, for example, is tiny to a physicist working on the Large Hadron Collider (LHC) that generates 30 petabytes in a year \cite{CERN_LHC}.
+Similarly, the measure of volume matters.
+The Inter-university Consortium for Political and Social Research (ICPSR) \cite{ICSPR}, one of the largest data repositories for data from the social sciences, consists of more than 500,000 files in 16 specialized data collections \cite{}
+Yet, until the recent acquisition of video data from the Gates Foundation-funded Methods of Effective Teaching (MET) Project \cite{METProject}, the large number of files in the repository totalled about 10 TB of digital storage.
+The aspects of volume most pertinent to developmental science include the number of participants or families and the number of measurement time points.
+Similarly, the aspects of data velocity most relevant to developmental researchers are those related to the frequency of measurement.
+In developmental research, velocity can span many orders of magnitude, from physiological measurements collected at millisecond time scales to longitudinal research spanning years or decades.
+Variety encompasses both the range of measurement types employed across developmental research: biological, behavioral, contextual, and cultural/historical.
+To the ``three Vs'', variability, or the rate of change over time, and complexity, the mutual interdependence of individual measures, might also be added.  
+
+Conventional conceptualizations of data focus on text or numeric information, but increasingly images, and audio \cite{Mehl} and video recordings have become part of the mix of data streams collected by researchers and others to better understand human behavior.
+Video in particular captures the complexity and richness of behavior unlike any other measure, and so video provides the main source of information for many researchers who study behavior in laboratory, classroom, or museum contexts. 
+Images and recordings are both larger, in file size, and denser than text or flat-file data. 
+Thus, developing tools that enable the storage and sharing of images, including brain images, audio, and video data has become a high priority for researchers and research funders \cite{Databrary2015, openfmri.org} and, of course, sharing these materials for non-research entertainment uses has become astonishingly popular \cite{YouTube2015}.
+New technologies, specifically the widespread use of smart mobile devices with embedded sensors, promises to make new big data streams about individual participants' locations, physiological states \cite{Picard}, activity patterns, and momentary cognitive \cite{Sliwinski}, and emotional states broadly available to researchers.
+Moreover, new web-based tools like Amazon's Mechanical Turk (http://www.mturk.com) or Apple's HealthKit (http://www.applehealthkit.com/) will make it possible for research teams to collect data from large numbers of participants in short periods of time, significantly enlarging the volume, velocity, and variety available for analysis.   
+Fundamentally, big data are those that cannot readily be processed by traditional databases or systems that are widely familiar to developmental researchers.
+
+Data may be big in any number of ways and present themselves in structured or unstructured forms, but they pose significant new challenges to traditional avenues for data creation, capture, storage, sharing, analysis, transfer, visualization, and analysis.
+Big data may also magnify the challenges facing researchers in maintaining participant privacy, in part because the more data that are collected, the more likely it is that individual identities can be discovered \cite{sweeney_identifiability}.
 
 \subsection{Big data about what?}
 
