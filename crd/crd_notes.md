@@ -49,7 +49,7 @@ Databrary is the solution to these challenges. But, even if we create Datarbary 
 - Started out thinking about what are the right interview questions about a service that they wanted. That didn't work as well as it could have, turned to just asking them how they currently work watching how researchers worked, and what forms they used.
 - Also collected a sampling of data from these labs and spent a good amount of time analyzing how to generalize across all of them.
 - Create composite user stories based on interviews with research labs about the service that they would need.
-- how difficult is it for information specialists to work in a science they are unfamiliar with? (sheer_curation_full) - what we needed more of was domain experts that could help interpret what these researchers are doing.
+
 ####Turning information into a rough design
 - Implementation of sheer curation approach
   - design a repository with the help of NYU Libraries and ITS
@@ -68,3 +68,4 @@ Databrary is the solution to these challenges. But, even if we create Datarbary 
 - Continue engagement with researchers (user experience testing)
 - Build, enhance, and improve based on continued interaction with researchers.  
 - Ongoing sheer curation is informed by strategic post hoc curation and ingest interventions (a researcher has a bulk upload or bulk edit - or has some encoded data that they themselves aren't able to add themselves without considerable effort, e.g. data from video coding software) - curation-upload-as-you-go is a feedback feedback loop.
+- How difficult is it for information specialists to work in a science they are unfamiliar with? (sheer_curation_full) - what we needed more of was domain experts that could help interpret what these researchers are doing.
