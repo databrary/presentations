@@ -1,6 +1,6 @@
 #TITLE OF CHAPTER
 
-###ABSTRACT
+###ABSTRACT <!-- PROBABLY WILL NOT SUBMIT WITH THIS, JUST HELPS TO ORGANIZE -->
 
 Curation of video data used in research of human behavior has a very specific set of use cases and challenges.
 Video of human behavior is more readily understandable on a raw viewing than are opaque datasets of encoded variables and values. 
@@ -26,9 +26,9 @@ Housed at New York University and with considerable support by NYU Libraries and
 This service aims to do so with the specific purpose of allowing the sharing and reuse of this data within a community of authorized colleagues. 
 
 A research data repository is only as good as the data it houses, and so a primary mission of Databrary is facilitating the contribution of research data by data owners.
-Traditional, post-hoc curation is a necessary component of this process, but it does not scale well and is very time consuming for researchers and repository staff (giarlo etc.).
-Addiotionally, it fails to meet the requirements of data management practices vis-a-vis new grant funding mandates [CITE (and reword)].
-This is why Databrary offers, in tandem with post-hoc curation, active curation, or the giving the ability for researchers to curate their own data as they collect it in the lab.
+Traditional, post-hoc curation is a necessary component of this process, but it does not scale well and is very time consuming for researchers and repository staff [GIARLO etc.].
+This is why Databrary offers active curation alongside post-hoc curation. 
+Through active curation, we allow researchers to curate their own data as they collect it in the lab, providing them with not only a fully shareable dataset at the end of their research, but also with a set of tools that also satisfy data management plan mandates by government funding agencies like the NSF and NIH [CITE].
 
 ##TOWARDS ACTIVE CURATION 
 Determing the path towards active curation of research data started with understanding how researchers in this domain currently work with their video data. 
@@ -36,38 +36,39 @@ We began by enlisting the help of a handful of labs that collected video data to
 We developed a set of interview questions that attemtpted to elicit what these researchers would want from a service that helped them share their data. 
 While these interviews were helpful, it was not until we began to ask how they currently work and observed the practices and tools they currently employed in their labs that we began to understand what kind of service would best suit this domain.
 
-In working with these labs, we also collected a sampling of data to compare them side by side. 
-We realized early on that research in this domain is characterized by a diversity of practices from lab to lab. 
-This results also in a diversity of datasets in what their labs chose to focus on [TOO VAGUE]. 
-In comparing data from different labs, we also understood that the data model and interface design requirements would have to be flexible enough to include a diversity of datasets [???]. 
-By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a system that accomodated a diversity existing practices, employing interfaces they were already familiar with and setting up a data model that reflected how researchers viewed the different components of the data they collected.
+We also collected a sample of their data to determine similarities and differences between them. 
+This lead us to realize early on that research in this domain is characterized by a diversity of practices from lab to lab. 
+As a result, datasets are heterogenously described and organized, which increases the time required to prepare these data for bringing into a repository after the fact.  
+Active curation addresses this problem by creating a standardized method for bringing different types of datasets to begin with.
+By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a system that accomodated a diversity of existing data management practices, employing interfaces researchers are already familiar with, and all undergirded by a data model that reflected how researchers viewed the different components of the data they collected [SENTENCE FEELS TOO REDUNDANT].
 
 ##IMPLEMENTATION 
 ###Data Model
-In order for this tools to make sense, we had to adopt langauage and research organizing principles from our target community. 
-Researchers call the analytic units of their studies sessions [BAKEMAN]. Within each session, we assign the general term `record` to any piece of metadata that describes a session, including the participants, activities, and research defined categories within them.
+In order for these tools to make sense, we had to adopt language and research organizing principles from our target community. 
+Researchers call the analytic units of their studies sessions [BAKEMAN]. Within each session, we assign the general term `record` to any piece of metadata that describes a session, including the participants, activities, and research defined categories within them [IS THIS BASED ON ANY OBSERVATIONS?].
 
 ###Interfaces
-More importantly, we needed to craft interfaces that were transparent and familiar to our community, based on what we observed and understood from working closely with them. 
+More importantly, we needed to craft interfaces that were transparent and familiar to our community. 
 Spreadsheets are a common tool employed across labs to capture session metadata.
-As such, the web application view to upload, modify, and manage session metadata takes the form of a spreadsheet view.
+As such, the web application view to upload, modify, and manage session metadata takes the form of a spreadsheet view, with features like auto-completion, field pre-population, and suggested entries added in for convenience.
 Rows of the spreadsheet correspond to an individual session, for instance, a date, set of participants(s) and participant consents that comprise a session of data collection.
 The columns correspond to basic categories of metadata (e.g., participant details, study conditions and tasks, location, language of the participant) which will help researchers manage their data and assist other researchers in finding videos of interest to them. 
-Categories are fungible and can be applied as appropriate to the individual dimensions of the researchers study [???]. 
-This is underpinned [WHAT IS?] by a design decision to use a minimal, generalized set of metadata rather than an exhaustive and over specific metadata requirement. 
-This is intentional asit allows for a greater number of eligible datasets to be cataloged in Databrary, as well as not to act as a deterrent to contributor participation.
+Categories are fungible and can be applied as needed to the researcher's study. 
+Databrary is motivated by the design decision to use a minimal, generalized set of metadata rather than an exhaustive and over specific metadata requirement. 
+This is intentional as it allows for a greater number of eligible datasets to be cataloged in Databrary, as well as not to act as a deterrent to contributor participation. [NEED THESE LAST TWO SENTENCES?]
 
-In addition to allowing researchers to add and modify metadata through this interface, we have also added tools that easily enhance their ability to work with their data that might not be readily available to some users of spreadsheets.
-Allowing users the ability to switch the view of the spreadsheet based on a category of interest gives them the power to understand their data easily in new ways at the click of a button. 
+In addition to allowing researchers to add and modify metadata through this interface, we have also added tools that easily enhance their ability to work with their data.
+Allowing users the ability to switch the view of the spreadsheet based on a category of interest gives them the power to understand their data easily in new ways at the click of a button.
+As such, active curation not only allows researchers to add their data to a repository as they work with it, but it also provides them ways to understand their data better as they collect it. 
 
-Because we observed that an overwhelming majority of researchers in this field use desktop video coding software to annotate videos for specific behaviors, events, or themes of interest to their study, we implemented a view for managing the data and metadata in sessions that is similar to this software.
+Because we observed that an overwhelming majority of researchers in this field use desktop video coding software to annotate videos for specific behaviors, events, or themes of interest in their study, we implemented a view for managing the data and metadata in sessions that is similar to this software.
 On the timeline, researchers can stream video files and visualize how files, session metadata, and other files relate to eachother temporally and thematically. 
-To allow researchers to add value to their data, they can also use this interface to annotate video files on the whole, or annotate specific segments of video files with keywords and tags marking behaviors, phenomena. 
-Not only does this enhance the data, it also helps other researchers to find and make sense of what exists in these data.
+To allow researchers to add value to their data, they can also use this interface to annotate video files on the whole, or annotate specific segments of video files with keywords and tags. 
+Not only does this enhance the data, it also helps other researchers to find and make sense of what is contained in Databrary.
 
 ##NEXT STEPS 
-While we have gathered anecdotal evidence that this approach to active curation resonates with our intended community, Databrary is still being actively developed.
-Now that Databrary has been in use by it's intended community for almost a year, we expect to do more concerted user experience testing, getting a better understanding of what is working, what needs improvement, and what is missing. 
+Databrary is still being actively developed.
+Now that it has been in use by its intended community for almost a year, we expect to do more organized user experience testing, getting a better understanding of what is working, what is missing, and what needs improvement. 
 At the same time, by continuing to perform staff guided curation where gaps in active curation lack features for bulk uploads or bulk edits of metadata, we get a better understanding of what feature enhancements to build into active curation to allow more of these interactions to be completed by the data owners themselves.
 
 
