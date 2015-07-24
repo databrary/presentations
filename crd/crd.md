@@ -15,30 +15,33 @@ We found that this is an effective way forward and provides a useful model for h
 
 ##INTRODUCTION 
 
-Video, as a resource for researching human behavior, has great potential for sharing and reuse. 
-First, video is fairly self-describing compared to encoded, tabular data in that it is already apparent what is happening in a clip upon viewing. 
-Video recordings also contain a wealth of information, such that two researchers can sit down with the same video and explore two different hypotheses about human behavior.  
+Researchers in the developmental and learning sciences make abundant use of video for studying human behavior and learning. 
+Video of human subjects performing experimental tasks are coded for behaviors, themes, and events of interest.
+These recordings are often the 'raw' data that are used to generate quantitative or qualitative data that is used for analysis, visualization and drawing inferences. 
+Video, as a medium for analyzing and understanding human behavior, holds great potential for reuse that is unique from other forms of data for two main reasons. 
+First, video is largely because video is fairly self-describing--compared to say, encoded, tabular data--it is readily transparent what is happening in a clip. 
+Second, video recordings can contain a wealth of information that could be extracted--ostensibly, two researchers could use the same videos to explore two entirely different phenomena about human behavior.
 
-Researchers in the developmental and learning sciences make abundant use of video for studying human behavior. 
-Using video of human subjects performing experimental tasks, they code these clips for behavior, themes, and events of interest to generate data they might analyze, visualize, and draw conclusions from. 
+<!--this needs a better transition-->
 Databrary is a video library for researchers in this domain. 
-Housed at New York University and with considerable support by NYU Libraries and Information Technology Services, Databrary provides software and curation services to help researchers in this domain store, share, and manage their video data, metadata, adn related research documents.
-This service aims to do so with the specific purpose of allowing the sharing and reuse of this data within a community of authorized colleagues. 
+Housed at New York University and with considerable support by NYU Libraries and Information Technology Services, Databrary provides software and curation services to researchers in this domain to  store, share, and manage their video data, metadata, and related research documents and to reuse shared data.
+This service aims to do so with the express goal of enabling open sharing and reuse of this data within a community of authorized colleagues. 
+<!--let's talk about how to jazz up this description, i get that this is for the library community and we should focus on the curational and data management aspects of Databrary, but i think there is more to say here-->
 
-A research data repository is only as good as the data it houses, and so a primary mission of Databrary is facilitating the contribution of research data by data owners.
-Traditional, post-hoc curation is a necessary component of this process, but it does not scale well and is very time consuming for researchers and repository staff [GIARLO etc.].
-This is why Databrary offers active curation alongside post-hoc curation. 
-Through active curation, we allow researchers to curate their own data as they collect it in the lab, providing them with not only a fully shareable dataset at the end of their research, but also with a set of tools that also satisfy data management plan mandates by government funding agencies like the NSF and NIH [CITE].
+A research data repository is only as good as the data that has been contributed, so a primary mission of Databrary is facilitating the contribution of research data by data owners so that the data may be shared and available for other researchers to reuse.
+Post-hoc curation is the typical method of contributing data <!--LS cut: "necessary component of this process"... what is 'this process, contributing?-->, but it is cumbersome. It often requires significant effort from researchers and repository staff [GIARLO etc.]. <!--LS: more could be said here... researchers must revisit data they are finished with... but i will leave for now-->
+Because of this, Databrary has designed the system to enable active curation alongside post-hoc curation. 
+Active curation allows researchers to organize and manage their own data as they collect it in the lab, which provides researchers with a dataset that is ready for sharing at the end of their study with little to no additional curational burden. Moreover, the process itself provides researchers with tools that satisfy data management plan mandates by government funding agencies like the NSF and NIH [CITE]. <!--not sure it's obvious how UAYG (the data organization aspect) helps satisfy DMPs. if anything, the fact that it is shared or shareable is what satisfies the requirements. Leaving for now because I think you're on to something and it could be massaged.-->
 
 ##TOWARDS ACTIVE CURATION 
-Determing the path towards active curation of research data started with understanding how researchers in this domain currently work with their video data. 
+Determining the best way to build active curation tools for this community started with understanding the needs of researchers in the target domain and how they work with their video data. 
 We began by enlisting the help of a handful of labs that collected video data to study human development. 
-We developed a set of interview questions that attemtpted to elicit what these researchers would want from a service that helped them share their data. 
-While these interviews were helpful, it was not until we began to ask how they currently work and observed the practices and tools they currently employed in their labs that we began to understand what kind of service would best suit this domain.
+We developed a set of interview questions that attempted to elicit what these researchers would want from a service that helped them share their data.
+These interviews were informative to some extent, but it was not until we sought to understand their current practices and the tools they use (or lack thereof) in their labs that we began to understand what kind of service <!--service? maybe framework?--> would best suit this domain.
 
 We also collected a sample of their data to determine similarities and differences between them. 
 This lead us to realize early on that research in this domain is characterized by a diversity of practices from lab to lab. 
-As a result, datasets are heterogenously described and organized, which increases the time required to prepare these data for bringing into a repository after the fact.  
+As a result, datasets are heterogenously described and organized, which increases the time required to prepare these data for bringing into a repository after the fact.
 Active curation addresses this problem by creating a standardized method for bringing different types of datasets to begin with.
 By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a system that accomodated a diversity of existing data management practices, employing interfaces researchers are already familiar with, and all undergirded by a data model that reflected how researchers viewed the different components of the data they collected [SENTENCE FEELS TOO REDUNDANT].
 
