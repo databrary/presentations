@@ -1,4 +1,4 @@
-#TITLE OF CHAPTER
+#Providing Self Curation for Video Research Data
 
 ##INTRODUCTION 
 
