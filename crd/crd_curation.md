@@ -31,7 +31,7 @@ This lead us to realize early on that research in this domain is characterized b
 As a result, datasets are heterogeneously described and organized, which increases the time required to prepare these data for ingesting into a repository after the fact.
 Active curation addresses this problem by creating a standardized method for bringing in different types of datasets to begin with.
 By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a user-facing repository that accommodated a diversity of existing data management practices. 
-This exploration resulted in a system which uses a data model that reflects how researchers already view the different components of their data and employs interfaces with which researchers are already familiar.
+This exploration resulted in a system that uses a data model that reflects how researchers already view the different components of their data and employs interfaces with which researchers are already familiar.
 
 ##IMPLEMENTATION 
 ###Data Model
