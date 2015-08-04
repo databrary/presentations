@@ -6,7 +6,7 @@ Researchers in the developmental and learning sciences make abundant use of vide
 Video of human subjects performing experimental tasks are coded for behaviors, themes, and events of interest.
 These recordings are used to generate quantitative or qualitative data that are used for analysis, visualization, and drawing inferences.
 Video, as a medium for analyzing and understanding human behavior, holds great potential for reuse that is unique from other forms of data for two main reasons.
-First, because video is fairly self-describing--compared to say, encoded, tabular data--in that it is more readily apperent what is happening in a video clip.
+First, because video is fairly self-describing--compared to encoded, tabular data--in that it is more readily apparent what is happening in a video clip.
 Second, video recordings contain a wealth of information that could be extracted--ostensibly, two researchers could use the same videos to explore two entirely different phenomena about human behavior.
 
 Databrary, a web accessible video library for researchers in the developmental and learning sciences, was created to allow for more seamless sharing and reuse of their research data. 
@@ -28,9 +28,9 @@ These interviews were informative to some extent, but it was not until we observ
 
 We also collected a sample of their data to determine similarities and differences between them. 
 This lead us to realize early on that research in this domain is characterized by a diversity of practices from lab to lab. 
-As a result, datasets are heterogenously described and organized, which increases the time required to prepare these data for ingesting into a repository after the fact.
+As a result, datasets are heterogeneously described and organized, which increases the time required to prepare these data for ingesting into a repository after the fact.
 Active curation addresses this problem by creating a standardized method for bringing in different types of datasets to begin with.
-By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a user-facing repository that accomodated a diversity of existing data management practices. 
+By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a user-facing repository that accommodated a diversity of existing data management practices. 
 This exploration resulted in a system which uses a data model that reflects how researchers already view the different components of their data and employs interfaces with which researchers are already familiar.
 
 ##IMPLEMENTATION 
@@ -38,7 +38,7 @@ This exploration resulted in a system which uses a data model that reflects how 
 In order for these tools to make sense, we had to adopt language and research organizing principles from our target community. 
 These researchers call the analytic units of their studies 'sessions' (Bakeman & Quera, 2012). 
 Within each session, we assign the general term 'record' to any piece of metadata that describes a session. Records may include the participants, activities, and research defined study groups within them. 
-The pre-defined records available in ther upload interface were drawn from what we observed to be the most common pieces of metadata across multiple sample labs.
+The predefined records available in the upload interface were drawn from what we observed to be the most common pieces of metadata across multiple sample labs.
 
 ###Interfaces
 More importantly, we needed to craft interfaces that were transparent and familiar to our community. 
@@ -57,7 +57,7 @@ As such, active curation not only allows researchers to add their data to a repo
 [FIGURE 2 HERE - task_view_vol_98.png. CAPTION: Spreadsheet metadata interface displaying the task view (Fabricius, 2014). Users can quickly switch between views to see a summary of how many sessions contain a certain record.]
 
 Because we observed that an overwhelming majority of researchers in this field use desktop video coding software to annotate videos for specific behaviors, events, or themes of interest in their study, we implemented a view for managing the data and metadata in sessions that is similar to this software (See Figure 3).
-On the timeline, researchers can stream video files and visualize how files, session metadata, and other files relate to eachother temporally and thematically. 
+On the timeline, researchers can stream video files and visualize how files, session metadata, and other files relate to each other temporally and thematically. 
 Researchers can also use this interface to annotate video files on the whole, or annotate specific segments of video files with keywords and tags. 
 Not only does this further enrich the  metadata, but it also helps other researchers to find and make sense of what is contained in Databrary on a granular level.
 
