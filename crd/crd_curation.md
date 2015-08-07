@@ -30,6 +30,7 @@ We also collected a sample of their data to determine similarities and differenc
 This lead us to realize early on that research in this domain is characterized by a diversity of practices from lab to lab. 
 As a result, datasets are heterogeneously described and organized, which increases the time required to prepare these data for ingesting into a repository after the fact.
 Active curation addresses this problem by creating a standardized method for bringing in different types of datasets to begin with.
+Furthermore, we acknowledged that in order to make a successful repository, we needed to be more closely engaged with how our intended community of researchers and how they already conducted their work (Martinez-Uribe & Macdonald, 2009).
 By understanding how researchers collect, organize, and analyze these videos and metadata, we were able to fashion a user-facing repository that accommodated a diversity of existing data management practices. 
 This exploration resulted in a system that uses a data model that reflects how researchers already view the different components of their data and employs interfaces with which researchers are already familiar.
 
@@ -70,14 +71,18 @@ At the same time, by continuing to perform staff-guided curation where active cu
 
 ##REFERENCES
 
-Adolph, K. (2014). Social and motor play on a playground. Databrary. Retrieved July 31, 2015 from http://dx.doi.org/10.17910/B77P4V.
+Adolph, K. (2014). Social and motor play on a playground. Databrary. Retrieved August 10, 2015 from http://dx.doi.org/10.17910/B77P4V.
 
 Bakeman, R., & Quera, V. (2012). Behavioral observation. In H. Cooper, P. M. Camic, D. L. Long, A. T. Panter, D. Rindskopf, & K. J. Sher (Eds.), APA handbook of research methods in psychology, Vol 1: Foundations, planning, measures, and psychometrics (pp. 207-225). Washington, DC, US: American Psychological Association. doi: 10.1037/13619-013
 
-Fabricius, W. (2014). Absence of Construct Validity in Standard False Belief Tasks. Databrary. Retrieved July 31, 2015 from http://dx.doi.org/10.17910/B7Z300.
+Databrary (2015). Databrary: An Open Data Library for Developmental Science. Retrieved August 10, 2015 from http://databrary.org/
+
+Fabricius, W. (2014). Absence of Construct Validity in Standard False Belief Tasks. Databrary. Retrieved August 10, 2015 from http://dx.doi.org/10.17910/B7Z300.
 
 Federer, L. (2013). The librarian as research informationist: a case study (English). Journal of the Medical Library Association, 101(4), 298-302.
 
+Giarlo, M. J. (2013). Academic Libraries as Data Quality Hubs. Journal of Librarianship and Scholarly Communication 1(3):eP1059. doi: 10.7710/2162-3309.1059
+
 Heidorn, P. B. (2011). The Emerging Role of Libraries in Data Curation and E-science. Journal of Library Administration, 51(7/8), 662-672. doi: 10.1080/01930826.2011.601269
 
-Giarlo, M. J. (2013). Academic Libraries as Data Quality Hubs. Journal of Librarianship and Scholarly Communication 1(3):eP1059. doi: 10.7710/2162-3309.1059
+Martinez-Uribe, L., & Macdonald, S. (2009) User Engagement in Research Data Curation. In  Borbinha, J.L., Kapidakis, S., Papatheodorou, C., Tsakonas, G. (Eds.), Research and advanced technology for digital libraries: 13th European Conference, ECDL 2009, Corfu, Greece, September 27 - October 2, 2009. Proceedings. (pp. 309-314) Berlin: Springer-Verlag. doi: 10.1007/978-3-642-04346-8
