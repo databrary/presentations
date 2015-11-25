@@ -8,6 +8,12 @@ Code4LibNYC Databrary Presentation Outline
 	- Share the wealth, a boon to the community
 	- Changing how research communities validate and reuse knowledge and materials
 
+0. Though the current status of sharing is a different picture
+	
+	- Few incentives to share
+	- Completely different way of doing things (extra work)
+	- Researchers do not have the time to do all the preparations for sharing.
+
 0. A Specific type of Data and Data collecting community
 
 	- Child development research
@@ -36,7 +42,6 @@ Code4LibNYC Databrary Presentation Outline
 	- Also, human subject data has a lot of privacy concerns that need to be observed.
 	- These assets are in any type of format, physical shape/level of corruption
 	- We get datasets in various stages of organization, or not yet organized
-	- Researchers do not have the time to do all the preparations for sharing. 
 	- What to keep and why, at what point in RDM do you step in and start collecting, where do you draw the line?
 
 0. Implications for other types of research data management in libraries (what we learned)
