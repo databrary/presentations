@@ -11,7 +11,6 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #bbb;
   background-color: #ddd; }
 
 .reveal {
@@ -50,10 +49,13 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 3.77em;
+  color: #97D1C5; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 2.11em;
+  background-color: rgba(221, 221, 221, 0.7);
+  padding: 20px; }
 
 .reveal h3 {
   font-size: 1.55em; }
@@ -91,6 +93,16 @@ body {
   display: inline-block;
   text-align: left;
   margin: 0 0 0 1em; }
+
+.reveal ul.raised {
+  background-color: rgba(221, 221, 221, 0.7);
+  padding: 20px; 
+  margin: 0;
+}
+
+.reveal ul.raised li {
+  margin: 0 0 0 1em;
+}
 
 .reveal ol {
   list-style-type: decimal; }
