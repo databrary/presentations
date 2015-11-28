@@ -4,7 +4,10 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{array} % for table
 \usepackage[hyphens]{url}
+\usepackage{pdflscape}
+
 %\usepackage{hyperref}
 % \hypersetup{breaklinks=true}
 
@@ -15,7 +18,7 @@
 \affiliation{{The Pennsylvania State University}, {The Databrary Project}}
 
 \abstract{The use of the term ``big data'' has grown substantially over the past several decades and is now widespread. 
-In this review, I ask what makes data ``big'' and what implications of size, density, or complexity of datasets have for the science of human development.
+In this review, I ask what makes data ``big'' and what implications size, density, or complexity of datasets have for the science of human development.
 A survey of existing data sets illustrates how existing large, complex, multi-level, and multi-measure data can reveal the complexities of developmental processes.
 At the same time, significant technical, policy, ethics, transparency, cultural, and conceptual issues associated with the use of big data must be addressed.
 Most big developmental science data are currently hard to find and cumbersome to access, the field lacks a culture of data sharing, and there is no consensus about who owns or should control research data.
@@ -36,19 +39,19 @@ I thank Karen E. Adolph for her comments on the manuscript.}
 A search on the term ``big data'' yields more than 49 million hits on Google (\url{http://www.google.com}), more than 147,000 results on Google Scholar (\url{http://scholar.google.com}), and 14 million hits on Bing (\url{http://bing.com}).
 The results return in less than a second.
 A search of the term using Google's Ngram viewer (\url{https://books.google.com/ngrams}) that indexes terms in digitized books shows the first appearance of the term around 1900 with a steady rise in frequency from the 1950s to around 2000.
-Clearly, as measured by search engine matches of electronic documents on the Internet, scholarly documents, or digitized books, the use of the term has grown substantially over the past several decades, and is now widespread.
-Moreover, the fact that these basic statistics about a particular phrase can be determined in an instant speaks to the rapid progress in networked computing, search engines, and databases.
+Clearly, as measured by search engine matches of electronic documents on the Internet, scholarly documents, or digitized books, the use of the term ``big data'' has grown substantially over the past several decades, and is now widespread.
+Moreover, the fact that these basic statistics about the use a particular phrase can be determined in an instant speaks to the rapid progress in networked computing, search engines, and databases.
 Most of the tools that enable it have been created in the last 20 years.
-Big data has become a significant cultural phenomenon \cite{borgman_big_2015,boyd_critical_2012}, with frequent feature articles in the popular \cite{lohr_big_2012,Marcus2013} and specialist press \cite{HBR2015,Press2013a}.
+In turn, big data has become a significant cultural phenomenon \cite{borgman_big_2015,boyd_critical_2012}, with frequent feature articles in the popular \cite{lohr_big_2012,Marcus2013} and specialist press \cite{HBR2015,Press2013a}.
 
 In this review, I show how the increased availability of and interest in big data sets promises to alter the study of human development.
-I begin by asking what makes data ``big'' and the implications of size, density, or complexity of datasets for understanding human development.
-Then, I survey case studies to illustrate how large, complex, multi-level, multi-measure data sets have been used to reveal some of the complexities of developmental processes.
-I conclude by discussing key questions that big data approaches pose for the future of developmental science.
+I begin by asking what makes data ``big'' and what implications the size, density, or complexity of datasets have for understanding human development.
+Then, I review and evaluate some of the existing big datasets in developmental science.
+I conclude by discussing key questions that big data approaches pose for the future of the field.
 
-In fact, big data analyses are not especially new in developmental science.
-The field tackles questions that benefit substantially from larger, richer, more widely shared, and more readily inter-operable datasets.
-Big data does not signal the end of theory \cite{anderson_end_2008}, nor will it necessarily revolutionize scientific understanding \cite{boyd_critical_2012}. 
+We will see that big data analyses in developmental science are not especially new.
+The field tackles questions that have benefited and will continue to benefit from large, rich, widely shared, and readily inter-operable datasets.
+So, big data approaches to development do not signal the end of theory \cite{anderson_end_2008}, nor will they necessarily revolutionize scientific understanding \cite{boyd_critical_2012}. 
 Rather, significant novel insights emerging from the era of big data will depend not just on the size, density, and complexity of the datasets, but on how widely and openly data are shared, and on how readily researchers are able to combine or link datasets across levels of analysis.
 These specific innovations depend largely on small, probably manageable, but nonetheless thorny problems related to policy, scientific culture, individual researcher behavior, publisher priorities, and research funding levels.
 Thus, technology may accelerate the big data era, but the challenges it poses may turn out to be less important for advancing research in developmental psychology than changes in scientific culture.
@@ -61,12 +64,12 @@ Similarly, what constitutes big depends on how one measures volume.
 The Inter-university Consortium for Political and Social Research (ICPSR) (\url{https://www.icpsr.umich.edu}), one of the largest and oldest repositories for data from the social sciences, consists of more than 500,000 files in 16 specialized data collections.
 Yet, until the recent acquisition of video data from the Gates Foundation-funded Methods of Effective Teaching (MET) Project (\url{http://www.metproject.org}), the entire repository totaled about 10 TB of digital storage.
 
-Even more important than the quantity of information stored is the kind of information.
-Developmental science spans phenomena across multiple levels of analysis in space (from genes to geography) and time (from microseconds to millennia) all aimed at answering two questions: ``What develops?'' and  ``Why does it develop this way?''
-In seeking answers, developmental scientists have long recognized the importance of multiple, nested influences on developmental processes arising across scales \cite{elman_rethinking_1998,gottlieb_normally_1998,oyama_ontogeny_2000,vygotsky_mind_1980}.
+Even more important than the quantity of information stored is the kind.
+Developmental science spans phenomena across multiple levels of analysis in space (from genes to geography) and time (from microseconds to millennia) all aimed at answering two questions: ``What develops?'' and  ``How does development occur''?
+In seeking answers, scientists have long recognized the importance of multiple, nested influences on developmental processes arising across scales \cite{elman_rethinking_1998,gottlieb_normally_1998,oyama_ontogeny_2000,vygotsky_mind_1980}.
 Most seek to describe change in the psychological processes of individuals, groups of individuals, or families.
 Data about neighborhoods, schools, and the broader social, cultural, political and environment primarily inform thinking about the development of individual or family behavior.
-Similarly, biological data---genes, hormones, physiological responses, brain activity, body dimensions, brain structure, disease or disorder status---reveals the influence of within-person factors on changes in behavior.
+Similarly, biological data---genes, hormones, physiological responses, brain activity, body dimensions, brain structure, disease or disorder status--- are brought to bear to reveal the influence of within-person factors on changes in behavior.
 
 Consequently, the aspects of data \emph{volume} salient to most developmental scientists include the number of participants or families and/or the number of measurement time points.
 Some datasets have hundreds or thousands of participants.
@@ -79,199 +82,65 @@ In addition to the ``three Vs'', intra-individual \emph{variability} and \emph{c
 
 The collection, management, and analysis of data high in volume, velocity, variety, variability, and complexity poses significant practical challenges for data collection, capture, storage, transfer, sharing, visualization, and analysis.
 Big data magnify the challenges facing researchers in maintaining participant privacy, in part because the more data that are collected, the more likely it is that individual identities can be discovered \cite{sweeney_identifiability}.
-Big data pose theoretical challenges: For example, how do micro-scale factors influence macro-scale phenomena?
+Big data pose theoretical challenges, too: For example, how do micro-scale factors influence macro-scale phenomena?
 Nevertheless, big data offer developmental researchers the opportunity to tackle some of the most profound and vexing questions in the behavioral science---if the relations among data components can be revealed in ways that do not undermine ethical research principles.
 Realizing this promise will require greater openness and more widespread sharing of research data than current practice.
 But, researchers may draw inspiration from examples of big datasets addressing developmental questions that have already been collected, and in some cases, widely shared.
+The next section highlights several.
+
 \section{Big Datasets in Developmental Research}
-Existing big datasets in developmental science fall into one of three broad categories depending on who collected the data and what mandates or restrictions apply to who may access it.
-Many of the largest existing sources come from data collected and disseminated by government entities such as the U.S. Census Bureau and the U.S. Department of Education.
+Existing big datasets in developmental science fall into one of several broad categories depending on who collected the data, what mandates or restrictions apply to who may access it, and the diversity of measures represented.
+
+\subsection{Government-Collected and Managed Datasets}
+Many of the largest existing sources come from data collected and disseminated by government entities such as the U.S. Census Bureau.
+Table 1 summarizes information about some representative large, developmentally-focused datasets whose collection and hosting is managed by governmental entities.
+Several themes emerge from this sample.
+Datasets are large in terms of the volume of participants sampled, ranging in the thousands to tens of thousands.
+Some studies involve dozens of samples per individual over extended periods of time, and show significant variety in the measures collected.
 The collection and dissemination of these datasets is mandated by law and subject to provisions of a complex set of statutory and regulatory requirements designed to protect individual respondents' identities.
 Government-collected datasets tend to be the most open and widely available to researchers, but by their very design and legal mandate the datasets are not intended for answering questions about individuals, families, or small groups.
-Datasets collected by individual researchers or teams of researchers employed by institutions, usually colleges or universities, who are funded by government or private foundations form a second group.
-These datasets tend to be somewhat smaller in size, but significantly more varied in terms of the types of information collected, the duration or intensity of data collection, the means of collection, the extent to which data are made available to individuals outside the research team, and the impact on scholarship.
-The extent to which datasets collected by non-government research teams are shared with other researchers depends on a set of factors including institutional research ethics and data privacy policies, funder and journal requirements, and individual researcher's support for data sharing.
-Large-scale datasets collected by private entities for business purposes form a third group.
-The data collected by private entities about individuals largely concern consumer behavior although health and fitness related data are an emerging area (e.g., Fitbit; \url{http://www.fitbit.com}).  
-Commercial datasets are sometimes made available to academic researchers, but the policies that govern data access are under the control of the commercial entities that provide the services.
-\subsection{Government-collected and Managed Datasets}
-Population-based studies constitute some of the largest and most widely used datasets in developmental science.
-The National Health and Nutrition Examination Survey (NHANES; \url{http://www.cdc.gov/nchs/nhanes.htm}) began collecting data in 1959 on the health and nutritional status of U.S. infants, children, and adults. 
-The annual survey combines interviews from a geographically diverse representative sample of about 5,000 people.
-NHANES focuses on demographic, socioeconomic, dietary and health-related topics, physical examinations involving medical, dental, and physiological measurements, and laboratory tests of behavior.
-The products include standardized child growth charts and the closely associated National Youth Fitness Survey (NYFS; \url{http://www.cdc.gov/nchs/nnyfs.htm}), which reports physical activity and fitness levels in 3 to 15-year-olds.
-Much of the NHANES and NYFS data are available to the public through the National Center for Health Statistics at the U.S. Centers for Disease Control.
-However, access to some data is restricted, available only to individuals via one of the 19 Federal Statistical Research Data Centers locations across the U.S.
-By mid-2015 more than 110,000 publications had cited the NHANES dataset.
+Most data are available to the public via web-based download or browsing/analysis portal, although access to data deemed sensitive may require a specific application and approval, and in the U.S., possibly travel to a Federal Research Data Center where special security provisions apply.
 
-In contrast to the cross-sectional NHANES, The National Longitudinal Survey of Youth (NLSY; \url{http://www.bls.gov/nls/}) has surveyed the same cohort---almost 10,000 American youth born between 1957 and 1964--- about employment-related topics on a annual basis since the study began in 1979.
-Most NLSY and NLS data are available free of charge by means of a web-based data portal to which users must apply for access; access to geographic-related variables requires special permission.
-By mid-2015 more than 20,000 publications had cited the NLSY.
-
-The Early Childhood Longitudinal Study (ECLS; \url{https://nces.ed.gov/ecls/}) focuses on child development, school readiness, and early school experiences in separate cohorts of children followed either from birth or from kindergarten.
-Some cohorts exceed 20,000 individuals.
-ECLS consists of both publicly available and restricted data archived at ICPSR.
-A Google Scholar search generates more than 8,000 hits, of which the ICPSR archive can verify 167 project-related publications.
-
-Several large government-collected and shared datasets contain information about employment patterns and educational attainment in children and youth.
-The Bureau of Labor Statistics reports data about youth employment and unemployment patterns derived from the Census Bureau's Current Population Survey (\url{http://www.bls.gov/cps/demographics.htm}).
-The U.S. Department of Education's National Center for Educational Statistics (NCES) collects and analyzes variables related to U.S. primary, secondary, and post-secondary education.
-Many datasets are public while data with personally identifiable data are available to researchers under a restricted use agreement.
-
-Several large-scale longitudinal studies focused on children's growth, health, and education include participants from outside the U.S.
-The World Health Organization's (WHO) Multicentre Growth Reference Study (MGRS; \url{http://www.who.int/childgrowth/en/}) collected physical growth and related data from 8,500 children in Brazil, Ghana, India, Norway, Oman, and the U.S.
-The ongoing Japan Environment and Children's Study (JECS; \url{http://www.env.go.jp/en/chemi/hs/jecs/}) involves 100,000 parent-child pairs with the goal of evaluating the impact of environmental factors on children's health and development.
-Large-scale birth cohort studies in the U.K. include the National Survey of Health \& Development and the National Child Development Study (NCDS; \url{http://www.cls.ioe.ac.uk}).
-NCDS is an ongoing longitudinal study that follows everyone in Great Britain who was born in one particular week in 1958, focusing on factors that predict wellbeing across the lifespan.
-NCDS data are available by registration from the U.K. Data Service (\url{http://ukdataservice.ac.uk/get-data/key-data/cohort-and-longitudinal-studies}).
-The British Cohort Studies such as NCDS have generated more than 3,500 publications to-date.
-The Organization for Economic Cooperation and Development (OECD) publishes the PISA comparative educational dataset (\url{http://pisa2000.acer.edu.au/index.php}), which generates more than 5,000 search hits.
-
-Not all large-scale birth cohort studies succeed.
+Not all large-scale government-initiated studies succeed.
 A notable failure is the U.S. National Children's Study (\url{http://www.nichd.nih.gov/research/NCS/Pages/default.aspx}).
 Authorized by the Children's Health Act of 2000, the NCS would have followed 100,000 children prenatally until age 21.
 However, the NIH Director decided to close the NCS in 2014 following the recommendations of an advisory panel. 
 Questionnaire, physical measures, biospecimens and environmental data from up to 5,726 participants were collected in 2009-2014 prior to study closure.
 Those data are slated for release in a data archive sometime in 2015.
+A comparable study in the U.K. targeting 80,000 was cancelled in October 2015, just 8 months after launch, for failures to recruit sufficient numbers of participant families \cite{pearson_massive_2015}.
+These failures highlight the significant challenges associated with designing and successfully implementing large-scale birth-cohort studies.
 
-Several themes emerge from this sample of government-led studies.
-Datasets are large in terms of the volume of participants sampled, ranging in the thousands to tens of thousands.
-Some studies involve dozens of samples per individual over extended periods of time, and show significant variety in the measures collected.
-Most data are available to the public via web-based download or browsing/analysis portal, although access to data deemed sensitive may require a specific application and approval and possibly travel to a Research Data Center where special security provisions apply.
-Finally, the datasets have generated research publications that range from the hundreds to the tens of thousands, suggesting that the collection, curation, and preservation of these resources has had a significant impact on scientific discovery.
-I turn next to datasets whose collection and management is under the control of individual investigators.
-\subsection{Public/Private Partnerships and Investigator-driven Projects}
-Several big data studies in developmental science involve partnerships between government agencies and academic investigators.
-Others involve large-scale data collections initiated and managed by individual investigators and funded by government or foundation sources.
-These projects are diverse in focus and methods, including population-based studies with a health focus, behavior genetics, brain imaging, cognition and temperament, and education and employment.
-\subsubsection{Population-Based Studies}
-The Panel Study on Income Dynamics (PSID; \url{https://psidonline.isr.umich.edu}) is a population based survey study focusing on employment, income, wealth, expenditures, health, marriage, childbearing, child development, philanthropy, and education.
-PSID began in 1968 with a nationally representative sample of 5,000 families and more than 18,000 individuals.
-As of mid-2015, PSID had generated more than 3,900 publications. 
-The data is available publicly to registered users who agree to the terms of use conditions that ensure participants are not reidentified and that users properly cite and acknowledge use of the data. 
-Some restricted data elements (e.g., geospatial data, school-level identifiers) are only available subject to a formal restricted use agreement between the investigator and the data owner, the University of Michigan.
-
-The National Longitudinal Study of Adolescent Health (Add Health; \url{http://www.cpc.unc.edu/projects/addhealth}) began as a survey study undertaken in response to a Congressional mandate. Designed to measure the multiplicity of influences on adolescents' health and unhealthy behaviors, parts of the Add Health cohort have been followed into young adulthood with four in-home interviews.
-In a recent wave, biomarker data have been made available. 
-The Add Health data are archived at ICSPR and are available for public use.
-As of mid-2015, more than 5,000 publications had arisen from the Add Health dataset.
-
-The NICHD Study of Early Child Care and Youth Development (SECCYD; \url{https://www.nichd.nih.gov/research/supported/Pages/seccyd.aspx}) prospectively followed the experiences of 1,364 infants born at 10 locations throughout the United States in 1991.
-The study sought to learn more about the kind and quality of child care experiences and the effects of different child care settings on developmental outcomes. 
-Measures included video, surveys and interviews, behavioral tests, biomarkers such as salivary cortisol, blood pressure, anthropometrics, and demographic information.
-Unlike the Add Health study, data in SECCYD are restricted, available only by application, with approval granted on a case-by-case basis.
-Staff at the National Institute of Child Health and Human Development manage the data access and approval process.
-The SECCYD has generated more than 214 publications as of mid-2015.
-
-Investigator-initiated and managed, the Family Life Project (FLP; \url{http://flp.fpg.unc.edu}) used a population-based approach to study the early development of children living in rural, largely poor communities in North Carolina and Pennsylvania. 
-A birth cohort of 800 children were studied in a series of home, child care visits, and phone calls when the infants were 2, 6, 15, 24, and 36 months of age. 
-Data included interviews, questionnaires, videotaped interactions, and biological samples yielding information about economic and community factors, family, home, language and cognition, stress, and genotype.
-Data from Phase I of the FLP are archived at ICPSR, but are subject to restrictions on access due to the sensitive and identifiable nature of the data.
-The FLP site lists about 50 publications through 2013.
-\subsubsection{Behavior Genetics}
-Large data samples have long been required in behavior genetics to detect small effect sizes.
-Several large-scale genetics studies that are not specifically developmental deserve mention.
-The Genome of the Netherlands Project (\url{http://www.nlgenome.nl}) is a publicly available dataset from 250 families representing two parents plus one of their adult children.
-The Psychiatric Genomics Consortium (PGC; \url{http://www.med.unc.edu/pgc}) contains data from more than 170,000 individuals with psychiatric diagnoses or who are at-risk.
-Many disorders in the PGC dataset have developmental dimensions (autism, attention-deficit hyperactivity disorder, and schizophrenia).
-Results may be viewed in a specialized web browser tool (\url{http://www.broadinstitute.org/mpg/ricopili/}).
-
-The U.K.-based Twins Early Development Study (TEDS; \url{http://www.teds.ac.uk/}) contains survey data from 15,000 English and Welsh families who gave birth to twins between 1994 and 1996, with lab-based behavioral task and DNA samples from a subset of participants.
-TEDS has generated more than 350 publications to-date.
-Researchers wishing to gain access to the data may do so by submitting a formal data request specifying the aims of the planned research and the variables needed to satisfy the aims. 
-Proposals that do not overlap with analyses already being planned or carried out by the TEDS research team or other collaborators are usually approved.
-
-The Twin and Offspring Study in Sweden (TOSS; \url{http://ki.se/en/meb/twin-offspring-study-in-sweden-toss}) aimed seeks to uncover genetic and environmental contributions to measures of family relationships and mental health.
-TOSS extends the Twin Moms Project to include a sample of twin fathers (320 twin pairs and their families).
-In addition, TOSS plans to collect another 250 pairs of twin mothers for a target sample of 900 twin parents (3,000 individuals in all) and their families.
-While relatively early in data collection, more than 24 publications reference the TOSS dataset.
-Data sharing plans have not yet been announced.
-
-Among behavior genetics studies, those focusing on adoption provide a unique window on the mix of genetic and non-genetic factors that influence child development.
-The Colorado Adoption Project (CAP; \url{http://ibg.colorado.edu/cap}) provides an illustrative example.
-Since its inception in 1976, CAP has enrolled more than 2,400 participants from more than 450 families, collecting data on cognitive abilities, temperament, and demographics.
-CAP has generated more than 200 published articles, and data collection continues.
-Data from 1976-1989 are archived at Dataverse and can be accessed by application.
-\subsubsection{Brain Imaging}
-Several large-scale studies have focused on developmental patterns in brain structure or activity.
-One of the earliest studies was a combined longitudinal and cross-sectional study of child and adolescent structural brain development led by Jay Giedd at NIMH \cite{giedd_brain_1999}.
-The study collected structural brain information from 145 4 to 20-year-olds along with behavioral and clinical data.
-More than 100 of the participants were scanned more than once, about two years apart.
-The original paper describing this study has been cited more than 3,300 times, as of mid-2015.
-The dataset has generated other highly cited papers \cite{gogtay_dynamic_2004}, but the data are not available for analyses by researchers outside the original investigative team.
-
-The NIH MRI Study of Normal Brain Development (\url{http://pediatricmri.nih.gov/nihpd/info}) collected multi-modal structural MRI from 554 children from 4 to 18 years of age.
-A second cohort of children from birth to 4 years was scanned longitudinally with up to 10 scans per child.
-Demographic, hormonal, cognitive, affective, and psychiatric data were also collected.
-The data are available to qualified researchers by application.
-John Richards and colleagues have combined data from the NIH MRI Study with data collected in their own labs and other public sources to create average structural brain templates that can provide more accurate bases for developmental functional neuroimaging studies using EEG and fMRI (\url{http://jerlab.psych.sc.edu/NeurodevelopmentalMRIDatabase/}).
-These data can be openly accessed with appropriate citation.
-
-More recently, the Pediatric Imaging, Neurocognition, and Genetics (PING; \url{http://pingstudy.ucsd.edu/}) Project collected multi-modal neuroimaging data, genotypes, neurodevelopmental histories, and information about cognitive and social and emotional function from more than 1,000 participants 3-20 years of age recruited from 8 U.S. cities. 
-Data are available to the research community by application.
-As of mid-2015, the project had generated more than 20 publications.
-
-Outside the U.S., The Developing Human Connectome Project (\url{http://www.developingconnectome.org}), led by investigators at King’s College London, Imperial College London, and Oxford University goes against the trend of imaging studies that focus on older children.
-This project aims to study the connectome, a map of human brain connectivity, in fetuses from 20 to 44 weeks post-conception.
-Funded by the European Research Council, the imaging data are accompanied by clinical, behavioral and genetic information.
-Investigators hope that the data set will provide a basis for studying genetic and environmental risks that could lead to neurodevelopmental disorders such as Autistic Spectrum Disorder or Cerebral Palsy.
-The project has generated 17 publications as of mid-2015.
-\subsubsection{Language, Cognition, and Temperament}
-The child language community pioneered the aggregation and sharing of developmental datasets about individual participants.
-CHILDES/TalkBank \cite{macwhinney_childes_2001} supports one of the largest and most well-established data archives in the psychological sciences.
-It consists of transcripts and audio and video recordings of children's utterances and from adults with aphasia.
-CHILDES/TalkBank has generated more than 10,000 citations, and the data are available to the research community, much of it publicly.
-
-WordBank (\url{http://wordbank.stanford.edu/}) consists of data from more than 40,000 samples of the MacArthur-Bates Communicative Development Inventory (CDI), a widely used test of early language function.
-Catherine Tamis-Lemonda has released video data (\url{https://nyu.databrary.org/volume/8}) from an NSF-funded longitudinal study of child language consisting of more than 1,000 sessions of infants and children (9 mos-7.6 years) and their mothers carrying out a series of semi-structured tasks.
-The Human Speechome Project (\url{http://www.media.mit.edu/cogmac/projects/hsp.html}) at MIT's Media Lab recorded 10 hours of video from one child's home on a daily basis from birth to age three.
-The project has generated more than 78 publications, but the data are not available outside of the original investigative team.
-The LENA (Language ENvironment Analysis; \url{http://www.lenafoundation.org}) Foundation has created a technology framework that allows children's speech in natural settings to be recorded and analyzed.
-The system provides an automatic language collection and analysis tool for speech language professionals and parents.
-No large-scale archive for LENA data currently exists, but some researchers who use the tool have begun to explore the creation of a data repository specialized for it.
-
-In other areas of cognition, a number of measures that have become standards.
-Their widespread adoption has resulted in data that are large in volume, velocity or variety.
-Davida Teller \cite{teller1986assessment} pioneered empirical techniques for measuring visual acuity in preverbal children, and the use of Teller Acuity Cards has resulted in the publication of age-based norms for visual development in infants to four-year-olds \cite{mayer_monocular_1995} based on a sample of more than 400.
-A companion study on children in Brazil \cite{salomao_large_1995} was conducted with an even larger sample.
-
-The Bayley Scales of Infant and Toddler Development \cite{bayley2006bayley} is widely used in clinical and epidemiological settings such as the EPICure (\url{http://www.epicure.ac.uk}) because of its published norms even though there are questions about the test's validity \cite{hack_poor_2005}.
-However, data about those norms is under the control of the Pearson Publishing company that publishes the Bayley and licenses its use.
-Some Bayley score data are available from the Carolina Abecedarian Project and the Carolina Approach to Responsive Education (CARE; \url{http://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/4091}) project on ICPSR.
-The data are freely available to registered users of ICSPR. 
-
-The standardized Wechsler intelligence tests were developed in the 1930's. 
-The Wechsler Intelligence Scale for Children-III (WISC-III) is designed for children ages 6-16, and the Wechsler Preschool and Primary Scale of Intelligence-R (WPPSI-R) is designed for children age 4-6 1/2 years.
-The current version (WISC-V) is published by Pearson (\url{http://www.pearsonclinical.com/psychology/products/100000771/wechsler-intelligence-scale-for-childrensupsupfifth-edition--wisc-v.html}).
-Like the Bayley, data about Wechsler norms are not available to researchers.
-However, data from the Project on Human Development in Chicago Neighborhoods (PHDCN) that collected WISC-R data on 6,000 children, adolescents, and young adults is housed at ICSPR and are accessible by specific authorization.
-
-In the realm of emotion and temperament, two academic-investigator-initiated measures have been widely adopted.
-The Infant Behavior Questionnaire (IBQ) is a parent survey measure, and the Laboratory Temperament Assessment Battery (Lab-TAB; \url{http://www.uta.edu/faculty/jgagne/labtab}) is an observational battery, using a set of 3-5 min episodes mimicking situations in everyday life.
-IBQ data on 1,388 participants are archived at ICSPR as part of the Maternal Lifestyle Study (MLS; \url{https://neonatal.rti.org/about/mls_background.cfm}), a longitudinal multi-site observational study of the long-term effects of in-utero exposure to cocaine on child development.
-IBQ and Lab-TAB data are also available from ICPSR from the Family Life Project.
-\subsubsection{Education and Learning Science}
-Several studies in the education and learning sciences studies deserve mention because of their volume, velocity, or variety or because of their availability for reuse by others.
-The Trends in International Math and Science Study (TIMSS) has studied mathematics and science achievement in 4th and 8th grade for more than 20 years (\url{http://timss.bc.edu}), with more than 20,000 U.S. students included in the 2001 sample.
-De-identified data from TIMSS and its sister study, the Progress in International Reading Literacy Study (PIRLS; \url{http://timssandpirls.bc.edu}) are available for public download.
-The 1999 TIMSS video study recorded math and science teaching practices in seven countries, and some of the materials are available for public use through a repository hosted at UCLA (\url{http://www.timssvideo.com}).
-The Gates Foundation Measures of Effective Teaching (MET; \url{http://www.metproject.org}) Project videotaped more than 3,000 classroom teachers beginning in 2009, with follow-on studies continuing currently.
-The MET video data are stored and shared at ICSPR.
-The Spatial Intelligence and Learning Center (SILC; \url{http://spatiallearning.org}) is an NSF-funded initiative designed to develop a multi-disciplinary science of spatial learning, including the development of tests and instruments useful in research.
-LearnLab (\url{http://learnlab.org}), another NSF-funded center, combines cognitive theory and computational modeling to understand changes in student knowledge in the context of computer-based math, science and language courses. 
-LearnLab hosts a repository, DataShop (\url{http://learnlab.org/technologies/datashop/index.php}), to store and openly share detailed data from classrooms employing computer-based cognitive tutors.
-DataShop enables data storage, management, visualization and analysis in a web-based tool.
-\subsubsection{Summary}
-Studies involving partnerships with government agencies or those initiated and managed by individual investigators exemplify the high volume, velocity, variety, and variability of big datasets.
-The studies employ a range of observational measures, including video recordings, population-normed test instruments, biological measurements of physiology, and brain structure or function.
-However, the extent to which data are available for secondary reuse, and the process for acquiring access is more variable than for datasets initiated and managed by government entities.
-Only some of the datasets are stored in data repositories, for example.
-Many large-scale developmental datasets are housed locally, on project-specific web sites, not on centralized servers that aggregate data across studies and sources.
+\subsection{Researcher-Initiated and Managed Datasets}
+Datasets initiated and collected by academic or medical researchers form a second group.
+Table 2 summarizes information about some representative large, developmentally-focused datasets whose collection was initiated by individual researchers, and the data themselves are managed by non-governmental entities.
+These tend to be smaller than those collected by government agencies, but the data collected are more varied in type, means of collection, and duration or intensity.
+For example, investigator-initiated studies commonly collect observational measures, including video recordings, population-normed test instruments, biological measurements of physiology, genetics, and brain structure or function.
+Unfortunately, the extent to which these data are available for secondary reuse, and the process for acquiring access is also more variable than for datasets initiated and managed by government entities.
+Institutional research ethics and data privacy policies, funder and journal requirements, and individual researchers' support for data sharing influence whether, when, and with whom data are shared.
 In many cases, the original investigative team retains control over the use of data by other researchers, including the kinds of questions that third parties may ask.
-In some cases, the original investigative team must be included as an author on publications.
-Perhaps as a consequence of these factors, these datasets have generated fewer scientific publications than government-led efforts.
+Some require the original investigative team to be included as an author on publications.
+Most large-scale investigator-initiated developmental datasets are housed locally, on project-specific web sites, not on centralized servers that aggregate data across studies and sources.
+Only some are stored in open public data repositories, for example.
+Catherine Tamis-Lemonda's MetroBaby dataset \cite{1372d9e6-d07e-4068-8264-7a5c629799c2} hosted on Databrary is a notable exception.
 
-\subsection{Non-Academically Initiated or Managed Sources of Big Data}
+\subsection{Measure-Specific Data}
+Datasets representing a single test or form of measurement constitute another group.
+Table 3 summarizes information about some measures commonly used in developmental science research and datasets created around them.
+Many measures in this category derive from the use of standardized instruments with group norms.
+It is considered best-practice in many research communities to employ widely adopted, standardized behavioral tests with well-characterized psychometric properties and developmental, usually age-based, norms.
+This allows researchers to compare patterns of performance between groups.
+Perhaps surprisingly, most of the raw data underlying the norms remain private.
+So, with few exceptions, researchers seeking access to measure-specific data collected by others will find it almost impossible.
+A number of standardized measures are published by commercial entities, and so economic interests may conflict with the ideal of greater data availability.
+However, widespread data sharing remains relatively rare even where measures developed by academic researchers and made freely available are concerned.
+Data sharing initiatives among child language researchers (CHILDES; WordBank; HomeBank) are notable exceptions.
+
+\subsection{Commercial Datasets}
+Large-scale datasets collected by private entities for business purposes form a final group.
+The data collected by private entities about individuals largely concern consumer behavior although health and fitness related data constitute a third category (e.g., Fitbit; \url{http://www.fitbit.com}).
+A growing number of smartphone apps enable parents to collect data on their own children for personal purposes (e.g. \url{https://www.baby-connect.com}).
+Commercial datasets are sometimes made available to academic researchers, but the policies that govern data access are under the control of the entities that provide the services.
+
 Some large-volume sources of developmental data are collected and managed by private, non-academic or government entities.
 For example, more than 1.6 million high school students \cite{lewin_more_2013} take standardized tests or provide financial aid information via measures developed and managed by The College Board or ACT, Inc.
 The College Board shares Scholastic Aptitude Test (SAT) and college cost and scholarship data with the research community by application.
@@ -285,11 +154,11 @@ Of course, detailed information about users, their characteristics and preferenc
 Users receive free services in exchange for providing these data.
 Both Google and Facebook have arms that conduct research and cooperate with academic researchers albeit with significant public criticism about the ethics of certain research projects \cite{meyer_everything_2014}.
 The primary criticism concerns whether Facebook users had given informed consent to participate in the manipulation of their newsfeeds as would be required by research ethics boards if a similar study were undertaken in a laboratory context.
-
-The scale of data collected and managed by non-academic entities dwarfs that of government or academically-managed initiatives.
+Clearly, the scale of data collected and managed by non-academic entities dwarfs that of other providers.
 Because the data are collected for proprietary business purposes, it is difficult to assess their current or potential impact on the scholarship of human development.
+
 \section{The Future of Big Data in Development}
-Clearly, the collection, analysis, and sharing of large, multilevel datasets has been part of the fabric of developmental science for a long time.
+Clearly, the collection, analysis, and sharing of large datasets has been part of the fabric of developmental science for a long time.
 In this section, I discuss a range of technical, conceptual, and theoretical issues that arise in thinking about the future of big data in developmental science. 
 \subsection{Technical}
 Technical issues associated with big data in developmental science center on collection, storage and retrieval, data management, provenance, and analysis \cite{goodman_ten_2014}. 
@@ -301,8 +170,8 @@ Although some researchers continue to use paper and pencil measures to collect s
 These reduce the manual labor involved in preparing a survey and processing completed data for analysis. 
 Developmental research commonly use behavioral measures involving computer-based tasks, but most rely on custom, project-specific software.
 So, the output data files, while often in an electronic form, may require significant post-processing to be linked with other data.
-Some researchers have begun to use tools such as Amazon's Mechanical Turk (\url{http://www.mturk.com}) or Apple's HealthKit (\url{https://developer.apple.com/healthkit/}) to conduct large-scale behavioral science experiments.
-These sites deliver data in well-structured electronic formats, sometimes using tools specialized for psychological research (e.g., \url{https://psiturk.org}).
+Some researchers have begun to use tools such as Amazon's Mechanical Turk (\url{http://www.mturk.com}) or Apple's HealthKit (\url{https://developer.apple.com/healthkit/}) to conduct large-scale behavioral science experiments (e.g., \url{https://autismandbeyond.researchkit.duke.edu}).
+These sites deliver data in well-structured electronic formats, sometimes using tools specialized for psychological research (e.g., PsiTurk, \url{https://psiturk.org}).
 Amazon's terms of use prohibit minors, but developmental researchers have found ways to secure video-based informed consent from parents to enable their children to participate in looking time studies (\url{https://lookit.mit.edu}) over the web.
 
 Large numbers of developmental researchers collect video and audio recordings.
@@ -316,8 +185,11 @@ But, unlike MRI, there are no standard file formats, and most data collection sy
 Lab-based tools for conducting physiological measurements such as EEG, heart-rate or skin conductance, produce electronic files.
 Thus, the files require significant post-collection data processing prior to analysis. 
 
-New technologies, specifically the widespread use of smart mobile devices with embedded sensors, promise to make big data streams about individual participants' locations, physiological states (e.g., \url{https://www.empatica.com}), activity patterns, and momentary cognitive, and emotional states broadly available to researchers.
-These tools will enable the collection of data from large numbers of participants in short periods of time, significantly enlarging the volume, velocity, and variety of data available for analysis.   
+New technologies, specifically the widespread use of smart mobile devices with embedded sensors, promise to make big data streams about individual participants' locations, physiological states (e.g., \url{https://www.empatica.com}, \url{https://autismandbeyond.researchkit.duke.edu}), activity patterns, facial expressions, and momentary cognitive, and emotional states broadly available to researchers.
+For example, a new class of wearable devices for infants and children has arisen (e.g., \url{https://www.owletcare.com}, \url{http://mimobaby.com}, \url{http://www.sproutling.com}), coupled to parent-controlled child tracking apps mentioned previously.
+These tools enable the collection of data from large numbers of people in short periods of time, significantly enlarging the volume, velocity, and variety of data available for analysis.
+Whether and how the data can be made available for academic and medical research in developmental science remains an open question.
+
 \subsubsection{Storage and Retrieval}
 Developmental researchers who wish to store and share big data face a bewildering array of options.
 These include individual or institutional websites, institutional repositories (e.g., \url{https://scholarsphere.psu.edu}), cloud services (Dropbox, Box, or Amazon), domain or measure-specific repositories (ICSPR, Databrary.org, TalkBank.org, WordBank.org, OpenfMRI.org), domain general services (Researchgate.net, FigShare/SlideShare, Dataverse, and the Open Science Framework), and open source software web sites (GitHub).
@@ -417,8 +289,11 @@ Unlike academic settings, where violations of research ethics principles may inv
 The White House has recommended data privacy principles \cite{data-privacy-networked-world} that some software companies have adopted voluntarily.
 
 Unresolved issues that could impact the availability of big data in the future include whether linkage across streams increases the risk of reidentification, whether it is essential to reconsent minors when they become adults, a notion most researchers find totally impractical and a significant barrier to data sharing, and a general concern about the ethics of granting consent to share data for an indefinite period.
-Because data security cannot ever be guaranteed, risks can only be minimized and managed, but not entirely eliminated. 
-Finally, there are unresolved questions about privacy protections in the consumer domain that have the potential to influence public attitudes toward academic research \cite{meyer_everything_2014}.
+Because data security cannot ever be guaranteed, risks can only be minimized and managed, but not entirely eliminated.
+The DataTags Project (\url{http://datatags.org} at Harvard provides example of a practical solution that may help researchers navigate the complexities of sharing data in the future. 
+DataTags seeks to make the process of determining what risks particular datasets pose and provide a practical way of ``tagging'' datasets based on that level of risk.
+
+Of course, there are unresolved questions about privacy protections in the consumer domain that have the potential to influence public attitudes toward academic research \cite{meyer_everything_2014}.
 \subsubsection{Transparency and Reproducibility}
 Another important dimension of scientific ethics concerns transparency and reproducibility.
 The social and behavioral sciences have incurred an unfortunate string of high profile cases of scientific misconduct in recent years, including cases of fraudulent data \cite{singal_case_2015, bhattacharjee_diederik_2013}.
@@ -439,8 +314,7 @@ No large-scale replication efforts in developmental science have been mounted, b
 One barrier to more open data practices appears to be researcher's fears of having their reputation or abilities publicly undermined \cite{ascoli_ups_2006}.
 So, changing views about replication may require shifts in the scientific culture.
 Researchers should work to reduce the extent of blame levied at researchers whose initial positive findings fail to be replicated by others \cite{bishop-blog-2015}.
-Technological tools that foster increased openness and transparency and more systematic research data management (OSF and Databrary) will also contribute to changing scientific practices.
-So will the widespread adoption of more consistent journal practices related to transparent and open scientific practices \cite{nosek_promoting_2015}.
+Technological tools that foster increased openness and transparency and more systematic research data management (OSF and Databrary) will also contribute to changing scientific practices, as will the widespread adoption of more consistent journal practices related to these issues \cite{nosek_promoting_2015}.
 
 Still, the increasing availability of large-scale datasets about developmental questions promises to magnify problems at the intersection between exploratory and confirmatory research.
 Large volume, high velocity, and high variety datasets make it possible to explore and discover novel unpredicted patterns in data.
@@ -473,7 +347,7 @@ That control may persist indefinitely.
 Others grant access to data only if co-authorship on any published product is guaranteed.
 Although legitimate arguments might be made in favor of embargo periods that enable teams of researchers to mine and report findings from their research efforts, the ideal of fostering greater data reuse argues for the shortest possible periods.
 Establishing consensus about data ownership and the kind of control investigators can exercise over it will require conversations among researchers, institutions, and funding agencies.
-That consensus may well prove vital to achieving some of the benefits of big data analyses in development. 
+That consensus may well prove vital to achieving some of the benefits of big data analyses in developmental science. 
 \subsection{Conceptual and Theoretical Issues}
 The increasing availability of big datasets for analysis in developmental research poses significant theoretical and conceptual questions alongside the pragmatic ones already discussed.
 Big(ger) data may help to overcome limitations with our existing knowledge base.
@@ -485,11 +359,11 @@ So, to the extent that new tools enable research on development in non-WEIRD cul
 However, developmental researchers are well aware of cohort effects---the notion that developmental processes can be influenced by changing social and cultural norms.
 Thus, even the most culturally diverse dataset may still yield conclusions that are locked in time.
 
-A second challenge larger datasets may help to address is the fact that most social, behavioral \cite{maxwell_persistence_2004} and neuroscience studies \cite{button_power_2013} are underpowered.
-Most worryingly many published research findings are false in fields that rely on small sample sizes, test multiple relationships between variables, engage in exploratory research, use diverse research designs, definitions, outcomes, and analytical modes across studies, and when more labs seek out significant effects \cite{ioannidis_why_2005}.
+Another challenge larger datasets may help to address is the fact that most social, behavioral \cite{maxwell_persistence_2004} and neuroscience studies \cite{button_power_2013} are underpowered.
+Most worryingly, many published research findings are false in fields that rely on small sample sizes, test multiple relationships between variables, engage in exploratory research, use diverse research designs, definitions, outcomes, and analytical modes across studies, and when more labs seek out significant effects \cite{ioannidis_why_2005}.
 Developmental research reflects many of these characteristics, but the collection, analysis, and sharing of larger datasets should work to reduce their impact.
 
-Developmental research faces a specific point of tension related to measurement.
+Developmental research based on big data faces a specific point of tension related to measurement.
 Many of the measures for which high volume data are available come from proprietary, expensive instruments such as the Bayley and the WIPPSI for which baseline data about population norms are unavailable.
 Free, academic instruments such as the Infant Behavior Questionnaire have no centralized data archive.
 Plus, the measures themselves have been revised several times, making it more challenging to compare data collected using different versions, especially across time.
@@ -497,11 +371,14 @@ Similar problems arise when non-proprietary tasks are used.
 Most investigators customize even a well-known task to make it suitable for use with children, and the sharing of research materials is just as limited as the sharing of data.
 Efforts to encourage researchers to capture and record the conceptual structure of psychological tasks have been undertaken (e.g., The Cognitive Atlas; \url{http://www.cognitiveatlas.org}) but are commonly used.
 
-Finally, some critics have raised concerns that the rise of big data means the ``end of theory'' \cite{anderson_end_2008}.
+Although new technologies make it possible to carry out large-scale experimental studies with developmental populations (e.g., LookIt, PsiTurk), big data techniques often invoke some form of correlational analysis.
+This makes causal inference problematic at best.
+Indeed, some critics have raised concerns that the rise of big data means the ``end of theory'' \cite{anderson_end_2008}.
 In a provocative essay Anderson \citeyear{anderson_end_2008} argued that large quantities of data mean the traditional model of scientific inquiry involving hypothesis testing will soon give way to model-free descriptions of data.
 Others note that bigger data do not necessarily lead to deeper insights \cite{graham_big_2012}.
-While some data intensive fields, largely in computer science, have adopted theory-free approaches to discovery, developmental science has a rich and rigorous intellectual history in which theory and experiment play central, essential role in scholarly discourse.
-That tradition is likely to continue.
+Some data intensive fields, largely in computer science, have adopted theory-free approaches to discovery.
+But, developmental science has a rich and rigorous intellectual history in which theory, correlational analyses, and experiments play central, essential roles in scholarly discourse.
+It`s vital that tradition continue.
 \section{Conclusion}
 As boyd and Crawford \citeyear{boyd_critical_2012} observe ``The era of Big Data has begun. Computer scientists, physicists, economists, mathematicians, political scientists, bio-informaticists, sociologists, and other scholars are clamoring for access to the massive quantities of information produced by and about people, things, and their interactions.'' (p. 662).
 The clamor extends to the developmental and learning sciences where discoveries have the potential to improve health and maximizing the potential for human achievement.
@@ -533,5 +410,7 @@ It would be short-sighted to underestimate the speed with which new technologies
 If developmental researchers can find ways to collect, manage, store, share, and enable others to build upon data about the multiple facets of human development, as many are beginning to do, we should look forward to a future rich in theory and understanding.
 
 \bibliography{big-data}
-
+\input{table-1.tex}
+\input{table-2.tex}
+\input{table-3.tex}
 \end{document}
