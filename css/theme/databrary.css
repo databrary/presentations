@@ -45,9 +45,10 @@ body {
 
 .reveal .attr_img{
   height: 75px;
-  width: 75px;
+  width: auto;
   display: inline-block;
   margin-right: 10px;
+  border: none;
 }
 
 /*********************************************
