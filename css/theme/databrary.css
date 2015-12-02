@@ -28,6 +28,22 @@ body {
   font-weight: inherit; }
 
 /*********************************************
+* CUSTOM
+**********************************************/
+.reveal .attribution{
+  font-size: 0.5em;
+  background-color: #FFF;
+  position: absolute;
+  bottom: -684px;
+  left: 50px;
+}
+
+.reveal .attribution a{
+  color: #97D1C5;
+
+}
+
+/*********************************************
  * HEADERS
  *********************************************/
 .reveal h1,
