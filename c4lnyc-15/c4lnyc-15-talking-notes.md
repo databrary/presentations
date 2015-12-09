@@ -1,14 +1,14 @@
 C4L presentation notes
 
 0.
-  - Databrary is a repository for research video collected by child development researchers
+  - Databrary is a repository for research video collected by researchers in behav. sciences
   - Databrary is an open source software project, but this isn't necessarily about technology
-  - I'd like to talk about our experience with addressing the challenge of collecting and sharing research data  
+  - I'd like to talk about our experience with addressing the challenge of collecting and sharing digital research data  
 
 1/2.
   - This is the idea behind sharing research data
   - Digital data everywhere in academia
-  - Funders and Institutions pushing for more sharing of the materials that go into publications
+  - Funders and Publishers pushing for more sharing of the materials that go into publications
   - More researchers can share in expensive and valuable datasets when they don't have the resources to collect their own
 
 3/4. 
@@ -35,8 +35,7 @@ C4L presentation notes
 
 9.
   - The traditional model for curation...
-  - But this is not without it's drawbacks
-
+  - But this is not without its drawbacks
 
 10.
   - Any given dataset can include paper records containing important metadata that are organized in any given fashion
@@ -50,9 +49,8 @@ C4L presentation notes
 13.
   - More to the software development side, we offer tools and interfaces in the browser, as part of databrary, that guide researchers to curate their own data as they collect it.
 
-
 14.
   - Demonstration models how a researcher can work through the workflow of curating their own data on Databrary.
 
-15. 
+15.
   - Speaking more generally, what have we learned that can apply to other projects that expect to collect and provide acces to research data for sharing?
