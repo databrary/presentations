@@ -1,0 +1,89 @@
+---
+title: "video-and-reproducible-science"
+author: "Karen E. Adolph & Rick O. Gilmore"
+date: "`r Sys.time()`"
+output: 
+  ioslides_presentation:
+    widescreen: TRUE
+    css: css/databrary.css
+    logo: img/databrary-leaf-large.png
+bibliography: bib/databrary.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Acknowledgements
+
+- [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
+- [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
+- [Society for Research in Child Development (SRCD)](http;//srcd.org)
+
+## Video and Reproducible Workflows
+
+## Reproducibility in Psychological Science
+
+## Data Sharing Sharpens Focus on Substance
+
+## Video Uniquely Captures Behavior
+
+## Video Collection & Sharing Aids Reproducibility
+
+- Methodological details not captured in write-ups
+- Unequivocally & unambiguously demonstrates phenomenon
+
+## Children's Scale Errors
+
+<div class="centered">
+<a href="http://doi.org/10.1126/science.1093567">
+<img src="img/deloache.science.jpg" height=500px>
+
+[[@deloache_scale_2004]](http://doi.org/10.1126/science.1093567)
+</a>
+</div>
+
+## Children's Scale Errors
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9850/-/asset/11552/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+[[@b03c5c6c-31b8-445e-9e4f-8917b735bb53]](http://doi.org/10.17910/B7H019)
+</div>
+
+## [Databrary.org](http://databrary.org)
+
+- Digital data library specialized for video
+- Video/audio + participant/context metadata
+- Restricted access for research/educational use
+
+## How Databrary Aids Reproducibility
+
+## Analysis Pipeline Using Databrary
+
+## Scripting Video Data Analyses
+
+- [Datavyu.org](http://datavyu.org)
+- Video coding tool
+- Java with Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
+- Free, open source, <https://github.com/databrary/datavyu>
+
+## Datavyu Script Example 1
+
+- Checking/correcting errors
+
+## Datavyu Script Example 2
+
+- Bulk export for analysis
+
+## Take Homes
+
+- Video captures behavior
+- Databrary securely stores, shares video
+- Video + Databrary -> reproducible and transparent workflows
+- Video + Datavyu -> reproducible and transparent workflows
+
+## References {.smaller}
+
