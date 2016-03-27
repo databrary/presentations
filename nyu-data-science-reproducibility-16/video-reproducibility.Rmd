@@ -22,9 +22,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Video and Reproducible Workflows
 
-## Reproducibility in Psychological Science
+## Is Psychological Science Reproducible?
 
-## Data Sharing Sharpens Focus on Substance
+<div class="centered">
+<a href="http://cos.io">
+<img src="https://cos.io/static/img/icons/cos_wide.png">
+</div>
+</a>
+
+- Nosek et al., [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+- vs. Gilbert et al. [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+- Sharing [data](https://osf.io/ezcuj/wiki/home/?_ga=1.260625677.1251838540.1458403228) focuses attention on substantive issues
 
 ## Video Uniquely Captures Behavior
 
@@ -37,13 +45,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class="centered">
 <a href="http://doi.org/10.1126/science.1093567">
-<img src="img/deloache.science.jpg" height=500px>
+<img src="img/deloache.science.jpg" height=400px>
+</a>
 
 [[@deloache_scale_2004]](http://doi.org/10.1126/science.1093567)
-</a>
 </div>
 
-## Children's Scale Errors
+## Children's Scale Errors {.vcenter}
 
 <div class="centered">
 <video width="640" height="480" controls>
