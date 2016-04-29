@@ -14,13 +14,23 @@ bibliography: bib/databrary.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## “Video Doesn’t Lie"
+
+<div class=centered>
+**Reproducible Workflows With [Databrary](http://databrary.org)**
+
+Karen E. Adolph (NYU)</br>
+David Millman (NYU)</br>
+Rick O. Gilmore (Penn State)</br>
+
+<http://github.com/databrary/presentations/nyu-data-science-reproducibility-16/video-reproducibility>
+</div>
+
 ## Acknowledgements
 
 - [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
 - [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
 - [Society for Research in Child Development (SRCD)](http;//srcd.org)
-
-## Video and Reproducible Workflows
 
 ## Is Psychological Science Reproducible?
 
@@ -35,6 +45,24 @@ knitr::opts_chunk$set(echo = FALSE)
 - Sharing [data](https://osf.io/ezcuj/wiki/home/?_ga=1.260625677.1251838540.1458403228) focuses attention on substantive issues
 
 ## Video Uniquely Captures Behavior
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+[[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
+</div>
+
+https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
+
+## [[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
+
+<div class=centered>
+<a href="https://nyu.databrary.org/volume/33">
+<img src="img/frank-databrary.jpg" height=550px>
+</a>
+</div>
 
 ## Video Collection & Sharing Aids Reproducibility
 
@@ -67,31 +95,35 @@ Your browser does not support the video tag.
 - Video/audio + participant/context metadata
 - Restricted access for research/educational use
 
-## How Databrary Aids Reproducibility
+## Databrary Improves Reproducibility
 
-## Analysis Pipeline Using Databrary
+- "Active" curation of data *as it's collected*
+- Organize, share, standardize participant metadata
+- Share materials, displays
+
+## Databrary Improves Reproducibility
+
+- External links to code repos
+- DOIs for shared datasets
+- Long-term preservation via partnership with NYU Libraries
 
 ## Scripting Video Data Analyses
 
+- Most analyses of video use specialized tools
 - [Datavyu.org](http://datavyu.org)
-- Video coding tool
-- Java with Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
 - Free, open source, <https://github.com/databrary/datavyu>
+- Java with Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
 
 ## Datavyu Script Example 1
 
 - Checking/correcting errors
 
-## Datavyu Script Example 2
-
-- Bulk export for analysis
-
 ## Take Homes
 
 - Video captures behavior
 - Databrary securely stores, shares video
-- Video + Databrary -> reproducible and transparent workflows
-- Video + Datavyu -> reproducible and transparent workflows
+- Video + Databrary -> reproducible & transparent workflows
+- Video + Datavyu -> reproducible & transparent workflows
+- Databrary helps make psychological science more transparent & reproducible
 
 ## References {.smaller}
-
