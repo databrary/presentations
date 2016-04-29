@@ -23,7 +23,7 @@ Karen E. Adolph (NYU)</br>
 David Millman (NYU)</br>
 Rick O. Gilmore (Penn State)</br>
 
-<http://github.com/databrary/presentations/nyu-data-science-reproducibility-16/video-reproducibility>
+<http://github.com/databrary/presentations/nyu-data-science-reproducibility-16/>
 </div>
 
 ## Acknowledgements
@@ -69,7 +69,7 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 - Methodological details not captured in write-ups
 - Unequivocally & unambiguously demonstrates phenomenon
 
-## Children's Scale Errors
+## Children's Scale Errors {.vcenter}
 
 <div class="centered">
 <a href="http://doi.org/10.1126/science.1093567">

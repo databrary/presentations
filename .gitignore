@@ -5,3 +5,4 @@
 *.log
 *.tex.project.vim
 *.synctex.gz
+.Rproj.user
