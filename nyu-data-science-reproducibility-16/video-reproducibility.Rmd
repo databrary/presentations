@@ -1,7 +1,6 @@
 ---
 title: "Video Doesn't Lie"
 author: "Karen E. Adolph, David Millman, and Rick O. Gilmore"
-date: "`r Sys.time()`"
 output: 
   ioslides_presentation:
     widescreen: TRUE
@@ -14,26 +13,16 @@ bibliography: bib/databrary.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-----
+# Reproducible workflows with [Databrary](http://databrary.org)
 
-<div class=centered>
-**Video Doesn't Lie:**</br>
-**Reproducible Workflows With [Databrary](http://databrary.org)**
-
-Karen E. Adolph (NYU)</br>
-David Millman (NYU)</br>
-Rick O. Gilmore (Penn State)</br>
-
-<http://github.com/databrary/presentations/nyu-data-science-reproducibility-16/>
-</div>
-
-## Acknowledgements
+## Acknowledgments
 
 - [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
 - [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
-- [Society for Research in Child Development (SRCD)](http;//srcd.org)
+- [Society for Research in Child Development (SRCD)](http://srcd.org)
+- NYU Libraries, ITS, IRB, and OSP
 
-## Is Psychological Science Reproducible?
+## Is psychological science reproducible?
 
 <div class="centered">
 <a href="http://cos.io">
@@ -41,13 +30,36 @@ Rick O. Gilmore (Penn State)</br>
 </div>
 </a>
 
-- Nosek et al., [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+- Nosek et al. [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
 - vs. Gilbert et al. [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
 - Sharing [data](https://osf.io/ezcuj/wiki/home/?_ga=1.260625677.1251838540.1458403228) focuses attention on substantive issues
 
-## Video Uniquely Captures Behavior
+----
+
+<iframe src="http://databrary.org" width=640px height=400px>
+</iframe>
+
+## [Databrary.org](http://databrary.org)
+
+- Digital data library specialized for research video
+- Video/audio + participant/context metadata
+- Restricted access for research/educational use
+- Policy framework for sharing identifiable data
+
+## Video uniquely captures behavior
 
 <div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9840/-/asset/11192/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+[[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
+</div>
+
+## Video uniquely captures behavior
+
+<div class="centered">
+
 <video width="640" height="480" controls>
   <source src="https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true" type="video/mp4">
 Your browser does not support the video tag.
@@ -61,20 +73,15 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 
 <div class=centered>
 <a href="https://nyu.databrary.org/volume/33">
-<img src="img/frank-databrary.jpg" height=550px>
+<img src="img/frank-databrary.jpg" height=450px>
 </a>
 </div>
 
-## Video Collection & Sharing Aids Reproducibility
-
-- Methodological details not captured in write-ups
-- Unequivocally & unambiguously demonstrates phenomena
-
-----
+## Unequivocally & unambiguously demonstrates phenomena
 
 <div class="centered">
 <a href="http://doi.org/10.1126/science.1093567">
-<img src="img/deloache.science.jpg" height=400px>
+<img src="img/deloache.science.jpg" height=350px>
 </a>
 
 [[@deloache_scale_2004]](http://doi.org/10.1126/science.1093567)
@@ -84,7 +91,7 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 
 <div class="centered">
 <video width="640" height="480" controls>
-  <source src="https://nyu.databrary.org/slot/9850/-/asset/11552/download?inline=true" type="video/mp4">
+  <source src="https://nyu.databrary.org/slot/9850/-/asset/11550/download?inline=true" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 [[@b03c5c6c-31b8-445e-9e4f-8917b735bb53]](http://doi.org/10.17910/B7H019)
@@ -92,64 +99,60 @@ Your browser does not support the video tag.
 
 ----
 
-<iframe src="http://databrary.org" width=640px height=480px>
+<iframe src="http://doi.org/10.17910/B7H019" width=640px height=400px>
 </iframe>
 
-## [Databrary.org](http://databrary.org)
+## Video depicts unreported methodological details
 
-- Digital data library specialized for video
-- Video/audio + participant/context metadata
-- Restricted access for research/educational use
+Fall from video, bridge 20 going into bridge 14, then fall. Subject 1. Cari brown sleeveless shirt. John assist.
+<https://nyu.databrary.org/volume/5>
 
-## Databrary Improves Reproducibility
+## [Datavyu](http://datavyu.org) makes video coding reproducible
 
-- "Active" curation of data **as it's collected**
-- Organize, share, standardized participant metadata
+- Raw research video must be coded
+- [Datavyu.org](http://datavyu.org) is a free, [open source](https://github.com/databrary/datavyu) coding tool
+- Add codes, annotations time-locked to video segments
+- Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
 
-## [[@15586370-3088-4527-bd0e-88ec0d8d673c]](http://dx.doi.org/10.17910/B7WC7S)
+## Reproducible video coding
 
-<iframe src="https://nyu.databrary.org/volume/2" width=750px height=500px>
-</iframe>
+Static image of fall from video.
 
-## Databrary Improves Reproducibility
-
-- Share materials, displays
-- External links to code repos
-- DOIs for shared datasets
-- Long-term preservation via partnership with NYU Libraries
-
-## Getting Permission to Share
+## Securing permission to share while limiting access
 
 <div class="centered">
 <video width="640" height="480" controls>
   <source src="https://databrary.org/video/example-video-1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-
-<https://databrary.org/access/guide.html>
 </div>
 
-## Reproducible video coding workflows
+## Databrary enhances reproducibility
 
-- Most analyses of video use specialized tools
-- [Datavyu.org](http://datavyu.org)
-- Free, open source, <https://github.com/databrary/datavyu>
-- Java with Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
+- "Active" curation of data **as it is collected**
+- Organize, share, standardized participant metadata
+- Sharing based on access level & participant permission
 
-----
+## [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 
-<iframe src="http://datavyu.org/" width=640px height=480px>
+<iframe src="https://nyu.databrary.org/volume/5" width=750px height=500px>
 </iframe>
 
-## Take Homes
+## Databrary enhances reproducibility
 
-- Video captures behavior
-- Databrary securely stores, shares video
-- Video + Databrary -> reproducible & transparent workflows
+> - Share raw research videos
+> - Share video excerpts for teaching and learning
+> - Share materials, coding spreadsheets, displays
+> - Share links to papers, code repositories
+> - Shared datasets get DOIs
+> - Long-term preservation via partnership with NYU Libraries
 
 ## Take homes
 
-- Video + Datavyu -> reproducible & transparent workflows
-- Databrary helps make psychological science more transparent & reproducible
+- Video uniquely captures complexity & richness of behavior
+- Databrary securely stores, shares video
+- Databrary and Datavyu enhance reproducibility of video-based research
+- Databrary makes psychological science more transparent & reproducible
 
 ## References {.smaller}
+
