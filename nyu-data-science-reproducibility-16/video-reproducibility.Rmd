@@ -1,6 +1,6 @@
 ---
-title: "video-and-reproducible-science"
-author: "Karen E. Adolph & Rick O. Gilmore"
+title: "Video Doesn't Lie"
+author: "Karen E. Adolph, David Millman, and Rick O. Gilmore"
 date: "`r Sys.time()`"
 output: 
   ioslides_presentation:
@@ -14,9 +14,10 @@ bibliography: bib/databrary.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## “Video Doesn’t Lie"
+----
 
 <div class=centered>
+**Video Doesn't Lie:**</br>
 **Reproducible Workflows With [Databrary](http://databrary.org)**
 
 Karen E. Adolph (NYU)</br>
@@ -67,9 +68,9 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 ## Video Collection & Sharing Aids Reproducibility
 
 - Methodological details not captured in write-ups
-- Unequivocally & unambiguously demonstrates phenomenon
+- Unequivocally & unambiguously demonstrates phenomena
 
-## Children's Scale Errors {.vcenter}
+----
 
 <div class="centered">
 <a href="http://doi.org/10.1126/science.1093567">
@@ -79,7 +80,7 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 [[@deloache_scale_2004]](http://doi.org/10.1126/science.1093567)
 </div>
 
-## Children's Scale Errors {.vcenter}
+----
 
 <div class="centered">
 <video width="640" height="480" controls>
@@ -89,6 +90,11 @@ Your browser does not support the video tag.
 [[@b03c5c6c-31b8-445e-9e4f-8917b735bb53]](http://doi.org/10.17910/B7H019)
 </div>
 
+----
+
+<iframe src="http://databrary.org" width=700px height=550px>
+</iframe>
+
 ## [Databrary.org](http://databrary.org)
 
 - Digital data library specialized for video
@@ -97,32 +103,56 @@ Your browser does not support the video tag.
 
 ## Databrary Improves Reproducibility
 
-- "Active" curation of data *as it's collected*
-- Organize, share, standardize participant metadata
-- Share materials, displays
+- "Active" curation of data **as it's collected**
+- Organize, share, standardized participant metadata
+
+## [[@15586370-3088-4527-bd0e-88ec0d8d673c]](http://dx.doi.org/10.17910/B7WC7S)
+
+<iframe src="https://nyu.databrary.org/volume/2" width=750px height=500px>
+</iframe>
 
 ## Databrary Improves Reproducibility
 
+- Share materials, displays
 - External links to code repos
 - DOIs for shared datasets
 - Long-term preservation via partnership with NYU Libraries
 
-## Scripting Video Data Analyses
+## Getting Permission to Share
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://databrary.org/video/example-video-1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+<https://databrary.org/access/guide.html>
+</div>
+
+## Reproducible video coding workflows
 
 - Most analyses of video use specialized tools
 - [Datavyu.org](http://datavyu.org)
 - Free, open source, <https://github.com/databrary/datavyu>
 - Java with Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
 
-## Datavyu Script Example 1
+----
 
-- Checking/correcting errors
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="http://datavyu.org/user-guide/_static/video/run-a-script.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
 
 ## Take Homes
 
 - Video captures behavior
 - Databrary securely stores, shares video
 - Video + Databrary -> reproducible & transparent workflows
+
+## Take homes
+
 - Video + Datavyu -> reproducible & transparent workflows
 - Databrary helps make psychological science more transparent & reproducible
 
