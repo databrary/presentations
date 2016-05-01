@@ -6,7 +6,7 @@ p, li, td {
 }
 
 slides > slide:not(.nobackground):before {
-  width: 100px;
-  height: 100px;
-  background-size: 100px 100px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
 }

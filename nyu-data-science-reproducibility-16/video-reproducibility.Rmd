@@ -13,17 +13,13 @@ bibliography: bib/databrary.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Reproducible workflows with [Databrary](http://databrary.org)
-
 ## Acknowledgments
-
 - [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
 - [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
 - [Society for Research in Child Development (SRCD)](http://srcd.org)
 - NYU Libraries, ITS, IRB, and OSP
 
 ## Is psychological science reproducible?
-
 <div class="centered">
 <a href="http://cos.io">
 <img src="https://cos.io/static/img/icons/cos_wide.png">
@@ -35,19 +31,16 @@ knitr::opts_chunk$set(echo = FALSE)
 - Sharing [data](https://osf.io/ezcuj/wiki/home/?_ga=1.260625677.1251838540.1458403228) focuses attention on substantive issues
 
 ----
-
 <iframe src="http://databrary.org" width=640px height=400px>
 </iframe>
 
 ## [Databrary.org](http://databrary.org)
-
 - Digital data library specialized for research video
 - Video/audio + participant/context metadata
 - Restricted access for research/educational use
 - Policy framework for sharing identifiable data
 
 ## Video uniquely captures behavior
-
 <div class="centered">
 <video width="640" height="480" controls>
   <source src="https://nyu.databrary.org/slot/9840/-/asset/11192/download?inline=true" type="video/mp4">
@@ -57,9 +50,7 @@ Your browser does not support the video tag.
 </div>
 
 ## Video uniquely captures behavior
-
 <div class="centered">
-
 <video width="640" height="480" controls>
   <source src="https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true" type="video/mp4">
 Your browser does not support the video tag.
@@ -70,7 +61,6 @@ Your browser does not support the video tag.
 https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 
 ## [[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
-
 <div class=centered>
 <a href="https://nyu.databrary.org/volume/33">
 <img src="img/frank-databrary.jpg" height=450px>
@@ -78,7 +68,6 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 </div>
 
 ## Unequivocally & unambiguously demonstrates phenomena
-
 <div class="centered">
 <a href="http://doi.org/10.1126/science.1093567">
 <img src="img/deloache.science.jpg" height=350px>
@@ -88,7 +77,6 @@ https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true
 </div>
 
 ----
-
 <div class="centered">
 <video width="640" height="480" controls>
   <source src="https://nyu.databrary.org/slot/9850/-/asset/11550/download?inline=true" type="video/mp4">
@@ -98,28 +86,57 @@ Your browser does not support the video tag.
 </div>
 
 ----
-
 <iframe src="http://doi.org/10.17910/B7H019" width=640px height=400px>
 </iframe>
 
-## Video depicts unreported methodological details
-
-Fall from video, bridge 20 going into bridge 14, then fall. Subject 1. Cari brown sleeveless shirt. John assist.
-<https://nyu.databrary.org/volume/5>
+## Video depicts unreported methodological details [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9855/0,85147/asset/38977/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
 
 ## [Datavyu](http://datavyu.org) makes video coding reproducible
-
 - Raw research video must be coded
-- [Datavyu.org](http://datavyu.org) is a free, [open source](https://github.com/databrary/datavyu) coding tool
+- [Datavyu.org](http://datavyu.org) = free, [open source](https://github.com/databrary/datavyu) coding tool
 - Add codes, annotations time-locked to video segments
-- Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts)
+- Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts) reproducible workflows
+
+----
+<div class="centered">
+<a href="http://datavyu.org/user-guide/index.html">
+<img src="http://datavyu.org/user-guide/_images/annotated-datavyu-desktop.png" width=800px>
+</a>
+</div>
 
 ## Reproducible video coding
+<div class="centered">
+<img src="img/crawl-1-hand-fall.jpg">
 
-Static image of fall from video.
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
 
-## Securing permission to share while limiting access
+----
+<div class="centered">
+<img src="img/timeline-crawl-1.jpg">
 
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+----
+<div class="centered">
+<img src="img/datavyu-ss-bridge-crawl-1-trial10.jpg" width=1000px>
+
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+----
+<div class="centered">
+<img src="img/databrary-vol-5-materials.jpg" width=1000px>
+
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+
+## Securing permission to share while limiting access {.flexbox .vcenter}
 <div class="centered">
 <video width="640" height="480" controls>
   <source src="https://databrary.org/video/example-video-1.mp4" type="video/mp4">
@@ -128,13 +145,13 @@ Your browser does not support the video tag.
 </div>
 
 ## Databrary enhances reproducibility
-
 - "Active" curation of data **as it is collected**
 - Organize, share, standardized participant metadata
-- Sharing based on access level & participant permission
+- Sharing based on 
+    + user access level
+    + participant permission
 
 ## [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
-
 <iframe src="https://nyu.databrary.org/volume/5" width=750px height=500px>
 </iframe>
 
@@ -150,7 +167,7 @@ Your browser does not support the video tag.
 ## Take homes
 
 - Video uniquely captures complexity & richness of behavior
-- Databrary securely stores, shares video
+- Databrary securely stores, shares video + metadata
 - Databrary and Datavyu enhance reproducibility of video-based research
 - Databrary makes psychological science more transparent & reproducible
 
