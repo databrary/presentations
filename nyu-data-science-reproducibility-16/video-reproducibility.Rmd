@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
 - [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
 - [Society for Research in Child Development (SRCD)](http://srcd.org)
-- NYU Libraries, ITS, IRB, and OSP
+- NYU Libraries, NYU IT, IRB, and OSP
 
 ## Is psychological science reproducible?
 <div class="centered">
@@ -98,53 +98,56 @@ Your browser does not support the video tag.
 </div>
 
 ## [Datavyu](http://datavyu.org) makes video coding reproducible
+
 - Raw research video must be coded
 - [Datavyu.org](http://datavyu.org) = free, [open source](https://github.com/databrary/datavyu) coding tool
 - Add codes, annotations time-locked to video segments
 - Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts) reproducible workflows
 
 ----
+
 <div class="centered">
 <a href="http://datavyu.org/user-guide/index.html">
-<img src="http://datavyu.org/user-guide/_images/annotated-datavyu-desktop.png" width=800px>
+<img src="http://datavyu.org/user-guide/_images/annotated-datavyu-desktop.png" width=1000px>
 </a>
 </div>
 
-## Reproducible video coding
+## Datavyu facilitates reproducible video coding
+
 <div class="centered">
-<img src="img/crawl-1-hand-fall.jpg">
+<img src="img/crawl-1-hand-fall.jpg" height=550px>
 
 [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 </div>
 
 ----
-<div class="centered">
-<img src="img/timeline-crawl-1.jpg">
 
-[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
-</div>
-----
 <div class="centered">
-<img src="img/datavyu-ss-bridge-crawl-1-trial10.jpg" width=1000px>
-
-[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+<img src="img/timeline-crawl-0.jpg" height=550px>
 </div>
+
 ----
+
+<div class="centered">
+<img src="img/timeline-crawl-1.jpg" height=550px>
+</div>
+
+----
+
+<div class="centered">
+<img src="img/datavyu-ss-bridge-crawl-1-trial10.jpg" height=550px>
+</div>
+
+----
+
 <div class="centered">
 <img src="img/databrary-vol-5-materials.jpg" width=1000px>
 
 [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 </div>
 
-## Securing permission to share while limiting access {.flexbox .vcenter}
-<div class="centered">
-<video width="640" height="480" controls>
-  <source src="https://databrary.org/video/example-video-1.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
-
 ## Databrary enhances reproducibility
+
 - "Active" curation of data **as it is collected**
 - Organize, share, standardized participant metadata
 - Sharing based on 
@@ -154,6 +157,44 @@ Your browser does not support the video tag.
 ## [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 <iframe src="https://nyu.databrary.org/volume/5" width=750px height=500px>
 </iframe>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-0.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-1.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-2.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-3.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-4.jpg">
+</div>
+
+## Standardized -- reproducible -- release levels
+
+<a href="https://databrary.org/access/guide/investigators/release/release-levels.html">
+<div class="centered">
+<img src="img/release-levels.jpg">
+</a>
+</div>
 
 ## Databrary enhances reproducibility
 
@@ -170,6 +211,14 @@ Your browser does not support the video tag.
 - Databrary securely stores, shares video + metadata
 - Databrary and Datavyu enhance reproducibility of video-based research
 - Databrary makes psychological science more transparent & reproducible
+- <http://github.com/databrary/presentations/nyu-data-science-reproducibility-16>
+
+## To boldly go where no science has gone before...
+
+- Reproducibility of numerical computation ≠ 
+- Reproducibility of behavioral measures, manipulations
+- **All** behavioral researchers should 
+    + share reproducible workflows of data, analyses *AND*
+    + videos of behavioral measures, displays
 
 ## References {.smaller}
-

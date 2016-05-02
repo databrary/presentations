@@ -1,6 +1,6 @@
 # README
 
-This repository contains files associated with a draft talk for NYU Center for Data Science workshop on reproducibility.
+This repository contains files associated with a talk presented at a [symposium](https://reproduciblescience.org/nyu/events/reproducibility-symposium-2016/) on reproducible science held on Tuesday, May 3, 2016. 
 
 The files were prepared in [RStudio](http://rstudio.com), version 0.99.893. 
 
