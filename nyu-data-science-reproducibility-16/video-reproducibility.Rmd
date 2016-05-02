@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Acknowledgments
+
 - [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
 - [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
 - [Society for Research in Child Development (SRCD)](http://srcd.org)
@@ -86,6 +87,7 @@ Your browser does not support the video tag.
 </div>
 
 ----
+
 <iframe src="http://doi.org/10.17910/B7H019" width=640px height=400px>
 </iframe>
 
@@ -220,5 +222,10 @@ Your browser does not support the video tag.
 - **All** behavioral researchers should 
     + share reproducible workflows of data, analyses *AND*
     + videos of behavioral measures, displays
+    
+## Join us!
+
+<iframe src="https://databrary.org/about/jobs.html" width=640px height=400px>
+</iframe>
 
 ## References {.smaller}
