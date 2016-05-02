@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 - [Society for Research in Child Development (SRCD)](http://srcd.org)
 - NYU Libraries, NYU IT, IRB, and OSP
 
-## TL;DR
+## TL; DR
 
 - Video is essential for reproducible behavioral science
     + Even where video is *not* the primary raw data
@@ -41,7 +41,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Why we're unsure
 
-- Replications can fail due to methdological differences
+- Replications can fail due to methodological differences
 - Methods sections don't always report essential details
 - **Video captures and preserves it**
 
@@ -54,24 +54,20 @@ knitr::opts_chunk$set(echo = FALSE)
 - Prepare to share from the beginning
 - Seek permission to share data
 
-## [Databrary.org](http://databrary.org)
+## [Databrary.org](http://databrary.org) makes this possible
 
 - Digital data library specialized for research video
 - Video/audio + participant/context metadata
+- Share displays, materials, text-based data files
 - Restricted access for research/educational use
 - Policy framework for sharing identifiable data
-- Developmental science focus, but not exclusive
-
-----
-
-<iframe src="http://databrary.org" width=640px height=400px>
-</iframe>
+- Developmental focus, but not exclusive
 
 ## How Databrary overcomes barriers to sharing video
 
 - Policies for sharing identifiable video data
-- Tools for coding video
-- Tools for "active curation"" during data collection
+- Tools for reproducibly coding video
+- Tools for "active curation" == during data collection
 
 ## Policies
 
@@ -91,8 +87,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Tools for coding video
 
 - Raw research video must be coded
-- [Datavyu.org](http://datavyu.org) = free, [open source](https://github.com/databrary/datavyu) coding tool
+- [Datavyu](http://datavyu.org) a free, [open source](https://github.com/databrary/datavyu) coding tool
 - Add codes, annotations time-locked to video segments
+- Turn behavior into quantifiable data
 - Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts) reproducible workflows
 
 ----
@@ -105,8 +102,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Curating data **as it is collected**
 
-- Organize, share, standardized participant metadata
-- Sharing based on 
+- After-the-fact curation burdensome
+- Databrary organizes, shares, standardized participant metadata
+- Sharing based on
     + user access level
     + participant permission
 
@@ -153,26 +151,12 @@ knitr::opts_chunk$set(echo = FALSE)
 [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 </div>
 
-
 ## Take homes
 
 - Video uniquely captures complexity & richness of behavior
-- Video captures vital methodological details in behavioral research
+- Video captures vital methodological details
 - Identifiable video (and other data) can be shared
+- Preparing to share reduces the burden
 - Video data sharing essential for a reproducible behavioral science
-
-## **Essentials** for a reproducible behavioral science
-
-- Video record all tasks, measures, and behaviors
-- Share the recordings
-- Share all questionnaires, tasks, displays
-- Share statistical, computational, data workflows
-- Prepare to share from the beginning
-- Seek permission to share data
-
-## Join us!
-
-<iframe src="https://databrary.org/about/jobs.html" width=640px height=400px>
-</iframe>
 
 ## References {.smaller}
