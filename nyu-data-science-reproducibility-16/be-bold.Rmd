@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Behavior rich, complex
 - Numeric, text-based measures reduce that complexity
-- **Video captures and preserves it**
+- **Video captures and preserves it
 
 ## Why we're unsure
 
@@ -174,5 +174,18 @@ Your browser does not support the video tag.
 
 <iframe src="http://databrary.org" width=640px height=400px>
 </iframe>
+
+----
+
+<iframe src="https://databrary.org/about/jobs.html" width=640px height=400px>
+</iframe>
+
+----
+
+<div class="centered">
+<img src="img/databrary-leaf-large.png" height=450>
+
+<http://github.com/databrary/presentations/nyu-data-science-reproducibility-16/>
+</div>
 
 ## References {.smaller}
