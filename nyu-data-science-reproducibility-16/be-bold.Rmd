@@ -42,10 +42,21 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Why we're unsure
 
 - Replications can fail due to methodological differences
-- Methods sections don't always report essential details
+- Methods sections can't possibly report essential details
 - **Video captures and preserves it**
 
-## **Essentials** for a reproducible behavioral science
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9855/0,85147/asset/38977/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+
+## A reproducible behavioral science *must*...
 
 - Video record all tasks, measures, and behaviors
 - Share the recordings
@@ -158,5 +169,10 @@ knitr::opts_chunk$set(echo = FALSE)
 - Identifiable video (and other data) can be shared
 - Preparing to share reduces the burden
 - Video data sharing essential for a reproducible behavioral science
+
+----
+
+<iframe src="http://databrary.org" width=640px height=400px>
+</iframe>
 
 ## References {.smaller}

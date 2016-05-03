@@ -6,7 +6,8 @@ The files were prepared in [RStudio](http://rstudio.com), version 0.99.893.
 
 ## Contents
 
-- [HTML](https://rawgit.com/databrary/presentations/master/nyu-data-science-reproducibility-16/video-reproducibility.html), [Rmd](video-reproducibility.Rmd)
+- Presented talk. [HTML](https://rawgit.com/databrary/presentations/master/nyu-data-science-reproducibility-16/be-bold.html), [Rmd](be-bold.Rmd)
+- Initial version. [HTML](https://rawgit.com/databrary/presentations/master/nyu-data-science-reproducibility-16/video-reproducibility.html), [Rmd](video-reproducibility.Rmd)
 - [bib/](/bib), bibliography files
 - [css/](/css), CSS files
 - [img/](/img), image files
