@@ -37,7 +37,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Behavior rich, complex
 - Numeric, text-based measures reduce that complexity
-- **Video captures and preserves it
+- **Video captures and preserves it**
 
 ## Why we're unsure
 
