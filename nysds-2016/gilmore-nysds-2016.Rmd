@@ -1,0 +1,297 @@
+---
+title: "gilmore-nysds-2016"
+author: "Rick O. Gilmore, Karen E. Adolph, & David S. Millman"
+date: "`r Sys.Date()`"
+output:
+  ioslides_presentation:
+    widescreen: TRUE
+    css: css/databrary.css
+    logo: img/databrary-leaf-large.png
+bibliography: bib/databrary.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+---- 
+
+**Curating identifiable data**
+
+## Acknowledgments
+
+- [NSF BCS-1238599](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1238599&HistoricalAwards=false)
+- [NICHD U01-HD-076595](https://projectreporter.nih.gov/project_info_description.cfm?aid=8531595&icde=15908155&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC)
+- [Society for Research in Child Development (SRCD)](http://srcd.org)
+- NYU Libraries, NYU IT, IRB, and OSP
+
+## TL; DR
+
+- Video is essential for reproducible behavioral science
+    + Even where video is *not* the primary raw data
+- [Databrary](http://databrary.org) specializes in storing and sharing research video
+- Video is identifiable, but it *can* be securely stored, managed, and shared
+- **All** behavioral scientists should collect and share videos of their research
+
+## Is behavioral science reproducible?
+
+- Nosek et al. [[@collaboration_estimating_2015]](http://doi.org/10.1126/science.aac4716)
+- vs. Gilbert et al. [[@gilbert_comment_2016]](http://doi.org/10.1126/science.aad7243)
+
+## Why we're unsure
+
+- Behavior rich, complex
+- Numeric, text-based measures reduce that complexity
+- **Video captures and preserves it**
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9840/-/asset/11192/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+[[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
+</div>
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9840/-/asset/11193/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+[[@c7fbeef0-d8a9-4b99-9e17-f598507486b7]](http://doi.org/10.17910/B7H019)
+</div>
+
+## Why we're unsure
+
+- Replications can fail due to methodological differences
+- Methods sections can't possibly report essential details
+- **Video captures and preserves it**
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/9855/0,85147/asset/38977/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+
+## A reproducible behavioral science *must*...
+
+>- Video record all tasks, measures, and behaviors
+>- Share the recordings openly with other researchers
+>- Share all questionnaires, tasks, displays
+>- Share statistical, computational, data workflows
+>- Prepare to share from the beginning
+>- Seek permission to share data from participants
+
+## [Databrary.org](http://databrary.org) makes this possible
+
+- Digital data library specialized for research video
+- Video/audio + participant/context metadata
+- Share displays, materials, text-based data files
+
+----
+
+- Restricted access for research/educational use
+- Policy framework for sharing identifiable data
+- Developmental focus, but not exclusive
+
+----
+
+- High capacity, centralized storage
+- Transcoding to common, interoperable formats
+- Long-term preservation
+
+## Databrary's progress
+
+- Support from NSF and NICHD in late 2012, early 2013.
+- Website "live" early 2014.
+- Rapid growth in investigators, institutions, datasets.
+
+----
+
+<iframe src="https://databrary.org" width=750px height=500px>
+</iframe>
+
+## How Databrary overcomes barriers to sharing video
+
+- Policies for sharing identifiable video data
+- Tools for reproducibly coding video
+- Tools for "active curation" == during data collection
+- Tools for searching, filtering
+
+## Policies
+
+- Restrict access to authorized researchers (& affiliates)
+    + Institutional [access agreement](https://databrary.org/access/policies/agreement.html)
+- Seek permission to share data from participants
+    + Release [template](https://databrary.org/access/policies/release-template.html); [script](https://databrary.org/access/guide/investigators/release/asking/script.html); sample [video](https://databrary.org/video/example-video-1.mp4)
+
+## Standardized release levels
+
+<div class="centered">
+<a href="https://databrary.org/access/guide/investigators/release/release-levels.html">
+<img src="img/release-levels.jpg">
+</a>
+</div>
+
+## Tools for coding video
+
+- Raw research video must be coded
+- [Datavyu](http://datavyu.org) a free, [open source](https://github.com/databrary/datavyu) coding tool
+- Add codes, annotations time-locked to video segments
+- Turn behavior into quantifiable data
+- Ruby API for [scripting](https://github.com/databrary/Datavyu-Example-Scripts) reproducible workflows
+
+----
+
+<div class="centered">
+<a href="http://datavyu.org/user-guide/index.html">
+<img src="http://datavyu.org/user-guide/_images/annotated-datavyu-desktop.png" width=1000px>
+</a>
+</div>
+
+---- 
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/223/-/asset/47075/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</iframe>
+
+## Video is just a spatially and temporally rich time series
+
+<div class="centered">
+<img src="http://www.psyrecon.de/uploads/pics/psychophysiologischeVariablen_01.jpg">
+</div>
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/11141/0,5000/asset/37958/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</iframe>
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/11141/0,5000/asset/37962/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</iframe>
+
+----
+
+<div class="centered">
+<video width="640" height="480" controls>
+  <source src="https://nyu.databrary.org/slot/11141/0,5000/asset/37968/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</iframe>
+
+## Datavyu can import multiple time series
+
+- Heart rate, skin conductance, brain activation
+- Eye position, diameter
+- Body position, movement
+
+## Curating data **as it is collected**
+
+- After-the-fact curation burdensome
+- Databrary organizes, shares, standardized participant metadata
+- Sharing based on
+    + user access level
+    + participant permission
+
+## [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+
+<iframe src="https://nyu.databrary.org/volume/5" width=750px height=500px>
+</iframe>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-0.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-1.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-2.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-3.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/vol-5-spreadsheet-4.jpg">
+</div>
+
+----
+
+<div class="centered">
+<img src="img/databrary-vol-5-materials.jpg">
+
+[[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
+</div>
+
+## Common metadata representation makes search, filtering easy
+
+<div class="centered">
+<img src="img/search=1-2-y-olds.jpg">
+**"Show me all the datasets that have videos of 1-2 year-old children"**
+</div>
+
+## Take homes
+
+- Video uniquely captures complexity & richness of behavior
+- Video captures vital methodological details
+- Identifiable video (and other data) can be shared securely and ethically
+- Preparing to share reduces the burden
+- Video data sharing essential for a reproducible behavioral science
+
+----
+
+<iframe src="http://databrary.org" width=640px height=400px>
+</iframe>
+
+----
+
+<iframe src="https://databrary.org/about/jobs.html" width=640px height=400px>
+</iframe>
+
+----
+
+<div class="centered">
+<img src="img/databrary-leaf-large.png" height=450>
+
+<http://github.com/databrary/presentations/nysds-2016/>
+</div>
+
+## References {.smaller}
+
