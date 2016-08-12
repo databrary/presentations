@@ -87,12 +87,20 @@ Your browser does not support the video tag.
 
 >- Video record all tasks, measures, and behaviors
 >- Share the recordings openly with other researchers
+
+## *Journal of Visualized Experiments*
+
+<iframe src="http://www.jove.com/" width=750px height=500px>
+</iframe>
+
+## But, a reproducible behavioral science must *also*...
+
 >- Share all questionnaires, tasks, displays
 >- Share statistical, computational, data workflows
 >- Prepare to share from the beginning
 >- Seek permission to share data from participants
 
-## [Databrary.org](http://databrary.org) makes this possible
+## [Databrary.org](http://databrary.org)
 
 - Digital data library specialized for research video
 - Video/audio + participant/context metadata
@@ -221,6 +229,13 @@ Your browser does not support the video tag.
 - Sharing based on
     + user access level
     + participant permission
+    
+## Databrary's structure
+
+- Datasets have own page; shared datasets have DOIs.
+- Data about testing *sessions* (locations, dates/times, people) stored in *spreadsheet*
+- Session data organized in *timeline*
+- Store data AND materials (displays, protocols, etc.)
 
 ## [[@ddff6ac6-cd1b-4365-89aa-70ea654b4ed9]](http://dx.doi.org/10.17910/B7MW2K)
 
