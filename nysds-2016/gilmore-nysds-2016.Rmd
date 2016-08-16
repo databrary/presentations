@@ -473,11 +473,8 @@ Your browser does not support the video tag.
 - I suggest that the same will be true in data science.
 - At the moment, Databrary offers the ability to search for datasets based on participant or file characteristics.
 - But, this search capability will surely grow, and so in the very near future, a researcher will be able to search for individual sessions or even segments of time when a particular event is occurring.
+- The results of this search and filtering will be a custom dataset that can be reanalyzed and reused.
 </div>
-
-----
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAmZucyzyZM" frameborder="0" allowfullscreen></iframe>
 
 ## "Big" questions about behavior require big(ger) data
 
