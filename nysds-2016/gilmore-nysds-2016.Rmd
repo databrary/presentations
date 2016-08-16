@@ -256,12 +256,7 @@ Your browser does not support the video tag.
 - Methods sections can't possibly report all essential details
 - **Video captures and preserves it**
 
-<div class="notes>
-- Even when researcher try to replicate results with help from the original investigators, the results can fall short?
-- Why? Methods sections can't possibly report all essential details due to time and space constraints.
-</div>
-
-## Adolph study
+----
 
 <div class="centered">
 <video width="640" height="480" controls>
@@ -461,6 +456,44 @@ Your browser does not support the video tag.
 - Notice that there are many video segments, and Databrary represents the temporal relationships among them.
 </div>
 
+## What is the input to the developing brain?
+
+<div class="centered">
+<video width="700" height="550" controls>
+  <source src="https://nyu.databrary.org/slot/11680/0,24500/asset/41871/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+[[@264e9563-8bc9-4863-b70f-e92203c3f283]](http://doi.org/10.17910/B7988V)
+</div>
+
+----
+
+<div class="centered">
+<video width="700" height="550" controls>
+  <source src="https://nyu.databrary.org/slot/11680/25500,50000/asset/41873/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+[[@264e9563-8bc9-4863-b70f-e92203c3f283]](http://doi.org/10.17910/B7988V)
+</div>
+
+----
+
+<div class="centered">
+<video width="700" height="550" controls>
+  <source src="https://nyu.databrary.org/slot/11680/51000,75500/asset/41875/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+[[@264e9563-8bc9-4863-b70f-e92203c3f283]](http://doi.org/10.17910/B7988V)
+</div>
+
+----
+
+<iframe src="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7345450" width=640px height=400px>
+</iframe>
+
 ## Tools for searching, filtering by participant characteristics
 
 <div class="centered">
@@ -486,7 +519,7 @@ Your browser does not support the video tag.
 
 - Multiple levels of spatial, temporal resolution
 - Linked data sets and streams
-- Key linkage variables: *when* (time), *where* (location), *who* (age, gender)
+- Key linkage variables: *when* (time), *where* (location), *who* (age, gender, race/ethnicity, ...)
 - Video is a spatially and temporally rich time series
 
 <div class="notes">
@@ -531,8 +564,10 @@ Your browser does not support the video tag.
 
 ----
 
-<iframe src="https://github.com/databrary/presentations/tree/master/nysds-2016" width=640px height=400px>
-</iframe>
+<div class="centered">
+<img src="img/github-screenshot.jpg" width=900px>
+
+</div>
 
 ## References {.smaller}
 
